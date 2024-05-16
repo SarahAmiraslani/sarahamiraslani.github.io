@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Data Scientist. Developer Advocate. San Jose, CA. <a href='mailto:sarahamiraslani@gmail.com'>Contact me </a>
+subtitle: Data Scientist. Developer Advocate. San Jose, CA.
 
 profile:
   align: right

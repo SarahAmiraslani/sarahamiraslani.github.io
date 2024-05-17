@@ -23,13 +23,13 @@
         "username": "Sarah Amiraslani",
         "url": "https://www.github.com/sarahamiraslani"
       }
-  ]
+    ]
   },
   "work": [
     {
       "name": "Wells Fargo Bank, N.A.",
       "position": "Quantitative Analytics Specialist",
-      "location":"San Francisco, CA",
+      "location": "San Francisco, CA",
       "url": "https://example.com",
       "startDate": "TBA",
       "endDate": "TBA",
@@ -39,7 +39,7 @@
     {
       "name": "Wells Fargo Bank, N.A.",
       "position": "Data Management Analyst",
-      "location":"San Francisco, CA",
+      "location": "San Francisco, CA",
       "url": "https://example.com",
       "startDate": "TBA",
       "endDate": "TBA",
@@ -49,7 +49,7 @@
     {
       "name": "Changing Room",
       "position": "Data Science Intern",
-      "location":"Remote",
+      "location": "Remote",
       "url": "https://example.com",
       "startDate": "TBA",
       "endDate": "TBA",
@@ -57,39 +57,39 @@
       "highlights": ["Data Science", "Python Scrtipting", "SQL", "Webscrapping", "Machine Learning"]
     },
     {
-    "name": "Trackonomy Systems, INC",
-    "position": "Data Analyst",
-    "location":"San Jose, CA",
-    "url": "https://example.com",
-    "startDate": "TBA",
-    "endDate": "TBA",
-    "summary": "TBA",
-    "highlights": ["Data Science", "Python Scrtipting", "SQL", "Webscrapping", "Machine Learning"]
-  },
-  {
-    "name": "University of California, San Diego",
-    "position": "Teaching Assistant and Tutor",
-    "location":"San Diego, CA",
-    "url": "https://cogs18.github.io/intro.html",
-    "startDate": "TBA",
-    "endDate": "TBA",
-    "summary": "TBA",
-    "highlights": ["Data Science", "Python Scrtipting", "SQL", "Webscrapping", "Machine Learning"]
-  },
-  {
-    "name": "University of California, San Diego",
-    "position": "Research Assistant, Honors Thesis",
-    "location":"San Diego, CA",
-    "url": "https://www.lime-lab-ucsd.com/",
-    "startDate": "TBA",
-    "endDate": "TBA",
-    "summary": "TBA",
-    "highlights": ["Experimental Design", "Data Analysis", "Data Visualization", "Statistical Analysis"]
-  },
-  {
+      "name": "Trackonomy Systems, INC",
+      "position": "Data Analyst",
+      "location": "San Jose, CA",
+      "url": "https://example.com",
+      "startDate": "TBA",
+      "endDate": "TBA",
+      "summary": "TBA",
+      "highlights": ["Data Science", "Python Scrtipting", "SQL", "Webscrapping", "Machine Learning"]
+    },
+    {
+      "name": "University of California, San Diego",
+      "position": "Teaching Assistant and Tutor",
+      "location": "San Diego, CA",
+      "url": "https://cogs18.github.io/intro.html",
+      "startDate": "TBA",
+      "endDate": "TBA",
+      "summary": "TBA",
+      "highlights": ["Data Science", "Python Scrtipting", "SQL", "Webscrapping", "Machine Learning"]
+    },
+    {
+      "name": "University of California, San Diego",
+      "position": "Research Assistant, Honors Thesis",
+      "location": "San Diego, CA",
+      "url": "https://www.lime-lab-ucsd.com/",
+      "startDate": "TBA",
+      "endDate": "TBA",
+      "summary": "TBA",
+      "highlights": ["Experimental Design", "Data Analysis", "Data Visualization", "Statistical Analysis"]
+    },
+    {
       "name": "University of California, San Diego school of Medicine",
       "position": "Research Assistant",
-      "location":"San Diego, CA",
+      "location": "San Diego, CA",
       "url": "https://profiles.ucsd.edu/amy.lansing",
       "startDate": "TBA",
       "endDate": "TBA",
@@ -141,15 +141,15 @@
       "courses": ["Data Science", "Machine Learning", "Deep Learning", "Natural Language Processing"]
     },
     {
-    "institution": "University of California, San Diego",
-    "url": "https://ucsd.edu/",
-    "area": "Cognitive Behavioral Neuroscience",
-    "studyType": "BS",
-    "startDate": "2017-09",
-    "endDate": "2020-06",
-    "score": "10",
-    "courses": ["Neuroscience", "Cognitive Psychology", "Statistics", "Research Methods", "Calculus", "Linear Algebra"]
-  }
+      "institution": "University of California, San Diego",
+      "url": "https://ucsd.edu/",
+      "area": "Cognitive Behavioral Neuroscience",
+      "studyType": "BS",
+      "startDate": "2017-09",
+      "endDate": "2020-06",
+      "score": "10",
+      "courses": ["Neuroscience", "Cognitive Psychology", "Statistics", "Research Methods", "Calculus", "Linear Algebra"]
+    }
   ],
   "awards": [
     {
@@ -200,7 +200,7 @@
       "language": "Spanish",
       "fluency": "Advanced"
     },
-      {
+    {
       "language": "French",
       "fluency": "Intermediate"
     }
@@ -209,12 +209,7 @@
     {
       "name": "Data Science",
       "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Python Programming",
-        "Machine Learning",
-        "Information Visualization",
-        "Network Analysis"
-      ]
+      "keywords": ["Python Programming", "Machine Learning", "Information Visualization", "Network Analysis"]
     }
   ],
   "references": [

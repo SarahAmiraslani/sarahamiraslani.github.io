@@ -74,7 +74,7 @@
       "startDate": "2019-08",
       "endDate": "2019-12",
       "summary": "TBA",
-      "highlights": ["Data Science", "Python Scrtipting", "SQL", "Webscrapping", "Machine Learning"]
+      "highlights": ["Data Science", "Python Scripting", "SQL", "Webscrapping", "Machine Learning"]
     },
     {
       "name": "University of California, San Diego",
@@ -217,6 +217,12 @@
       "level": "TBD",
       "icon": "fa-solid fa-hashtag",
       "keywords": ["Git", "GitHub", "Docker", "Kubernetes", "AWS", "GCP", "Tableau", "Power BI", "Microsoft Office"]
+    },
+    {
+      "name": "Soft",
+      "level": "TBD",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": ["Collaboration", "Communication", "Problem Solving", "Critical Thinking","Leadership", "Project Management"]
     }
   ],
   "languages": [
@@ -253,7 +259,7 @@
     {
       "name": "Professor John Doe",
       "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "reference": "TBA"
     }
   ],
   "projects": [
@@ -261,6 +267,14 @@
       "name": "In-Situ Properties of Solar Wind",
       "summary": "Collaborated with the Climate and Space Sciences Engineering department at the University of Michigan to map solar wind in-situ properties to their origin in the sun and to better understand the differences among categories of solar wind caused by their different solar origins.",
       "highlights": ["TBA"],
+      "startDate": "TBA",
+      "endDate": "TBA",
+      "url": "https://example.com"
+    },
+    {
+      "name": "Drawing to Learn Abstract Science Concepts",
+      "summary": "",
+      "highlights": [],
       "startDate": "TBA",
       "endDate": "TBA",
       "url": "https://example.com"

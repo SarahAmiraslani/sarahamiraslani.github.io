@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Sarah Amiraslani",
-    "label": "Data Scientist",
+    "label": "Data Scientist | Quantitative Analyst | Developer Relations Specialist",
     "image": "",
     "email": "sarahamiraslani@gmail.com",
     "phone": "(408) 332-9280",
@@ -30,19 +30,19 @@
       "name": "Wells Fargo Bank, N.A.",
       "position": "Quantitative Analytics Specialist",
       "location": "San Francisco, CA",
-      "url": "https://example.com",
-      "startDate": "TBA",
-      "endDate": "TBA",
-      "summary": "TBA",
+      "url": "https://www.wellsfargo.com",
+      "startDate": "2022-11",
+      "endDate": "2024-06",
+      "summary": "Effectively managed AutoML platform services at the bank, enhancing vendor relationships and community engagement, while spearheading educational initiatives that improved documentation quality and accelerated tool adoption, leading to faster time-to-market for AI solutions.",
       "highlights": ["Data Science", "Machine Learning", "AutoML", "Developer Relations"]
     },
     {
       "name": "Wells Fargo Bank, N.A.",
       "position": "Data Management Analyst",
       "location": "San Francisco, CA",
-      "url": "https://example.com",
-      "startDate": "TBA",
-      "endDate": "TBA",
+      "url": "https://www.wellsfargo.com",
+      "startDate": "2022-04",
+      "endDate": "2022-11",
       "summary": "TBA",
       "highlights": ["Data Science", "Data Management", "Analytics"]
     },
@@ -50,29 +50,29 @@
       "name": "Changing Room",
       "position": "Data Science Intern",
       "location": "Remote",
-      "url": "https://example.com",
-      "startDate": "TBA",
-      "endDate": "TBA",
-      "summary": "TBA",
-      "highlights": ["Data Science", "Python Scrtipting", "SQL", "Webscrapping", "Machine Learning"]
+      "url": "https://www.linkedin.com/company/chngroom/",
+      "startDate": "2021-10",
+      "endDate": "2022-04",
+      "summary": "Developed and optimized Selenium web drivers to scrape and integrate data from over 100,000 fashion items, generating training datasets for AI-driven recommendation algorithms. Collaborated with cross-functional teams to create a Chrome plugin that helps consumers assess the environmental impact of their purchases and recomends sustainable alternatives.",
+      "highlights": ["Data Science", "Python Scripting", "SQL", "Webscrapping", "Machine Learning"]
     },
     {
       "name": "Trackonomy Systems, INC",
       "position": "Data Analyst",
       "location": "San Jose, CA",
       "url": "https://example.com",
-      "startDate": "TBA",
-      "endDate": "TBA",
-      "summary": "TBA",
-      "highlights": ["Data Science", "Python Scrtipting", "SQL", "Webscrapping", "Machine Learning"]
+      "startDate": "2020-10",
+      "endDate": "10-2021",
+      "summary": "Developed an innovative computer vision system using OpenCV for pre-production quality testing, reducing material waste and alleviating production bottlenecks. Designed and launched a Python-based GUI on Raspberry Pi devices, enhancing data collection and anomaly detection, significantly improving production efficiency and product quality.",
+      "highlights": ["Data Science", "Python Scripting", "SQL", "Webscrapping", "Machine Learning"]
     },
     {
       "name": "University of California, San Diego",
       "position": "Teaching Assistant and Tutor",
       "location": "San Diego, CA",
       "url": "https://cogs18.github.io/intro.html",
-      "startDate": "TBA",
-      "endDate": "TBA",
+      "startDate": "2019-08",
+      "endDate": "2019-12",
       "summary": "TBA",
       "highlights": ["Data Science", "Python Scrtipting", "SQL", "Webscrapping", "Machine Learning"]
     },
@@ -81,8 +81,8 @@
       "position": "Research Assistant, Honors Thesis",
       "location": "San Diego, CA",
       "url": "https://www.lime-lab-ucsd.com/",
-      "startDate": "TBA",
-      "endDate": "TBA",
+      "startDate": "2018-08",
+      "endDate": "2021-02",
       "summary": "TBA",
       "highlights": ["Experimental Design", "Data Analysis", "Data Visualization", "Statistical Analysis"]
     },
@@ -91,8 +91,8 @@
       "position": "Research Assistant",
       "location": "San Diego, CA",
       "url": "https://profiles.ucsd.edu/amy.lansing",
-      "startDate": "TBA",
-      "endDate": "TBA",
+      "startDate": "2017-12",
+      "endDate": "2018-08",
       "summary": "TBA",
       "highlights": ["Archival Data Analysis", "Data Visualization", "Statistical Analysis", "Data Management"]
     }
@@ -111,7 +111,7 @@
     {
       "organization": "United Auto Workers",
       "location": "San Diego, CA",
-      "position": "Graduate Student Representative",
+      "position": "Sexual Violence and Harassment Graduate Student Representative",
       "url": "https://example.com",
       "startDate": "TBA",
       "endDate": "TBA",
@@ -137,26 +137,45 @@
       "studyType": "MS",
       "startDate": "2021-01",
       "endDate": "2024-05",
-      "score": "10",
-      "courses": ["Data Science", "Machine Learning", "Deep Learning", "Natural Language Processing"]
+      "score": "3.9/4.0",
+      "courses": ["Data Science", "Machine Learning", "Deep Learning", "Natural Language Processing"],
+      "thesis": "TBA"
     },
     {
-      "institution": "University of California, San Diego",
+      "institution": "University of California, San Diego (UCSD)",
       "url": "https://ucsd.edu/",
       "area": "Cognitive Behavioral Neuroscience",
       "studyType": "BS",
       "startDate": "2017-09",
       "endDate": "2020-06",
-      "score": "10",
-      "courses": ["Neuroscience", "Cognitive Psychology", "Statistics", "Research Methods", "Calculus", "Linear Algebra"]
+      "score": "3.9/4.0 - Magna Cum Laude",
+      "courses": ["Neuroscience", "Cognitive Psychology", "Statistics", "Research Methods", "Calculus", "Linear Algebra"],
+      "thesis": "TBA"
     }
   ],
   "awards": [
     {
       "title": "Norman Henry Anderson Excellence in Research Presentation",
-      "date": "TBA",
+      "date": "2020",
       "awarder": "UCSD Psychology Department",
-      "url": "https://example.com",
+      "summary": "TBA"
+    },
+    {
+      "title": "Revelle College Provost's Honors",
+      "date": "2020",
+      "awarder": "UCSD Revelle College",
+      "summary": "TBA"
+    },
+    {
+      "title": "Departmental Honors",
+      "date": "2020",
+      "awarder": "UCSD Psychology Department",
+      "summary": "TBA"
+    },
+    {
+      "title": "Chancellor's Undergraduate Research Scholarship",
+      "date": "20018",
+      "awarder": "UCSD Chancellors Office",
       "summary": "TBA"
     }
   ],
@@ -175,7 +194,6 @@
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Python Programming",
         "Machine Learning",
         "Deep Learning",
         "Natural Language Processing",
@@ -183,8 +201,22 @@
         "Network Analysis",
         "Information Visualization",
         "Data Management",
-        "SQL"
+        "SQL",
+        "MySQL",
+        "PostgreSQL"
       ]
+    },
+    {
+      "name": "Programming",
+      "level": "TBD",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": ["Python", "R", "MATLAB", "SQL", "HTML", "CSS", "JavaScript", "D3.js", "Plotly", "Bokeh", "Dash", "Flask", "Jupyter"]
+    },
+    {
+      "name": "Tools",
+      "level": "TBD",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": ["Git", "GitHub", "Docker", "Kubernetes", "AWS", "GCP", "Tableau", "Power BI", "Microsoft Office"]
     }
   ],
   "languages": [

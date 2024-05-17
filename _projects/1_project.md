@@ -1,32 +1,18 @@
 ---
 layout: page
 title: Drawing to Learn Abstract Science
-description: with background image
+description: Research conducted as an undergraduate at the University of California, San Diego at the LIME Lab.
 img: assets/img/kelly-sikkema-Kl1gC0ve620-unsplash.jpg
 importance: 1
 category: work
 related_publications: true
 ---
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-
 
 Photo by [Kelly Sikkema](https://unsplash.com/@kellysikkema?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/photos/person-writing-on-white-paper-Kl1gC0ve620?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/pdf/Draw_to_learn_poster.pdf" title="Research Poster (2019)" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}

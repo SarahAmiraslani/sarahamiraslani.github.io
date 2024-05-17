@@ -6,7 +6,7 @@ subtitle: Data Scientist. Developer Advocate. San Jose, CA.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: self.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
 

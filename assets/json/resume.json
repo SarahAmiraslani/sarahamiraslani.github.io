@@ -29,6 +29,7 @@
     {
       "name": "Wells Fargo Bank, N.A.",
       "position": "Quantitative Analytics Specialist",
+      "location":"San Francisco, CA",
       "url": "https://example.com",
       "startDate": "TBA",
       "endDate": "TBA",
@@ -38,6 +39,7 @@
     {
       "name": "Wells Fargo Bank, N.A.",
       "position": "Data Management Analyst",
+      "location":"San Francisco, CA",
       "url": "https://example.com",
       "startDate": "TBA",
       "endDate": "TBA",
@@ -47,6 +49,7 @@
     {
       "name": "Changing Room",
       "position": "Data Science Intern",
+      "location":"Remote",
       "url": "https://example.com",
       "startDate": "TBA",
       "endDate": "TBA",
@@ -56,6 +59,7 @@
     {
     "name": "Trackonomy Systems, INC",
     "position": "Data Analyst",
+    "location":"San Jose, CA",
     "url": "https://example.com",
     "startDate": "TBA",
     "endDate": "TBA",
@@ -65,7 +69,8 @@
   {
     "name": "University of California, San Diego",
     "position": "Teaching Assistant and Tutor",
-    "url": "https://example.com",
+    "location":"San Diego, CA",
+    "url": "https://cogs18.github.io/intro.html",
     "startDate": "TBA",
     "endDate": "TBA",
     "summary": "TBA",
@@ -74,7 +79,8 @@
   {
     "name": "University of California, San Diego",
     "position": "Research Assistant, Honors Thesis",
-    "url": "https://example.com",
+    "location":"San Diego, CA",
+    "url": "https://www.lime-lab-ucsd.com/",
     "startDate": "TBA",
     "endDate": "TBA",
     "summary": "TBA",
@@ -83,7 +89,8 @@
   {
       "name": "University of California, San Diego school of Medicine",
       "position": "Research Assistant",
-      "url": "https://example.com",
+      "location":"San Diego, CA",
+      "url": "https://profiles.ucsd.edu/amy.lansing",
       "startDate": "TBA",
       "endDate": "TBA",
       "summary": "TBA",
@@ -125,34 +132,32 @@
   "education": [
     {
       "institution": "University of Michigan, Ann Arbor",
-      "location": "Ann Arbor, MI",
-      "url": "https://www.uzh.ch/",
+      "url": "https://umich.edu/",
       "area": "Applied Data Science",
       "studyType": "MS",
-      "startDate": "TBA",
-      "endDate": "TBA",
+      "startDate": "2021-01",
+      "endDate": "2024-05",
       "score": "10",
       "courses": ["Data Science", "Machine Learning", "Deep Learning", "Natural Language Processing"]
     },
-      {
-      "institution": "University of California, San Diego",
-      "location": "San Diego, CA",
-      "url": "https://www.uzh.ch/",
-      "area": "Cognitive Behavioral Neuroscience",
-      "studyType": "BS",
-      "startDate": "TBA",
-      "endDate": "TBA",
-      "score": "10",
-      "courses": ["Neuroscience", "Cognitive Psychology", "Statistics", "Research Methods", "Calculus", "Linear Algebra"]
-    }
+    {
+    "institution": "University of California, San Diego",
+    "url": "https://ucsd.edu/",
+    "area": "Cognitive Behavioral Neuroscience",
+    "studyType": "BS",
+    "startDate": "2017-09",
+    "endDate": "2020-06",
+    "score": "10",
+    "courses": ["Neuroscience", "Cognitive Psychology", "Statistics", "Research Methods", "Calculus", "Linear Algebra"]
+  }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "Norman Henry Anderson Excellence in Research Presentation",
+      "date": "TBA",
+      "awarder": "UCSD Psychology Department",
+      "url": "https://example.com",
+      "summary": "TBA"
     }
   ],
   "certificates": [
@@ -162,98 +167,60 @@
       "issuer": "Stanford University",
       "url": "https://example.com",
       "icon": "fa-solid fa-location-dot"
-    },
-    {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
     }
   ],
   "skills": [
     {
-      "name": "Physics",
+      "name": "Data Science",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Python Programming",
+        "Machine Learning",
+        "Deep Learning",
+        "Natural Language Processing",
+        "Statistical Analysis",
+        "Network Analysis",
+        "Information Visualization",
+        "Data Management",
+        "SQL"
       ]
     }
   ],
   "languages": [
     {
       "language": "Farsi",
-      "fluency": "Native speaker",
-      "icon": ""
+      "fluency": "Native speaker"
     },
     {
       "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
+      "fluency": "Fluent"
     },
     {
       "language": "Spanish",
-      "fluency": "Advanced",
-      "icon": ""
+      "fluency": "Advanced"
     },
       {
       "language": "French",
-      "fluency": "Intermediate",
-      "icon": ""
+      "fluency": "Intermediate"
     }
   ],
   "interests": [
     {
-      "name": "Physics",
+      "name": "Data Science",
       "icon": "fa-solid fa-tag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Python Programming",
+        "Machine Learning",
+        "Information Visualization",
+        "Network Analysis"
       ]
     }
   ],
   "references": [
     {
       "name": "Professor Emma Geller",
-      "icon": "fa-solid fa-laptop",
+      "icon": "fa-solid fa-thumbtack",
       "reference": "TBA"
     },
     {
@@ -264,8 +231,8 @@
   ],
   "projects": [
     {
-      "name": "Mapping Solar Wind",
-      "summary": "TBA",
+      "name": "In-Situ Properties of Solar Wind",
+      "summary": "Collaborated with the Climate and Space Sciences Engineering department at the University of Michigan to map solar wind in-situ properties to their origin in the sun and to better understand the differences among categories of solar wind caused by their different solar origins.",
       "highlights": ["TBA"],
       "startDate": "TBA",
       "endDate": "TBA",

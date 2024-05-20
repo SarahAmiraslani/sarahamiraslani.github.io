@@ -31,8 +31,8 @@
       "position": "Quantitative Analytics Specialist",
       "location": "San Francisco, CA",
       "url": "https://www.wellsfargo.com",
-      "startDate": "2022-11",
-      "endDate": "2024-06",
+      "startDate": "2022",
+      "endDate": "2024",
       "summary": "Effectively managed AutoML platform services at the bank, enhancing vendor relationships and community engagement, while spearheading educational initiatives that improved documentation quality and accelerated tool adoption, leading to faster time-to-market for AI solutions.",
       "highlights": ["Data Science", "Machine Learning", "AutoML", "Developer Relations"]
     },
@@ -41,8 +41,8 @@
       "position": "Data Management Analyst",
       "location": "San Francisco, CA",
       "url": "https://www.wellsfargo.com",
-      "startDate": "2022-04",
-      "endDate": "2022-11",
+      "startDate": "2022",
+      "endDate": "2022",
       "summary": "TBA",
       "highlights": ["Data Science", "Data Management", "Analytics"]
     },
@@ -51,38 +51,38 @@
       "position": "Data Science Intern",
       "location": "Remote",
       "url": "https://www.linkedin.com/company/chngroom/",
-      "startDate": "2021-10",
-      "endDate": "2022-04",
-      "summary": "Developed and optimized Selenium web drivers to scrape and integrate data from over 100,000 fashion items, generating training datasets for AI-driven recommendation algorithms. Collaborated with cross-functional teams to create a Chrome plugin that helps consumers assess the environmental impact of their purchases and recomends sustainable alternatives.",
-      "highlights": ["Data Science", "Python Scripting", "SQL", "Webscrapping", "Machine Learning"]
+      "startDate": "2021",
+      "endDate": "202",
+      "summary": "Collaborated with cross-functional teams to create a Chrome plugin that helps consumers assess the environmental impact of their purchases and recommends sustainable alternatives.",
+      "highlights": ["Developed and optimized Selenium web drivers to scrape and integrate data from over 100,000 fashion items, generating training datasets for AI-driven recommendation algorithms."]
     },
     {
       "name": "Trackonomy Systems, INC",
       "position": "Data Analyst",
       "location": "San Jose, CA",
       "url": "https://example.com",
-      "startDate": "2020-10",
-      "endDate": "10-2021",
-      "summary": "Developed an innovative computer vision system using OpenCV for pre-production quality testing, reducing material waste and alleviating production bottlenecks. Designed and launched a Python-based GUI on Raspberry Pi devices, enhancing data collection and anomaly detection, significantly improving production efficiency and product quality.",
-      "highlights": ["Data Science", "Python Scripting", "SQL", "Webscrapping", "Machine Learning"]
+      "startDate": "2020",
+      "endDate": "2021",
+      "summary": "As a member of the manufacturing automation team at a startup company, I collaborated on projects to improve data collection processes and to cut production costs.",
+      "highlights": ["Developed an innovative computer vision system using OpenCV for pre-production quality testing, reducing material waste and alleviating production bottlenecks.","Designed and launched a Python-based GUI on Raspberry Pi devices, enhancing data collection and anomaly detection, significantly improving production efficiency and product quality."]
     },
     {
       "name": "University of California, San Diego",
       "position": "Teaching Assistant and Tutor",
       "location": "San Diego, CA",
       "url": "https://cogs18.github.io/intro.html",
-      "startDate": "2019-08",
-      "endDate": "2019-12",
+      "startDate": "2019",
+      "endDate": "2019",
       "summary": "TBA",
-      "highlights": ["Data Science", "Python Scripting", "SQL", "Webscrapping", "Machine Learning"]
+      "highlights": ["Data Science", "Python Scripting", "SQL", "Web-scrapping", "Machine Learning"]
     },
     {
       "name": "University of California, San Diego",
       "position": "Research Assistant, Honors Thesis",
       "location": "San Diego, CA",
       "url": "https://www.lime-lab-ucsd.com/",
-      "startDate": "2018-08",
-      "endDate": "2021-02",
+      "startDate": "2018",
+      "endDate": "2021",
       "summary": "TBA",
       "highlights": ["Experimental Design", "Data Analysis", "Data Visualization", "Statistical Analysis"]
     },
@@ -91,8 +91,8 @@
       "position": "Research Assistant",
       "location": "San Diego, CA",
       "url": "https://profiles.ucsd.edu/amy.lansing",
-      "startDate": "2017-12",
-      "endDate": "2018-08",
+      "startDate": "2017",
+      "endDate": "2018",
       "summary": "TBA",
       "highlights": ["Archival Data Analysis", "Data Visualization", "Statistical Analysis", "Data Management"]
     }

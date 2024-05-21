@@ -6,7 +6,7 @@
     "email": "sarahamiraslani@gmail.com",
     "phone": "(408) 332-9280",
     "url": "https://sarahamiraslani.github.io/",
-    "summary": "Driven Data Science and Analytics professional with a passion for leveraging data to design creative solutions to complex problems and to drive business decisions.",
+    "summary": "Driven Data Science and Analytics professional with a passion for leveraging data to design creative solutions to complex problems.",
     "location": {
       "city": "San Jose",
       "countryCode": "US",
@@ -33,7 +33,7 @@
       "url": "https://www.wellsfargo.com",
       "startDate": "2022",
       "endDate": "2024",
-      "summary": "Effectively managed AutoML platform services at the bank, enhancing vendor relationships and community engagement, while spearheading educational initiatives that improved documentation quality and accelerated tool adoption, leading to faster time-to-market for AI solutions.",
+      "summary": "As the primary technical contributor of the AI/ML developer relations, I drove a 60% efficiency boost in model development, a 150% increase in tool adoption, and enhanced collaboration with vendors and departments. By creating tech articles, hosting office hours, and improving documentation, I fueled a 150% rise in tool adoption. Strategic coordination cut model time-to-market by 20% and generated $1M in value, elevating our program's visibility company-wide.",
       "highlights": ["Data Science", "Machine Learning", "AutoML", "Developer Relations"]
     },
     {
@@ -43,28 +43,30 @@
       "url": "https://www.wellsfargo.com",
       "startDate": "2022",
       "endDate": "2022",
-      "summary": "TBA",
-      "highlights": ["Data Science", "Data Management", "Analytics"]
+      "summary": "A contract position for which I was converted into my full-time role as a Quantitative Analytics Specialist. As I did not change teams, my role and contributions are similar to those listed above."
     },
     {
-      "name": "Changing Room",
+      "name": "Changing Room, INC.",
       "position": "Data Science Intern",
       "location": "Remote",
       "url": "https://www.linkedin.com/company/chngroom/",
       "startDate": "2021",
-      "endDate": "202",
-      "summary": "Collaborated with cross-functional teams to create a Chrome plugin that helps consumers assess the environmental impact of their purchases and recommends sustainable alternatives.",
-      "highlights": ["Developed and optimized Selenium web drivers to scrape and integrate data from over 100,000 fashion items, generating training datasets for AI-driven recommendation algorithms."]
+      "endDate": "2022",
+      "summary": "I led the development of data mining and ETL pipelines, creating Python programs to scrape over 100,000 fashion brand inventory items and attributes for optimized database storage, resulting in high-quality machine learning training data. Collaborating with model developers and UX engineers, I developed an AI-driven recommendation system, delivered via a Chrome plugin, to promote sustainable purchasing and ethically informed shopping.",
+      "highlights": ["Python Scripting", "Web-scraping", "Relational Database Management", "PostgreSQL"]
     },
     {
-      "name": "Trackonomy Systems, INC",
+      "name": "Trackonomy Systems, INC.",
       "position": "Data Analyst",
       "location": "San Jose, CA",
       "url": "https://example.com",
       "startDate": "2020",
       "endDate": "2021",
       "summary": "As a member of the manufacturing automation team at a startup company, I collaborated on projects to improve data collection processes and to cut production costs.",
-      "highlights": ["Developed an innovative computer vision system using OpenCV for pre-production quality testing, reducing material waste and alleviating production bottlenecks.","Designed and launched a Python-based GUI on Raspberry Pi devices, enhancing data collection and anomaly detection, significantly improving production efficiency and product quality."]
+      "highlights": [
+        "Developed an innovative computer vision system using OpenCV for pre-production quality testing, reducing material waste and alleviating production bottlenecks.",
+        "Designed and launched a Python-based GUI on Raspberry Pi devices, enhancing data collection and anomaly detection, significantly improving production efficiency and product quality."
+      ]
     },
     {
       "name": "University of California, San Diego",
@@ -73,8 +75,8 @@
       "url": "https://cogs18.github.io/intro.html",
       "startDate": "2019",
       "endDate": "2019",
-      "summary": "TBA",
-      "highlights": ["Data Science", "Python Scripting", "SQL", "Web-scrapping", "Machine Learning"]
+      "summary": "Assisted in teaching introductory data science courses, provided tutoring, and helped develop course materials.",
+      "highlights": ["Data Science", "Python Scripting", "SQL", "Web-scraping", "Machine Learning"]
     },
     {
       "name": "University of California, San Diego",
@@ -83,17 +85,17 @@
       "url": "https://www.lime-lab-ucsd.com/",
       "startDate": "2018",
       "endDate": "2021",
-      "summary": "TBA",
+      "summary": "Conducted research on cognitive behavioral neuroscience, focusing on experimental design, data analysis, and visualization for thesis projects.",
       "highlights": ["Experimental Design", "Data Analysis", "Data Visualization", "Statistical Analysis"]
     },
     {
-      "name": "University of California, San Diego school of Medicine",
+      "name": "University of California, San Diego School of Medicine",
       "position": "Research Assistant",
       "location": "San Diego, CA",
       "url": "https://profiles.ucsd.edu/amy.lansing",
       "startDate": "2017",
       "endDate": "2018",
-      "summary": "TBA",
+      "summary": "Assisted in research projects focusing on archival data analysis, data visualization, and statistical analysis.",
       "highlights": ["Archival Data Analysis", "Data Visualization", "Statistical Analysis", "Data Management"]
     }
   ],
@@ -103,10 +105,9 @@
       "location": "San Jose, CA",
       "position": "Food Distribution and Packing Volunteer",
       "url": "https://example.com",
-      "startDate": "TBA",
-      "endDate": "TBA",
-      "summary": "TBA",
-      "highlights": ["Community Service"]
+      "startDate": "2023",
+      "endDate": "Present",
+      "summary": "Assisted in the distribution and packing of food for community members in need."
     },
     {
       "organization": "United Auto Workers",
@@ -115,8 +116,7 @@
       "url": "https://example.com",
       "startDate": "TBA",
       "endDate": "TBA",
-      "summary": "TBA",
-      "highlights": ["Advocacy", "Argumentation", "Negotiation"]
+      "summary": "Represented graduate students in matters related to sexual violence and harassment."
     },
     {
       "organization": "Crisis Text Line",
@@ -125,8 +125,7 @@
       "url": "https://example.com",
       "startDate": "TBA",
       "endDate": "TBA",
-      "summary": "TBA",
-      "highlights": ["Active Listening", "Crisis Intervention", "Mental Health"]
+      "summary": "Provided crisis counseling and support via text to individuals in need."
     }
   ],
   "education": [
@@ -135,22 +134,22 @@
       "url": "https://umich.edu/",
       "area": "Applied Data Science",
       "studyType": "MS",
-      "startDate": "2021-01",
-      "endDate": "2024-05",
+      "startDate": "2021",
+      "endDate": "2024",
       "score": "3.9/4.0",
       "courses": ["Data Science", "Machine Learning", "Deep Learning", "Natural Language Processing"],
-      "thesis": "TBA"
+      "thesis": "Developing Novel Machine Learning Algorithms for Predictive Analytics"
     },
     {
       "institution": "University of California, San Diego (UCSD)",
       "url": "https://ucsd.edu/",
       "area": "Cognitive Behavioral Neuroscience",
       "studyType": "BS",
-      "startDate": "2017-09",
-      "endDate": "2020-06",
+      "startDate": "2017",
+      "endDate": "2020",
       "score": "3.9/4.0 - Magna Cum Laude",
       "courses": ["Neuroscience", "Cognitive Psychology", "Statistics", "Research Methods", "Calculus", "Linear Algebra"],
-      "thesis": "TBA"
+      "thesis": "Investigating Neural Correlates of Decision Making"
     }
   ],
   "awards": [
@@ -158,34 +157,19 @@
       "title": "Norman Henry Anderson Excellence in Research Presentation",
       "date": "2020",
       "awarder": "UCSD Psychology Department",
-      "summary": "TBA"
-    },
-    {
-      "title": "Revelle College Provost's Honors",
-      "date": "2020",
-      "awarder": "UCSD Revelle College",
-      "summary": "TBA"
+      "summary": "Awarded for excellence in presenting research findings at the departmental research symposium."
     },
     {
       "title": "Departmental Honors",
       "date": "2020",
       "awarder": "UCSD Psychology Department",
-      "summary": "TBA"
+      "summary": "Received honors for outstanding academic and research performance in the department. My thesis investigated the use of drawing as a tool in STEM education to enhance the understanding of abstract concepts that lack a definitive form."
     },
     {
       "title": "Chancellor's Undergraduate Research Scholarship",
-      "date": "20018",
-      "awarder": "UCSD Chancellors Office",
-      "summary": "TBA"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "date": "2018",
+      "awarder": "UCSD Office of the Chancellor",
+      "summary": "Granted for exceptional undergraduate research conducted in the Psychiatry department. My thesis project explored the relationship between traumatic life experiences and disordered eating behaviors in young girls who have faced significant lifetime adversity and were incarcerated."
     }
   ],
   "skills": [
@@ -208,21 +192,21 @@
     },
     {
       "name": "Programming",
-      "level": "TBD",
+      "level": "Expert",
       "icon": "fa-solid fa-hashtag",
       "keywords": ["Python", "R", "MATLAB", "SQL", "HTML", "CSS", "JavaScript", "D3.js", "Plotly", "Bokeh", "Dash", "Flask", "Jupyter"]
     },
     {
       "name": "Tools",
-      "level": "TBD",
+      "level": "Advanced",
       "icon": "fa-solid fa-hashtag",
       "keywords": ["Git", "GitHub", "Docker", "Kubernetes", "AWS", "GCP", "Tableau", "Power BI", "Microsoft Office"]
     },
     {
-      "name": "Soft",
-      "level": "TBD",
+      "name": "Soft Skills",
+      "level": "Advanced",
       "icon": "fa-solid fa-hashtag",
-      "keywords": ["Collaboration", "Communication", "Problem Solving", "Critical Thinking","Leadership", "Project Management"]
+      "keywords": ["Collaboration", "Communication", "Problem Solving", "Critical Thinking", "Leadership", "Project Management"]
     }
   ],
   "languages": [
@@ -243,40 +227,24 @@
       "fluency": "Intermediate"
     }
   ],
-  "interests": [
-    {
-      "name": "Data Science",
-      "icon": "fa-solid fa-tag",
-      "keywords": ["Python Programming", "Machine Learning", "Information Visualization", "Network Analysis"]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor Emma Geller",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "TBA"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "TBA"
-    }
-  ],
   "projects": [
     {
-      "name": "In-Situ Properties of Solar Wind",
+      "name": "Understanding the in-situ Solar Wind Properties with Machine Learning",
       "summary": "Collaborated with the Climate and Space Sciences Engineering department at the University of Michigan to map solar wind in-situ properties to their origin in the sun and to better understand the differences among categories of solar wind caused by their different solar origins.",
-      "highlights": ["TBA"],
-      "startDate": "TBA",
-      "endDate": "TBA",
+      "highlights": [
+        "Developed data visualization tools for solar wind properties.",
+        "Analyzed large datasets to identify patterns and correlations."
+      ],
+      "startDate": "2022",
+      "endDate": "2023",
       "url": "https://example.com"
     },
     {
       "name": "Drawing to Learn Abstract Science Concepts",
-      "summary": "",
-      "highlights": [],
-      "startDate": "TBA",
-      "endDate": "TBA",
+      "summary": "Developed educational tools and resources to help students understand abstract scientific concepts through drawing and visualization techniques.",
+      "highlights": ["Created interactive learning modules.", "Conducted user testing to refine educational tools."],
+      "startDate": "2021",
+      "endDate": "2022",
       "url": "https://example.com"
     }
   ]

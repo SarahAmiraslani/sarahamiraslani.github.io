@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="post">
+<div class="about-page">
   <header class="post-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
@@ -40,18 +40,28 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
-    <!-- News -->
-    {% if page.news and site.announcements.enabled %}
+    <!-- Projects -->
+    {% if site.data.projects %}
       <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        <a href="{{ '/projects/' | relative_url }}" style="color: inherit">{{ 'selected projects' | capitalize }}</a>
       </h2>
-      {% include news.liquid limit=true %}
+      <div class="projects-grid section-spacing">
+        {% for project in site.data.projects limit: 5 %}
+          <div class="project-card">
+            <h3>
+              <a href="{{ project.url }}">{{ project.title }}</a>
+            </h3>
+            <p>{{ project.description }}</p>
+            <p><strong>Technologies used:</strong> {{ project.technologies | join: ', ' }}</p>
+          </div>
+        {% endfor %}
+      </div>
     {% endif %}
 
     <!-- Latest posts -->
     {% if site.latest_posts.enabled %}
       <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest posts</a>
       </h2>
       {% include latest_posts.liquid %}
     {% endif %}

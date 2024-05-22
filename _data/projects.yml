@@ -1,0 +1,25 @@
+- url: https://example.com/project1
+  title: Project 1
+  description: Description of Project 1.
+  technologies:
+    - Tool1
+
+- url: https://example.com/project2
+  title: Project 2
+  description: Description of Project 2.
+  technologies:
+    - Python
+    - Django
+
+- url: https://example.com/project1
+  title: Project 1
+  description: Description of Project 1.
+  technologies:
+    - Tool1
+
+- url: https://example.com/project2
+  title: Project 2
+  description: Description of Project 2.
+  technologies:
+    - Python
+    - Django

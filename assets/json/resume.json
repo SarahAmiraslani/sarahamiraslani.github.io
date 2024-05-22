@@ -104,7 +104,7 @@
       "organization": "Second Harvest Food Bank",
       "location": "San Jose, CA",
       "position": "Food Distribution and Packing Volunteer",
-      "url": "https://example.com",
+      "url": "https://www.shfb.org/",
       "startDate": "2023",
       "endDate": "",
       "summary": "Assisted in the distribution and packing of food for community members in need."
@@ -113,7 +113,7 @@
       "organization": "United Auto Workers for Academic Workers at the University of California, San Diego (UAW Local 2865)",
       "location": "San Diego, CA",
       "position": "Sexual Violence and Harassment Graduate Student Representative",
-      "url": "https://example.com",
+      "url": "https://uaw2865.org/",
       "startDate": "2019",
       "endDate": "2020",
       "summary": "Advocated for graduate student workers in issues related to sexual violence and harassment, promoting reforms to the university's PhD defense procedures to reduce undue power held by faculty advisors, ensuring a safer and more equitable environment that enables students to complete their research programs."
@@ -138,7 +138,7 @@
       "endDate": "2024",
       "score": "3.9/4.0",
       "courses": ["Data Science", "Machine Learning", "Deep Learning", "Natural Language Processing"],
-      "thesis": "Developing Novel Machine Learning Algorithms for Predictive Analytics"
+      "thesis": "Thesis: Developing Novel Machine Learning Algorithms for Predictive Analytics"
     },
     {
       "institution": "University of California, San Diego (UCSD)",
@@ -149,7 +149,7 @@
       "endDate": "2020",
       "score": "3.9/4.0 - Magna Cum Laude",
       "courses": ["Neuroscience", "Cognitive Psychology", "Statistics", "Research Methods", "Calculus", "Linear Algebra"],
-      "thesis": "Investigating Neural Correlates of Decision Making"
+      "thesis": "Thesis: Drawing to Learn Abstract Science Concepts"
     }
   ],
   "awards": [

@@ -2,9 +2,9 @@
 layout: page
 title: Drawing to Learn Abstract Science
 description: Research conducted as an undergraduate at the University of California, San Diego at the LIME Lab.
-img: assets/img/kelly-sikkema-Kl1gC0ve620-unsplash.jpg
-importance: 1
-category: work
+img: assets/img/13.jpg
+importance: 2
+category: Academic
 related_publications: true
 ---
 

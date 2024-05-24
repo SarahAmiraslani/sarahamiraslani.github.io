@@ -6,5 +6,3 @@ related_posts: false
 ---
 
 Graduated with my MS in Applied Data Science!
-
-

@@ -220,54 +220,6 @@
             
           
             
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
               
                 <li class="nav-item ">
                   
@@ -276,16 +228,6 @@
                   </a>
                 </li>
               
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
             
           
             
@@ -371,9 +313,20 @@
 
 <figure>
   <picture>
-    <source srcset="/assets/img/self.jpg?b73cb256368f7e21840499314b5ad845" class="img-fluid z-depth-1 rounded">
-    <img src="/assets/img/self.jpg?b73cb256368f7e21840499314b5ad845" class="img-fluid z-depth-1 rounded" width="100%" height="auto" alt="self.jpg" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-  </picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/self-480.webp 480w,/assets/img/self-800.webp 800w,/assets/img/self-1400.webp 1400w," sizes="(min-width: 800px) 231.0px, (min-width: 576px)
+      30vw, 95vw" type="image/webp">
+    
+    <img src="/assets/img/self.jpg?b73cb256368f7e21840499314b5ad845" class="img-fluid z-depth-1
+      rounded" width="100%" height="auto" alt="self.jpg" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </source></picture>
+
+  
 </figure>
 
         
@@ -439,34 +392,16 @@
       <div class="news">
   
     
-    <div class="table-responsive" style="max-height: 60vw">
+    <div class="table-responsive">
       <table class="table table-sm table-borderless">
         
         
         
           <tr>
-            <th scope="row" style="width: 20%">May 01, 2024</th>
+            <th scope="row" style="width: 20%">May 24, 2024</th>
             <td>
               
-                <a class="news-title" href="/blog/2024/tabs/">a post with tabs</a>
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <th scope="row" style="width: 20%">Apr 29, 2024</th>
-            <td>
-              
-                <a class="news-title" href="/blog/2024/typograms/">a post with typograms</a>
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <th scope="row" style="width: 20%">Apr 28, 2024</th>
-            <td>
-              
-                <a class="news-title" href="/blog/2024/post-citation/">a post that can be cited</a>
+                <a class="news-title" href="/blog/2024/itemsets-blog/">a post with math</a>
               
             </td>
           </tr>
@@ -557,11 +492,11 @@
       © Copyright 2024
       Sarah
       H.
-      Amiraslani. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
+      Amiraslani. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
 
       
       
-        Last updated: May 24, 2024.
+        Last updated: June 05, 2024.
       
     </div>
   </footer>

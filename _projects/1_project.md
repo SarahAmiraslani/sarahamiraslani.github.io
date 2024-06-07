@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Drawing to Learn Abstract Science
-description: Research conducted as an undergraduate at the University of California, San Diego at the LIME Lab.
-img: assets/img/13.jpg
+description: Research conducted at the University of California, San Diego at the LIME Lab.
+img: assets/img/multimedia-learning.png
 importance: 2
-category: Academic
+category: Experimentation
 related_publications: true
 ---
 

@@ -2,9 +2,9 @@
 layout: page
 title: Understanding Disordered Eating Behavior Among Delinquent Youth
 description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+img: assets/img/dan-dimmock-3mt71MKGjQ0-unsplash.jpg
 importance: 2
-category: Academic
+category: Analytics
 giscus_comments: true
 ---
 

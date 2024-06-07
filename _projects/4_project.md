@@ -1,10 +1,11 @@
 ---
 layout: page
-title: Movie Recomendations
+title: F1 Race Predictions
 description: another without an image
-img:
+img: assets/img/lennon-k-Bt7xY17R45Q-unsplash.jpg
+redirect: https://unsplash.com
 importance: 3
-category: personal
+category: Machine Learning
 ---
 
 Every project has a beautiful feature showcase page.

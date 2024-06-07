@@ -1,9 +1,8 @@
 ---
 layout: page
 title: F1 Race Predictions
-description: another without an image
+description: TBA
 img: assets/img/lennon-k-Bt7xY17R45Q-unsplash.jpg
-redirect: https://unsplash.com
 importance: 3
 category: Machine Learning
 ---

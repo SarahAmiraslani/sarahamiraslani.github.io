@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Understanding Disordered Eating Behavior Among Delinquent Youth
-description: a project with a background image and giscus comments
+description: Research conducted at the University of California, San Diego with Dr. Amy Lansing
 img: assets/img/dan-dimmock-3mt71MKGjQ0-unsplash.jpg
 importance: 2
 category: Analytics

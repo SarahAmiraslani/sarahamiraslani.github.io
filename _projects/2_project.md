@@ -5,7 +5,10 @@ description: Research conducted at the University of California, San Diego with 
 img: assets/img/dan-dimmock-3mt71MKGjQ0-unsplash.jpg
 importance: 2
 category: Analytics
+giscus: true
 giscus_comments: true
+github: https://github.com/SarahAmiraslani/solar-wind-coronal-origin-ml
+
 ---
 
 Every project has a beautiful feature showcase page.

@@ -6,6 +6,9 @@ img: assets/img/guillermo-ferla-Oze6U2m1oYU-unsplash.jpg
 importance: 3
 category: Machine Learning
 github: https://github.com/SarahAmiraslani/solar-wind-coronal-origin-ml
+giscus: true
+giscuss_comments: true
+
 ---
 
 Every project has a beautiful feature showcase page.

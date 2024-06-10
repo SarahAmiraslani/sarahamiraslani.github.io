@@ -5,6 +5,9 @@ description: TBA
 img: assets/img/lennon-k-Bt7xY17R45Q-unsplash.jpg
 importance: 3
 category: Machine Learning
+giscus: true
+giscuss_comments: true
+github: https://github.com/SarahAmiraslani/solar-wind-coronal-origin-ml
 ---
 
 Every project has a beautiful feature showcase page.

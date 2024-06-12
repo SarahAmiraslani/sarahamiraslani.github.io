@@ -1,25 +1,35 @@
-- url: https://example.com/project1
-  title: Project 1
-  description: Description of Project 1.
+- url: http://sarahamiraslani.com/projects/3_project/
+  title: Tracing the Origins of Solar Wind with Machine Learning
+  description: This project uses in-situ measurements and unsupervised learning to cluster solar wind with similar properties and map it to its coronal origins, aiming to enhance predictions of heliospheric phenomena through machine learning.
   technologies:
-    - Tool1
+    - Unsupervised Learning
+    - PCA
+    - t-SNE
+    - DBSCAN
+  github:
+    - https://github.com/SarahAmiraslani/solar-wind-coronal-origin-ml
 
 - url: https://example.com/project2
-  title: Project 2
+  title: Fashion Miner and Recomendation System
   description: Description of Project 2.
   technologies:
-    - Python
-    - Django
+    - Data Mining
+    - PyTorch
+  github:
+  -
 
 - url: https://example.com/project1
-  title: Project 1
-  description: Description of Project 1.
+  title: F1 Top 10 Predictions and Track Clustering
+  description: This project applies supervised learning to predict top 10 race finishes, pinpointing key factors that influence these outcomes. Additionally, it employs unsupervised learning to cluster race tracks based on characteristics like layout and surface, offering novel insights into racing strategies and optimizing performance.
+
   technologies:
-    - Tool1
+    - Random Forest
+    - Logistic Regression
+
 
 - url: https://example.com/project2
-  title: Project 2
+  title: Drawing to Learn Abstractions
   description: Description of Project 2.
   technologies:
-    - Python
-    - Django
+    - Experimental Design
+    - Multivariate Analysis

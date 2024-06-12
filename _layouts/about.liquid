@@ -45,18 +45,39 @@ layout: default
       <h2>
         <a href="{{ '/projects/' | relative_url }}" style="color: inherit">{{ 'selected projects' | capitalize }}</a>
       </h2>
-      <div class="projects-grid section-spacing">
-        {% for project in site.data.projects limit: 4 %}
-          <div class="project-card">
-            <h3>
-              <a href="{{ project.url }}">{{ project.title }}</a>
-            </h3>
-            <p>{{ project.description }}</p>
-            <p><strong>Technologies used:</strong> {{ project.technologies | join: ', ' }}</p>
-            {% comment %} <a href="{{ project.github }}"><i class="fa-brands fa-github gh-icon"></i></a> {% endcomment %}
-          </div>
+      <ul class="card-text font-weight-light list-group list-group-flush">
+        {% assign sorted_projects = site.data.projects | sort: 'releaseDate' | reverse %}
+        {% for project in sorted_projects limit: 4 %}
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
+                {% if project.releaseDate %}
+                  {% assign date = project.releaseDate | split: '-' | join: '.' %}
+                {% else %}
+                  {% assign date = '' %}
+                {% endif %}
+                <table class="table-cv">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img src="{{ project.visualization }}" alt="Description of the GIF" style="min-width: 75px">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0" style="text-align: left;">
+                <h6 class="title font-weight-bold ml-1 ml-md-0">
+                  <a href="{{ project.url }}">{{ project.title }}</a>
+                </h6>
+                <p>{{ project.description }}</p>
+                <p><strong>Technologies used:</strong> {{ project.technologies | join: ', ' }}</p>
+                {% comment %} <a href="{{ project.github }}"><i class="fa-brands fa-github gh-icon"></i></a> {% endcomment %}
+              </div>
+            </div>
+          </li>
         {% endfor %}
-      </div>
+      </ul>
     {% endif %}
 
     <!-- Latest posts -->

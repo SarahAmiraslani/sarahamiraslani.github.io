@@ -355,11 +355,18 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-#light-toggle {
+#light-toggle,
+#search-toggle {
   padding: 0;
   border: 0;
   background-color: inherit;
   color: var(--global-text-color);
+
+  &:hover {
+    color: var(--global-hover-color);
+  }
+}
+
 
   &:hover {
     color: var(--global-hover-color);

@@ -490,17 +490,6 @@ pre code {
     margin-left: -15px
 }
 
-.no-gutters {
-    margin-right: 0;
-    margin-left: 0
-}
-
-.no-gutters>.col,
-.no-gutters>[class*=col-] {
-    padding-right: 0;
-    padding-left: 0
-}
-
 .col,
 .col-10,
 .col-2,
@@ -508,7 +497,6 @@ pre code {
 .col-md-12,
 .col-md-2,
 .col-md-6,
-.col-md-8,
 .col-sm,
 .col-sm-2,
 .col-sm-3,
@@ -598,10 +586,10 @@ pre code {
 
 @media (min-width:768px) {
 
-    .row-cols-md-2>* {
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: 50%
+    .row-cols-md-3>* {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%
     }
 
     .col-md-2 {
@@ -614,12 +602,6 @@ pre code {
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 50%
-    }
-
-    .col-md-8 {
-        -ms-flex: 0 0 66.666667%;
-        flex: 0 0 66.666667%;
-        max-width: 66.666667%
     }
 
     .col-md-10 {
@@ -1246,20 +1228,17 @@ a.btn.disabled {
     margin-bottom: 0
 }
 
-.card-img {
+
+.card-img-top {
     -ms-flex-negative: 0;
     flex-shrink: 0;
     width: 100%
 }
 
-.card-img {
+
+.card-img-top {
     border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px)
-}
-
-.card-img {
-    border-bottom-right-radius: calc(.25rem - 1px);
-    border-bottom-left-radius: calc(.25rem - 1px)
 }
 
 .breadcrumb {

@@ -3,8 +3,9 @@ layout: post
 title: a post with math
 date: 2024-05-24 11:12:00-0400
 description: an example of a blog post with some math
-tags: data mining
+tags: datamining
 categories: sample-posts
+featured: true
 related_posts: false
 giscus: true
 giscuss_comments: true

@@ -2,7 +2,7 @@
 layout: page
 title: F1 Race Predictions
 description: TBA
-img: assets/img/lennon-k-Bt7xY17R45Q-unsplash.jpg
+img: /assets/img/lennon-k-Bt7xY17R45Q-unsplash.jpg
 importance: 3
 category: Machine Learning
 giscus: true

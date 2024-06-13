@@ -2,13 +2,12 @@
 layout: page
 title: Using Machine Learning to map in-situ properties of Solar Wind to Coronal Origins
 description: Project conducted at the University of Michigan
-img: assets/img/guillermo-ferla-Oze6U2m1oYU-unsplash.jpg
+img: /assets/img/guillermo-ferla-Oze6U2m1oYU-unsplash.jpg
 importance: 3
 category: Machine Learning
 github: https://github.com/SarahAmiraslani/solar-wind-coronal-origin-ml
 giscus: true
 giscuss_comments: true
-
 ---
 
 Every project has a beautiful feature showcase page.

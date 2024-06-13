@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Drawing to Learn Abstract Science
-pdf_link: _site/assets/pdf/Draw_to_learn_poster.pdf
+pdf_link: /assets/pdf/Draw_to_learn_poster.pdf
 description: Research conducted at the University of California, San Diego at the [LIME Lab](https://www.lime-lab-ucsd.com) between 2018 and 2020.
-img: assets/img/multimedia-learning.png
+img: /assets/img/multimedia-learning.png
 importance: 2
 category: Experimental Design
 related_publications: true

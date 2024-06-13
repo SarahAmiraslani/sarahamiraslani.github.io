@@ -2,13 +2,12 @@
 layout: page
 title: Understanding Disordered Eating Behavior Among Delinquent Youth
 description: Research conducted at the University of California, San Diego with Dr. Amy Lansing
-img: assets/img/dan-dimmock-3mt71MKGjQ0-unsplash.jpg
+img: /assets/img/dan-dimmock-3mt71MKGjQ0-unsplash.jpg
 importance: 2
 category: Analytics
 giscus: true
 giscus_comments: true
 github: https://github.com/SarahAmiraslani/solar-wind-coronal-origin-ml
-
 ---
 
 Every project has a beautiful feature showcase page.

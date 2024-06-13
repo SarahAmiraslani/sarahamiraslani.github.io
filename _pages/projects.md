@@ -6,7 +6,7 @@ description: A growing collection of my favorite projects.
 nav: true
 nav_order: 3
 display_categories: [Machine Learning, Analytics, Experimental Design]
-horizontal: true
+horizontal: false
 ---
 
 <!-- pages/projects.md -->

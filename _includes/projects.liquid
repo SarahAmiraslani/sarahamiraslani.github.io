@@ -1,6 +1,7 @@
+
 <div class="col">
   <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
-    <div class="card h-200 hoverable">
+    <div class="card h-100 hoverable">
       {% if project.img %}
         {%
           include figure.liquid
@@ -13,7 +14,7 @@
       {% endif %}
       <div class="card-body">
         <h2 class="card-title">{{ project.title }}</h2>
-        {% comment %} <p class="card-text">{{ project.description }}</p> {% endcomment %}
+        <p class="card-text">{{ project.description }}</p>
         <div class="row ml-1 mr-1 p-0">
           {% if project.github %}
             <div class="github-icon">

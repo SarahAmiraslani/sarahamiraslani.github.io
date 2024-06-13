@@ -48,7 +48,7 @@ layout: default
       <ul class="card-text font-weight-light list-group list-group-flush">
         {% assign sorted_projects = site.data.projects | sort: 'releaseDate' | reverse %}
         {% for project in sorted_projects limit: 4 %}
-          <li class="list-group-item">
+          <li class="list-group-item" style="background-color: inherit; color: inherit">
             <div class="row">
               <div class="col-2 text-center date-column">
                 <div class="project-container">
@@ -81,13 +81,15 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
-    {% endif %}
+    {% comment %}
+      <!-- Selected papers -->
+      {% if page.selected_papers %}
+        <h2>
+          <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        </h2>
+        {% include selected_papers.liquid %}
+      {% endif %}
+    {% endcomment %}
 
     <!-- Social -->
     {% if page.social %}

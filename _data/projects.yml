@@ -8,7 +8,7 @@
     - t-SNE
     - DBSCAN
   github: https://github.com/SarahAmiraslani/solar-wind-coronal-origin-ml
-  visualization: /assets/img/solar-wind.jpg
+  visualization: /assets/img/kpca.png
 
 - url: https://example.com/project2
   title: Fashion Miner and Recomendation System
@@ -18,7 +18,7 @@
     - PyTorch
   releaseDate: 2023-03-03
   github: https://github.com/example
-  visualization: assets/img/1.jpg
+  visualization: assets/img/fashion.png
 
 - url: https://example.com/project1
   title: F1 Top 10 Predictions and Track Clustering
@@ -28,7 +28,7 @@
     - Logistic Regression
   releaseDate: 2024-04-01
   github: https://github.com/example
-  visualization: assets/img/2.jpg
+  visualization: assets/img/test.png
 
 - url: https://example.com/project2
   title: Drawing to Learn Abstractions
@@ -38,4 +38,4 @@
     - Multivariate Analysis
   releaseDate: 2020-05-20
   github: https://github.com/example
-  visualization: /assets/img/draw-condition-experiment.png
+  visualization: /assets/img/drawing-black-holes.png

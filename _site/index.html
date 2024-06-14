@@ -112,7 +112,7 @@
 
 
 <!-- Bootstrap & MDB -->
-<link rel="stylesheet" href="/assets/css/bootstrap.min.css?5e51bee3bbc4d495bd6ef85790ccb01b">
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css?8da090d50fe8f61ae273f0037d265322">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
 
 <!-- Bootstrap Table -->
@@ -328,8 +328,7 @@
       <source class="responsive-img-srcset" srcset="/assets/img/self-480.webp 480w,/assets/img/self-800.webp 800w,/assets/img/self-1400.webp 1400w," sizes="(min-width: 930px) 270.0px, (min-width: 576px)
       30vw, 95vw" type="image/webp">
     
-    <img src="/assets/img/self.jpg?4540de4994e8dc518cd63650a8d72165" class="img-fluid z-depth-1
-      rounded" width="100%" height="auto" alt="self.jpg" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/self.jpg?4540de4994e8dc518cd63650a8d72165" class="img-fluid z-depth-1 rounded" width="100%" height="auto" alt="self.jpg" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
   </source></picture>
 
   
@@ -365,89 +364,77 @@
       <ul class="card-text font-weight-light list-group list-group-flush">
         
         
-          <li class="list-group-item" style="background-color: inherit; color: inherit">
+          <li class="list-group-item project-item">
             <div class="row">
-              <div class="col-2 text-center date-column">
-                <div class="project-container">
-                  <div class="image-wrapper">
-                    <img src="/assets/img/solar-wind.jpg" alt="Project visualization" class="project-gif img-fluid">
-                  </div>
+              <div class="col-3 text-center date-column"> <!-- Changed col-2 to col-3 -->
+                <div class="image-wrapper">
+                  <img src="/assets/img/solar-wind.jpg" alt="Project visualization" class="project-gif img-fluid">
                 </div>
               </div>
-              <div class="col-10 mt-2 mt-md-0">
+              <div class="col-9 mt-2 mt-md-0"> <!-- Changed col-10 to col-9 -->
                 <div class="project-description">
                   <h6 class="title font-weight-bold ml-1 ml-md-0">
                     <a href="http://sarahamiraslani.com/projects/3_project/" rel="external nofollow noopener" target="_blank">Tracing the Origins of Solar Wind with Machine Learning</a>
                   </h6>
                   <p>This project uses in-situ measurements and unsupervised learning to cluster solar wind with similar properties and map it to its coronal origins, aiming to enhance predictions of heliospheric phenomena through machine learning.</p>
                   <p><strong>Technologies used:</strong> Unsupervised Learning, PCA, t-SNE, DBSCAN</p>
-                  
                 </div>
               </div>
             </div>
           </li>
         
-          <li class="list-group-item" style="background-color: inherit; color: inherit">
+          <li class="list-group-item project-item">
             <div class="row">
-              <div class="col-2 text-center date-column">
-                <div class="project-container">
-                  <div class="image-wrapper">
-                    <img src="assets/img/2.jpg" alt="Project visualization" class="project-gif img-fluid">
-                  </div>
+              <div class="col-3 text-center date-column"> <!-- Changed col-2 to col-3 -->
+                <div class="image-wrapper">
+                  <img src="assets/img/2.jpg" alt="Project visualization" class="project-gif img-fluid">
                 </div>
               </div>
-              <div class="col-10 mt-2 mt-md-0">
+              <div class="col-9 mt-2 mt-md-0"> <!-- Changed col-10 to col-9 -->
                 <div class="project-description">
                   <h6 class="title font-weight-bold ml-1 ml-md-0">
                     <a href="https://example.com/project1" rel="external nofollow noopener" target="_blank">F1 Top 10 Predictions and Track Clustering</a>
                   </h6>
                   <p>This project applies supervised learning to predict top 10 race finishes, pinpointing key factors that influence these outcomes. Additionally, it employs unsupervised learning to cluster race tracks based on characteristics like layout and surface, offering novel insights into racing strategies and optimizing performance.</p>
                   <p><strong>Technologies used:</strong> Random Forest, Logistic Regression</p>
-                  
                 </div>
               </div>
             </div>
           </li>
         
-          <li class="list-group-item" style="background-color: inherit; color: inherit">
+          <li class="list-group-item project-item">
             <div class="row">
-              <div class="col-2 text-center date-column">
-                <div class="project-container">
-                  <div class="image-wrapper">
-                    <img src="assets/img/1.jpg" alt="Project visualization" class="project-gif img-fluid">
-                  </div>
+              <div class="col-3 text-center date-column"> <!-- Changed col-2 to col-3 -->
+                <div class="image-wrapper">
+                  <img src="assets/img/1.jpg" alt="Project visualization" class="project-gif img-fluid">
                 </div>
               </div>
-              <div class="col-10 mt-2 mt-md-0">
+              <div class="col-9 mt-2 mt-md-0"> <!-- Changed col-10 to col-9 -->
                 <div class="project-description">
                   <h6 class="title font-weight-bold ml-1 ml-md-0">
                     <a href="https://example.com/project2" rel="external nofollow noopener" target="_blank">Fashion Miner and Recomendation System</a>
                   </h6>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                   <p><strong>Technologies used:</strong> Data Mining, PyTorch</p>
-                  
                 </div>
               </div>
             </div>
           </li>
         
-          <li class="list-group-item" style="background-color: inherit; color: inherit">
+          <li class="list-group-item project-item">
             <div class="row">
-              <div class="col-2 text-center date-column">
-                <div class="project-container">
-                  <div class="image-wrapper">
-                    <img src="/assets/img/draw-condition-experiment.png" alt="Project visualization" class="project-gif img-fluid">
-                  </div>
+              <div class="col-3 text-center date-column"> <!-- Changed col-2 to col-3 -->
+                <div class="image-wrapper">
+                  <img src="/assets/img/draw-condition-experiment.png" alt="Project visualization" class="project-gif img-fluid">
                 </div>
               </div>
-              <div class="col-10 mt-2 mt-md-0">
+              <div class="col-9 mt-2 mt-md-0"> <!-- Changed col-10 to col-9 -->
                 <div class="project-description">
                   <h6 class="title font-weight-bold ml-1 ml-md-0">
                     <a href="https://example.com/project2" rel="external nofollow noopener" target="_blank">Drawing to Learn Abstractions</a>
                   </h6>
                   <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                   <p><strong>Technologies used:</strong> Experimental Design, Multivariate Analysis</p>
-                  
                 </div>
               </div>
             </div>
@@ -482,8 +469,6 @@
     </div>
   
 </div>
-
-    
 
     
 
@@ -554,6 +539,60 @@
     
   </article>
 </div>
+
+<style>
+  /* Ensure the list items have consistent height and width */
+  .project-item {
+    display: flex;
+    align-items: center;
+    height: 200px; /* Set a fixed height */
+    border: 1px solid #ddd; /* Optional: Add border for better visibility */
+    margin-bottom: 10px; /* Optional: Add space between items */
+  }
+
+  /* Ensure all columns are equally spaced and aligned */
+  .row {
+    display: flex;
+    width: 100%;
+  }
+
+  .col-2,
+  .col-10 {
+    display: flex;
+    align-items: center;
+  }
+
+  .col-2 {
+    width: 20%; /* Adjust width as per the number of columns */
+    justify-content: center;
+  }
+
+  .col-10 {
+    width: 80%; /* Adjust width as per the number of columns */
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  /* Ensure images fit well within their containers */
+  .image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .image-wrapper img {
+    width: 200px;
+    height: 175px;
+    object-fit: cover;
+  }
+
+  /* Additional styling for the project description */
+  .project-description {
+    width: 100%;
+  }
+</style>
 
       
     </div>

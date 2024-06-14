@@ -22,8 +22,7 @@ layout: default
           {% if page.profile.image_circular %}
             {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
           {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
+            {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
           {% endif %}
           {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
       30vw, 95vw"{% endcapture %}
@@ -48,23 +47,20 @@ layout: default
       <ul class="card-text font-weight-light list-group list-group-flush">
         {% assign sorted_projects = site.data.projects | sort: 'releaseDate' | reverse %}
         {% for project in sorted_projects limit: 4 %}
-          <li class="list-group-item" style="background-color: inherit; color: inherit">
+          <li class="list-group-item project-item">
             <div class="row">
-              <div class="col-2 text-center date-column">
-                <div class="project-container">
-                  <div class="image-wrapper">
-                    <img src="{{ project.visualization }}" alt="Project visualization" class="project-gif img-fluid">
-                  </div>
+              <div class="col-3 text-center date-column"> <!-- Changed col-2 to col-3 -->
+                <div class="image-wrapper">
+                  <img src="{{ project.visualization }}" alt="Project visualization" class="project-gif img-fluid">
                 </div>
               </div>
-              <div class="col-10 mt-2 mt-md-0">
+              <div class="col-9 mt-2 mt-md-0"> <!-- Changed col-10 to col-9 -->
                 <div class="project-description">
                   <h6 class="title font-weight-bold ml-1 ml-md-0">
                     <a href="{{ project.url }}">{{ project.title }}</a>
                   </h6>
                   <p>{{ project.description }}</p>
                   <p><strong>Technologies used:</strong> {{ project.technologies | join: ', ' }}</p>
-                  {% comment %} <a href="{{ project.github }}"><i class="fa-brands fa-github gh-icon"></i></a> {% endcomment %}
                 </div>
               </div>
             </div>
@@ -81,16 +77,6 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
-    {% comment %}
-      <!-- Selected papers -->
-      {% if page.selected_papers %}
-        <h2>
-          <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-        </h2>
-        {% include selected_papers.liquid %}
-      {% endif %}
-    {% endcomment %}
-
     <!-- Social -->
     {% if page.social %}
       <div class="social">
@@ -101,3 +87,57 @@ layout: default
     {% endif %}
   </article>
 </div>
+
+<style>
+  /* Ensure the list items have consistent height and width */
+  .project-item {
+    display: flex;
+    align-items: center;
+    height: 200px; /* Set a fixed height */
+    border: 1px solid #ddd; /* Optional: Add border for better visibility */
+    margin-bottom: 10px; /* Optional: Add space between items */
+  }
+
+  /* Ensure all columns are equally spaced and aligned */
+  .row {
+    display: flex;
+    width: 100%;
+  }
+
+  .col-2,
+  .col-10 {
+    display: flex;
+    align-items: center;
+  }
+
+  .col-2 {
+    width: 20%; /* Adjust width as per the number of columns */
+    justify-content: center;
+  }
+
+  .col-10 {
+    width: 80%; /* Adjust width as per the number of columns */
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  /* Ensure images fit well within their containers */
+  .image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .image-wrapper img {
+    width: 200px;
+    height: 175px;
+    object-fit: cover;
+  }
+
+  /* Additional styling for the project description */
+  .project-description {
+    width: 100%;
+  }
+</style>

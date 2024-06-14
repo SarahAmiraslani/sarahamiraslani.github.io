@@ -4,7 +4,8 @@
     "label": "Data Scientist | Quantitative Analyst | Developer Relations Specialist",
     "image": "",
     "email": "sarahamiraslani@gmail.com",
-    "url": "http://sarahamiraslani.com",
+    "phone": "",
+    "url": "https://sarahamiraslani.com",
     "summary": "Driven Data Science and Analytics professional with a passion for leveraging data to design creative solutions to complex problems.",
     "location": {
       "city": "San Jose",
@@ -38,8 +39,8 @@
         "Machine Learning",
         "AutoML",
         "Developer Relations",
-        "Public Speaking",
-        "Technical Writing"
+        "Technical Writing",
+        "Public Speaking"
       ]
     },
     {
@@ -67,10 +68,9 @@
       "summary": "As a member of the manufacturing automation team at a startup company, I collaborated on projects to improve data collection processes and to cut production costs.",
       "highlights": [
         "Data Analysis",
-        "Dashboard Development",
-        "Front-end Development",
-        "Python Scripting"
-      ]
+        "Data Visualization",
+        "Statistical Analysis",
+        "Data Management"]
     },
     {
       "name": "University of California, San Diego",
@@ -129,19 +129,18 @@
         "Data Science",
         "Machine Learning",
         "Deep Learning",
-        "Natural Language Processing",
-        "Information Visualization"
+        "Natural Language Processing"
       ],
       "thesis": "Thesis: Understanding the in-situ Solar Wind Properties with Machine Learning"
     },
     {
-      "institution": "University of California, San Diego)",
+      "institution": "University of California, San Diego (UCSD)",
       "url": "https://ucsd.edu/",
       "area": "Cognitive Behavioral Neuroscience",
       "studyType": "Bachelors of Science (BS)",
       "startDate": "2017",
       "endDate": "2020",
-      "score": "3.9/4.0",
+      "score": "3.9/4.0 - Magna Cum Laude",
       "courses": [
         "Neuroscience",
         "Cognitive Psychology",
@@ -224,6 +223,7 @@
         "GCP",
         "Tableau",
         "Power BI",
+        "Microsoft Office"
       ]
     },
     {
@@ -285,7 +285,7 @@
       ],
       "startDate": "2021",
       "endDate": "2022",
-      "url": "https://sarahamiraslani.com/projects/1_project"
+      "url": "https://example.com"
     }
   ]
 }

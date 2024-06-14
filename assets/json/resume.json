@@ -4,8 +4,8 @@
     "label": "Data Scientist | Quantitative Analyst | Developer Relations Specialist",
     "image": "",
     "email": "sarahamiraslani@gmail.com",
-    "phone": "(408) 332-9280",
-    "url": "https://sarahamiraslani.github.io/",
+    "phone": "",
+    "url": "https://sarahamiraslani.com",
     "summary": "Driven Data Science and Analytics professional with a passion for leveraging data to design creative solutions to complex problems.",
     "location": {
       "city": "San Jose",
@@ -38,17 +38,10 @@
         "Data Science",
         "Machine Learning",
         "AutoML",
-        "Developer Relations"
+        "Developer Relations",
+        "Technical Writing",
+        "Public Speaking"
       ]
-    },
-    {
-      "name": "Wells Fargo Bank, N.A.",
-      "position": "Data Management Analyst",
-      "location": "San Francisco, CA",
-      "url": "https://www.wellsfargo.com",
-      "startDate": "2022",
-      "endDate": "2022",
-      "summary": "A contract position for which I was converted into my full-time role as a Quantitative Analytics Specialist. As I did not change teams, my role and contributions are similar to those listed above."
     },
     {
       "name": "Changing Room, INC.",
@@ -74,9 +67,10 @@
       "endDate": "2021",
       "summary": "As a member of the manufacturing automation team at a startup company, I collaborated on projects to improve data collection processes and to cut production costs.",
       "highlights": [
-        "Developed an innovative computer vision system using OpenCV for pre-production quality testing, reducing material waste and alleviating production bottlenecks.",
-        "Designed and launched a Python-based GUI on Raspberry Pi devices, enhancing data collection and anomaly detection, significantly improving production efficiency and product quality."
-      ]
+        "Data Analysis",
+        "Data Visualization",
+        "Statistical Analysis",
+        "Data Management"]
     },
     {
       "name": "University of California, San Diego",
@@ -87,11 +81,8 @@
       "endDate": "2019",
       "summary": "Assisted in teaching introductory data science courses, provided tutoring, and helped develop course materials.",
       "highlights": [
-        "Data Science",
-        "Python Scripting",
-        "SQL",
-        "Web-scraping",
-        "Machine Learning"
+        "Python",
+        "Teaching"
       ]
     },
     {
@@ -140,7 +131,7 @@
         "Deep Learning",
         "Natural Language Processing"
       ],
-      "thesis": "Thesis: Developing Novel Machine Learning Algorithms for Predictive Analytics"
+      "thesis": "Thesis: Understanding the in-situ Solar Wind Properties with Machine Learning"
     },
     {
       "institution": "University of California, San Diego (UCSD)",

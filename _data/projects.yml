@@ -18,7 +18,7 @@
     - PyTorch
   releaseDate: 2023-03-03
   github: https://github.com/example
-  visualization: assets/img/biplot-DBSCAN-f1.jpeg
+  visualization: assets/img/1.jpg
 
 - url: https://example.com/project1
   title: F1 Top 10 Predictions and Track Clustering
@@ -28,7 +28,7 @@
     - Logistic Regression
   releaseDate: 2024-04-01
   github: https://github.com/example
-  visualization:
+  visualization: assets/img/2.jpg
 
 - url: https://example.com/project2
   title: Drawing to Learn Abstractions

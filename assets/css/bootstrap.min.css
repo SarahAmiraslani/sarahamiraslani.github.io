@@ -2050,10 +2050,6 @@ a.close.disabled {
     margin-top: 0 !important
 }
 
-.mr-1 {
-    margin-right: .25rem !important
-}
-
 .ml-1 {
     margin-left: .25rem !important
 }
@@ -2135,10 +2131,6 @@ a.close.disabled {
 
 .text-uppercase {
     text-transform: uppercase !important
-}
-
-.text-capitalize {
-    text-transform: capitalize !important
 }
 
 .font-weight-light {

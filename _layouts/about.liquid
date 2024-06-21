@@ -49,12 +49,14 @@ layout: default
         {% for project in sorted_projects limit: 4 %}
           <li class="list-group-item project-item">
             <div class="row">
-              <div class="col-3 text-center date-column"> <!-- Changed col-2 to col-3 -->
+              <div class="col-3 text-center date-column">
+                <!-- Changed col-2 to col-3 -->
                 <div class="image-wrapper">
                   <img src="{{ project.visualization }}" alt="Project visualization" class="project-gif img-fluid">
                 </div>
               </div>
-              <div class="col-9 mt-2 mt-md-0"> <!-- Changed col-10 to col-9 -->
+              <div class="col-9 mt-2 mt-md-0">
+                <!-- Changed col-10 to col-9 -->
                 <div class="project-description">
                   <h6 class="title font-weight-bold ml-1 ml-md-0">
                     <a href="{{ project.url }}">{{ project.title }}</a>
@@ -116,7 +118,7 @@ layout: default
   .col-2 {
     width: 20%; /* Adjust width as per the number of columns */
     justify-content: center;
-    color:
+    color:;
   }
 
   .col-10 {

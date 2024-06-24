@@ -5,7 +5,8 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+        <span class="font-weight-bold">{{ site.first_name }}</span>
+        {{ site.middle_name }}
         {{ site.last_name }}
       {% else %}
         {{ site.title }}
@@ -27,9 +28,8 @@ layout: default
           {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
       30vw, 95vw"{% endcapture %}
           {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}queries
+            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image cache_bust=true
+          %}
         {% endif %}
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
@@ -49,21 +49,20 @@ layout: default
         {% for project in sorted_projects limit: 4 %}
           <li class="list-group-item project-item">
             <div class="row">
-              <div class="col-3 text-center date-column">
-                <!-- Changed col-2 to col-3 -->
+              <div class="col-sm-4">
                 <div class="image-wrapper">
-                  <img src="{{ project.visualization }}" alt="Project visualization" class="project-gif img-fluid">
+                  <img src="{{ project.image }}" alt="{{ project.title }}">
                 </div>
               </div>
-              <div class="col-9 mt-2 mt-md-0">
-                <!-- Changed col-10 to col-9 -->
-                <div class="project-description">
-                  <h6 class="title font-weight-bold ml-1 ml-md-0">
-                    <a href="{{ project.url }}">{{ project.title }}</a>
-                  </h6>
-                  <p>{{ project.description }}</p>
-                  <p><strong>Technologies used:</strong> {{ project.technologies | join: ', ' }}</p>
-                </div>
+              <div class="col-sm-8">
+                <h3>
+                  <a href="{{ project.url }}">{{ project.title }}</a>
+                </h3>
+                <p>{{ project.description }}</p>
+                {% comment %} <a href="{{ project.url }}" class="btn btn-primary">Read more</a> {% endcomment %}
+                <p>
+                  <strong>Technologies used:</strong>
+                  {{ project.technologies | join: ', ' }}</p>
               </div>
             </div>
           </li>
@@ -87,63 +86,100 @@ layout: default
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
     {% endif %}
+
+
   </article>
 </div>
 
 <style>
-  /* Ensure the list items have consistent height and width */
   .project-item {
     display: flex;
     align-items: center;
-    height: 200px; /* Set a fixed height */
-    border: 1px solid #ddd; /* Optional: Add border for better visibility */
-    margin-bottom: 10px; /* Optional: Add space between items */
-    background-color: inherit;
-  }
-
-  /* Ensure all columns are equally spaced and aligned */
-  .row {
-    display: flex;
-    width: 100%;
-    background-color: inherit;
-  }
-
-  .col-2,
-  .col-10 {
-    display: flex;
-    align-items: center;
-    background-color: inherit;
-  }
-
-  .col-2 {
-    width: 20%; /* Adjust width as per the number of columns */
     justify-content: center;
-    color:;
+    margin-bottom: 20px;
+    background-color: inherit;
   }
 
-  .col-10 {
-    width: 80%; /* Adjust width as per the number of columns */
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  /* Ensure images fit well within their containers */
   .image-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
+    flex-shrink: 0;
+    width: 200px;
+    /* Fixed width */
+    height: 200px;
+    /* Fixed height */
+    overflow: hidden;
+    /* Ensures the image doesn't overflow the container */
+    border-radius: 10px;
+    /* Optional: Adds rounded corners to the image container */
   }
 
   .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image covers the container while maintaining aspect ratio */
+  }
+
+  @media (max-width: 768px) {
+    .image-wrapper {
+      width: 100%;
+      /* Full width on smaller screens */
+      height: auto;
+      /* Adjust height automatically */
+    }
+  }
+
+  .project-description,
+  .social {
+    background-color: inherit;
+  }
+
+  .parent-container {
+    display: flex;
+    align-items: center;
+  }
+
+  header {
+    margin-bottom: 0;
+  }
+
+  .profile {
+    float: left;
+    position: relative;
+    top: -20px;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .profile-image-container {
+    flex-shrink: 0;
+  }
+
+  .about-text {
+    flex: 1;
+  }
+
+  .profile-image {
     width: 200px;
-    height: 175px;
+    height: 200px;
     object-fit: cover;
   }
 
-  /* Additional styling for the project description */
-  .project-description {
-    width: 100%;
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .profile-image {
+      width: 100%;
+      height: auto;
+    }
   }
 </style>

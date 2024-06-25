@@ -107,6 +107,12 @@ abbr[title] {
     text-decoration-skip-ink: none
 }
 
+address {
+    margin-bottom: 1rem;
+    font-style: normal;
+    line-height: inherit
+}
+
 dl,
 ol,
 ul {
@@ -380,6 +386,11 @@ h5 {
 .h6,
 h6 {
     font-size: 1rem
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300
 }
 
 hr {
@@ -734,14 +745,6 @@ pre code {
 
 a.btn.disabled {
     pointer-events: none
-}
-
-
-.btn-sm {
-    padding: .25rem .5rem;
-    font-size: .875rem;
-    line-height: 1.5;
-    border-radius: .2rem
 }
 
 .fade {
@@ -1278,16 +1281,6 @@ a.badge:hover {
     margin-bottom: 1rem;
     border: 1px solid transparent;
     border-radius: .25rem
-}
-
-.alert-success {
-    color: #155724;
-    background-color: #d4edda;
-    border-color: #c3e6cb
-}
-
-.alert-success hr {
-    border-top-color: #b1dfbb
 }
 
 @-webkit-keyframes progress-bar-stripes {

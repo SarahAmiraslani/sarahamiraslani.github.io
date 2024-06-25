@@ -2,7 +2,7 @@
 layout: page
 title: Using Machine Learning to map in-situ properties of Solar Wind to Coronal Origins
 description: Project conducted at the University of Michigan
-img: /assets/img/guillermo-ferla-Oze6U2m1oYU-unsplash.jpg
+img: /assets/img/solar-wind-depiction.jpg
 importance: 3
 category: Machine Learning
 github: https://github.com/SarahAmiraslani/solar-wind-coronal-origin-ml
@@ -10,74 +10,57 @@ giscus: true
 giscuss_comments: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+# Introduction
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+The corona, the Sun's outer atmosphere, releases a stream of hot, high-pressure charged particles and magnetic fields that escape the Sun’s gravitational pull and extend throughout our solar system. This phenomenon, termed as solar wind, contributes to the plasma that fills the solar system and significantly impacts the space weather conditions surrounding Earth and other planets. As the solar wind travels through space, it carries with it the Sun's magnetic field, extending the solar magnetic field throughout the solar system. This interaction with Earth's magnetic field can cause geomagnetic storms, which can disrupt satellite operations, communication systems, and power grids on Earth. This applies machine learning algorithms to explore how the physical characteristics of the solar wind, captured through in-situ measurements by satellite sensors and magnetometers, can be employed to more accurately determine the solar wind's coronal origins and more accurately predict the data for the future Heliophsyical phenomena. Accurate classification of solar wind origins is crucial for space weather forecasting, protecting space missions, developing early warning systems, and enhancing our understanding of the solar system.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0 custom-img-container">
+        {% include figure.liquid loading="eager" path="assets/img/8.jpg" class="img-fluid rounded z-depth-1 custom-img" zoomable=true %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm mt-3 mt-md-0 custom-img-container">
+        {% include figure.liquid loading="eager" path="assets/img/10.jpg" class="img-fluid rounded z-depth-1 custom-img" zoomable=true %}
     </div>
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+# Analytical Questions
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+1. How can novel dimension reduction methods, like PCA and t-SNE, enhance the representation and visualization of solar wind data?
+2. How can feature selection methods rank the importance of solar wind parameters?
+3. Can clustering methods like DBSCAN and OPTICS reveal differences in solar wind categories based on their coronal origins?
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+# Data Ingestion
 
-{% raw %}
+NASA’s Advanced Composition Explorer (ACE), launched in 1997, captures particles from various sources to explore the Sun-Earth-Milky Way connection. ACE data, collected at the Sun-Earth L1 Lagrange point, includes 809,951 records with 174 features from 1998 to 2011. Additionally, we retrieved 207,894 data points from the Solar and Heliospheric Observatory (SOHO) to cover more recent data. These datasets provide essential measurements for our analysis.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+# Data Wrangling
 
-{% endraw %}
+ACE data is stored in daily HDF files. We developed Python utilities to scrape, concatenate, and merge hourly data from multiple instruments (MAG, SWEPAM, EPAM, SWICS). We handled data quality issues by removing rows with bad measurements and transforming quantitative data using a logarithm base 10 and Min-Max scaling. This approach minimized biases and ensured uniform scaling across variables.
+
+# Feature Engineering
+
+Using Zhao et al.’s classification scheme, we categorized solar wind into fast wind from coronal holes (CH), slow wind from non-coronal holes (NCH), and transient wind. This involved comparing the O7+/O6+ ratio to specific constants and proton speed multipliers.
+
+# Dimensionality Reduction
+
+We employed PCA, FPCA, KPCA, and t-SNE to investigate solar wind data in low-dimensional spaces. While PCA handles linear data, KPCA and t-SNE manage non-linear data. t-SNE, in particular, preserves local relationships, making it ideal for identifying clusters. Our t-SNE analysis used the Barnes-Hut method to create 3D visualizations, while PCA, FPCA, and KPCA provided 2D insights.
+
+# Acknowledgments
+
+We thank the ACE Science Center (ASC) for maintaining the ACE spacecraft data, and acknowledge the support of NASA’s National Space Science Data Center, the Space Physics Data Facility, and Edward C. Stone of Caltech, the Principal Investigator for the ACE project.
+
+<style>
+.custom-img-container {
+    width: 100%; /* Ensure the container takes the full width of its parent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.custom-img {
+    width: 50%; /* Make the image take up 50% of the screen width */
+    height: auto; /* Adjust height automatically to maintain aspect ratio */
+    object-fit: contain; /* Ensure the image fits within its bounding box without cropping */
+}
+</style>

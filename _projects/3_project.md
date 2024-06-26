@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Using Machine Learning to map in-situ properties of Solar Wind to Coronal Origins
-description: Project conducted at the University of Michigan
+title: Tracing the Origins of Solar Wind with Machine Learning
+description: This project uses in-situ measurements and unsupervised learning to cluster solar wind with similar properties and map it to its coronal origins, aiming to enhance predictions of heliospheric phenomena through machine learning.
 img: /assets/img/solar-wind-depiction.jpg
 importance: 3
 category: Machine Learning

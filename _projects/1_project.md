@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Draw to Learn: A Strategy to Learn Abstract Concepts"
-description: Research conducted at the University of California, San Diego at the [LIME Lab](https://www.lime-lab-ucsd.com) between 2018 and 2020.
+description: This project examines the effectiveness of student-generated drawings in learning abstract science concepts. By comparing various visualization strategies and important covariates in a lab setting, we explore how different methods impact retention and understanding of complex topics like black holes.
 img: /assets/img/multimedia-learning.png
 importance: 2
 category: Experimental Design
@@ -153,7 +153,6 @@ Participants demonstrated good visual imagery ability (M = 3.761, SD = 0.574) on
 
 We analyzed the effects of illustration generativity on multiple-choice gains, open-response retention scores, and open-response transfer scores. No significant differences were found in multiple-choice gains or transfer scores across conditions. However, we did observe significant differences in open-response retention scores (F(3,209) = 7.41, p < 0.001). Participants who drew their own illustrations (M = 6.688, SD = 2.93) scored significantly higher on retention compared to those who copied illustrations (M = 4.204, SD = 2.750, p < 0.0001) and those who completed partial illustrations (M = 4.796, SD = 2.595, p = 0.0037). The difference between drawing and studying was near significance (p = 0.052).
 
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/mc-gain.png" title="Experiment 1, Copy Condition" class="img-fluid rounded z-depth-1" %}
@@ -187,6 +186,7 @@ Additional analyses were conducted to explore mechanisms by which drawing might 
 Overall, our findings indicate that engaging in drawing activities, particularly creating one’s own illustrations, can enhance retention of complex scientific concepts, potentially through increased engagement and effective cognitive processing.
 
 ## Discussion
+
 The findings of our study suggest that drawing to learn theoretical science can enhance the recall of key points addressed in a passage. Participants in the drawing condition significantly outperformed all other groups on the open response retention test. However, they did not show superior performance on the multiple-choice test or the transfer test compared to other visualization conditions. The most notable difference in performance on the open response retention task was observed between the draw and copy conditions.
 
 These patterns of effects contradict previous findings that suggested students perform better on retention tests when their visualization is guided or inspired by an instructor. While our data indicate that the visualization strategy does not impact students’ transfer ability, it is possible that providing participants in future studies with more time could reveal an effect of visualization strategy. Additionally, exploratory analyses reveal that time spent on the passage may be a crucial factor in supporting retention performance and highlight that self-reported germane load is significantly predicted by the visualization condition.
@@ -197,3 +197,6 @@ Furthermore, certain visualization tasks may have disproportionately discouraged
 
 Future studies should test these visualization manipulations in true classroom environments where theoretical science concepts are taught (e.g., advanced physics, astronomy, and evolutionary biology courses). This approach will help determine the effectiveness of drawing as a learning strategy in more realistic and motivating educational settings.
 
+# Acknowledgments
+
+This research was conducted at the University of California, San Diego in the [LIME Lab](https://www.lime-lab-ucsd.com) between 2018 and 2020 and served as my honors thesis project. I would like to extend my heartfelt gratitude to Dr. Geller for providing invaluable mentorship and support throughout my time at UCSD. Your guidance was instrumental in the success of this project and my professional development.

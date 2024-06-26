@@ -68,8 +68,6 @@ We hypothesize that drawing will enhance learning of abstract concepts more effe
 
 # Methods
 
-## Experiment 1: Learning Abstract Concepts
-
 ### Participants
 
 A convenience sample of 238 undergraduate students was gathered from the University of California, San Diego Psychology Subject Pool. All participants received partial course credit for their participation. Twenty-five participants were excluded from data analysis, leaving a final sample of 213 participants. Of the 213 participants, 43 identified as male, 165 identified as female, and five identified as non-binary. A majority of participants were in their early twenties with a mean age of 20.27 (SD = 1.93 years). Fifty-seven students participated in the study condition, 54 in the copy condition, 54 in the complete condition, and 48 in the draw condition.
@@ -143,7 +141,7 @@ The materials for this study included a Qualtrics survey, a passage about black 
         {% include figure.liquid loading="eager" path="assets/img/draw-condition-experiment.png" title="Experiment 1, Draw Condition" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="caption">
-        Figure 6. Example of completed learner-generated drawings from the draw condition. Students assigned to this condition were asked to generate their own visual representation of the learning materials. 
+        Figure 6. Example of completed learner-generated drawings from the draw condition. Students assigned to this condition were asked to generate their own visual representation of the learning materials.
     </div>
 </div>
 
@@ -154,6 +152,25 @@ The purpose of our experiment was to determine if more generative illustration a
 Participants demonstrated good visual imagery ability (M = 3.761, SD = 0.574) on a scale from 1 to 5, but reported low prior knowledge in physics and astronomy (M = 9.310, SD = 6.813) on a scale from 0 to 50. Their pre-test scores on a multiple-choice test specific to black holes were also low (M = 4.188 out of 12, SD = 1.963). There were no significant differences across conditions for visual imagery ability, self-reported prior knowledge, or pre-test scores, indicating a baseline similarity among participants.
 
 We analyzed the effects of illustration generativity on multiple-choice gains, open-response retention scores, and open-response transfer scores. No significant differences were found in multiple-choice gains or transfer scores across conditions. However, we did observe significant differences in open-response retention scores (F(3,209) = 7.41, p < 0.001). Participants who drew their own illustrations (M = 6.688, SD = 2.93) scored significantly higher on retention compared to those who copied illustrations (M = 4.204, SD = 2.750, p < 0.0001) and those who completed partial illustrations (M = 4.796, SD = 2.595, p = 0.0037). The difference between drawing and studying was near significance (p = 0.052).
+
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/mc-gain.png" title="Experiment 1, Copy Condition" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="caption">
+        Figure 7. A bar chart demonstrating participants’ multiple-choice gain (post-test minus pre-test) score. Higher scores indicate better performance and maximum possible gain score is 13.
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/or-scores.png" title="Experiment 1, Complete Condition" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="caption">
+        Figure 8. A bar chart demonstrating participants’ performance on the open responses retention test organized by condition. Higher scores indicate better performance and the maximum possible score is 22.
+    </div>
+</div>
 
 ## Exploratory Analyses
 
@@ -168,3 +185,15 @@ Additional analyses were conducted to explore mechanisms by which drawing might 
 - **Word Count**: No significant differences were found in total word count or unique word count across conditions, suggesting that the amount of writing did not account for differences in retention scores.
 
 Overall, our findings indicate that engaging in drawing activities, particularly creating one’s own illustrations, can enhance retention of complex scientific concepts, potentially through increased engagement and effective cognitive processing.
+
+## Discussion
+The findings of our study suggest that drawing to learn theoretical science can enhance the recall of key points addressed in a passage. Participants in the drawing condition significantly outperformed all other groups on the open response retention test. However, they did not show superior performance on the multiple-choice test or the transfer test compared to other visualization conditions. The most notable difference in performance on the open response retention task was observed between the draw and copy conditions.
+
+These patterns of effects contradict previous findings that suggested students perform better on retention tests when their visualization is guided or inspired by an instructor. While our data indicate that the visualization strategy does not impact students’ transfer ability, it is possible that providing participants in future studies with more time could reveal an effect of visualization strategy. Additionally, exploratory analyses reveal that time spent on the passage may be a crucial factor in supporting retention performance and highlight that self-reported germane load is significantly predicted by the visualization condition.
+
+There are limitations to our study that future research should address. Importantly, a lab setting does not represent true learning environments where students are genuinely motivated to learn. Our participants were volunteers who participated to receive partial course credit, regardless of their performance in the experiment, which means they may not have been genuinely invested in learning about the formation and properties of black holes.
+
+Furthermore, certain visualization tasks may have disproportionately discouraged participants from completing the task. For example, because the study illustration condition requires no active engagement, participants assigned to this condition may have passively scanned the illustrations rather than studying them carefully. Similarly, students assigned to complete an illustration may have found this task odd or elementary, discouraging them from actively completing the worksheet. Feedback from our pilot study suggests that participants did not enjoy completing the illustration and were generally confused by it.
+
+Future studies should test these visualization manipulations in true classroom environments where theoretical science concepts are taught (e.g., advanced physics, astronomy, and evolutionary biology courses). This approach will help determine the effectiveness of drawing as a learning strategy in more realistic and motivating educational settings.
+

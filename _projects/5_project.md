@@ -2,7 +2,7 @@
 layout: page
 title: Fashion Data Miner
 description: TBA
-img: /assets/img/5.jpg
+img: /assets/img/test.png
 importance: 3
 category: Machine Learning
 giscus: true

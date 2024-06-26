@@ -1953,14 +1953,6 @@ a.close.disabled {
     align-items: center !important
 }
 
-@media (min-width:576px) {
-
-    .justify-content-sm-center {
-        -ms-flex-pack: center !important;
-        justify-content: center !important
-    }
-}
-
 @media (min-width:768px) {
     .flex-md-row {
         -ms-flex-direction: row !important;

@@ -48,7 +48,6 @@ ACE was launched on August 25th, 1997 and arrived at it's desired location at th
     From NASA/JPL-Caltech/VTAD.
 </div>
 
-
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/ace-launch.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
@@ -63,7 +62,6 @@ ACE was launched on August 25th, 1997 and arrived at it's desired location at th
 <div class="caption">
     (left) A Boeing Delta II expendable launch vehicle lifts off with ACE from Cape Canaveral Air Station, Florida on August 25th, 1997.(center) artist's rendition of ACE in space (right) a depiction of the scientific instruments of ACE. There are nine in total: Solar Wind Ion Mass Spectrometer (SWIMS), Solar Wind Ion Composition Spectrometer (SWICS), Ultra-Low Energy Isotope Spectrometer (ULEIS), Solar Energetic Particle Ionic Charge Analyzer (SEPICA), Solar Isotope Spectrometer (SIS), Cosmic Ray Isotope Spectrometer (CRIS), Solar Wind Electron, Proton, and Alpha Monitor (SWEPAM), Electron, Proton, and Alpha-Particle Monitor (EPAM), Magnetometer (MAG), Real Time Solar Wind Experiment (RTSW).
 </div>
-
 
 # Data Wrangling
 

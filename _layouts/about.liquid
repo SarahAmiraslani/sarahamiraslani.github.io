@@ -27,9 +27,7 @@ layout: default
           {% endif %}
           {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
       30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image cache_bust=true
-          %}
+          {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image cache_bust=true %}
         {% endif %}
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
@@ -63,7 +61,8 @@ layout: default
                 {% comment %} <a href="{{ project.url }}" class="btn btn-primary">Read more</a> {% endcomment %}
                 <p>
                   <strong>Technologies used:</strong>
-                  {{ project.technologies | join: ', ' }}</p>
+                  {{ project.technologies | join: ', ' }}
+                </p>
                 <!-- GitHub Link -->
                 <a href="{{ project.github_url }}" class="btn btn-outline-secondary custom-btn-style">View on GitHub</a>
               </div>
@@ -89,8 +88,6 @@ layout: default
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
     {% endif %}
-
-
   </article>
 </div>
 

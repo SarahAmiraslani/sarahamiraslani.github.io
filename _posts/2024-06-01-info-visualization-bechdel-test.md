@@ -9,6 +9,7 @@ featured: false
 related_posts: true
 giscus: true
 giscuss_comments: true
+excerpt_separator: "<!--more-->"
 ---
 
 {::nomarkdown}
@@ -21,3 +22,7 @@ giscuss_comments: true
 <p>Sorry, the notebook you are looking for does not exist.</p>
 {% endif %}
 {:/nomarkdown}
+
+<!--more-->
+
+Continue your post here...

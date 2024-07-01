@@ -92,6 +92,7 @@ flowchart LR
     J --> H[Post-test<br>12 multiple choice questions<br>8 open response]
     H --> L[Visual Imagery Questionaire<br>16 items]
 ```
+
 ### Materials
 
 The materials for this study included a Qualtrics survey, a passage about black holes, illustrations to support the passage, passage comprehension tests (multiple choice and open response), and measures of individual differences (prior knowledge, visual imagery ability, cognitive load). All materials were presented to participants via a Qualtrics survey, which they accessed online via desktop computers in a lab setting.

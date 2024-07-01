@@ -9,11 +9,12 @@ featured: false
 related_posts: true
 giscus: true
 giscuss_comments: true
+excerpt_separator: "<!--more-->"
 ---
 
 {::nomarkdown}
 {% assign jupyter_path = "assets/jupyter/starwards_network_analysis.ipynb" | relative_url %}
-{% capture notebook_exists %}{% file_exists assets/jupyter/data_mining_blog.ipynb %}{% endcapture %}
+{% capture notebook_exists %}{% file_exists assets/jupyter/starwards_network_analysis.ipynb %}{% endcapture %}
 {% if notebook_exists == "true" %}
 {% jupyter_notebook jupyter_path %}
 {% else %}
@@ -21,3 +22,5 @@ giscuss_comments: true
 <p>Sorry, the notebook you are looking for does not exist.</p>
 {% endif %}
 {:/nomarkdown}
+
+<!--more-->

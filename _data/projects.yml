@@ -7,7 +7,7 @@
     - PCA
     - t-SNE
     - DBSCAN
-  github: https://github.com/SarahAmiraslani/solar-wind-coronal-origin-ml
+  github_url: https://github.com/SarahAmiraslani/solar-wind-coronal-origin-ml
   image: /assets/img/kpca.png
 
 - url: https://example.com/project2
@@ -17,7 +17,7 @@
     - Data Mining
     - PyTorch
   releaseDate: 2023-03-03
-  github: https://github.com/example
+  github_url: https://github.com/example
   image: assets/img/fashion.png
 
 - url: https://example.com/project1
@@ -27,7 +27,7 @@
     - Random Forest
     - Logistic Regression
   releaseDate: 2024-04-01
-  github: https://github.com/example
+  github_url: https://github.com/example
   image: assets/img/track-clusters.png
 
 - url: https://example.com/project2
@@ -37,5 +37,5 @@
     - Experimental Design
     - Multivariate Analysis
   releaseDate: 2020-05-20
-  github: https://github.com/example
+  github_url: https://github.com/example
   image: /assets/img/drawing-black-holes.png

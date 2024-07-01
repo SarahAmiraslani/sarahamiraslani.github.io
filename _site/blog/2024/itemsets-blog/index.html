@@ -17,7 +17,7 @@
   
   
     
-      a post with math | Sarah H. Amiraslani
+      Exploring Frequent Itemsets using Tweets | Sarah H. Amiraslani
     
   
 </title>
@@ -34,7 +34,7 @@
   <!-- OpenGraph -->
   <meta property="og:site_name" content="Sarah H. Amiraslani">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Sarah H. Amiraslani | a post with math">
+  <meta property="og:title" content="Sarah H. Amiraslani | Exploring Frequent Itemsets using Tweets">
   <meta property="og:url" content="http://localhost:4000/blog/2024/itemsets-blog/">
   <meta property="og:description" content="an example of a blog post with some math">
   
@@ -42,7 +42,7 @@
 
   <!-- Twitter card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="a post with math">
+  <meta name="twitter:title" content="Exploring Frequent Itemsets using Tweets">
   <meta name="twitter:description" content="an example of a blog post with some math">
   
   
@@ -98,7 +98,7 @@
         "url": "http://localhost:4000/blog/2024/itemsets-blog/",
         "@type": "BlogPosting",
         "description": "an example of a blog post with some math",
-        "headline": "a post with math",
+        "headline": "Exploring Frequent Itemsets using Tweets",
         
         "sameAs": ["https://github.com/SarahAmiraslani", "https://www.linkedin.com/in/samirasl", "https://medium.com/@Sarah Amiraslani", "https://gitlab.com/SarahAmiraslani", "https://www.kaggle.com/sarahamiraslani7"],
         
@@ -224,6 +224,14 @@
             
           
             
+          
+            
+          
+            
+          
+            
+          
+            
               
                 <li class="nav-item ">
                   
@@ -313,7 +321,7 @@
 
 <div class="post">
   <header class="post-header">
-    <h1 class="post-title">a post with math</h1>
+    <h1 class="post-title">Exploring Frequent Itemsets using Tweets</h1>
     <p class="post-meta">
       Created in May 24, 2024
       
@@ -328,7 +336,7 @@
           ·  
         
           
-            <a href="/blog/tag/datamining"> <i class="fa-solid fa-hashtag fa-sm"></i> datamining</a>
+            <a href="/blog/tag/data-mining"> <i class="fa-solid fa-hashtag fa-sm"></i> data-mining</a>
              
           
         
@@ -350,27 +358,16 @@
   <article class="post-content">
     
     <div id="markdown-content">
-      <p>This theme supports rendering beautiful math in inline and display modes using <a href="https://www.mathjax.org/" rel="external nofollow noopener" target="_blank">MathJax 3</a> engine. You just need to surround your math expression with <code class="language-plaintext highlighter-rouge">$$</code>, like <code class="language-plaintext highlighter-rouge">$$ E = mc^2 $$</code>. If you leave it inside a paragraph, it will produce an inline expression, just like</p>
+      
 
-\[E = mc^2\]
 
-<p>.</p>
+<div class="jupyter-notebook" style="position: relative; width: 100%; margin: 0 auto;">
+  <div class="jupyter-notebook-iframe-container">
+    <iframe src="/assets/jupyter/data_mining_blog.ipynb.html" style="position: absolute; top: 0; left: 0; border-style: none;" width="100%" height="100%" onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
+  </div>
+</div>
 
-<p>To use display mode, again surround your expression with <code class="language-plaintext highlighter-rouge">$$</code> and place it as a separate paragraph. Here is an example:</p>
 
-\[\sum_{k=1}^\infty |\langle x, e_k \rangle|^2 \leq \|x\|^2\]
-
-<p>You can also use <code class="language-plaintext highlighter-rouge">\begin{equation}...\end{equation}</code> instead of <code class="language-plaintext highlighter-rouge">$$</code> for display mode math.
-MathJax will automatically number equations:</p>
-
-<p>\begin{equation}
-\label{eq:cauchy-schwarz}
-\left( \sum<em>{k=1}^n a_k b_k \right)^2 \leq \left( \sum</em>{k=1}^n a<em>k^2 \right) \left( \sum</em>{k=1}^n b_k^2 \right)
-\end{equation}</p>
-
-<p>and by adding <code class="language-plaintext highlighter-rouge">\label{...}</code> inside the equation environment, we can now refer to the equation using <code class="language-plaintext highlighter-rouge">\eqref</code>.</p>
-
-<p>Note that MathJax 3 is <a href="https://docs.mathjax.org/en/latest/upgrading/whats-new-3.0.html" rel="external nofollow noopener" target="_blank">a major re-write of MathJax</a> that brought a significant improvement to the loading and rendering speed, which is now <a href="http://www.intmath.com/cg5/katex-mathjax-comparison.php" rel="external nofollow noopener" target="_blank">on par with KaTeX</a>.</p>
 
     </div>
   </article>
@@ -401,7 +398,7 @@ MathJax will automatically number equations:</p>
 
       
       
-        Last updated: June 26, 2024.
+        Last updated: July 01, 2024.
       
     </div>
   </footer>
@@ -653,9 +650,31 @@ MathJax will automatically number equations:</p>
               handler: () => {
                 window.location.href = "/cv/";
               },
-            },{id: "post-a-post-with-math",
+            },{id: "post-network-analysis-of-the-star-wars-films",
           
-            title: "a post with math",
+            title: "Network Analysis of the Star Wars Films",
+          
+          description: "an exploration of network analysis with networkx.",
+          section: "Posts",
+          handler: () => {
+            
+              window.location.href = "/blog/2024/starwars-network/";
+            
+          },
+        },{id: "post-exploring-information-visualization-with-the-bechdel-test",
+          
+            title: "Exploring Information Visualization with the Bechdel Test",
+          
+          description: "an example of a blog post with some math",
+          section: "Posts",
+          handler: () => {
+            
+              window.location.href = "/blog/2024/info-visualization-bechdel-test/";
+            
+          },
+        },{id: "post-exploring-frequent-itemsets-using-tweets",
+          
+            title: "Exploring Frequent Itemsets using Tweets",
           
           description: "an example of a blog post with some math",
           section: "Posts",

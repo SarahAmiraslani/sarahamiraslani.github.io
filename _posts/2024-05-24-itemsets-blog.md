@@ -1,38 +1,23 @@
 ---
 layout: post
-title: a post with math
+title: Exploring Frequent Itemsets using Tweets
 date: 2024-05-24 11:12:00-0400
 description: an example of a blog post with some math
-tags: datamining
+tags: data-mining
 categories: sample-posts
-featured: true
+featured: false
 related_posts: false
 giscus: true
 giscuss_comments: true
 ---
 
-This theme supports rendering beautiful math in inline and display modes using [MathJax 3](https://www.mathjax.org/) engine. You just need to surround your math expression with `$$`, like `$$ E = mc^2 $$`. If you leave it inside a paragraph, it will produce an inline expression, just like
+{::nomarkdown}
+{% assign jupyter_path = "assets/jupyter/data_mining_blog.ipynb" | relative_url %}
+{% capture notebook_exists %}{% file_exists assets/jupyter/data_mining_blog.ipynb %}{% endcapture %}
+{% if notebook_exists == "true" %}
+{% jupyter_notebook jupyter_path %}
+{% else %}
 
-$$
-E = mc^2
-$$
-
-.
-
-To use display mode, again surround your expression with `$$` and place it as a separate paragraph. Here is an example:
-
-$$
-\sum_{k=1}^\infty |\langle x, e_k \rangle|^2 \leq \|x\|^2
-$$
-
-You can also use `\begin{equation}...\end{equation}` instead of `$$` for display mode math.
-MathJax will automatically number equations:
-
-\begin{equation}
-\label{eq:cauchy-schwarz}
-\left( \sum*{k=1}^n a_k b_k \right)^2 \leq \left( \sum*{k=1}^n a*k^2 \right) \left( \sum*{k=1}^n b_k^2 \right)
-\end{equation}
-
-and by adding `\label{...}` inside the equation environment, we can now refer to the equation using `\eqref`.
-
-Note that MathJax 3 is [a major re-write of MathJax](https://docs.mathjax.org/en/latest/upgrading/whats-new-3.0.html) that brought a significant improvement to the loading and rendering speed, which is now [on par with KaTeX](http://www.intmath.com/cg5/katex-mathjax-comparison.php).
+<p>Sorry, the notebook you are looking for does not exist.</p>
+{% endif %}
+{:/nomarkdown}

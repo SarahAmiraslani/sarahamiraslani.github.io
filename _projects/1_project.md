@@ -92,16 +92,6 @@ flowchart LR
     J --> H[Post-test<br>12 multiple choice questions<br>8 open response]
     H --> L[Visual Imagery Questionaire<br>16 items]
 ```
-
-<!-- <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path= "assets/img/Untitled diagram-2024-06-26-034650.png" title="Experimental Design" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Figure 3. The flow of the experiment where students were randomly assigned to complete one of the four learning conditions (a) study (b) copy (c) complete (d) draw. All students completed all of the other stages of the experiment.
-</div> -->
-
 ### Materials
 
 The materials for this study included a Qualtrics survey, a passage about black holes, illustrations to support the passage, passage comprehension tests (multiple choice and open response), and measures of individual differences (prior knowledge, visual imagery ability, cognitive load). All materials were presented to participants via a Qualtrics survey, which they accessed online via desktop computers in a lab setting.

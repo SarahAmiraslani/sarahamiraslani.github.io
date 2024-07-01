@@ -1,4 +1,4 @@
-- url: http://sarahamiraslani.com/projects/3_project/
+- url: /projects/3_project/
   title: Tracing the Origins of Solar Wind with Machine Learning
   description: This project uses in-situ measurements and unsupervised learning to cluster solar wind with similar properties and map it to its coronal origins, aiming to enhance predictions of heliospheric phenomena through machine learning.
   releaseDate: 2024-05-20
@@ -10,32 +10,32 @@
   github_url: https://github.com/SarahAmiraslani/solar-wind-coronal-origin-ml
   image: /assets/img/kpca.png
 
-- url: https://example.com/project2
+- url: /projects/5_project/
   title: Fashion Miner and Recomendation System
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   technologies:
     - Data Mining
     - PyTorch
   releaseDate: 2023-03-03
-  github_url: https://github.com/example
+  github_url: https://github.com/SarahAmiraslani/fashion-data-miner
   image: assets/img/fashion.png
 
-- url: https://example.com/project1
+- url: /projects/4_project/
   title: F1 Top 10 Predictions and Track Clustering
   description: This project applies supervised learning to predict top 10 race finishes, pinpointing key factors that influence these outcomes. Additionally, it employs unsupervised learning to cluster race tracks based on characteristics like layout and surface, offering novel insights into racing strategies and optimizing performance.
   technologies:
     - Random Forest
     - Logistic Regression
   releaseDate: 2024-04-01
-  github_url: https://github.com/example
+  github_url: https://github.com/SarahAmiraslani/F1-Milestone-Tharval-Amiraslani-Korbin
   image: assets/img/track-clusters.png
 
-- url: https://example.com/project2
+- url: /projects/1_project/
   title: Drawing to Learn Abstractions
   description: This project examines the effectiveness of student-generated drawings in learning abstract science concepts. By comparing various visualization strategies and important covariates in a lab setting, we explore how different methods impact retention and understanding of complex topics like black holes.
   technologies:
     - Experimental Design
     - Multivariate Analysis
   releaseDate: 2020-05-20
-  github_url: https://github.com/example
+  github_url: https://github.com/SarahAmiraslani/drawing-to-learn
   image: /assets/img/drawing-black-holes.png

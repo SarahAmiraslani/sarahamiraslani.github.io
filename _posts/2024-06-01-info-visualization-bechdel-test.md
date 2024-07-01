@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exploring Information Visualization with the Bechdel Test
-date: 2024-05-24 11:12:00-0400
+date: 2024-06-01 11:12:00-0400
 description: an example of a blog post with some math
 tags: data-visualization
 categories: sample-posts

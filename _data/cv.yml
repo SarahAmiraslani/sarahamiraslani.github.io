@@ -2,64 +2,75 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Sarah Amiraslani
     - name: Date of Birth
-      value: 14th March 1879
+      value: Not provided
     - name: Languages
-      value: English, German
+      value: Farsi (Native speaker), English (Fluent), Spanish (Advanced), French (Intermediate)
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Masters of Science (MS)
+      institution: University of Michigan, Ann Arbor, Michigan, US
+      year: 2021-2024
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Data Science
+        - Machine Learning
+        - Deep Learning
+        - Natural Language Processing
+        - Data Structures and Algorithms
+        - Thesis: Understanding the in-situ Solar Wind Properties with Machine Learning
+    - title: Bachelors of Science (BS)
+      institution: University of California, San Diego, California, US
+      year: 2017-2020
       description:
-        - Description 1.
-        - Description 2.
+        - Neuroscience
+        - Cognitive Psychology
+        - Statistics
+        - Research Methods
+        - Calculus
+        - Linear Algebra
+        - Python Programming
+        - Thesis: Drawing to Learn Abstract Science Concepts
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Quantitative Analytics Specialist
+      institution: Wells Fargo Bank, N.A., San Francisco, California, US
+      year: 2022 - 2024
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - As the primary technical contributor of the AI/ML developer relations, drove a 60% efficiency boost in model development.
+        - Enhanced collaboration with vendors and departments, generating $1M in value.
+        - Created tech articles, hosted office hours, and improved documentation, fueling a 150% rise in tool adoption.
+        - Strategic coordination cut model time-to-market by 20% and elevated program visibility company-wide.
+    - title: Data Science Intern
+      institution: Changing Room, INC., Remote
+      year: 2021 - 2022
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Led the development of data mining and ETL pipelines, creating Python programs to scrape over 100,000 fashion brand inventory items.
+        - Collaborated on developing an AI-driven recommendation system delivered via a Chrome plugin.
+    - title: Data Analyst
+      institution: Trackonomy Systems, INC., San Jose, California, US
+      year: 2020 - 2021
       description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+        - Collaborated on projects to improve data collection processes and cut production costs as a member of the manufacturing automation team.
+    - title: Teaching Assistant and Tutor
+      institution: University of California, San Diego, California, US
+      year: 2019
+      description:
+        - Assisted in teaching introductory data science courses, provided tutoring, and helped develop course materials.
+    - title: Research Assistant, Honors Thesis
+      institution: University of California, San Diego, California, US
+      year: 2018 - 2021
+      description:
+        - Conducted research on cognitive behavioral neuroscience, focusing on experimental design, data analysis, and visualization for thesis projects.
+    - title: Research Assistant
+      institution: University of California, San Diego School of Medicine, San Diego, California, US
+      year: 2017 - 2018
+      description:
+        - Assisted in research projects focusing on archival data analysis, data visualization, and statistical analysis.
 
 - title: Open Source Projects
   type: time_table
@@ -71,27 +82,28 @@
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2020
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Norman Henry Anderson Excellence in Research
+        - Departmental Honors
+    - year: 2018
       items:
-        - Max Planck Medal
+        - Chancellor's Undergraduate Research Scholarship
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Data Science
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Machine Learning
+        - Deep Learning
+        - Natural Language Processing
+    - title: Behavioral Neuroscience
       items:
-        - Description 1.
-        - Description 2.
+        - Cognitive Psychology
+        - Neuroscience
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Not provided

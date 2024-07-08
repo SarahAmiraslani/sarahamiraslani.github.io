@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Draw to Learn: A Strategy to Learn Abstract Concepts"
-description: This project examines the effectiveness of student-generated drawings in learning abstract science concepts. By comparing various visualization strategies and important covariates in a lab setting, we explore how different methods impact retention and understanding of complex topics like black holes.
+description: This project investigates the effectiveness of student-generated drawings in facilitating the learning of abstract science concepts. By comparing various visualization strategies and key covariates in a controlled lab setting, we aim to uncover how different methods influence comprehension of complex topics and lead to better learning outcomes.
 img: /assets/img/multimedia-learning.png
 importance: 2
 category: Experimental Design
@@ -14,36 +14,38 @@ mermaid:
   zoomable: true
 toc:
   sidebar: left
+
+pdf: /assets/pdf/Draw_to_learn_poster.pdf
 ---
+
+<a href="{{ 'assets/pdf/Draw_to_learn_poster.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary">View the Research Poster</a>
 
 # Summary
 
 Have you ever wondered why images stick in your mind longer than words? Our brains are hardwired to process visual information with remarkable efficiency. Research shows that visual aids not only make learning easier by breaking down complex ideas, but also help illustrate spatial relationships, pinpoint knowledge gaps, and keep us captivated {% cite mayer2008 %}. But what if drawing your own pictures could take learning to the next level, even more than instructor-provided visuals?
 
-Studies reveal that drawing can significantly enhance understanding of how physical systems work. However, its effectiveness hinges on factors like the accuracy of the drawings, the learner’s prior knowledge, and the level of guidance provided while drawing {% cite fiorella2018 %}. Beginners often benefit from more structured support as creating accurate drawings from scratch is cognitively demanding and may detract from energy spent learning the material {% cite vanmeter2005 %}. Yet, when dealing with content that doesn’t have a clear visual representation, the precision of these drawings might not matter as much. In these scenarios, student-generated drawings can capture their unique thought processes and create memorable visual snapshots.
+Studies reveal that drawing can significantly enhance understanding of how physical systems work. However, its effectiveness hinges on factors like the accuracy of the drawings, the learner’s prior knowledge, and the level of guidance provided while drawing {% cite fiorella2018 %}. Beginners often benefit from more structured support as creating accurate drawings from scratch is cognitively demanding and may detract from energy spent learning the material {% cite vanmeter2005 %}. Yet, when dealing with content that doesn’t have a clear visual representation, the accuracy of these drawings may not be consequential. In these scenarios, student-generated drawings can capture their unique thought processes and create memorable visual representations.
 
-In two experiments, we randomly assigned college students were randomly assigned to different learning tasks. Some studied or copied an instructor’s drawing, others completed a scaffolded drawing worksheet, and some drew on a blank sheet while reading about abstract concepts or physical systems. The findings were fascinating. When it came to abstract lessons, unguided drawing significantly boosted retention but not transfer. However, for lessons on physical systems, drawing didn’t improve retention or transfer.
+In two experiments, we randomly assigned college students to different learning tasks. Some studied or copied an instructor’s drawing, others completed a scaffolded drawing worksheet, and some drew their own representations on a blank sheet while reading about abstract concepts or physical systems. We found that, when it came to abstract lessons, unguided drawing significantly boosted retention but not transfer. However, for lessons on physical systems, drawing didn’t improve retention or transfer and students reported higher levels of intrinsic cognitive load.
 
-These insights suggest that while drawing aids learning, its impact depends on the nature of the content and the context in which it’s used. So next time you’re learning a new abstract concept, consider picking up a pen and sketching it out—you might just find it sticks with you longer.
+These insights suggest that while drawing aids learning, its impact depends on the nature of the content and the context in which it’s used. So next time you’re learning a new abstract concept, consider picking up a pen and sketching it out—you might just find it sticks with you longer. However, if you are learning about a physical system studying an instructor provided visual representation is preferred.
 
 # Introduction
 
-Visual representations play a crucial role in learning by summarizing verbal information, illustrating spatial relationships, and enhancing memory retention {% cite ainsworth2011 %}. While educational visuals are typically provided by instructors or textbooks, asking students to create their own drawings is less common {% cite vanmeter2005 %}. Studying and constructing visuals engage different cognitive processes and can differentially impact learning {% cite fiorella2018 %}. It is essential to determine which method most effectively promotes meaningful learning.
+Visual representations play a crucial role in learning by summarizing verbal information, illustrating spatial relationships, and enhancing memory retention {% cite ainsworth2011 %}. While educational visuals are typically provided by instructors or the authors of textbooks, asking students to create their own drawings is less common {% cite vanmeter2005 %}. Studying and constructing visuals engage different cognitive processes and can differentially impact learning {% cite fiorella2018 %}. Therefore, it is essential to determine which method most effectively promotes meaningful learning.
 
-Effective learning involves selecting, organizing, and integrating new information with prior knowledge {% cite mayer2002multimedia %}. The more connections learners make between new material and their existing knowledge, the better they retain information and transfer it to new contexts {% cite mayer2003nine %}. Thus, an ideal learning strategy encourages the integration of new and prior knowledge. While learning can occur through various media (e.g., text, podcasts, pictures), multimedia learning specifically involves processing both words and pictures. This distinction is important because verbal and pictorial information are processed through different cognitive pathways.
+According to the Cognitive Theory of Multimedia Learning, effective learning involves selecting, organizing, and integrating new information with prior knowledge {% cite mayer2002multimedia %}. The more connections learners make between new material and their existing knowledge, the more likely they are to retain information and transfer it to new contexts {% cite mayer2003nine %}. Thus, an ideal learning strategy encourages the integration of new and prior knowledge.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/ctml-diagram.png" title="Cognitive Theory of Multimedia Learning " class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="caption">
-        Figure 1. A visual representation of the Cognitive Theory of Multimedia Learning from Multimedia Learning {% cite mayer2002multimedia %}.
+        Figure 1. A visual representation of the Cognitive Theory of Multimedia Learning from Multimedia Learning {% cite mayer2002multimedia %}. While learning can occur through various media (e.g., text, podcasts, pictures), Multimedia Learning specifically involves processing both words and pictures. This distinction is important because verbal and pictorial information are processed through different cognitive pathways.
     </div>
 </div>
 
-Paivio’s Dual Channel Processing Theory, a well-supported cognitive theory, explains that we process verbal and non-verbal information through separate channels, forming unique connections between new material and our existing knowledge {% cite paivio1968 %}. This theory is particularly relevant to drawing, as it often involves processing both verbal and non-verbal information simultaneously. For example, drawing to understand a passage requires processing the words while organizing a visuospatial representation of the material.
-
-Multimedia learning leverages Paivio’s Dual Channel Processing Theory by engaging both verbal and visual processing channels. When learners draw, they integrate these channels by processing text and creating corresponding visuospatial representations. This integration enhances cognitive processing and recall {% cite wammes2017learning %}.
+The Dual Channel Processing Theory, a well-supported cognitive theory, explains that we process verbal and non-verbal information through separate channels, forming unique connections between new material and our existing knowledge {% cite paivio1968 %}. When learners draw, they engage both verbal and visual processing channels as process the text in a passage and create a corresponding visuospatial representation. This process enhances cognitive processing and recall {% cite wammes2017learning %}.
 
 Learner-generated drawings are visual representations created by students to achieve educational goals {% cite alesandrini1981pictorial %}. Generative learning strategies, like drawing, promote long-term understanding by helping learners identify gaps in their knowledge and update their understanding through self-monitoring {% cite vanmeter2013 %}. Drawing allows students to personalize study materials, addressing individual differences in prior knowledge and learning needs. These drawings can be representational (faithfully depicting physical structures) or non-representational (abstract diagrams and flow charts) {% cite carney2002pictorial %}. Non-representational drawings may require additional cognitive processing to translate abstract visuals into meaningful content.
 
@@ -76,22 +78,15 @@ A convenience sample of 238 undergraduate students was gathered from the Univers
 
 We used a between-subjects design to manipulate participants' drawing experience and measure their learning from a lesson about black holes. Participants were randomly assigned to one of four drawing conditions, which varied by the degree to which they generated their illustrations: copying a provided illustration (“copy”), completing a partial illustration (“complete”), free drawing their own illustration (“draw”), or a control condition that involved no drawing (“study”). Learning was measured using multiple choice and open response questions designed to assess both the retention and transfer of the lesson content. We also measured participants' prior knowledge about physics and astronomy, their visual imagery ability, and their cognitive load during the learning activity to use as covariates in our analyses. The survey was designed to prevent participants from accessing the entire study at once or revisiting previous sections. While there was no time limit, participants were expected to complete the experiment within an hour.
 
-```mermaid
-flowchart LR
-    A[Self-reported prior knowledge<br>Likert scale] --> I[Pre-test<br>12 multiple choice questions]
-    I --> C[Complete drawing<br>while reading the passage]
-    I --> D[Copy drawing<br>while reading the passage]
-    I --> E[Study drawing<br>while reading the passage]
-    I --> F[Create drawing<br>while reading the passage]
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/experimental-design.png" title="Previous Literature" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Figure 3. Visual representation of the experimental design.
+</div>
 
-    C --> J[Self-reported cognitive load<br>14 items]
-    D --> J
-    E --> J
-    F --> J
-
-    J --> H[Post-test<br>12 multiple choice questions<br>8 open response]
-    H --> L[Visual Imagery Questionaire<br>16 items]
-```
 
 ### Materials
 
@@ -170,11 +165,9 @@ Additional analyses were conducted to explore mechanisms by which drawing might 
 
 - **Cognitive Load**: We found no overall differences in cognitive load across conditions. However, significant differences were observed in extraneous load (F(3,209) = 15.82, p < 0.0001) and germane load (F(3,209) = 6.20, p = 0.0005). Participants in the complete condition reported higher extraneous load, while those in the study condition reported higher germane load compared to other groups.
 
-- **Condition Enjoyment**: Participants in the study condition enjoyed the activity more (M = 3.965, SD = 0.778) than those in other conditions, with significant differences observed between study and complete conditions, and between copy and complete conditions.
+- **Condition Enjoyment**: Participants in the study condition enjoyed the activity more (M = 3.965/5 Likert scale, SD = 0.778) than those in other conditions, with significant differences observed between study and complete conditions, and between copy and complete conditions.
 
-- **Word Count**: No significant differences were found in total word count or unique word count across conditions, suggesting that the amount of writing did not account for differences in retention scores.
-
-Overall, our findings indicate that engaging in drawing activities, particularly creating one’s own illustrations, can enhance retention of complex scientific concepts, potentially through increased engagement and effective cognitive processing.
+- **Word Count**: No significant differences were found in total word count or unique word count used to answer open response questions across conditions, suggesting that the amount of writing did not account for differences in retention scores.
 
 ## Discussion
 

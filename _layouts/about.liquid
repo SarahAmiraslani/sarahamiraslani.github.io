@@ -5,11 +5,11 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span>
-        {{ site.middle_name }}
-        {{ site.last_name }}
+      <span class="font-weight-bold">{{ site.first_name }}</span>
+      {{ site.middle_name }}
+      {{ site.last_name }}
       {% else %}
-        {{ site.title }}
+      {{ site.title }}
       {% endif %}
     </h1>
     <p class="desc">{{ page.subtitle }}</p>
@@ -17,76 +17,78 @@ layout: default
 
   <article>
     {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
+    <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+      {% if page.profile.image %}
+      {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+      {% if page.profile.image_circular %}
+      {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+      {% else %}
+      {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+      {% endif %}
+      {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width:
+      576px)
       30vw, 95vw"{% endcapture %}
-          {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image cache_bust=true %}
-        {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
-      </div>
+      {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes
+      alt=page.profile.image cache_bust=true %}
+      {% endif %}
+      {% if page.profile.more_info %}
+      <div class="more-info">{{ page.profile.more_info }}</div>
+      {% endif %}
+    </div>
     {% endif %}
 
     <div class="clearfix">{{ content }}</div>
 
     <!-- Projects -->
     {% if site.data.projects %}
-      <h2>
-        <a href="{{ '/projects/' | relative_url }}" style="color: inherit">{{ 'selected projects' | capitalize }}</a>
-      </h2>
-      <ul class="card-text font-weight-light list-group list-group-flush">
-        {% assign sorted_projects = site.data.projects | sort: 'releaseDate' | reverse %}
-        {% for project in sorted_projects limit: 4 %}
-          <li class="list-group-item project-item">
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="image-wrapper">
-                  <img src="{{ project.image }}" alt="{{ project.title }}">
-                </div>
-              </div>
-              <div class="col-sm-8">
-                <h3>
-                  <a href="{{ project.url }}">{{ project.title }}</a>
-                </h3>
-                <p>{{ project.description }}</p>
-                <!-- Commented out Read more button -->
-                {% comment %} <a href="{{ project.url }}" class="btn btn-primary">Read more</a> {% endcomment %}
-                <p>
-                  <strong>Technologies used:</strong>
-                  {{ project.technologies | join: ', ' }}
-                </p>
-                <!-- GitHub Link -->
-                <a href="{{ project.github_url }}" class="btn btn-outline-secondary custom-btn-style">View on GitHub</a>
-              </div>
+    <h2>
+      <a href="{{ '/projects/' | relative_url }}" style="color: inherit">{{ 'selected projects' | capitalize }}</a>
+    </h2>
+    <ul class="card-text font-weight-light list-group list-group-flush">
+      {% assign sorted_projects = site.data.projects | sort: 'releaseDate' | reverse %}
+      {% for project in sorted_projects limit: 4 %}
+      <li class="list-group-item project-item">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="image-wrapper">
+              <img src="{{ project.image }}" alt="{{ project.title }}">
             </div>
-          </li>
-        {% endfor %}
-      </ul>
+          </div>
+          <div class="col-sm-8">
+            <h3>
+              <a href="{{ project.url }}">{{ project.title }}</a>
+            </h3>
+            <p>{{ project.description }}</p>
+            <p>
+              <strong>Technologies used:</strong>
+              {{ project.technologies | join: ', ' }}
+            </p>
+            <!-- GitHub Link -->
+            <a href="{{ project.github_url }}" style="color: inherit;"
+              class="btn btn-outline-secondary">View on
+              GitHub</a>
+          </div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
     {% endif %}
 
     <!-- Latest posts -->
     {% if site.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest blog posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
+    <h2>
+      <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest blog posts</a>
+    </h2>
+    {% include latest_posts.liquid %}
     {% endif %}
 
     <!-- Social -->
     {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
+    <div class="social">
+      <div class="contact-icons">{% include social.liquid %}</div>
 
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
+      <div class="contact-note">{{ site.contact_note }}</div>
+    </div>
     {% endif %}
   </article>
 </div>

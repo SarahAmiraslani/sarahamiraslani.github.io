@@ -10,16 +10,6 @@
   github_url: https://github.com/SarahAmiraslani/solar-wind-coronal-origin-ml
   image: /assets/img/kpca.png
 
-- url: /projects/5_project/
-  title: Fashion Miner and Recomendation System
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  technologies:
-    - Data Mining
-    - PyTorch
-  releaseDate: 2023-03-03
-  github_url: https://github.com/SarahAmiraslani/fashion-data-miner
-  image: assets/img/fashion.png
-
 - url: /projects/4_project/
   title: F1 Top 10 Predictions and Track Clustering
   description: This project applies supervised learning to predict top 10 race finishes, pinpointing key factors that influence these outcomes. Additionally, it employs unsupervised learning to cluster race tracks based on characteristics like layout and surface, offering novel insights into racing strategies and optimizing performance.

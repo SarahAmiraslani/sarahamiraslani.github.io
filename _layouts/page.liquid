@@ -12,20 +12,21 @@ layout: default
   </article>
 
   {% if page.github %}
-    <h2>Codebase</h2>
-    <div class="publications">
-      <a href="{{ page.github }}">View on GitHub</a>
-    </div>
+  <h2>Codebase</h2>
+  <div class="publications" style="margin-bottom: 20px;"> <!-- Added inline style here -->
+    <a href="{{ page.github }}">View on GitHub</a>
+
+  </div>
   {% endif %}
 
   {% if page.related_publications %}
-    <h2>References</h2>
-    <div class="publications">
-      {% bibliography --cited_in_order %}
-    </div>
+  <h2>References</h2>
+  <div class="publications">
+    {% bibliography --cited_in_order %}
+  </div>
   {% endif %}
 
   {% if site.giscus and page.giscus_comments %}
-    {% include giscus.liquid %}
+  {% include giscus.liquid %}
   {% endif %}
 </div>

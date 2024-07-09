@@ -5,8 +5,8 @@ date: 2024-05-24 11:12:00-0400
 description: an example of a blog post with some math
 tags: data-mining
 categories: sample-posts
-featured: false
-related_posts: false
+featured: true
+related_posts: true
 giscus: true
 giscuss_comments: true
 excerpt_separator: <!--more-->

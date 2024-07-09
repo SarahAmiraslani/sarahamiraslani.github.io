@@ -232,6 +232,8 @@
             
           
             
+          
+            
               
                 <li class="nav-item ">
                   
@@ -380,6 +382,38 @@
 
   
     
+      
+
+  
+    
+    <br>
+    <hr>
+    <br>
+    <ul class="list-disc pl-8"></ul>
+
+    <!-- Adds related posts to the end of an article -->
+    <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2>
+    <p class="mb-2">Here are some more articles you might like to read next:</p>
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2024/modeling-influence-in-networks/">Modeling Influence in Networks</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2024/starwars-network/">Network Analysis of the Star Wars Films</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2024/info-visualization-bechdel-test/">Exploring Information Visualization with the Bechdel Test</a>
+  </li>
+
+
+    
   
 
   
@@ -400,7 +434,7 @@
 
       
       
-        Last updated: July 08, 2024.
+        Last updated: July 09, 2024.
       
     </div>
   </footer>
@@ -652,7 +686,18 @@
               handler: () => {
                 window.location.href = "/cv/";
               },
-            },{id: "post-network-analysis-of-the-star-wars-films",
+            },{id: "post-modeling-influence-in-networks",
+          
+            title: "Modeling Influence in Networks",
+          
+          description: "an example of a blog post with some math",
+          section: "Posts",
+          handler: () => {
+            
+              window.location.href = "/blog/2024/modeling-influence-in-networks/";
+            
+          },
+        },{id: "post-network-analysis-of-the-star-wars-films",
           
             title: "Network Analysis of the Star Wars Films",
           
@@ -690,13 +735,18 @@
               description: "This project investigates the effectiveness of student-generated drawings in facilitating the learning of abstract science concepts. By comparing various visualization strategies and key covariates in a controlled lab setting, we aim to uncover how different methods influence comprehension of complex topics and lead to better learning outcomes.",
               section: "Projects",handler: () => {
                   window.location.href = "/projects/1_project/";
+                },},{id: "projects-addressing-employee-turnover-a-case-study-in-presenting-data-science-results",
+              title: 'Addressing Employee Turnover: A Case Study in Presenting Data Science Results',
+              description: "",
+              section: "Projects",handler: () => {
+                  window.location.href = "/projects/2_project/";
                 },},{id: "projects-tracing-the-origins-of-solar-wind-with-machine-learning",
               title: 'Tracing the Origins of Solar Wind with Machine Learning',
-              description: "This project uses in-situ measurements and unsupervised learning to cluster solar wind with similar properties and map it to its coronal origins, aiming to enhance predictions of heliospheric phenomena through machine learning.",
+              description: "The project employs machine learning to analyze the physical characteristics of solar wind, trace its origins in the solar corona, and improve the prediction of heliophysical phenomena.",
               section: "Projects",handler: () => {
                   window.location.href = "/projects/3_project/";
-                },},{id: "projects-f1-race-predictions-and-track-clustering",
-              title: 'F1 Race Predictions and Track Clustering',
+                },},{id: "projects-formula-1-analytics-predicting-top-10-finishes-and-clustering-race-tracks",
+              title: 'Formula 1 Analytics: Predicting Top 10 Finishes and Clustering Race Tracks',
               description: "This project leverages machine learning to predict top 10 finishes in Formula 1 races using data from the Ergast Developer API, while also clustering race tracks based on their characteristics to latent groupings among F1 circuits worldwide.",
               section: "Projects",handler: () => {
                   window.location.href = "/projects/4_project/";

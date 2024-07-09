@@ -22,7 +22,7 @@
   
 </title>
 <meta name="author" content="Sarah H. Amiraslani">
-<meta name="description" content="This project uses in-situ measurements and unsupervised learning to cluster solar wind with similar properties and map it to its coronal origins, aiming to enhance predictions of heliospheric phenomena through machine learning.">
+<meta name="description" content="The project employs machine learning to analyze the physical characteristics of solar wind, trace its origins in the solar corona, and improve the prediction of heliophysical phenomena.">
 
   <meta name="keywords" content="portfolio-website, sarah-amiraslani, data-science, analytics, data, quantitative, portfolio">
 
@@ -36,14 +36,14 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Sarah H. Amiraslani | Tracing the Origins of Solar Wind with Machine Learning">
   <meta property="og:url" content="http://0.0.0.0:8080/projects/3_project/">
-  <meta property="og:description" content="This project uses in-situ measurements and unsupervised learning to cluster solar wind with similar properties and map it to its coronal origins, aiming to enhance predictions of heliospheric phenomena through machine learning.">
+  <meta property="og:description" content="The project employs machine learning to analyze the physical characteristics of solar wind, trace its origins in the solar corona, and improve the prediction of heliophysical phenomena.">
   
   <meta property="og:locale" content="en">
 
   <!-- Twitter card -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Tracing the Origins of Solar Wind with Machine Learning">
-  <meta name="twitter:description" content="This project uses in-situ measurements and unsupervised learning to cluster solar wind with similar properties and map it to its coronal origins, aiming to enhance predictions of heliospheric phenomena through machine learning.">
+  <meta name="twitter:description" content="The project employs machine learning to analyze the physical characteristics of solar wind, trace its origins in the solar corona, and improve the prediction of heliophysical phenomena.">
   
   
 
@@ -97,7 +97,7 @@
         },
         "url": "http://0.0.0.0:8080/projects/3_project/",
         "@type": "WebSite",
-        "description": "This project uses in-situ measurements and unsupervised learning to cluster solar wind with similar properties and map it to its coronal origins, aiming to enhance predictions of heliospheric phenomena through machine learning.",
+        "description": "The project employs machine learning to analyze the physical characteristics of solar wind, trace its origins in the solar corona, and improve the prediction of heliophysical phenomena.",
         "headline": "Tracing the Origins of Solar Wind with Machine Learning",
         
         "sameAs": ["https://github.com/SarahAmiraslani", "https://www.linkedin.com/in/samirasl", "https://medium.com/@Sarah Amiraslani", "https://gitlab.com/SarahAmiraslani", "https://www.kaggle.com/sarahamiraslani7"],
@@ -235,6 +235,8 @@
             
           
             
+          
+            
               
                 <li class="nav-item ">
                   
@@ -328,23 +330,21 @@
   <header class="post-header">
     <h1 class="post-title">Tracing the Origins of Solar Wind with Machine Learning</h1>
     <p class="post-description"></p>
-<p>This project uses in-situ measurements and unsupervised learning to cluster solar wind with similar properties and map it to its coronal origins, aiming to enhance predictions of heliospheric phenomena through machine learning.</p>
+<p>The project employs machine learning to analyze the physical characteristics of solar wind, trace its origins in the solar corona, and improve the prediction of heliophysical phenomena.</p>
 
   </header>
 
   <article>
-    <h1 id="project-statement">Project Statement</h1>
-
-<p>The research project employs machine learning techniques to analyze the physical characteristics of solar wind, trace its origins in the solar corona, and improve the prediction of heliophysical phenomena. By utilizing data from the Advanced Composition Explorer (ACE) spacecraft sensors and indices from the Heliospheric Current Sheet (HCS), our goal is to enhance the understanding of solar wind properties and their coronal sources. This deeper insight aims to improve the prediction of future sunspots on the Sun.</p>
-
-<h1 id="introduction">Introduction</h1>
+    <h1 id="introduction">Introduction</h1>
 
 <h2 id="solar-wind">Solar Wind</h2>
+
 <p>The solar corona, the outermost part of the Sun’s atmosphere, emits a continuous flow of charged particles and magnetic fields known as the solar wind. This high-energy stream escapes the Sun’s gravitational influence, permeates the entire solar system, and plays a pivotal role in shaping space weather conditions that affect Earth and other celestial bodies (CITE). The solar wind extends the Sun’s magnetic field across the solar system, which can lead to geomagnetic storms when interacting with Earth’s magnetic field. These storms can disrupt satellite functions, communications, and terrestrial power systems (CITE).</p>
 
 <p>Understanding the solar wind’s characteristics is crucial for forecasting space weather conditions. Direct measurements in space are essential for tracing the solar wind’s origins near the Sun, where the plasma is accelerated, heated, and ionized. Traditionally, the classification of solar wind sources has relied on six in-situ measured physical properties: proton speed, proton entropy, proton temperature, ion charge states, and elemental composition <a class="citation" href="#zhao2017relation">(Zhao et al., 2017)</a>. However, these measurements face challenges due to overlapping property values and the dynamic interactions of the solar wind with various elements of the solar system, which can obscure the definitive origins of the wind. Consequently, researchers often rely on subjective interpretation of continuous data distributions, making accurate categorization of the solar wind difficult.</p>
 
 <h2 id="sunspots">Sunspots</h2>
+
 <p>Sunspots, observed since the 1800s, exhibit a cyclic pattern with an average period of about 11 years, serving as a critical measure of solar activity (David Hathaway, 2017). Sunspots are linked to phenomena like solar flares and coronal mass ejections, which can impact satellite communications, power grids, and Earth’s climate. These spots originate from regions on the Sun with intense magnetic fields, marking areas of inhibited convective plasma flow.</p>
 
 <p>Sunspots also play a role in determining the Sun’s rotation period, approximately 27 days (David Hathaway, 2017). Historical data show fluctuations in sunspot cycle amplitudes, with peaks averaging around 150. Periods like the Maunder Minimum highlight phases of reduced solar activity. Understanding these patterns requires continuous monitoring to predict solar behavior accurately, ensuring preparedness for potential impacts on technology and climate.</p>
@@ -357,38 +357,30 @@
   <li>How can novel dimension reduction methods, like PCA and t-SNE, enhance the representation and visualization of solar wind data?</li>
   <li>How can feature selection methods rank the importance of solar wind parameters?</li>
   <li>Can clustering methods like DBSCAN and OPTICS reveal differences in solar wind categories based on their coronal origins?</li>
+  <li>Can we accurately forecast the number of sunspots on the sun?</li>
 </ol>
 
 <h1 id="data">Data</h1>
 
-<p><a href="https://science.nasa.gov/mission/ace/" rel="external nofollow noopener" target="_blank"><strong>Advanced Composition Explorer (ACE) Spacecraft Data</strong></a>: launched in 1997, NASA’s Advanced Composition Explorer (ACE) mission captures and analyzes particles from solar, interplanetary, interstellar, and galactic sources. Its primary aim is to explore the connections between the Sun, Earth, and the Milky Way by examining materials expelled by the Sun. ACE data comprise in-situ measurements collected at the Sun-Earth L1 Lagrange point, about 870,000 miles (1.4 million kilometers) from Earth (NASA, n.d.)—where the gravitational pull between the Earth and the Sun is at equilibrium. ACE is equipped with nine instruments: Solar Wind Ion Mass Spectrometer (SWIMS), Solar Wind Ion Composition Spectrometer (SWICS), Ultra-Low Energy Isotope Spectrometer (ULEIS), Solar Energetic Particle Ionic Charge Analyzer (SEPICA), Solar Isotope Spectrometer (SIS), Cosmic Ray Isotope Spectrometer (CRIS), Solar Wind Electron, Proton, and Alpha Monitor (SWEPAM), Electron, Proton, and Alpha-Particle Monitor (EPAM), Magnetometer (MAG), Real Time Solar Wind Experiment (RTSW).</p>
+<h2 id="advanced-composition-explorer-ace-spacecraft-data"><a href="https://science.nasa.gov/mission/ace/" rel="external nofollow noopener" target="_blank">Advanced Composition Explorer (ACE) Spacecraft Data</a></h2>
+<p>Launched in 1997, NASA’s Advanced Composition Explorer (ACE) mission captures and analyzes particles from solar, interplanetary, interstellar, and galactic sources. Its primary aim is to explore the connections between the Sun, Earth, and the Milky Way by examining materials expelled by the Sun. ACE data comprise in-situ measurements collected at the Sun-Earth L1 Lagrange point, about 870,000 miles (1.4 million kilometers) from Earth — where the gravitational pull between the Earth and the Sun is at equilibrium <a class="citation" href="#nasa_solar">(NASA, n.d.)</a>. ACE is equipped with nine instruments: Solar Wind Ion Mass Spectrometer (<code class="language-plaintext highlighter-rouge">SWIMS</code>), Solar Wind Ion Composition Spectrometer (<code class="language-plaintext highlighter-rouge">SWICS</code>), Ultra-Low Energy Isotope Spectrometer (<code class="language-plaintext highlighter-rouge">ULEIS</code>), Solar Energetic Particle Ionic Charge Analyzer (<code class="language-plaintext highlighter-rouge">SEPICA</code>), Solar Isotope Spectrometer (<code class="language-plaintext highlighter-rouge">SIS</code>), Cosmic Ray Isotope Spectrometer (<code class="language-plaintext highlighter-rouge">CRIS</code>), Solar Wind Electron, Proton, and Alpha Monitor (<code class="language-plaintext highlighter-rouge">SWEPAM</code>), Electron, Proton, and Alpha-Particle Monitor (<code class="language-plaintext highlighter-rouge">EPAM</code>), Magnetometer (<code class="language-plaintext highlighter-rouge">MAG</code>), Real Time Solar Wind Experiment (<code class="language-plaintext highlighter-rouge">RTSW</code>) <a class="citation" href="#garrard1998ace">(Garrard et al., 1998)</a>.</p>
 
-<p>We focus on the data from two main instruments of the ACE satellite:</p>
+<p>We focus on the data from four  instruments of the ACE satellite:</p>
 
 <ul>
   <li>
-    <p>SWEPAM McComas et al. (1998), for Solar Wind Electron, Proton and Alpha Monitor measures rates of electron and ion flows with two distinct electrostatic analyzers with fan- shaped fields of view that use the spacecraft’s rotation to observe in all directions. The first one observes electrons in the 1 eV–1.35 keV energy range and the second one ions in the 0.26–36 keV energy range.</p>
+    <p><strong>Solar Wind Electron, Proton and Alpha Monitor</strong> (<code class="language-plaintext highlighter-rouge">SWEPAM</code>): measures rates of electron and ion flows with two distinct electrostatic analyzers with fan- shaped fields of view that use the spacecraft’s rotation to observe in all directions. The first one observes electrons in the 1 eV–1.35 keV energy range and the second one ions in the 0.26–36 keV energy range <a class="citation" href="#mccomas1998solar">(McComas et al., 1998)</a>.</p>
   </li>
   <li>
-    <p>MAG, for Magnetic Field Monitor, consists of a set of twin sensors (triaxial fluxgate magnetometers, Stone et al. (1998)) measuring the three components of the interplanetary magnetic field at L1</p>
+    <p><strong>Magnetic Field Monitor</strong> (<code class="language-plaintext highlighter-rouge">MAG</code>): consists of a set of twin sensors measuring the three components of the interplanetary magnetic field at L1 <a class="citation" href="#stone1998advanced">(Stone et al., 1998)</a>.</p>
+  </li>
+  <li>
+    <p><strong>Electron, Proton, and Alpha-Particle Monitor</strong> (<code class="language-plaintext highlighter-rouge">EPAM</code>):</p>
+  </li>
+  <li>
+    <p><strong>Solar Wind Ion Mass Spectrometer</strong> (<code class="language-plaintext highlighter-rouge">SWIMS</code>): <a class="citation" href="#gloeckler1992solar">(Gloeckler et al., 1992)</a></p>
   </li>
 </ul>
-
-<p><a href="https://www.sidc.be/SILSO/infosnmtot" rel="external nofollow noopener" target="_blank"><strong>Sunspot Index and Long-term Solar Observations</strong></a>: Monthly mean total sunspot number: This dataset contains monthly mean total sunspot numbers, which are averages derived from daily total counts per calendar month, starting from January 1749 up to the last elapsed month. This extensive time range is due to data availability only from 1749 onward because of sparse earlier observations. The dataset is available in plain ASCII text and CSV formats, detailing columns for the year, month, date in fraction of year, monthly mean sunspot number, monthly standard deviation, and number of observations used. Notably, an error value of -1 indicates missing observations, with the monthly standard deviation calculated from daily values. These monthly mean values provide critical insights into long-term solar activity patterns essential for various scientific and operational purposes.</p>
-
-<p><strong>Heliospheric Current Sheet (HCS) Indexes</strong>: Curated by Dr. Liang Zhao from the University of Michigan, this dataset encompasses heliospheric current attributes recorded bi-monthly from 1976 to 2022. The key features of this dataset include the SD index and the SL index. The SD index describes the standard deviation of the HCS’s latitude, while the SL index describes the HCS’s integrated slope. These novel, derived parameters simplify current methods of evaluating HCS activity and tracking the solar cycle. In compliance with non-disclosure agreements, sharing this dataset with the public is restricted.</p>
-
-<style>
-.responsive-iframe {
-  width: 100%;
-  height: 600px; /* Adjust the height as needed */
-}
-</style>
-
-<iframe class="responsive-iframe" src="https://eyes.nasa.gov/apps/solar-system/#/sc_ace" allowfullscreen=""></iframe>
-<div class="caption">
-    <a class="citation" href="#nasa_solar_system">(NASA Jet Propulsion Laboratory, n.d.)</a>.
-</div>
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -456,9 +448,27 @@
     (left) A Boeing Delta II expendable launch vehicle lifts off with the Advanced Composition Explorer (ACE) from Cape Canaveral Air Station, Florida, on August 25, 1997. ACE reached its intended location at the Sun-Earth L1 Lagrange Point on January 21, 1998, and has been collecting data ever since, far exceeding its expected five-year lifespan. (center) An artist’s rendition of ACE in space. (right) A depiction of ACE’s scientific instruments.
 </div>
 
+<style>
+.responsive-iframe {
+  width: 100%;
+  height: 600px; /* Adjust the height as needed */
+}
+</style>
+
+<iframe class="responsive-iframe" src="https://eyes.nasa.gov/apps/solar-system/#/sc_ace" allowfullscreen=""></iframe>
+<div class="caption">
+    <a class="citation" href="#nasa_solar_system">(NASA Jet Propulsion Laboratory, n.d.)</a>.
+</div>
+
+<h2 id="sunspot-index-and-long-term-solar-observations"><a href="https://www.sidc.be/SILSO/infosnmtot" rel="external nofollow noopener" target="_blank">Sunspot Index and Long-term Solar Observations</a></h2>
+<p>Monthly mean total sunspot number: This dataset contains monthly mean total sunspot numbers, which are averages derived from daily total counts per calendar month, starting from January 1749 up to the last elapsed month. This extensive time range is due to data availability only from 1749 onward because of sparse earlier observations. The dataset is available in plain ASCII text and CSV formats, detailing columns for the year, month, date in fraction of year, monthly mean sunspot number, monthly standard deviation, and number of observations used. Notably, an error value of -1 indicates missing observations, with the monthly standard deviation calculated from daily values. These monthly mean values provide critical insights into long-term solar activity patterns essential for various scientific and operational purposes.</p>
+
+<h2 id="heliospheric-current-sheet-hcs-indexes">Heliospheric Current Sheet (HCS) Indexes</h2>
+<p>Curated by Dr. Liang Zhao from the University of Michigan, this dataset encompasses heliospheric current attributes recorded bi-monthly from 1976 to 2022. The key features of this dataset include the SD index and the SL index. The SD index describes the standard deviation of the HCS’s latitude, while the SL index describes the HCS’s integrated slope. These novel, derived parameters simplify current methods of evaluating HCS activity and tracking the solar cycle. In compliance with non-disclosure agreements, sharing this dataset with the public is restricted.</p>
+
 <h1 id="data-wrangling">Data Wrangling</h1>
 
-<p>ACE data is stored in daily HDF files. We developed Python utilities to scrape, concatenate, and merge hourly data from multiple instruments (MAG, SWEPAM, EPAM, SWICS). We handled data quality issues by removing rows with bad measurements and transforming quantitative data using a logarithm base 10 and Min-Max scaling. This approach minimized biases and ensured uniform scaling across variables.</p>
+<p>ACE data is stored in daily HDF files. We developed Python utilities to scrape, concatenate, and merge hourly data from multiple instruments (<code class="language-plaintext highlighter-rouge">MAG</code>, <code class="language-plaintext highlighter-rouge">SWEPAM</code>, <code class="language-plaintext highlighter-rouge">EPAM</code>, <code class="language-plaintext highlighter-rouge">SWICS</code>). We handled data quality issues by removing rows with bad measurements and transforming quantitative data using a logarithm base 10 and Min-Max scaling. This approach minimized biases and ensured uniform scaling across variables.</p>
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -495,7 +505,7 @@
 
 <p>We thank the ACE Science Center (ASC) for maintaining the ACE spacecraft data, and acknowledge the support of NASA’s National Space Science Data Center, the Space Physics Data Facility, and Edward C. Stone of Caltech, the Principal Investigator for the ACE project.</p>
 
-<p>#TODO: thank UMICH prof</p>
+<p>We would also like to thank Dr. Liang Zhao for supporting our capstone project and providing Heliospheric Current Sheet (HCS) Indexes.</p>
 
 <style>
 .custom-img-container {
@@ -545,7 +555,7 @@
 
       
       
-        Last updated: July 08, 2024.
+        Last updated: July 09, 2024.
       
     </div>
   </footer>
@@ -800,7 +810,18 @@
               handler: () => {
                 window.location.href = "/cv/";
               },
-            },{id: "post-network-analysis-of-the-star-wars-films",
+            },{id: "post-modeling-influence-in-networks",
+          
+            title: "Modeling Influence in Networks",
+          
+          description: "an example of a blog post with some math",
+          section: "Posts",
+          handler: () => {
+            
+              window.location.href = "/blog/2024/modeling-influence-in-networks/";
+            
+          },
+        },{id: "post-network-analysis-of-the-star-wars-films",
           
             title: "Network Analysis of the Star Wars Films",
           
@@ -838,13 +859,18 @@
               description: "This project investigates the effectiveness of student-generated drawings in facilitating the learning of abstract science concepts. By comparing various visualization strategies and key covariates in a controlled lab setting, we aim to uncover how different methods influence comprehension of complex topics and lead to better learning outcomes.",
               section: "Projects",handler: () => {
                   window.location.href = "/projects/1_project/";
+                },},{id: "projects-addressing-employee-turnover-a-case-study-in-presenting-data-science-results",
+              title: 'Addressing Employee Turnover: A Case Study in Presenting Data Science Results',
+              description: "",
+              section: "Projects",handler: () => {
+                  window.location.href = "/projects/2_project/";
                 },},{id: "projects-tracing-the-origins-of-solar-wind-with-machine-learning",
               title: 'Tracing the Origins of Solar Wind with Machine Learning',
-              description: "This project uses in-situ measurements and unsupervised learning to cluster solar wind with similar properties and map it to its coronal origins, aiming to enhance predictions of heliospheric phenomena through machine learning.",
+              description: "The project employs machine learning to analyze the physical characteristics of solar wind, trace its origins in the solar corona, and improve the prediction of heliophysical phenomena.",
               section: "Projects",handler: () => {
                   window.location.href = "/projects/3_project/";
-                },},{id: "projects-f1-race-predictions-and-track-clustering",
-              title: 'F1 Race Predictions and Track Clustering',
+                },},{id: "projects-formula-1-analytics-predicting-top-10-finishes-and-clustering-race-tracks",
+              title: 'Formula 1 Analytics: Predicting Top 10 Finishes and Clustering Race Tracks',
               description: "This project leverages machine learning to predict top 10 finishes in Formula 1 races using data from the Ergast Developer API, while also clustering race tracks based on their characteristics to latent groupings among F1 circuits worldwide.",
               section: "Projects",handler: () => {
                   window.location.href = "/projects/4_project/";

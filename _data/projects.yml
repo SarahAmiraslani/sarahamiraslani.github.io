@@ -11,11 +11,13 @@
   image: /assets/img/kpca.png
 
 - url: /projects/4_project/
-  title: F1 Top 10 Predictions and Track Clustering
+  title: "Formula 1 Analytics: Predicting Top 10 Finishes and Clustering Race Tracks"
   description: This project applies supervised learning to predict top 10 race finishes, pinpointing key factors that influence these outcomes. Additionally, it employs unsupervised learning to cluster race tracks based on characteristics like layout and surface, offering novel insights into racing strategies and optimizing performance.
   technologies:
     - Random Forest
     - Logistic Regression
+    - Neural Networks
+    - DBSCAN
   releaseDate: 2024-04-01
   github_url: https://github.com/SarahAmiraslani/F1-Milestone-Tharval-Amiraslani-Korbin
   image: assets/img/track-clusters.png

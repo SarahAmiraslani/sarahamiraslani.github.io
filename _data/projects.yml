@@ -8,7 +8,7 @@
     - t-SNE
     - DBSCAN
   github_url: https://github.com/SarahAmiraslani/solar-wind-coronal-origin-ml
-  image: /assets/img/kpca.png
+  image: /assets/img/KPCA.png
 
 - url: /projects/4_project/
   title: "Formula 1 Analytics: Predicting Top 10 Finishes and Clustering Race Tracks"

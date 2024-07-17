@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-  <!-- Head -->
+<html>
+
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
     <!-- Metadata, OpenGraph and Schema.org -->
 
 
@@ -124,9 +123,6 @@
 <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light">
 
 
-  <!-- Sidebar Table of Contents -->
-  <link defer href="/assets/css/bootstrap-toc.min.css?6f5af0bb9aab25d79b2448143cbeaa88" rel="stylesheet">
-
 
 <!-- Styles -->
 
@@ -158,10 +154,98 @@
 
 
 
+    
+    <!-- Medium Zoom JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script>
+    <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script>
+    
+    <!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    
+  
+    <!-- MathJax -->
+    <script type="text/javascript">
+      window.MathJax = {
+        tex: {
+          tags: 'ams',
+        },
+      };
+    </script>
+    <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.min.js" integrity="sha256-rjmgmaB99riUNcdlrDtcAiwtLIojSxNyUFdl+Qh+rB4=" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script>
+  
+
+
+    <!-- Distill js -->
+    <script src="/assets/js/distillpub/template.v2.js"></script>
+    <script src="/assets/js/distillpub/transforms.v2.js"></script>
+    <script src="/assets/js/distillpub/overrides.js"></script>
+    
   </head>
 
-  <!-- Body -->
-  <body class="fixed-top-nav ">
+  <body>
+<d-front-matter>
+    <script async type="text/json">
+      {
+            "title": "Formula 1 Analytics: Predicting Top 10 Finishes and Clustering Race Tracks",
+            "description": "This project leverages machine learning to predict top 10 finishes in Formula 1 races using data from the Ergast Developer API, while also clustering race tracks based on their characteristics to latent groupings among F1 circuits worldwide.",
+            "published": "May 22, 2021",
+            "authors": [
+              
+              {
+                "author": "Sarah Amiraslani",
+                "authorURL": "samirasl@umich.edu",
+                "affiliations": [
+                  {
+                    "name": "University of Michigan, Ann Arbor",
+                    "url": ""
+                  }
+                ]
+              },
+              
+              {
+                "author": "Akshay Tharval",
+                "authorURL": "tharval@umich.edu",
+                "affiliations": [
+                  {
+                    "name": "University of Michigan, Ann Arbor",
+                    "url": ""
+                  }
+                ]
+              },
+              
+              {
+                "author": "Sam Kobrin",
+                "authorURL": "kobrin@umich.edu",
+                "affiliations": [
+                  {
+                    "name": "University of Michigan, Ann Arbor",
+                    "url": ""
+                  }
+                ]
+              }
+              
+            ],
+            "katex": {
+              "delimiters": [
+                {
+                  "left": "$",
+                  "right": "$",
+                  "display": false
+                },
+                {
+                  "left": "$$",
+                  "right": "$$",
+                  "display": true
+                }
+              ]
+            }
+          }
+    </script>
+  </d-front-matter>
+
+  
     <!-- Header -->
     <header>
   <!-- Nav Bar -->
@@ -316,26 +400,60 @@
 
 
     <!-- Content -->
-    <div class="container mt-5" role="main">
+    <div class="post distill">
+      <d-title>
+        <h1>Formula 1 Analytics: Predicting Top 10 Finishes and Clustering Race Tracks</h1>
+        <p>This project leverages machine learning to predict top 10 finishes in Formula 1 races using data from the Ergast Developer API, while also clustering race tracks based on their characteristics to latent groupings among F1 circuits worldwide.</p>
+      </d-title>
       
+      <d-byline></d-byline>
+      
+
+      <d-article>
         
-          <div class="row">
-            <!-- sidebar, which will move to the top on a small screen -->
-            <div class="col-sm-3">
-              <nav id="toc-sidebar" class="sticky-top"></nav>
+        <d-contents>
+          <nav class="l-text figcaption">
+            <h3>Contents</h3>
+            
+            <div>
+              <a href="#introduction">Introduction</a>
             </div>
-            <!-- main content area -->
-            <div class="col-sm-9">
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">Formula 1 Analytics: Predicting Top 10 Finishes and Clustering Race Tracks</h1>
-    <p class="post-description"></p>
-<p>This project leverages machine learning to predict top 10 finishes in Formula 1 races using data from the Ergast Developer API, while also clustering race tracks based on their characteristics to latent groupings among F1 circuits worldwide.</p>
-
-  </header>
-
-  <article>
-    <div class="row mt-3">
+            
+            
+            <div>
+              <a href="#data-source">Data Source</a>
+            </div>
+            
+            
+            <div>
+              <a href="#preprocessing">Preprocessing</a>
+            </div>
+            
+            
+            <div>
+              <a href="#exploratory-data-analysis">Exploratory Data Analysis</a>
+            </div>
+            
+            
+            <div>
+              <a href="#feature-engineering">Feature Engineering</a>
+            </div>
+            
+            
+            <div>
+              <a href="#modeling">Modeling</a>
+            </div>
+            
+            
+            <div>
+              <a href="#discussion">Discussion</a>
+            </div>
+            
+            
+          </nav>
+        </d-contents>
+        
+        <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         
 
@@ -436,7 +554,7 @@ A driver must finish within the top ten to receive a point for setting the faste
 
 <h1 id="data-source">Data Source</h1>
 
-<p>The Ergast Developer API serves as a pivotal data source for our Formula 1 analysis, offering an extensive repository of historical race data, including driver standings, race results, and qualifying times <a class="citation" href="#ergast">(Ergast, n.d.)</a>. Renowned for its comprehensive coverage of F1 statistics, the API has been instrumental in various analytical projects, ranging from predictive modeling to detailed statistical analyses of driver performances. In our project, the Ergast API provided a robust foundation for both the supervised and unsupervised learning components. We used it to extract datasets spanning from 1995 to the present, reflecting our focus on the modern era of Formula 1 racing. This period is characterized by significant technological advancements and regulatory changes, making the data particularly relevant for our analysis. Key features of the API that we leveraged include its ability to filter data by race season, event, and individual driver/team performance metrics. This flexibility allowed us to tailor our dataset precisely to the needs of our predictive models and clustering algorithms, ensuring a high degree of accuracy and relevance in our analysis.</p>
+<p>The Ergast Developer API serves as a pivotal data source for our Formula 1 analysis, offering an extensive repository of historical race data, including driver standings, race results, and qualifying times <d-cite key="ergast"></d-cite>. Renowned for its comprehensive coverage of F1 statistics, the API has been instergastrumental in various analytical projects, ranging from predictive modeling to detailed statistical analyses of driver performances. In our project, the Ergast API provided a robust foundation for both the supervised and unsupervised learning components. We used it to extract datasets spanning from 1995 to the present, reflecting our focus on the modern era of Formula 1 racing. This period is characterized by significant technological advancements and regulatory changes, making the data particularly relevant for our analysis. Key features of the API that we leveraged include its ability to filter data by race season, event, and individual driver/team performance metrics. This flexibility allowed us to tailor our dataset precisely to the needs of our predictive models and clustering algorithms, ensuring a high degree of accuracy and relevance in our analysis.</p>
 
 <!-- Table -->
 <table class="styled-table">
@@ -613,7 +731,7 @@ A driver must finish within the top ten to receive a point for setting the faste
 <h1 id="exploratory-data-analysis">Exploratory Data Analysis</h1>
 <p>Our data analysis phase utilized a suite of visual tools to dissect and understand the underlying patterns within the Formula 1 dataset. Through the deployment of heatmaps, we were able to discern the correlation matrix across various features, providing us with an initial glimpse into the relationships between variables such as qualifying times, previous year’s positions, and their impact on race outcomes. Pair plots further enriched our analysis by offering a granular view of the pairwise relationships between features, revealing trends, clusters, and potential outliers that could influence model performance. Additionally, leveraging feature importance plots, particularly from our Random Forest model, allowed us to identify the most predictive variables in determining top 10 finishes. This visual exploration not only guided our feature selection process but also offered profound insights into the factors that most significantly affect race performance, laying a robust foundation for our predictive modeling efforts. This comprehensive approach to data analysis ensures that our models are built on a nuanced understanding of the dataset, maximizing their ability to uncover meaningful patterns and predictions.</p>
 
-<h3 id="heatmap">Heatmap</h3>
+<h2 id="heatmap">Heatmap</h2>
 <p>A heatmap is a graphical representation of data where values are depicted by color, allowing for an intuitive perception of patterns, such as correlations between variables in a dataset, which can be crucial for identifying relationships and trends at a glance.</p>
 
 <div class="col-sm mt-3 mt-md-0">
@@ -650,7 +768,7 @@ A driver must finish within the top ten to receive a point for setting the faste
 <strong>Low Correlation between Previous Year Position and Current Position</strong>: There is a very weak negative correlation (almost zero) between <code class="language-plaintext highlighter-rouge">prev_year_pos</code> and <code class="language-plaintext highlighter-rouge">position</code>. This suggests that the previous year’s race position does not have a strong predictive power on the current year’s race outcome.</li>
 </ul>
 
-<h3 id="pairplot">PairPlot</h3>
+<h2 id="pairplot">PairPlot</h2>
 <p>A pair plot, or a scatterplot matrix, visualizes pairwise relationships between variables in a dataset, combining scatter plots for each variable combination with histograms to show the distribution of each variable, thus providing a comprehensive overview of correlations, trends, and distributions all in one figure.</p>
 
 <div class="col-sm mt-3 mt-md-0">
@@ -685,7 +803,7 @@ A driver must finish within the top ten to receive a point for setting the faste
 <strong>Timing and Qualifying Position</strong>: There is a trend visible in the scatter plots of the timing variables (q1_timing, <code class="language-plaintext highlighter-rouge">q2_timing</code>, <code class="language-plaintext highlighter-rouge">q3_timing</code>) against qualifying_pos. Drivers with lower qualifying positions tend to have lower (faster) timings in all three qualifying sessions, particularly noticeable in <code class="language-plaintext highlighter-rouge">q2_timing</code> and <code class="language-plaintext highlighter-rouge">q3_timing</code>.</li>
 </ul>
 
-<h3 id="feature-importance-plot">Feature Importance Plot</h3>
+<h2 id="feature-importance-plot">Feature Importance Plot</h2>
 <p>A feature importance plot ranks the features of a model based on their importance in making accurate predictions, and in the context of a RandomForestClassifier, it reflects how much each feature contributes to reducing the variance in the model’s predictions.</p>
 
 <div class="col-sm mt-3 mt-md-0">
@@ -921,23 +1039,16 @@ The feature importance plot and the pair plot provided valuable insights into th
 </style>
 
 
-  </article>
+      </d-article>
 
-  
-  <h2>Codebase</h2>
-  <div class="publications" style="margin-bottom: 20px;"> <!-- Added inline style here -->
-    <a href="https://github.com/SarahAmiraslani/formula1-predictions-track-clustering" rel="external nofollow noopener" target="_blank">View on GitHub</a>
+      <d-appendix>
+        <d-footnote-list></d-footnote-list>
+        <d-citation-list></d-citation-list>
+      </d-appendix>
 
-  </div>
-  
+      <d-bibliography src="/assets/bibliography/formula-one-distill.bib"></d-bibliography>
 
-  
-
-  
-</div>
-</div>
-          </div>
-        
+      
       
     </div>
 
@@ -952,92 +1063,16 @@ The feature importance plot and the pair plot provided valuable insights into th
 
       
       
-        Last updated: July 15, 2024.
+        Last updated: July 16, 2024.
       
     </div>
   </footer>
 
 
-
-    <!-- JavaScripts -->
-    <!-- jQuery -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
     <!-- Bootsrap & MDB scripts -->
 <script src="/assets/js/bootstrap.bundle.min.js"></script>
 <!-- <script src="/assets/js/mdb.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
-
-    
-  <!-- Masonry & imagesLoaded -->
-  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
-  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-  <!-- Medium Zoom JS -->
-  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script>
-  <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script>
-
-
-  <!-- Sidebar Table of Contents -->
-  <script defer src="/assets/js/bootstrap-toc.min.js?c82ff4de8b0955d6ff14f5b05eed7eb6"></script>
-
-
-<!-- Bootstrap Table -->
-
-
-<!-- Load Common JS -->
-<script src="/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script>
-<script defer src="/assets/js/common.js?b7816bd189846d29eded8745f9c4cf77"></script>
-<script defer src="/assets/js/copy_code.js?12775fdf7f95e901d7119054556e495f" type="text/javascript"></script>
-
-<!-- Jupyter Open External Links New Tab -->
-<script defer src="/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script>
-
-
-
-    
-  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
-
-
-  <script async src="https://badge.dimensions.ai/badge.js"></script>
-
-
-    
-  
-    <!-- MathJax -->
-    <script type="text/javascript">
-      window.MathJax = {
-        tex: {
-          tags: 'ams',
-        },
-      };
-    </script>
-    <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.min.js" integrity="sha256-rjmgmaB99riUNcdlrDtcAiwtLIojSxNyUFdl+Qh+rB4=" crossorigin="anonymous"></script>
-    <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script>
-  
-
-
-    
 
     
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -1131,12 +1166,6 @@ The feature importance plot and the pair plot provided valuable insights into th
     }
   </script>
 
-
-    
-
-    
-
-    
 
     
   <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script>
@@ -1350,6 +1379,7 @@ The feature importance plot and the pair plot provided valuable insights into th
   </script>
 
 
-    <script src="/assets/js/shortcut-key.js"></script>
-  </body>
+  
+
+</body>
 </html>

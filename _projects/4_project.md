@@ -1,15 +1,37 @@
 ---
-layout: page
+layout: distill
 title: "Formula 1 Analytics: Predicting Top 10 Finishes and Clustering Race Tracks"
 description: This project leverages machine learning to predict top 10 finishes in Formula 1 races using data from the Ergast Developer API, while also clustering race tracks based on their characteristics to latent groupings among F1 circuits worldwide.
+date: 2021-05-22
 img: /assets/img/f1-lego.jpg
 importance: 3
 category: Machine Learning
+
+github: https://github.com/SarahAmiraslani/formula1-predictions-track-clusterin
 giscus: true
 giscuss_comments: true
-github: https://github.com/SarahAmiraslani/formula1-predictions-track-clustering
+authors:
+  - name: Sarah Amiraslani
+    url: samirasl@umich.edu
+    affiliations:
+      name: University of Michigan, Ann Arbor
+  - name: Akshay Tharval
+    url: tharval@umich.edu
+    affiliations:
+      name: University of Michigan, Ann Arbor
+  - name: Sam Kobrin
+    url: kobrin@umich.edu
+    affiliations:
+      name: University of Michigan, Ann Arbor
 toc:
-  sidebar: left
+  - name: Introduction
+  - name: Data Source
+  - name: Preprocessing
+  - name: Exploratory Data Analysis
+  - name: Feature Engineering
+  - name: Modeling
+  - name: Discussion
+bibliography: formula-one-distill.bib
 ---
 
 <div class="row mt-3">
@@ -79,7 +101,7 @@ A driver must finish within the top ten to receive a point for setting the faste
 
 # Data Source
 
-The Ergast Developer API serves as a pivotal data source for our Formula 1 analysis, offering an extensive repository of historical race data, including driver standings, race results, and qualifying times {% cite ergast %}. Renowned for its comprehensive coverage of F1 statistics, the API has been instrumental in various analytical projects, ranging from predictive modeling to detailed statistical analyses of driver performances. In our project, the Ergast API provided a robust foundation for both the supervised and unsupervised learning components. We used it to extract datasets spanning from 1995 to the present, reflecting our focus on the modern era of Formula 1 racing. This period is characterized by significant technological advancements and regulatory changes, making the data particularly relevant for our analysis. Key features of the API that we leveraged include its ability to filter data by race season, event, and individual driver/team performance metrics. This flexibility allowed us to tailor our dataset precisely to the needs of our predictive models and clustering algorithms, ensuring a high degree of accuracy and relevance in our analysis.
+The Ergast Developer API serves as a pivotal data source for our Formula 1 analysis, offering an extensive repository of historical race data, including driver standings, race results, and qualifying times <d-cite key="ergast"></d-cite>. Renowned for its comprehensive coverage of F1 statistics, the API has been instrumental in various analytical projects, ranging from predictive modeling to detailed statistical analyses of driver performances. In our project, the Ergast API provided a robust foundation for both the supervised and unsupervised learning components. We used it to extract datasets spanning from 1995 to the present, reflecting our focus on the modern era of Formula 1 racing. This period is characterized by significant technological advancements and regulatory changes, making the data particularly relevant for our analysis. Key features of the API that we leveraged include its ability to filter data by race season, event, and individual driver/team performance metrics. This flexibility allowed us to tailor our dataset precisely to the needs of our predictive models and clustering algorithms, ensuring a high degree of accuracy and relevance in our analysis.
 
 <!-- Table -->
 <table class="styled-table">
@@ -238,7 +260,7 @@ After our initial data sourcing and preprocessing, we developed a dataset that c
 #  Exploratory Data Analysis
 Our data analysis phase utilized a suite of visual tools to dissect and understand the underlying patterns within the Formula 1 dataset. Through the deployment of heatmaps, we were able to discern the correlation matrix across various features, providing us with an initial glimpse into the relationships between variables such as qualifying times, previous year's positions, and their impact on race outcomes. Pair plots further enriched our analysis by offering a granular view of the pairwise relationships between features, revealing trends, clusters, and potential outliers that could influence model performance. Additionally, leveraging feature importance plots, particularly from our Random Forest model, allowed us to identify the most predictive variables in determining top 10 finishes. This visual exploration not only guided our feature selection process but also offered profound insights into the factors that most significantly affect race performance, laying a robust foundation for our predictive modeling efforts. This comprehensive approach to data analysis ensures that our models are built on a nuanced understanding of the dataset, maximizing their ability to uncover meaningful patterns and predictions.
 
-### Heatmap
+## Heatmap
 A heatmap is a graphical representation of data where values are depicted by color, allowing for an intuitive perception of patterns, such as correlations between variables in a dataset, which can be crucial for identifying relationships and trends at a glance.
 
 <div class="col-sm mt-3 mt-md-0">
@@ -251,7 +273,7 @@ A heatmap is a graphical representation of data where values are depicted by col
 - **Weak Correlation between Q1 Timing and Other Features**: The `q1_timing` shows relatively weak correlations with other features, with the highest being around 0.17 with `q2_timing`. This might suggest that the Q1 timing is less indicative of the final position or the performances in the later qualifying rounds.
 - **Low Correlation between Previous Year Position and Current Position**: There is a very weak negative correlation (almost zero) between `prev_year_pos` and `position`. This suggests that the previous year's race position does not have a strong predictive power on the current year's race outcome.
 
-### PairPlot
+## PairPlot
 A pair plot, or a scatterplot matrix, visualizes pairwise relationships between variables in a dataset, combining scatter plots for each variable combination with histograms to show the distribution of each variable, thus providing a comprehensive overview of correlations, trends, and distributions all in one figure.
 
 <div class="col-sm mt-3 mt-md-0">
@@ -263,7 +285,7 @@ A pair plot, or a scatterplot matrix, visualizes pairwise relationships between 
 - **Top 10 Finishers Distribution**: When looking at the hue for `position`, there appears to be a concentration of top 10 finishers (denoted by the color, possibly orange) with lower `qualifying_pos` values, reinforcing the importance of qualifying performance on race outcomes.
 - **Timing and Qualifying Position**: There is a trend visible in the scatter plots of the timing variables (q1_timing, `q2_timing`, `q3_timing`) against qualifying_pos. Drivers with lower qualifying positions tend to have lower (faster) timings in all three qualifying sessions, particularly noticeable in `q2_timing` and `q3_timing`.
 
-### Feature Importance Plot
+## Feature Importance Plot
 A feature importance plot ranks the features of a model based on their importance in making accurate predictions, and in the context of a RandomForestClassifier, it reflects how much each feature contributes to reducing the variance in the model's predictions.
 
 <div class="col-sm mt-3 mt-md-0">

@@ -7,17 +7,15 @@ layout: default
     <p class="post-description">{{ page.description | markdownify }}</p>
   </header>
 
+  {% if page.github %}
+  <a href="{{ page.github }}" class="btn btncv z-depth-0">View code on
+    GitHub</a>
+  {% endif %}
+
   <article>
+    <br>
     {{ content }}
   </article>
-
-  {% if page.github %}
-  <h2>Codebase</h2>
-  <div class="publications" style="margin-bottom: 20px;"> <!-- Added inline style here -->
-    <a href="{{ page.github }}">View on GitHub</a>
-
-  </div>
-  {% endif %}
 
   {% if page.related_publications %}
   <h2>References</h2>

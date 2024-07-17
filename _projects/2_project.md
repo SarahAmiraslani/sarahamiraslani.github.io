@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: distill
 title: "Predicting Sunspots"
 description:
 img: /assets/img/roc-curve-acme.png
@@ -14,12 +14,10 @@ mermaid:
   zoomable: true
 toc:
   sidebar: left
-
-pdf: /assets/pdf/Acme - Slide Docs.pdf
 ---
 
-4. Can we accurately forecast the number of sunspots on the sun?
-4. Apply ensemble learning and deep learning methods, such as Extra tree, LSTM, and transformer etc., to predict the sunspot number and Heliospheric current sheet (HCS) indexes and to provide implications for the solar wind global structure in the future.
+1. Can we accurately forecast the number of sunspots on the sun?
+2. Apply ensemble learning and deep learning methods, such as Extra tree, LSTM, and transformer etc., to predict the sunspot number and Heliospheric current sheet (HCS) indexes and to provide implications for the solar wind global structure in the future.
 
 
 

@@ -1,15 +1,22 @@
 ---
-layout: page
+layout: distill
 title: Tracing the Origins of Solar Wind with Machine Learning
 description: The project employs machine learning to analyze the physical characteristics of solar wind, trace its origins in the solar corona, and improve the prediction of heliophysical phenomena.
+date: 2024-05-23
+
 img: /assets/img/solar-wind-depiction.jpg
-importance: 3
+importance: 1
+authors:
+  - name: Sarah Amiraslani
+    url: samirasl@umich.edu
+    affiliations:
+      name: University of Michigan, Ann Arbor
 category: Machine Learning
 github: https://github.com/SarahAmiraslani/solar-wind-coronal-origin-ml
 giscus: true
 giscuss_comments: true
-toc:
-  sidebar: left
+
+bibliography: solar-wind-distill.bib
 ---
 
 <div class="row mt-3">
@@ -84,7 +91,7 @@ the streamer belt.
 </div>
 
 
-# Analytical Goals
+##  Analytical Goals
 
 Given the growing size and complexity of solar wind in-situ observations and the advancements in ML and AI techniques, it is crucial that we incorporate modern ML and AI data analysis methods into the field of Heliophysics solar wind data analysis. By doing so, we will be able to maximize the scientific outcomes we can learn from the data. Our research project aims to address the following an Specifically, we expect that our data will be used for the following purpose, but not limited to:
 
@@ -94,7 +101,7 @@ Given the growing size and complexity of solar wind in-situ observations and the
 
 
 
-# Data
+# Data Sources
 
 ## [Advanced Composition Explorer (ACE) Spacecraft Data](https://science.nasa.gov/mission/ace/)
 Launched in 1997, NASA's Advanced Composition Explorer (ACE) mission captures and analyzes particles from solar, interplanetary, interstellar, and galactic sources. Its primary aim is to explore the connections between the Sun, Earth, and the Milky Way by examining materials expelled by the Sun. ACE data comprise in-situ measurements collected at the Sun-Earth L1 Lagrange point, about 870,000 miles (1.4 million kilometers) from Earth — where the gravitational pull between the Earth and the Sun is at equilibrium {% cite nasa_solar %}. ACE is equipped with nine instruments: Solar Wind Ion Mass Spectrometer (`SWIMS`), Solar Wind Ion Composition Spectrometer (`SWICS`), Ultra-Low Energy Isotope Spectrometer (`ULEIS`), Solar Energetic Particle Ionic Charge Analyzer (`SEPICA`), Solar Isotope Spectrometer (`SIS`), Cosmic Ray Isotope Spectrometer (`CRIS`), Solar Wind Electron, Proton, and Alpha Monitor (`SWEPAM`), Electron, Proton, and Alpha-Particle Monitor (`EPAM`), Magnetometer (`MAG`), Real Time Solar Wind Experiment (`RTSW`) {% cite garrard1998ace %}.
@@ -173,19 +180,3 @@ Moreover, most in-situ measurements represent continuous distributions, with no 
 We thank the ACE Science Center (ASC) for maintaining the ACE spacecraft data, and acknowledge the support of NASA’s National Space Science Data Center, the Space Physics Data Facility, and Edward C. Stone of Caltech, the Principal Investigator for the ACE project.
 
 We would also like to thank Dr. Liang Zhao for supporting our capstone project and providing Heliospheric Current Sheet (HCS) Indexes.
-
-<style>
-.custom-img-container {
-    width: 100%; /* Ensure the container takes the full width of its parent */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.custom-img {
-    width: 50%; /* Make the image take up 50% of the screen width */
-    height: auto; /* Adjust height automatically to maintain aspect ratio */
-    object-fit: contain; /* Ensure the image fits within its bounding box without cropping */
-}
-</style>

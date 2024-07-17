@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-  <!-- Head -->
+<html>
+
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
     <!-- Metadata, OpenGraph and Schema.org -->
 
 
@@ -124,9 +123,6 @@
 <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light">
 
 
-  <!-- Sidebar Table of Contents -->
-  <link defer href="/assets/css/bootstrap-toc.min.css?6f5af0bb9aab25d79b2448143cbeaa88" rel="stylesheet">
-
 
 <!-- Styles -->
 
@@ -158,10 +154,76 @@
 
 
 
+    
+    <!-- Medium Zoom JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script>
+    <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script>
+    
+    <!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    
+  
+    <!-- MathJax -->
+    <script type="text/javascript">
+      window.MathJax = {
+        tex: {
+          tags: 'ams',
+        },
+      };
+    </script>
+    <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.min.js" integrity="sha256-rjmgmaB99riUNcdlrDtcAiwtLIojSxNyUFdl+Qh+rB4=" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script>
+  
+
+
+    <!-- Distill js -->
+    <script src="/assets/js/distillpub/template.v2.js"></script>
+    <script src="/assets/js/distillpub/transforms.v2.js"></script>
+    <script src="/assets/js/distillpub/overrides.js"></script>
+    
   </head>
 
-  <!-- Body -->
-  <body class="fixed-top-nav ">
+  <body>
+<d-front-matter>
+    <script async type="text/json">
+      {
+            "title": "Draw to Learn: A Strategy to Learn Abstract Concepts",
+            "description": "This project investigates the effectiveness of student-generated drawings in facilitating the learning of abstract science concepts. By comparing various visualization strategies and key covariates in a controlled lab setting, we aim to uncover how different methods influence comprehension of complex topics and lead to better learning outcomes.",
+            "published": "May 22, 2021",
+            "authors": [
+              
+              {
+                "author": "Sarah Amiraslani",
+                "authorURL": "example.com",
+                "affiliations": [
+                  {
+                    "name": "UCSD",
+                    "url": ""
+                  }
+                ]
+              }
+              
+            ],
+            "katex": {
+              "delimiters": [
+                {
+                  "left": "$",
+                  "right": "$",
+                  "display": false
+                },
+                {
+                  "left": "$$",
+                  "right": "$$",
+                  "display": true
+                }
+              ]
+            }
+          }
+    </script>
+  </d-front-matter>
+
+  
     <!-- Header -->
     <header>
   <!-- Nav Bar -->
@@ -316,32 +378,59 @@
 
 
     <!-- Content -->
-    <div class="container mt-5" role="main">
+    <div class="post distill">
+      <d-title>
+        <h1>Draw to Learn: A Strategy to Learn Abstract Concepts</h1>
+        <p>This project investigates the effectiveness of student-generated drawings in facilitating the learning of abstract science concepts. By comparing various visualization strategies and key covariates in a controlled lab setting, we aim to uncover how different methods influence comprehension of complex topics and lead to better learning outcomes.</p>
+      </d-title>
       
+      <d-byline></d-byline>
+      
+
+      <d-article>
         
-          <div class="row">
-            <!-- sidebar, which will move to the top on a small screen -->
-            <div class="col-sm-3">
-              <nav id="toc-sidebar" class="sticky-top"></nav>
+        <d-contents>
+          <nav class="l-text figcaption">
+            <h3>Contents</h3>
+            
+            <div>
+              <a href="#summary">Summary</a>
             </div>
-            <!-- main content area -->
-            <div class="col-sm-9">
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">Draw to Learn: A Strategy to Learn Abstract Concepts</h1>
-    <p class="post-description"></p>
-<p>This project investigates the effectiveness of student-generated drawings in facilitating the learning of abstract science concepts. By comparing various visualization strategies and key covariates in a controlled lab setting, we aim to uncover how different methods influence comprehension of complex topics and lead to better learning outcomes.</p>
+            
+            
+            <div>
+              <a href="#introduction">Introduction</a>
+            </div>
+            
+            
+            <div>
+              <a href="#methods">Methods</a>
+            </div>
+            
+            
+            <div>
+              <a href="#results">Results</a>
+            </div>
+            
+            
+            <div>
+              <a href="#discussion">Discussion</a>
+            </div>
+            
+            
+            <div>
+              <a href="#acknowledgments">Acknowledgments</a>
+            </div>
+            
+            
+          </nav>
+        </d-contents>
+        
+        <h1 id="summary">Summary</h1>
 
-  </header>
+<p>Have you ever wondered why images stick in your mind longer than words? Our brains are hardwired to process visual information with remarkable efficiency. Research shows that visual aids not only make learning easier by breaking down complex ideas, but also help illustrate spatial relationships, pinpoint knowledge gaps, and keep us captivated <d-cite key="mayer2008"></d-cite>. But what if drawing your own pictures could take learning to the next level, even more than instructor-provided visuals?</p>
 
-  <article>
-    <p><a href="/assets/pdf/Draw_to_learn_poster.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary">View the Research Poster</a></p>
-
-<h1 id="summary">Summary</h1>
-
-<p>Have you ever wondered why images stick in your mind longer than words? Our brains are hardwired to process visual information with remarkable efficiency. Research shows that visual aids not only make learning easier by breaking down complex ideas, but also help illustrate spatial relationships, pinpoint knowledge gaps, and keep us captivated <a class="citation" href="#mayer2008">(Mayer, 2008)</a>. But what if drawing your own pictures could take learning to the next level, even more than instructor-provided visuals?</p>
-
-<p>Studies reveal that drawing can significantly enhance understanding of how physical systems work. However, its effectiveness hinges on factors like the accuracy of the drawings, the learner’s prior knowledge, and the level of guidance provided while drawing <a class="citation" href="#fiorella2018">(Fiorella &amp; Zhang, 2018)</a>. Beginners often benefit from more structured support as creating accurate drawings from scratch is cognitively demanding and may detract from energy spent learning the material <a class="citation" href="#vanmeter2005">(Van Meter &amp; Garner, 2005)</a>. Yet, when dealing with content that doesn’t have a clear visual representation, the accuracy of these drawings may not be consequential. In these scenarios, student-generated drawings can capture their unique thought processes and create memorable visual representations.</p>
+<p>Studies reveal that drawing can significantly enhance understanding of how physical systems work. However, its effectiveness hinges on factors like the accuracy of the drawings, the learner’s prior knowledge, and the level of guidance provided while drawing <d-cite key="fiorella2018"></d-cite>. Beginners often benefit from more structured support as creating accurate drawings from scratch is cognitively demanding and may detract from energy spent learning the material <d-cite key="vanmeter2005"></d-cite>. Yet, when dealing with content that doesn’t have a clear visual representation, the accuracy of these drawings may not be consequential. In these scenarios, student-generated drawings can capture their unique thought processes and create memorable visual representations.</p>
 
 <p>In two experiments, we randomly assigned college students to different learning tasks. Some studied or copied an instructor’s drawing, others completed a scaffolded drawing worksheet, and some drew their own representations on a blank sheet while reading about abstract concepts or physical systems. We found that, when it came to abstract lessons, unguided drawing significantly boosted retention but not transfer. However, for lessons on physical systems, drawing didn’t improve retention or transfer and students reported higher levels of intrinsic cognitive load.</p>
 
@@ -349,9 +438,9 @@
 
 <h1 id="introduction">Introduction</h1>
 
-<p>Visual representations play a crucial role in learning by summarizing verbal information, illustrating spatial relationships, and enhancing memory retention <a class="citation" href="#ainsworth2011">(Ainsworth et al., 2011)</a>. While educational visuals are typically provided by instructors or the authors of textbooks, asking students to create their own drawings is less common <a class="citation" href="#vanmeter2005">(Van Meter &amp; Garner, 2005)</a>. Studying and constructing visuals engage different cognitive processes and can differentially impact learning <a class="citation" href="#fiorella2018">(Fiorella &amp; Zhang, 2018)</a>. Therefore, it is essential to determine which method most effectively promotes meaningful learning.</p>
+<p>Visual representations play a crucial role in learning by summarizing verbal information, illustrating spatial relationships, and enhancing memory retention <d-cite key="ainsworth2011"></d-cite>. While educational visuals are typically provided by instructors or the authors of textbooks, asking students to create their own drawings is less common <d-cite key="vanmeter2005"></d-cite>. Studying and constructing visuals engage different cognitive processes and can differentially impact learning <d-cite key="fiorella2018"></d-cite>. Therefore, it is essential to determine which method most effectively promotes meaningful learning.</p>
 
-<p>According to the Cognitive Theory of Multimedia Learning, effective learning involves selecting, organizing, and integrating new information with prior knowledge <a class="citation" href="#mayer2002multimedia">(Mayer, 2002)</a>. The more connections learners make between new material and their existing knowledge, the more likely they are to retain information and transfer it to new contexts <a class="citation" href="#mayer2003nine">(Mayer &amp; Moreno, 2003)</a>. Thus, an ideal learning strategy encourages the integration of new and prior knowledge.</p>
+<p>According to the Cognitive Theory of Multimedia Learning, effective learning involves selecting, organizing, and integrating new information with prior knowledge <d-cite key="mayer2002multimedia"></d-cite>. The more connections learners make between new material and their existing knowledge, the more likely they are to retain information and transfer it to new contexts <d-cite key="mayer2003nine"></d-cite>. Thus, an ideal learning strategy encourages the integration of new and prior knowledge.</p>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -375,15 +464,15 @@
 
     </div>
     <div class="caption">
-        Figure 1. A visual representation of the Cognitive Theory of Multimedia Learning from Multimedia Learning <a class="citation" href="#mayer2002multimedia">(Mayer, 2002)</a>. While learning can occur through various media (e.g., text, podcasts, pictures), Multimedia Learning specifically involves processing both words and pictures. This distinction is important because verbal and pictorial information are processed through different cognitive pathways.
+        Figure 1. A visual representation of the Cognitive Theory of Multimedia Learning from Multimedia Learning <d-cite key="mayer2002multimedia"></d-cite>. While learning can occur through various media (e.g., text, podcasts, pictures), Multimedia Learning specifically involves processing both words and pictures. This distinction is important because verbal and pictorial information are processed through different cognitive pathways.
     </div>
 </div>
 
-<p>The Dual Channel Processing Theory, a well-supported cognitive theory, explains that we process verbal and non-verbal information through separate channels, forming unique connections between new material and our existing knowledge <a class="citation" href="#paivio1968">(Paivio et al., 1968)</a>. When learners draw, they engage both verbal and visual processing channels as process the text in a passage and create a corresponding visuospatial representation. This process enhances cognitive processing and recall <a class="citation" href="#wammes2017learning">(Wammes et al., 2017)</a>.</p>
+<p>The Dual Channel Processing Theory, a well-supported cognitive theory, explains that we process verbal and non-verbal information through separate channels, forming unique connections between new material and our existing knowledge <d-cite key="paivio1968"></d-cite> . When learners draw, they engage both verbal and visual processing channels as process the text in a passage and create a corresponding visuospatial representation. This process enhances cognitive processing and recall <d-cite key="wammes2017learning"></d-cite>.</p>
 
-<p>Learner-generated drawings are visual representations created by students to achieve educational goals <a class="citation" href="#alesandrini1981pictorial">(Alesandrini, 1981)</a>. Generative learning strategies, like drawing, promote long-term understanding by helping learners identify gaps in their knowledge and update their understanding through self-monitoring <a class="citation" href="#vanmeter2013">(Van Meter &amp; Firetto, 2013)</a>. Drawing allows students to personalize study materials, addressing individual differences in prior knowledge and learning needs. These drawings can be representational (faithfully depicting physical structures) or non-representational (abstract diagrams and flow charts) <a class="citation" href="#carney2002pictorial">(Carney &amp; Levin, 2002)</a>. Non-representational drawings may require additional cognitive processing to translate abstract visuals into meaningful content.</p>
+<p>Learner-generated drawings are visual representations created by students to achieve educational goals <d-cite key="alesandrini1981pictorial"></d-cite>. Generative learning strategies, like drawing, promote long-term understanding by helping learners identify gaps in their knowledge and update their understanding through self-monitoring <d-cite key="vanmeter2013"></d-cite>. Drawing allows students to personalize study materials, addressing individual differences in prior knowledge and learning needs. These drawings can be representational (faithfully depicting physical structures) or non-representational (abstract diagrams and flow charts) <d-cite key="carney2002pictorial"></d-cite>. Non-representational drawings may require additional cognitive processing to translate abstract visuals into meaningful content.</p>
 
-<p>Research on learner-generated drawings has yielded mixed results, influenced by factors such as prior knowledge and the level of guidance provided during the drawing process. Early studies showed weak effects favoring drawing to learn. For example, researchers found that drawing or paraphrasing while learning about electrochemistry had varied impacts based on the level of detail of students’ drawings <a class="citation" href="#alesandrini1981pictorial">(Alesandrini, 1981)</a>. Subsequent studies indicated that drawing without guidance might be too cognitively demanding, detracting from meaningful engagement with the material <a class="citation" href="#schwamborn2011cognitive">(Schwamborn et al., 2011)</a>. Guided drawing processes, such as providing drawing training or partially completed worksheets, have shown positive learning outcomes. These strategies help learners identify knowledge gaps, reduce cognitive load, and receive feedback on their mental representations <a class="citation" href="#scheiter2017sketching">(Scheiter et al., 2017)</a>.</p>
+<p>Research on learner-generated drawings has yielded mixed results, influenced by factors such as prior knowledge and the level of guidance provided during the drawing process. Early studies showed weak effects favoring drawing to learn. For example, researchers found that drawing or paraphrasing while learning about electrochemistry had varied impacts based on the level of detail of students’ drawings <d-cite key="alesandrini1981pictorial"></d-cite>. Subsequent studies indicated that drawing without guidance might be too cognitively demanding, detracting from meaningful engagement with the material <d-cite key="schwamborn2011cognitive"></d-cite>. Guided drawing processes, such as providing drawing training or partially completed worksheets, have shown positive learning outcomes. These strategies help learners identify knowledge gaps, reduce cognitive load, and receive feedback on their mental representations <d-cite key="scheiter2017sketching"></d-cite>.</p>
 
 <h2 id="research-focus">Research Focus</h2>
 
@@ -415,17 +504,17 @@
     Figure 2. Examples of lesson materials used in previous drawing to learn experiments. All of these studies teach students about physical systems that have a definitive physical representation.
 </div>
 
-<h3 id="hypothesis">Hypothesis</h3>
+<h2 id="hypothesis">Hypothesis</h2>
 
 <p>We hypothesize that drawing will enhance learning of abstract concepts more effectively than concrete ones. For abstract lessons, we expect learning to increase as students generate more of their own drawings. For concrete lessons, we predict that guided drawing will most benefit learning by reducing cognitive demands.</p>
 
 <h1 id="methods">Methods</h1>
 
-<h3 id="participants">Participants</h3>
+<h2 id="participants">Participants</h2>
 
 <p>A convenience sample of 238 undergraduate students was gathered from the University of California, San Diego Psychology Subject Pool. All participants received partial course credit for their participation. Twenty-five participants were excluded from data analysis, leaving a final sample of 213 participants. Of the 213 participants, 43 identified as male, 165 identified as female, and five identified as non-binary. A majority of participants were in their early twenties with a mean age of 20.27 (SD = 1.93 years). Fifty-seven students participated in the study condition, 54 in the copy condition, 54 in the complete condition, and 48 in the draw condition.</p>
 
-<h3 id="design">Design</h3>
+<h2 id="design">Design</h2>
 
 <p>We used a between-subjects design to manipulate participants’ drawing experience and measure their learning from a lesson about black holes. Participants were randomly assigned to one of four drawing conditions, which varied by the degree to which they generated their illustrations: copying a provided illustration (“copy”), completing a partial illustration (“complete”), free drawing their own illustration (“draw”), or a control condition that involved no drawing (“study”). Learning was measured using multiple choice and open response questions designed to assess both the retention and transfer of the lesson content. We also measured participants’ prior knowledge about physics and astronomy, their visual imagery ability, and their cognitive load during the learning activity to use as covariates in our analyses. The survey was designed to prevent participants from accessing the entire study at once or revisiting previous sections. While there was no time limit, participants were expected to complete the experiment within an hour.</p>
 
@@ -455,7 +544,7 @@
     Figure 3. Visual representation of the experimental design.
 </div>
 
-<h3 id="materials">Materials</h3>
+<h2 id="materials">Materials</h2>
 
 <p>The materials for this study included a Qualtrics survey, a passage about black holes, illustrations to support the passage, passage comprehension tests (multiple choice and open response), and measures of individual differences (prior knowledge, visual imagery ability, cognitive load). All materials were presented to participants via a Qualtrics survey, which they accessed online via desktop computers in a lab setting.</p>
 
@@ -464,19 +553,19 @@
     <p><strong>Prior Knowledge</strong>: Participants self-reported their knowledge and confidence in physics and astronomy using 5-point Likert scales. The knowledge scale ranged from “I know nothing at all” to “I know a great deal,” and the confidence scale ranged from “not confident at all” to “extremely confident.” The prior knowledge score was calculated by multiplying the knowledge and confidence ratings for both subjects and summing the results.</p>
   </li>
   <li>
-    <p><strong>Black holes Lesson</strong>: All participants read an educational passage about black holes, adapted from The Cosmic Perspective textbook <a class="citation" href="#bennett2016">(Bennett et al., 2016)</a>. The passage was condensed to 11 paragraphs (1607 words) covering the definition, formation, properties, event horizon, singularity, size, and internal structure of black holes. The readability of the passage was measured using the Automated Readability Index (ARI), resulting in an ARI of 11.30, indicating a grade level of 11.6.</p>
+    <p><strong>Black holes Lesson</strong>: All participants read an educational passage about black holes, adapted from The Cosmic Perspective textbook <d-cite key="bennett2016"></d-cite>. The passage was condensed to 11 paragraphs (1607 words) covering the definition, formation, properties, event horizon, singularity, size, and internal structure of black holes. The readability of the passage was measured using the Automated Readability Index (ARI), resulting in an ARI of 11.30, indicating a grade level of 11.6.</p>
   </li>
   <li>
-    <p><strong>Illustrations</strong>: Participants in the copy, study, and complete conditions received illustrations produced using Adobe Photoshop 2019 and Pages. Inspired by The Cosmic Perspective textbook and Pearson Mastering Astronomy platform <a class="citation" href="#pearson2019">(Pearson Education, 2019)</a>, the illustrations included drawings of black hole features, Einstein’s Theory of General Relativity, and spacetime distortion near black holes. Scaffolded illustrations featured key elements masked with empty text boxes. Participants in the drawing condition received blank sheets of paper and pens.</p>
+    <p><strong>Illustrations</strong>: Participants in the copy, study, and complete conditions received illustrations produced using Adobe Photoshop 2019 and Pages. Inspired by The Cosmic Perspective textbook and Pearson Mastering Astronomy platform <d-cite key="pearson2019"></d-cite>, the illustrations included drawings of black hole features, Einstein’s Theory of General Relativity, and spacetime distortion near black holes. Scaffolded illustrations featured key elements masked with empty text boxes. Participants in the drawing condition received blank sheets of paper and pens.</p>
   </li>
   <li>
     <p><strong>Passage Comprehension Tests</strong>: Three types of tests were developed: two analogous 15-question multiple-choice tests, one 4-question open response retention test, and one 4-question open response transfer test. The multiple-choice tests included 8 perfect analogs and 7 strong pairs of questions. Retention questions asked students to summarize lesson information, while transfer questions required application of knowledge to new scenarios. Answers were scored based on identified idea units, with inter-rater reliability for retention and transfer tests being r(212)=0.995, p &lt;0.0001 and r(212)=0.798, p &lt;0.0001, respectively.</p>
   </li>
   <li>
-    <p><strong>Cognitive Load</strong>: Cognitive load was measured using a 10-item instrument assessing intrinsic, extraneous, and germane load <a class="citation" href="#leppink2013">(Leppink et al., 2013)</a>. Participants rated items on a 0 to 10 scale. Examples included “The topics covered in the activity were very complex” (intrinsic load), “The instructions and explanations during the activity were very unclear” (extraneous load), and “The activity really enhanced my understanding of the topics covered” (germane load). Cognitive load was analyzed to determine the impact of visualization strategies on perceived difficulty and mental effort.</p>
+    <p><strong>Cognitive Load</strong>: Cognitive load was measured using a 10-item instrument assessing intrinsic, extraneous, and germane load <d-cite key="leppink2013"></d-cite>. Participants rated items on a 0 to 10 scale. Examples included “The topics covered in the activity were very complex” (intrinsic load), “The instructions and explanations during the activity were very unclear” (extraneous load), and “The activity really enhanced my understanding of the topics covered” (germane load). Cognitive load was analyzed to determine the impact of visualization strategies on perceived difficulty and mental effort.</p>
   </li>
   <li>
-    <p><strong>Visual Imagery</strong>: Visual imagery ability was assessed using the Vividness of Visual Imagery Questionnaire (VVIQ), which asks participants to rate the vividness of imagined scenes on a 5-point Likert scale <a class="citation" href="#mckelvie1995">(McKelvie, 1995)</a>. The VVIQ was completed once with eyes open.</p>
+    <p><strong>Visual Imagery</strong>: Visual imagery ability was assessed using the Vividness of Visual Imagery Questionnaire (VVIQ), which asks participants to rate the vividness of imagined scenes on a 5-point Likert scale <d-cite key="mckelvie1995"></d-cite>. The VVIQ was completed once with eyes open.</p>
   </li>
 </ul>
 
@@ -558,8 +647,9 @@
     </div>
 </div>
 
-<h2 id="results">Results</h2>
+<h1 id="results">Results</h1>
 
+<h2 id="planned-analysis">Planned Analysis</h2>
 <p>The purpose of our experiment was to determine if more generative illustration activities would improve retention and transfer of knowledge about black holes. We hypothesized that participants who created their own illustrations would perform better on comprehension measures compared to those who studied provided illustrations. From the initial 238 participants, 213 were included in the final analysis after excluding those who did not engage in the illustration activity, failed attention checks, or did not complete the study.</p>
 
 <p>Participants demonstrated good visual imagery ability (M = 3.761, SD = 0.574) on a scale from 1 to 5, but reported low prior knowledge in physics and astronomy (M = 9.310, SD = 6.813) on a scale from 0 to 50. Their pre-test scores on a multiple-choice test specific to black holes were also low (M = 4.188 out of 12, SD = 1.963). There were no significant differences across conditions for visual imagery ability, self-reported prior knowledge, or pre-test scores, indicating a baseline similarity among participants.</p>
@@ -637,7 +727,7 @@
   </li>
 </ul>
 
-<h2 id="discussion">Discussion</h2>
+<h1 id="discussion">Discussion</h1>
 
 <p>The findings of our study suggest that drawing to learn theoretical science can enhance the recall of key points addressed in a passage. Participants in the drawing condition significantly outperformed all other groups on the open response retention test. However, they did not show superior performance on the multiple-choice test or the transfer test compared to other visualization conditions. The most notable difference in performance on the open response retention task was observed between the draw and copy conditions.</p>
 
@@ -653,1330 +743,16 @@
 
 <p>This research was conducted at the University of California, San Diego in the <a href="https://www.lime-lab-ucsd.com" rel="external nofollow noopener" target="_blank">LIME Lab</a> between 2018 and 2020 and served as my honors thesis project. I would like to extend my heartfelt gratitude to Dr. Geller for providing invaluable mentorship and support throughout my time at UCSD. Your guidance was instrumental in the success of this project and my professional development.</p>
 
-  </article>
+      </d-article>
 
-  
-  <h2>Codebase</h2>
-  <div class="publications" style="margin-bottom: 20px;"> <!-- Added inline style here -->
-    <a href="https://github.com/SarahAmiraslani/solar-wind-coronal-origin-ml" rel="external nofollow noopener" target="_blank">View on GitHub</a>
+      <d-appendix>
+        <d-footnote-list></d-footnote-list>
+        <d-citation-list></d-citation-list>
+      </d-appendix>
 
-  </div>
-  
+      <d-bibliography src="/assets/bibliography/multimedia-learning-distill.bib"></d-bibliography>
 
-  
-  <h2>References</h2>
-  <div class="publications">
-    <h2 class="bibliography">2019</h2>
-<ol class="bibliography"><li>
-<div class="row">
-  
-    <div class="col col-sm-2 abbr">
       
-    </div>
-  
-
-  <!-- Entry bib key -->
-  <div id="pearson2019" class="col-sm-8">
-    <!-- Title -->
-    <div class="title">Mastering Astronomy</div>
-    <!-- Author -->
-    <div class="author">
-      
-
-      
-      
-            Pearson Education
-    </div>
-
-    <!-- Journal/Book title and date -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="periodical">
-      2019
-    </div>
-    <div class="periodical">
-      Retrieved from https://www.pearsonmylabandmastering.com/northamerica/masteringastronomy/
-    </div>
-
-    <!-- Links/Buttons -->
-    <div class="links">
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </div>
-    
-      
-      
-      
-      
-    
-
-    
-
-    
-
-    
-
-    
-  </div>
-</div>
-</li></ol>
-<h2 class="bibliography">2018</h2>
-<ol class="bibliography"><li>
-<div class="row">
-  
-    <div class="col col-sm-2 abbr">
-      
-    </div>
-  
-
-  <!-- Entry bib key -->
-  <div id="fiorella2018" class="col-sm-8">
-    <!-- Title -->
-    <div class="title">Drawing Boundary Conditions for Learning by Drawing</div>
-    <!-- Author -->
-    <div class="author">
-      
-
-      
-      Logan
-            Fiorella, and Qian
-            Zhang
-    </div>
-
-    <!-- Journal/Book title and date -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="periodical">
-      <em>Educational Psychology Review</em>,  2018
-    </div>
-    <div class="periodical">
-      
-    </div>
-
-    <!-- Links/Buttons -->
-    <div class="links">
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </div>
-    
-      
-      
-      
-      
-    
-
-    
-
-    
-
-    
-
-    
-  </div>
-</div>
-</li></ol>
-<h2 class="bibliography">2017</h2>
-<ol class="bibliography">
-<li>
-<div class="row">
-  
-    <div class="col col-sm-2 abbr">
-      
-    </div>
-  
-
-  <!-- Entry bib key -->
-  <div id="wammes2017learning" class="col-sm-8">
-    <!-- Title -->
-    <div class="title">Learning terms and definitions: Drawing and the role of elaborative encoding</div>
-    <!-- Author -->
-    <div class="author">
-      
-
-      
-      Jeffrey D
-            Wammes, Melissa E
-            Meade, and Myra A
-            Fernandes
-    </div>
-
-    <!-- Journal/Book title and date -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="periodical">
-      <em>Acta Psychologica</em>,  2017
-    </div>
-    <div class="periodical">
-      
-    </div>
-
-    <!-- Links/Buttons -->
-    <div class="links">
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </div>
-    
-      
-      
-      
-      
-    
-
-    
-
-    
-
-    
-
-    
-  </div>
-</div>
-</li>
-<li>
-<div class="row">
-  
-    <div class="col col-sm-2 abbr">
-      
-    </div>
-  
-
-  <!-- Entry bib key -->
-  <div id="scheiter2017sketching" class="col-sm-8">
-    <!-- Title -->
-    <div class="title">Why sketching may aid learning from science texts: Contrasting sketching with written explanations</div>
-    <!-- Author -->
-    <div class="author">
-      
-
-      
-      Katharina
-            Scheiter, Katrin
-            Schleinschok, and Shaaron
-            Ainsworth
-    </div>
-
-    <!-- Journal/Book title and date -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="periodical">
-      <em>Topics in cognitive science</em>,  2017
-    </div>
-    <div class="periodical">
-      
-    </div>
-
-    <!-- Links/Buttons -->
-    <div class="links">
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </div>
-    
-      
-      
-      
-      
-    
-
-    
-
-    
-
-    
-
-    
-  </div>
-</div>
-</li>
-</ol>
-<h2 class="bibliography">2016</h2>
-<ol class="bibliography"><li>
-<div class="row">
-  
-    <div class="col col-sm-2 abbr">
-      
-    </div>
-  
-
-  <!-- Entry bib key -->
-  <div id="bennett2016" class="col-sm-8">
-    <!-- Title -->
-    <div class="title">Black Holes: Gravity’s Ultimate Victory. The Cosmic Perspective (8th edition, ch. 18.3)</div>
-    <!-- Author -->
-    <div class="author">
-      
-
-      
-      J.
-            Bennett, M.
-            Donahue, N.
-            Schneider, and
-        <span class="more-authors" title="click to view 1 more author" onclick="
-              var element = $(this);
-              element.attr('title', '');
-              var more_authors_text = element.text() == '1 more author' ? 'M. Voit' : '1 more author';
-              var cursorPosition = 0;
-              var textAdder = setInterval(function(){
-                element.text(more_authors_text.substring(0, cursorPosition + 1));
-                if (++cursorPosition == more_authors_text.length){
-                  clearInterval(textAdder);
-                }
-            }, '10');
-          ">1 more author</span>
-      
-    </div>
-
-    <!-- Journal/Book title and date -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="periodical">
-      2016
-    </div>
-    <div class="periodical">
-      
-    </div>
-
-    <!-- Links/Buttons -->
-    <div class="links">
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </div>
-    
-      
-      
-      
-      
-    
-
-    
-
-    
-
-    
-
-    
-  </div>
-</div>
-</li></ol>
-<h2 class="bibliography">2013</h2>
-<ol class="bibliography">
-<li>
-<div class="row">
-  
-    <div class="col col-sm-2 abbr">
-      
-    </div>
-  
-
-  <!-- Entry bib key -->
-  <div id="vanmeter2013" class="col-sm-8">
-    <!-- Title -->
-    <div class="title">Cognitive model of drawing construction</div>
-    <!-- Author -->
-    <div class="author">
-      
-
-      
-      Peggy
-            Van Meter, and Christina M.
-            Firetto
-    </div>
-
-    <!-- Journal/Book title and date -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="periodical">
-      <em>In Learning through visual displays</em> ,  2013
-    </div>
-    <div class="periodical">
-      
-    </div>
-
-    <!-- Links/Buttons -->
-    <div class="links">
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </div>
-    
-      
-      
-      
-      
-    
-
-    
-
-    
-
-    
-
-    
-  </div>
-</div>
-</li>
-<li>
-<div class="row">
-  
-    <div class="col col-sm-2 abbr">
-      
-    </div>
-  
-
-  <!-- Entry bib key -->
-  <div id="leppink2013" class="col-sm-8">
-    <!-- Title -->
-    <div class="title">Development of an instrument for measuring different types of cognitive load</div>
-    <!-- Author -->
-    <div class="author">
-      
-
-      
-      Jimmie
-            Leppink, Fred
-            Paas, Cees P.M.
-            Vleuten, and
-        <span class="more-authors" title="click to view 2 more authors" onclick="
-              var element = $(this);
-              element.attr('title', '');
-              var more_authors_text = element.text() == '2 more authors' ? 'Tamara Van Gog, Jeroen J.G. Van Merriënboer' : '2 more authors';
-              var cursorPosition = 0;
-              var textAdder = setInterval(function(){
-                element.text(more_authors_text.substring(0, cursorPosition + 1));
-                if (++cursorPosition == more_authors_text.length){
-                  clearInterval(textAdder);
-                }
-            }, '10');
-          ">2 more authors</span>
-      
-    </div>
-
-    <!-- Journal/Book title and date -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="periodical">
-      <em>Behavior Research Methods</em>,  2013
-    </div>
-    <div class="periodical">
-      
-    </div>
-
-    <!-- Links/Buttons -->
-    <div class="links">
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </div>
-    
-      
-      
-      
-      
-    
-
-    
-
-    
-
-    
-
-    
-  </div>
-</div>
-</li>
-</ol>
-<h2 class="bibliography">2011</h2>
-<ol class="bibliography">
-<li>
-<div class="row">
-  
-    <div class="col col-sm-2 abbr">
-      
-    </div>
-  
-
-  <!-- Entry bib key -->
-  <div id="ainsworth2011" class="col-sm-8">
-    <!-- Title -->
-    <div class="title">Drawing to learn in science</div>
-    <!-- Author -->
-    <div class="author">
-      
-
-      
-      Shaaron
-            Ainsworth, Vaughan
-            Prain, and Russell
-            Tytler
-    </div>
-
-    <!-- Journal/Book title and date -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="periodical">
-      <em>Science</em>,  2011
-    </div>
-    <div class="periodical">
-      
-    </div>
-
-    <!-- Links/Buttons -->
-    <div class="links">
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </div>
-    
-      
-      
-      
-      
-    
-
-    
-
-    
-
-    
-
-    
-  </div>
-</div>
-</li>
-<li>
-<div class="row">
-  
-    <div class="col col-sm-2 abbr">
-      
-    </div>
-  
-
-  <!-- Entry bib key -->
-  <div id="schwamborn2011cognitive" class="col-sm-8">
-    <!-- Title -->
-    <div class="title">Cognitive load and instructionally supported learning with provided and learner-generated visualizations</div>
-    <!-- Author -->
-    <div class="author">
-      
-
-      
-      Annett
-            Schwamborn, Hubertina
-            Thillmann, Maria
-            Opfermann, and
-        <span class="more-authors" title="click to view 1 more author" onclick="
-              var element = $(this);
-              element.attr('title', '');
-              var more_authors_text = element.text() == '1 more author' ? 'Detlev Leutner' : '1 more author';
-              var cursorPosition = 0;
-              var textAdder = setInterval(function(){
-                element.text(more_authors_text.substring(0, cursorPosition + 1));
-                if (++cursorPosition == more_authors_text.length){
-                  clearInterval(textAdder);
-                }
-            }, '10');
-          ">1 more author</span>
-      
-    </div>
-
-    <!-- Journal/Book title and date -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="periodical">
-      <em>Computers in human behavior</em>,  2011
-    </div>
-    <div class="periodical">
-      
-    </div>
-
-    <!-- Links/Buttons -->
-    <div class="links">
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </div>
-    
-      
-      
-      
-      
-    
-
-    
-
-    
-
-    
-
-    
-  </div>
-</div>
-</li>
-</ol>
-<h2 class="bibliography">2008</h2>
-<ol class="bibliography"><li>
-<div class="row">
-  
-    <div class="col col-sm-2 abbr">
-      
-    </div>
-  
-
-  <!-- Entry bib key -->
-  <div id="mayer2008" class="col-sm-8">
-    <!-- Title -->
-    <div class="title">Applying the science of learning: evidence-based principles for the design of multimedia instruction</div>
-    <!-- Author -->
-    <div class="author">
-      
-
-      
-      Richard E.
-            Mayer
-    </div>
-
-    <!-- Journal/Book title and date -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="periodical">
-      <em>The American Psychologist</em>,  2008
-    </div>
-    <div class="periodical">
-      
-    </div>
-
-    <!-- Links/Buttons -->
-    <div class="links">
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </div>
-    
-      
-      
-      
-      
-    
-
-    
-
-    
-
-    
-
-    
-  </div>
-</div>
-</li></ol>
-<h2 class="bibliography">2005</h2>
-<ol class="bibliography"><li>
-<div class="row">
-  
-    <div class="col col-sm-2 abbr">
-      
-    </div>
-  
-
-  <!-- Entry bib key -->
-  <div id="vanmeter2005" class="col-sm-8">
-    <!-- Title -->
-    <div class="title">The promise and practice of learner-generated drawing: literature review and synthesis</div>
-    <!-- Author -->
-    <div class="author">
-      
-
-      
-      Peggy
-            Van Meter, and Joel
-            Garner
-    </div>
-
-    <!-- Journal/Book title and date -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="periodical">
-      <em>Educational Psychology Review</em>,  2005
-    </div>
-    <div class="periodical">
-      
-    </div>
-
-    <!-- Links/Buttons -->
-    <div class="links">
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </div>
-    
-      
-      
-      
-      
-    
-
-    
-
-    
-
-    
-
-    
-  </div>
-</div>
-</li></ol>
-<h2 class="bibliography">2003</h2>
-<ol class="bibliography"><li>
-<div class="row">
-  
-    <div class="col col-sm-2 abbr">
-      
-    </div>
-  
-
-  <!-- Entry bib key -->
-  <div id="mayer2003nine" class="col-sm-8">
-    <!-- Title -->
-    <div class="title">Nine ways to reduce cognitive load in multimedia learning</div>
-    <!-- Author -->
-    <div class="author">
-      
-
-      
-      Richard E
-            Mayer, and Roxana
-            Moreno
-    </div>
-
-    <!-- Journal/Book title and date -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="periodical">
-      <em>Educational psychologist</em>,  2003
-    </div>
-    <div class="periodical">
-      
-    </div>
-
-    <!-- Links/Buttons -->
-    <div class="links">
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </div>
-    
-      
-      
-      
-      
-    
-
-    
-
-    
-
-    
-
-    
-  </div>
-</div>
-</li></ol>
-<h2 class="bibliography">2002</h2>
-<ol class="bibliography">
-<li>
-<div class="row">
-  
-    <div class="col col-sm-2 abbr">
-      
-    </div>
-  
-
-  <!-- Entry bib key -->
-  <div id="mayer2002multimedia" class="col-sm-8">
-    <!-- Title -->
-    <div class="title">Multimedia learning</div>
-    <!-- Author -->
-    <div class="author">
-      
-
-      
-      Richard E
-            Mayer
-    </div>
-
-    <!-- Journal/Book title and date -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="periodical">
-      <em>In Psychology of learning and motivation</em> ,  2002
-    </div>
-    <div class="periodical">
-      
-    </div>
-
-    <!-- Links/Buttons -->
-    <div class="links">
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </div>
-    
-      
-      
-      
-      
-    
-
-    
-
-    
-
-    
-
-    
-  </div>
-</div>
-</li>
-<li>
-<div class="row">
-  
-    <div class="col col-sm-2 abbr">
-      
-    </div>
-  
-
-  <!-- Entry bib key -->
-  <div id="carney2002pictorial" class="col-sm-8">
-    <!-- Title -->
-    <div class="title">Pictorial illustrations still improve students’ learning from text</div>
-    <!-- Author -->
-    <div class="author">
-      
-
-      
-      Russell N
-            Carney, and Joel R
-            Levin
-    </div>
-
-    <!-- Journal/Book title and date -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="periodical">
-      <em>Educational psychology review</em>,  2002
-    </div>
-    <div class="periodical">
-      
-    </div>
-
-    <!-- Links/Buttons -->
-    <div class="links">
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </div>
-    
-      
-      
-      
-      
-    
-
-    
-
-    
-
-    
-
-    
-  </div>
-</div>
-</li>
-</ol>
-<h2 class="bibliography">1995</h2>
-<ol class="bibliography"><li>
-<div class="row">
-  
-    <div class="col col-sm-2 abbr">
-      
-    </div>
-  
-
-  <!-- Entry bib key -->
-  <div id="mckelvie1995" class="col-sm-8">
-    <!-- Title -->
-    <div class="title">The VVIQ as a psychometric test of individual differences in visual imagery vividness: A critical quantitative review and plea for direction</div>
-    <!-- Author -->
-    <div class="author">
-      
-
-      
-      Stuart J.
-            McKelvie
-    </div>
-
-    <!-- Journal/Book title and date -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="periodical">
-      <em>Journal of Mental Imagery</em>,  1995
-    </div>
-    <div class="periodical">
-      
-    </div>
-
-    <!-- Links/Buttons -->
-    <div class="links">
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </div>
-    
-      
-      
-      
-      
-    
-
-    
-
-    
-
-    
-
-    
-  </div>
-</div>
-</li></ol>
-<h2 class="bibliography">1981</h2>
-<ol class="bibliography"><li>
-<div class="row">
-  
-    <div class="col col-sm-2 abbr">
-      
-    </div>
-  
-
-  <!-- Entry bib key -->
-  <div id="alesandrini1981pictorial" class="col-sm-8">
-    <!-- Title -->
-    <div class="title">Pictorial–verbal and analytic–holistic learning strategies in science learning.</div>
-    <!-- Author -->
-    <div class="author">
-      
-
-      
-      Kathryn L
-            Alesandrini
-    </div>
-
-    <!-- Journal/Book title and date -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="periodical">
-      <em>Journal of Educational Psychology</em>,  1981
-    </div>
-    <div class="periodical">
-      
-    </div>
-
-    <!-- Links/Buttons -->
-    <div class="links">
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </div>
-    
-      
-      
-      
-      
-    
-
-    
-
-    
-
-    
-
-    
-  </div>
-</div>
-</li></ol>
-<h2 class="bibliography">1968</h2>
-<ol class="bibliography"><li>
-<div class="row">
-  
-    <div class="col col-sm-2 abbr">
-      
-    </div>
-  
-
-  <!-- Entry bib key -->
-  <div id="paivio1968" class="col-sm-8">
-    <!-- Title -->
-    <div class="title">Why are pictures easier to recall than words?</div>
-    <!-- Author -->
-    <div class="author">
-      
-
-      
-      Allan
-            Paivio, Timothy B.
-            Rogers, and Peter C.
-            Smythe
-    </div>
-
-    <!-- Journal/Book title and date -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="periodical">
-      <em>Psychonomic Science</em>,  1968
-    </div>
-    <div class="periodical">
-      
-    </div>
-
-    <!-- Links/Buttons -->
-    <div class="links">
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </div>
-    
-      
-      
-      
-      
-    
-
-    
-
-    
-
-    
-
-    
-  </div>
-</div>
-</li></ol>
-  </div>
-  
-
-  
-</div>
-</div>
-          </div>
-        
       
     </div>
 
@@ -1991,136 +767,16 @@
 
       
       
-        Last updated: July 15, 2024.
+        Last updated: July 16, 2024.
       
     </div>
   </footer>
 
 
-
-    <!-- JavaScripts -->
-    <!-- jQuery -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
     <!-- Bootsrap & MDB scripts -->
 <script src="/assets/js/bootstrap.bundle.min.js"></script>
 <!-- <script src="/assets/js/mdb.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
-
-    
-  <!-- Masonry & imagesLoaded -->
-  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
-  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
-
-
-    
-  <script defer src="https://cdn.jsdelivr.net/npm/mermaid@10.7.0/dist/mermaid.min.js" integrity="sha256-TtLOdUA8mstPoO6sGvHIGx2ceXrrX4KgIItO06XOn8A=" crossorigin="anonymous"></script>
-  
-    <script defer src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js" integrity="sha256-1rA678n2xEx7x4cTZ5x4wpUCj6kUMZEZ5cxLSVSFWxw=" crossorigin="anonymous"></script>
-  
-  <script>
-    let theme = determineComputedTheme();
-
-    /* Create mermaid diagram as another node and hide the code block, appending the mermaid node after it
-       this is done to enable retrieving the code again when changing theme between light/dark */
-    document.onreadystatechange = () => {
-      if (document.readyState === 'complete') {
-        document.querySelectorAll('pre>code.language-mermaid').forEach((elem) => {
-          const svgCode = elem.textContent;
-          const backup = elem.parentElement;
-          backup.classList.add('unloaded');
-          /* create mermaid node */
-          let mermaid = document.createElement('pre');
-          mermaid.classList.add('mermaid');
-          const text = document.createTextNode(svgCode);
-          mermaid.appendChild(text);
-          backup.after(mermaid);
-        });
-
-        mermaid.initialize({ theme: theme });
-
-        /* Zoomable mermaid diagrams */
-        if (typeof d3 !== 'undefined') {
-          window.addEventListener('load', function () {
-            var svgs = d3.selectAll('.mermaid svg');
-            svgs.each(function () {
-              var svg = d3.select(this);
-              svg.html('<g>' + svg.html() + '</g>');
-              var inner = svg.select('g');
-              var zoom = d3.zoom().on('zoom', function (event) {
-                inner.attr('transform', event.transform);
-              });
-              svg.call(zoom);
-            });
-          });
-        }
-      }
-    };
-  </script>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-  <!-- Medium Zoom JS -->
-  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script>
-  <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script>
-
-
-  <!-- Sidebar Table of Contents -->
-  <script defer src="/assets/js/bootstrap-toc.min.js?c82ff4de8b0955d6ff14f5b05eed7eb6"></script>
-
-
-<!-- Bootstrap Table -->
-
-
-<!-- Load Common JS -->
-<script src="/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script>
-<script defer src="/assets/js/common.js?b7816bd189846d29eded8745f9c4cf77"></script>
-<script defer src="/assets/js/copy_code.js?12775fdf7f95e901d7119054556e495f" type="text/javascript"></script>
-
-<!-- Jupyter Open External Links New Tab -->
-<script defer src="/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script>
-
-
-
-    
-  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
-
-
-  <script async src="https://badge.dimensions.ai/badge.js"></script>
-
-
-    
-  
-    <!-- MathJax -->
-    <script type="text/javascript">
-      window.MathJax = {
-        tex: {
-          tags: 'ams',
-        },
-      };
-    </script>
-    <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.min.js" integrity="sha256-rjmgmaB99riUNcdlrDtcAiwtLIojSxNyUFdl+Qh+rB4=" crossorigin="anonymous"></script>
-    <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script>
-  
-
-
-    
 
     
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -2214,12 +870,6 @@
     }
   </script>
 
-
-    
-
-    
-
-    
 
     
   <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script>
@@ -2433,6 +1083,7 @@
   </script>
 
 
-    <script src="/assets/js/shortcut-key.js"></script>
-  </body>
+  
+
+</body>
 </html>

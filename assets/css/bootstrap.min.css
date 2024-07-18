@@ -96,17 +96,6 @@ p {
     margin-bottom: 1rem
 }
 
-abbr[data-original-title],
-abbr[title] {
-    text-decoration: underline;
-    -webkit-text-decoration: underline dotted;
-    text-decoration: underline dotted;
-    cursor: help;
-    border-bottom: 0;
-    -webkit-text-decoration-skip-ink: none;
-    text-decoration-skip-ink: none
-}
-
 address {
     margin-bottom: 1rem;
     font-style: normal;
@@ -328,10 +317,6 @@ progress {
     -webkit-appearance: button
 }
 
-output {
-    display: inline-block
-}
-
 summary {
     display: list-item;
     cursor: pointer
@@ -507,10 +492,10 @@ pre code {
 
 .col,
 .col-md-10,
+.col-md-12,
 .col-md-2,
 .col-md-6,
 .col-sm,
-.col-sm-2,
 .col-sm-3,
 .col-sm-4,
 .col-sm-8,
@@ -538,6 +523,12 @@ pre code {
     max-width: 100%
 }
 
+.row-cols-2>* {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%
+}
+
 @media (min-width:576px) {
     .col-sm {
         -ms-flex-preferred-size: 0;
@@ -545,12 +536,6 @@ pre code {
         -ms-flex-positive: 1;
         flex-grow: 1;
         max-width: 100%
-    }
-
-    .col-sm-2 {
-        -ms-flex: 0 0 16.666667%;
-        flex: 0 0 16.666667%;
-        max-width: 16.666667%
     }
 
     .col-sm-3 {
@@ -602,6 +587,12 @@ pre code {
         -ms-flex: 0 0 83.333333%;
         flex: 0 0 83.333333%;
         max-width: 83.333333%
+    }
+
+    .col-md-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%
     }
 }
 
@@ -736,42 +727,6 @@ pre code {
 
 a.btn.disabled {
     pointer-events: none
-}
-
-.btn-outline-secondary {
-    color: #6c757d;
-    border-color: #6c757d
-}
-
-.btn-outline-secondary:hover {
-    color: #fff;
-    background-color: #6c757d;
-    border-color: #6c757d
-}
-
-.btn-outline-secondary.focus,
-.btn-outline-secondary:focus {
-    box-shadow: 0 0 0 .2rem rgba(108, 117, 125, .5)
-}
-
-.btn-outline-secondary.disabled,
-.btn-outline-secondary:disabled {
-    color: #6c757d;
-    background-color: transparent
-}
-
-.btn-outline-secondary:not(:disabled):not(.disabled).active,
-.btn-outline-secondary:not(:disabled):not(.disabled):active,
-.show>.btn-outline-secondary.dropdown-toggle {
-    color: #fff;
-    background-color: #6c757d;
-    border-color: #6c757d
-}
-
-.btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
-.btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
-.show>.btn-outline-secondary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 .2rem rgba(108, 117, 125, .5)
 }
 
 .fade {
@@ -2125,6 +2080,10 @@ a.close.disabled {
     text-align: center !important
 }
 
+.text-lowercase {
+    text-transform: lowercase !important
+}
+
 .text-uppercase {
     text-transform: uppercase !important
 }
@@ -2156,10 +2115,6 @@ a.close.disabled {
 
     a:not(.btn) {
         text-decoration: underline
-    }
-
-    abbr[title]::after {
-        content: " (" attr(title) ")"
     }
 
     pre {

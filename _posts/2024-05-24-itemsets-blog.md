@@ -8,7 +8,7 @@ categories: sample-posts
 featured: true
 related_posts: true
 giscus: true
-giscuss_comments: true
+giscus_comments: true
 excerpt_separator: <!--more-->
 ---
 

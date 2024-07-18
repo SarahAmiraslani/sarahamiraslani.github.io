@@ -1,15 +1,14 @@
 ---
 layout: distill
 title: "Draw to Learn: A Strategy to Learn Abstract Concepts"
-description: This project investigates the effectiveness of student-generated drawings in facilitating the learning of abstract science concepts. By comparing various visualization strategies and key covariates in a controlled lab setting, we aim to uncover how different methods influence comprehension of complex topics and lead to better learning outcomes.
-date: 2021-05-22
+description: This project studies how student-generated drawings aid learning of abstract science concepts in a lab setting.
+date: 2020-05-20
 img: /assets/img/multimedia-learning.png
 importance: 2
 category: Experimental Design
-
-github: https://github.com/SarahAmiraslani/drawing-to-learn
+github: "https://github.com/SarahAmiraslani/drawing-to-learn"
 giscus: true
-giscuss_comments: true
+giscus_comments: true
 authors:
   - name: Sarah Amiraslani
     url: sarahamiraslani@gmail.com
@@ -18,8 +17,18 @@ authors:
 toc:
   - name: Summary
   - name: Introduction
+    children:
+      - name: Research Focus
+      - name: Hypothesis
   - name: Methods
+    children:
+      - name: Participants
+      - name: Design
+      - name: Materials
   - name: Results
+    children:
+      - name: Planned Analyses
+      - name: Exploratory Analyses
   - name: Discussion
   - name: Acknowledgment
 bibliography: multimedia-learning-distill.bib
@@ -77,7 +86,7 @@ We hypothesize that drawing will enhance learning of abstract concepts more effe
 
 ## Participants
 
-A convenience sample of 238 undergraduate students was gathered from the University of California, San Diego Psychology Subject Pool. All participants received partial course credit for their participation. Twenty-five participants were excluded from data analysis, leaving a final sample of 213 participants. Of the 213 participants, 43 identified as male, 165 identified as female, and five identified as non-binary. A majority of participants were in their early twenties with a mean age of 20.27 (SD = 1.93 years). Fifty-seven students participated in the study condition, 54 in the copy condition, 54 in the complete condition, and 48 in the draw condition.
+A convenience sample of 238 undergraduate students was gathered from the University of California, San Diego Psychology Subject Pool. All participants received partial course credit for their participation. Twenty-five participants were excluded from data analysis, leaving a final sample of 213 participants. Of the 213 participants, 43 identified as male, 165 identified as female, and five identified as non-binary. A majority of participants were in their early twenties with a mean age of 20.27 (_SD_ = 1.93 years). Fifty-seven students participated in the study condition, 54 in the copy condition, 54 in the complete condition, and 48 in the draw condition.
 
 ## Design
 
@@ -92,7 +101,6 @@ We used a between-subjects design to manipulate participants' drawing experience
     Figure 3. Visual representation of the experimental design.
 </div>
 
-
 ## Materials
 
 The materials for this study included a Qualtrics survey, a passage about black holes, illustrations to support the passage, passage comprehension tests (multiple choice and open response), and measures of individual differences (prior knowledge, visual imagery ability, cognitive load). All materials were presented to participants via a Qualtrics survey, which they accessed online via desktop computers in a lab setting.
@@ -103,7 +111,7 @@ The materials for this study included a Qualtrics survey, a passage about black 
 
 - **Illustrations**: Participants in the copy, study, and complete conditions received illustrations produced using Adobe Photoshop 2019 and Pages. Inspired by The Cosmic Perspective textbook and Pearson Mastering Astronomy platform <d-cite key="pearson2019"></d-cite>, the illustrations included drawings of black hole features, Einstein’s Theory of General Relativity, and spacetime distortion near black holes. Scaffolded illustrations featured key elements masked with empty text boxes. Participants in the drawing condition received blank sheets of paper and pens.
 
-- **Passage Comprehension Tests**: Three types of tests were developed: two analogous 15-question multiple-choice tests, one 4-question open response retention test, and one 4-question open response transfer test. The multiple-choice tests included 8 perfect analogs and 7 strong pairs of questions. Retention questions asked students to summarize lesson information, while transfer questions required application of knowledge to new scenarios. Answers were scored based on identified idea units, with inter-rater reliability for retention and transfer tests being r(212)=0.995, p <0.0001 and r(212)=0.798, p <0.0001, respectively.
+- **Passage Comprehension Tests**: Three types of tests were developed: two analogous 15-question multiple-choice tests, one 4-question open response retention test, and one 4-question open response transfer test. The multiple-choice tests included 8 perfect analogs and 7 strong pairs of questions. Retention questions asked students to summarize lesson information, while transfer questions required application of knowledge to new scenarios. Answers were scored based on identified idea units, with inter-rater reliability for retention and transfer tests being _r_(212)=0.995, _p_ <0.0001 and _r_(212)=0.798, _p_ <0.0001, respectively.
 
 - **Cognitive Load**: Cognitive load was measured using a 10-item instrument assessing intrinsic, extraneous, and germane load <d-cite key="leppink2013"></d-cite>. Participants rated items on a 0 to 10 scale. Examples included “The topics covered in the activity were very complex” (intrinsic load), “The instructions and explanations during the activity were very unclear” (extraneous load), and “The activity really enhanced my understanding of the topics covered” (germane load). Cognitive load was analyzed to determine the impact of visualization strategies on perceived difficulty and mental effort.
 
@@ -138,12 +146,13 @@ The materials for this study included a Qualtrics survey, a passage about black 
 
 # Results
 
-## Planned Analysis
+## Planned Analyses
+
 The purpose of our experiment was to determine if more generative illustration activities would improve retention and transfer of knowledge about black holes. We hypothesized that participants who created their own illustrations would perform better on comprehension measures compared to those who studied provided illustrations. From the initial 238 participants, 213 were included in the final analysis after excluding those who did not engage in the illustration activity, failed attention checks, or did not complete the study.
 
-Participants demonstrated good visual imagery ability (M = 3.761, SD = 0.574) on a scale from 1 to 5, but reported low prior knowledge in physics and astronomy (M = 9.310, SD = 6.813) on a scale from 0 to 50. Their pre-test scores on a multiple-choice test specific to black holes were also low (M = 4.188 out of 12, SD = 1.963). There were no significant differences across conditions for visual imagery ability, self-reported prior knowledge, or pre-test scores, indicating a baseline similarity among participants.
+Participants demonstrated good visual imagery ability (_M_ = 3.761, _SD_ = 0.574) on a scale from 1 to 5, but reported low prior knowledge in physics and astronomy (_M_ = 9.310, _SD_ = 6.813) on a scale from 0 to 50. Their pre-test scores on a multiple-choice test specific to black holes were also low (_M_ = 4.188 out of 12, _SD_ = 1.963). There were no significant differences across conditions for visual imagery ability, self-reported prior knowledge, or pre-test scores, indicating a baseline similarity among participants.
 
-We analyzed the effects of illustration generativity on multiple-choice gains, open-response retention scores, and open-response transfer scores. No significant differences were found in multiple-choice gains or transfer scores across conditions. However, we did observe significant differences in open-response retention scores (F(3,209) = 7.41, p < 0.001). Participants who drew their own illustrations (M = 6.688, SD = 2.93) scored significantly higher on retention compared to those who copied illustrations (M = 4.204, SD = 2.750, p < 0.0001) and those who completed partial illustrations (M = 4.796, SD = 2.595, p = 0.0037). The difference between drawing and studying was near significance (p = 0.052).
+We analyzed the effects of illustration generativity on multiple-choice gains, open-response retention scores, and open-response transfer scores. No significant differences were found in multiple-choice gains or transfer scores across conditions. However, we did observe significant differences in open-response retention scores (_F_(3,209) = 7.41, _p_ < 0.001). Participants who drew their own illustrations (_M_ = 6.688, _SD_ = 2.93) scored significantly higher on retention compared to those who copied illustrations (_M_ = 4.204, _SD_ = 2.750, _p_ < 0.0001) and those who completed partial illustrations (_M_ = 4.796, _SD_ = 2.595, _p_ = 0.0037). The difference between drawing and studying was near significance (_p_ = 0.052).
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -167,11 +176,11 @@ We analyzed the effects of illustration generativity on multiple-choice gains, o
 
 Additional analyses were conducted to explore mechanisms by which drawing might enhance learning. We examined reading time, cognitive load, condition enjoyment, and word count:
 
-- **Reading Time**: Participants in the drawing condition spent more time engaging with the lesson (M = 16.994 min, SD = 5.809) compared to other conditions (study, copy, complete), which could contribute to their better performance on the retention test. This was confirmed by a significant linear regression (F(1,211)=6.97, p = 0.008), with reading time predicting retention test scores.
+- **Reading Time**: Participants in the drawing condition spent more time engaging with the lesson (_M_ = 16.994 min, _SD_ = 5.809) compared to other conditions (study, copy, complete), which could contribute to their better performance on the retention test. This was confirmed by a significant linear regression (_F_(1,211)=6.97, _p_ = 0.008), with reading time predicting retention test scores.
 
-- **Cognitive Load**: We found no overall differences in cognitive load across conditions. However, significant differences were observed in extraneous load (F(3,209) = 15.82, p < 0.0001) and germane load (F(3,209) = 6.20, p = 0.0005). Participants in the complete condition reported higher extraneous load, while those in the study condition reported higher germane load compared to other groups.
+- **Cognitive Load**: We found no overall differences in cognitive load across conditions. However, significant differences were observed in extraneous load (_F_(3,209) = 15.82, _p_ < 0.0001) and germane load (_F_(3,209) = 6.20, _p_ = 0.0005). Participants in the complete condition reported higher extraneous load, while those in the study condition reported higher germane load compared to other groups.
 
-- **Condition Enjoyment**: Participants in the study condition enjoyed the activity more (M = 3.965/5 Likert scale, SD = 0.778) than those in other conditions, with significant differences observed between study and complete conditions, and between copy and complete conditions.
+- **Condition Enjoyment**: Participants in the study condition enjoyed the activity more (_M_ = 3.965/5 Likert scale, _SD_ = 0.778) than those in other conditions, with significant differences observed between study and complete conditions, and between copy and complete conditions.
 
 - **Word Count**: No significant differences were found in total word count or unique word count used to answer open response questions across conditions, suggesting that the amount of writing did not account for differences in retention scores.
 

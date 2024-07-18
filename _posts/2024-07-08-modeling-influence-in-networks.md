@@ -8,7 +8,7 @@ categories: exploration
 featured: true
 related_posts: true
 giscus: true
-giscuss_comments: true
+giscus_comments: true
 _styles: >
   .fake-img {
     background: #bbb;
@@ -24,7 +24,6 @@ _styles: >
     text-align: center;
     font-size: 16px;
   }
-
 
 bibliography: 2018-12-22-distill.bib
 
@@ -47,8 +46,6 @@ toc:
   - name: Layouts
   - name: Other Typography?
 ---
-
-
 
 <div class="l-page">
   <iframe src="{{ '/assets/plotly/network.html' | relative_url }}" frameborder='0' scrolling='no' height="500px" width="100%" style="border: 1px dashed grey;"></iframe>

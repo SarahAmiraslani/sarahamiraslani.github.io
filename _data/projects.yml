@@ -1,35 +1,59 @@
-- url: /projects/3_project/
-  title: Tracing the Origins of Solar Wind with Machine Learning
-  description: This project uses in-situ measurements and unsupervised learning to cluster solar wind with similar properties and map it to its coronal origins, aiming to enhance predictions of heliospheric phenomena through machine learning.
-  releaseDate: 2024-05-20
+- url: /projects/1_project/
+  title: Drawing to Learn Abstractions
+  description: This project examines the effectiveness of student-generated drawings in
+    learning abstract science concepts. By comparing various visualization
+    strategies and important covariates in a lab setting, we explore how
+    different methods impact retention and understanding of complex topics like
+    black holes.
   technologies:
-    - Unsupervised Learning
-    - PCA
-    - t-SNE
-    - DBSCAN
-  github_url: https://github.com/SarahAmiraslani/solar-wind-coronal-origin-ml
-  image: /assets/img/KPCA.png
+    - Experimental Design
+    - Multivariate Analysis
+    - General Linear Models
+  date: 2020-05-20
+  github: https://github.com/SarahAmiraslani/drawing-to-learn
+  image: /assets/img/drawing-black-holes.png
 
-- url: /projects/4_project/
-  title: "Formula 1 Analytics: Predicting Top 10 Finishes and Clustering Race Tracks"
-  description: This project applies supervised learning to predict top 10 race finishes, pinpointing key factors that influence these outcomes. Additionally, it employs unsupervised learning to cluster race tracks based on characteristics like layout and surface, offering novel insights into racing strategies and optimizing performance.
+- url: /projects/2_project/
+  title: "Predicting Top 10 Formula 1 Finishes and Clustering Race Tracks"
+  description: This project applies supervised learning to predict top 10 race finishes,
+    pinpointing key factors that influence these outcomes. Additionally, it
+    employs unsupervised learning to cluster race tracks based on
+    characteristics like layout and surface, offering novel insights into racing
+    strategies and optimizing performance.
   technologies:
     - Random Forest
     - Logistic Regression
     - Neural Networks
     - DBSCAN
-  releaseDate: 2024-04-01
-  github_url: https://github.com/SarahAmiraslani/F1-Milestone-Tharval-Amiraslani-Korbin
+  date: 2024-04-01
+  github: https://github.com/SarahAmiraslani/formula1-predictions-track-clustering
   image: assets/img/track-clusters.png
 
-- url: /projects/1_project/
-  title: Drawing to Learn Abstractions
-  description: This project examines the effectiveness of student-generated drawings in learning abstract science concepts. By comparing various visualization strategies and important covariates in a lab setting, we explore how different methods impact retention and understanding of complex topics like black holes.
+- url: /projects/3_project/
+  title: Tracing the Origins of Solar Wind with Machine Learning
+  description: This project uses in-situ measurements and unsupervised learning to cluster
+    solar wind with similar properties and map it to its coronal origins, aiming
+    to enhance predictions of heliospheric phenomena through machine learning.
+  date: 2024-06-20
   technologies:
-    - Experimental Design
-    - Multivariate Analysis
-  releaseDate: 2020-05-20
-  github_url: https://github.com/SarahAmiraslani/drawing-to-learn
-  image: /assets/img/drawing-black-holes.png
-  pdf_link: /assets/pdf/drawing-to-learn.pdf
-  pdf_description: Research Poster
+    - Unsupervised Learning
+    - PCA
+    - t-SNE
+    - DBSCAN
+  github: https://github.com/SarahAmiraslani/solar-wind-coronal-origin-ml
+  image: /assets/img/KPCA.png
+
+- url: /projects/4_project/
+  title: Predicting Sunspot Activity with Machine Learning
+  description: This project aims to accurately forecast the number of sunspots on the Sun
+    by applying ensemble learning and deep learning methods, including Extra
+    Trees, LSTM, and Transformers, to predict sunspot numbers and Heliospheric
+    Current Sheet (HCS) indexes. The findings from these models will provide
+    insights into the future global structure of the solar wind and its
+    implications.
+  technologies:
+    - LTSM
+    - Prophet
+  date: 2024-05-20
+  github: https://github.com/SarahAmiraslani/solar-wind-coronal-origin-ml
+  image: /assets/img/sunspot-prediction.png

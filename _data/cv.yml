@@ -1,12 +1,13 @@
 - title: General Information
-  type: map
+  type: CodeCV
   contents:
     - name: Full Name
       value: Sarah Amiraslani
     - name: Date of Birth
       value: Not provided
     - name: Languages
-      value: Farsi (Native speaker), English (Fluent), Spanish (Advanced), French (Intermediate)
+      value: Farsi (Native speaker), English (Fluent), Spanish (Advanced), French
+        (Intermediate)
 
 - title: Education
   type: time_table
@@ -20,7 +21,8 @@
         - Deep Learning
         - Natural Language Processing
         - Data Structures and Algorithms
-        - Thesis: Understanding the in-situ Solar Wind Properties with Machine Learning
+        - Thesis: Understanding the in-situ Solar Wind Properties with Machine
+            Learning
     - title: Bachelors of Science (BS)
       institution: University of California, San Diego, California, US
       year: 2017-2020
@@ -41,43 +43,48 @@
       institution: Wells Fargo Bank, N.A., San Francisco, California, US
       year: 2022 - 2024
       description:
-        - As the primary technical contributor of the AI/ML developer relations, drove a 60% efficiency boost in model development.
-        - Enhanced collaboration with vendors and departments, generating $1M in value.
-        - Created tech articles, hosted office hours, and improved documentation, fueling a 150% rise in tool adoption.
-        - Strategic coordination cut model time-to-market by 20% and elevated program visibility company-wide.
+        - As the primary technical contributor of the AI/ML developer relations,
+          drove a 60% efficiency boost in model development.
+        - Enhanced collaboration with vendors and departments, generating $1M in
+          value.
+        - Created tech articles, hosted office hours, and improved
+          documentation, fueling a 150% rise in tool adoption.
+        - Strategic coordination cut model time-to-market by 20% and elevated
+          program visibility company-wide.
     - title: Data Science Intern
       institution: Changing Room, INC., Remote
       year: 2021 - 2022
       description:
-        - Led the development of data mining and ETL pipelines, creating Python programs to scrape over 100,000 fashion brand inventory items.
-        - Collaborated on developing an AI-driven recommendation system delivered via a Chrome plugin.
+        - Led the development of data mining and ETL pipelines, creating Python
+          programs to scrape over 100,000 fashion brand inventory items.
+        - Collaborated on developing an AI-driven recommendation system
+          delivered via a Chrome plugin.
     - title: Data Analyst
       institution: Trackonomy Systems, INC., San Jose, California, US
       year: 2020 - 2021
       description:
-        - Collaborated on projects to improve data collection processes and cut production costs as a member of the manufacturing automation team.
+        - Collaborated on projects to improve data collection processes and cut
+          production costs as a member of the manufacturing automation team.
     - title: Teaching Assistant and Tutor
       institution: University of California, San Diego, California, US
       year: 2019
       description:
-        - Assisted in teaching introductory data science courses, provided tutoring, and helped develop course materials.
+        - Assisted in teaching introductory data science courses, provided
+          tutoring, and helped develop course materials.
     - title: Research Assistant, Honors Thesis
       institution: University of California, San Diego, California, US
       year: 2018 - 2021
       description:
-        - Conducted research on cognitive behavioral neuroscience, focusing on experimental design, data analysis, and visualization for thesis projects.
+        - Conducted research on cognitive behavioral neuroscience, focusing on
+          experimental design, data analysis, and visualization for thesis
+          projects.
     - title: Research Assistant
-      institution: University of California, San Diego School of Medicine, San Diego, California, US
+      institution: University of California, San Diego School of Medicine, San Diego,
+        California, US
       year: 2017 - 2018
       description:
-        - Assisted in research projects focusing on archival data analysis, data visualization, and statistical analysis.
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+        - Assisted in research projects focusing on archival data analysis, data
+          visualization, and statistical analysis.
 
 - title: Honors and Awards
   type: time_table
@@ -102,8 +109,3 @@
       items:
         - Cognitive Psychology
         - Neuroscience
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Not provided

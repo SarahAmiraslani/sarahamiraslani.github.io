@@ -8,8 +8,7 @@ layout: default
   </header>
 
   {% if page.github %}
-  <a href="{{ page.github }}" class="btn btncv z-depth-0">View code on
-    GitHub</a>
+    <a href="{{ page.github }}" class="btn btncv z-depth-0">View code on GitHub</a>
   {% endif %}
 
   <article>
@@ -18,13 +17,13 @@ layout: default
   </article>
 
   {% if page.related_publications %}
-  <h2>References</h2>
-  <div class="publications">
-    {% bibliography --cited_in_order %}
-  </div>
+    <h2>References</h2>
+    <div class="publications">
+      {% bibliography --cited_in_order %}
+    </div>
   {% endif %}
 
   {% if site.giscus and page.giscus_comments %}
-  {% include giscus.liquid %}
+    {% include giscus.liquid %}
   {% endif %}
 </div>

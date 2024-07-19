@@ -7,11 +7,11 @@ on:
       - main
     paths:
       - "assets/**"
-      - "**/*.html"
-      - "**/*.js"
-      - "**/*.liquid"
+      - "**.html"
+      - "**.js"
+      - "**.liquid"
       - "**/*.md"
-      - "**/*.yml"
+      - "**.yml"
       - "!.github/workflows/axe.yml"
       - "!.github/workflows/deploy-docker-tag.yml"
       - "!.github/workflows/deploy-image.yml"
@@ -25,11 +25,11 @@ on:
       - main
     paths:
       - "assets/**"
-      - "**/*.html"
-      - "**/*.js"
-      - "**/*.liquid"
+      - "**.html"
+      - "**.js"
+      - "**.liquid"
       - "**/*.md"
-      - "**/*.yml"
+      - "**.yml"
       - "!.github/workflows/axe.yml"
       - "!.github/workflows/deploy-docker-tag.yml"
       - "!.github/workflows/deploy-image.yml"
@@ -39,41 +39,14 @@ on:
       - "!lighthouse_results/**"
 
 jobs:
-  build-and-serve:
+  link-checker:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      # Setup Ruby
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: "3.0" # Specify the Ruby version you need for your project
-
-      # Install Bundler
-      - name: Install Bundler
-        run: gem install bundler
-
-      # Install dependencies
-      - name: Install Dependencies
-        run: bundle install
-
-      # Serve the site using Jekyll
-      - name: Build and Serve Site
-        run: bundle exec jekyll serve --lsi --port 4000 --host 127.0.0.1 &
-        # The '&' at the end runs Jekyll in the background, allowing the workflow to move on to the next steps
-
-      - name: Wait for Jekyll Server to be Ready
-        run: |
-          until curl --output /dev/null --silent --head --fail http://127.0.0.1:4000; do
-            printf '.'
-            sleep 5
-          done
-
-      # Run the link checker
       - name: Link Checker 🔗
         uses: lycheeverse/lychee-action@v1.9.0
         with:
           fail: true
-          args: --user-agent 'curl/7.54' --exclude-path README.md --exclude-path _pages/404.md --exclude-path _pages/blog.md --exclude-path _posts/2018-12-22-distill.md --verbose --no-progress --ignore-unknown
-          inputs: 'http://127.0.0.1:4000/**/*.md' 'http://127.0.0.1:4000/**/*.html'
+          # removed md files that include liquid tags
+          args: --user-agent 'curl/7.54' --exclude-path README.md --exclude-path _pages/404.md --exclude-path _pages/blog.md --exclude-path _posts/2018-12-22-distill.md --exclude-path _posts/2023-04-24-videos.md --verbose --no-progress './**/*.md' './**/*.html'

@@ -48,7 +48,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.0' # Specify the Ruby version you need for your project
+          ruby-version: "3.0" # Specify the Ruby version you need for your project
 
       # Install Bundler
       - name: Install Bundler
@@ -60,7 +60,8 @@ jobs:
 
       # Serve the site using Jekyll
       - name: Build and Serve Site
-        run: bundle exec jekyll serve --lsi --port 4000 --host 127.0.0.1
+        run: bundle exec jekyll serve --lsi --port 4000 --host 127.0.0.1 &
+        # The '&' at the end runs Jekyll in the background, allowing the workflow to move on to the next steps
 
       # Run the link checker
       - name: Link Checker 🔗

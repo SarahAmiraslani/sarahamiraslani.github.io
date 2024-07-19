@@ -133,7 +133,7 @@ The Ergast Developer API serves as a pivotal data source for our Formula 1 analy
   </tr>
   <tr>
     <td><strong>Location</strong></td>
-    <td> <a href="https://ergast.com/mrd/">Ergast Developer API</a></td>
+    <td> <a href="https://ergast.com">Ergast Developer API</a></td>
   </tr>
   <tr>
     <td><strong>Format</strong></td>
@@ -181,7 +181,7 @@ To prepare the dataset for our supervised learning model, a comprehensive pre-pr
     </tr>
     <tr>
       <td>RacerId</td>
-      <td>Firstname-Lastname (e.g., Lewis-Hamilton)</td>
+      <td>First name-Last name (e.g., Lewis-Hamilton)</td>
       <td>Index</td>
     </tr>
     <tr>
@@ -241,7 +241,7 @@ For our analysis of F1 track characteristics, we leveraged three data sources. T
     <tr>
       <td>Location</td>
       <td><a href="https://en.wikipedia.org/wiki/List_of_Formula_One_circuits">https://en.wikipedia.org/wiki/List_of_Formula_One_circuits</a></td>
-      <td><a href="https://ergast.com/api/f1/circuits?limit=100&offset=0">https://ergast.com/api/f1/circuits?limit=100&offset=0</a></td>
+      <td>https://ergast.com/api/f1/circuits?limit=100&offset=0</td>
       <td><a href="https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020">https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020</a></td>
     </tr>
     <tr>

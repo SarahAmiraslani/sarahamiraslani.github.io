@@ -46,7 +46,3 @@ toc:
   - name: Layouts
   - name: Other Typography?
 ---
-
-<div class="l-page">
-  <iframe src="{{ '/assets/plotly/network.html' | relative_url }}" frameborder='0' scrolling='no' height="500px" width="100%" style="border: 1px dashed grey;"></iframe>
-</div>

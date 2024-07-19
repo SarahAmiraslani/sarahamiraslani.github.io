@@ -44,9 +44,26 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Add a step to build your site, adjust the command according to your site's build process
+      - name: Build Site
+        run: |
+          # Example for Jekyll, replace with your build command
+          bundle install
+          bundle exec jekyll build
+
+      # Start a local server to serve the built site
+      - name: Start Local Server
+        run: |
+          npm install -g http-server
+          # Serve the site, replace `_site` with your build directory if different
+          http-server _site -p 4000 &
+          # Wait a bit for the server to start up
+          sleep 10
+
+      # Run the link checker
       - name: Link Checker 🔗
         uses: lycheeverse/lychee-action@v1.9.0
         with:
           fail: true
-          # removed md files that include liquid tags
-          args: --user-agent 'curl/7.54' --exclude-path README.md --exclude-path _pages/404.md --exclude-path _pages/blog.md --exclude-path _posts/2018-12-22-distill.md --verbose --no-progress './**/*.md' './**/*.html'
+          # Update args to check your local server, adjust paths as needed
+          args: --user-agent 'curl/7.54' --exclude-path README.md --exclude-path _pages/404.md --exclude-path _pages/blog.md --exclude-path _posts/2018-12-22-distill.md --verbose --no-progress 'http://localhost:4000/**/*.md' 'http://localhost:4000/**/*.html'

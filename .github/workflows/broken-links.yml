@@ -39,25 +39,29 @@ on:
       - "!lighthouse_results/**"
 
 jobs:
-  link-checker:
+  build-and-serve:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      # Add a step to build your site, adjust the command according to your site's build process
-      - name: Build Site
-        run: |
-          bundle install
-          bundle exec jekyll serve --lsi
+      # Setup Ruby
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0' # Specify the Ruby version you need for your project
 
-      # Start a local server to serve the built site
-      - name: Start Local Server
-        run: |
-          npm install -g http-server
-          # Serve the site, replace `_site` with your build directory if different
-          http-server _site -p 4000 &
-          # Wait a bit for the server to start up
-          sleep 10
+      # Install Bundler
+      - name: Install Bundler
+        run: gem install bundler
+
+      # Install dependencies
+      - name: Install Dependencies
+        run: bundle install
+
+      # Serve the site using Jekyll
+      - name: Build and Serve Site
+        run: bundle exec jekyll serve --lsi --port 4000 --host 0.0.0.0 &
+        # The '&' at the end runs Jekyll in the background, allowing the workflow to move on to the next steps
 
       # Run the link checker
       - name: Link Checker 🔗

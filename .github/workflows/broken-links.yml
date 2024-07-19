@@ -47,9 +47,8 @@ jobs:
       # Add a step to build your site, adjust the command according to your site's build process
       - name: Build Site
         run: |
-          # Example for Jekyll, replace with your build command
           bundle install
-          bundle exec jekyll build
+          bundle exec jekyll serve --lsi
 
       # Start a local server to serve the built site
       - name: Start Local Server

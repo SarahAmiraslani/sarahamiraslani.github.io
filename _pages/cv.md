@@ -1,7 +1,7 @@
 ---
 layout: cv
-permalink: /cv/
-title: CV
+permalink: /resume/
+title: Resume
 nav: true
 nav_order: 5
 cv_pdf: Sarah_Amiraslani_Resume.pdf

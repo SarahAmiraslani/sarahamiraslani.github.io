@@ -2255,7 +2255,7 @@ a.close.disabled {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
 .languages-container {
     display: flex;
@@ -2348,4 +2348,12 @@ a.close.disabled {
 
 .skill-item:hover {
     background-color: transparent;
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    /* Adjust height as needed */
+    object-fit: cover;
+    /* Ensures the image covers the area without stretching */
 }

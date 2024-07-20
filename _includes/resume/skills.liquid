@@ -1,20 +1,20 @@
 <div class="skills-container">
   {% for content in data[1] %}
-    <div class="skill-group" title="{{ content.level }}">
-      <div class="skill-category">
-        {% if content.icon %}
-          <span class="skill-icon">
-            <i class="{{ content.icon }}"></i>
-          </span>
-        {% endif %}
-        <span class="title skill-name font-weight-bold">{{ content.name }}</span>
-      </div>
-      <ul class="skill-list">
-        {% for item in content.keywords %}
-          <li class="skill-item" style="font-size: 0.95rem">{{ item }}</li>
-        {% endfor %}
-      </ul>
+  <div class="skill-group" title="{{ content.level }}">
+    <div class="skill-category">
+      {% if content.icon %}
+      <span class="skill-icon">
+        <i class="{{ content.icon }}"></i>
+      </span>
+      {% endif %}
+      <span class="title skill-name font-weight-bold">{{ content.name }}</span>
     </div>
+    <ul class="skill-list">
+      {% for item in content.keywords %}
+      <li class="skill-item" style="font-size: 0.95rem">{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
   {% endfor %}
 </div>
 
@@ -53,7 +53,7 @@
 
   .skill-name {
     font-weight: bold;
-    font-size: 0.95rem;
+    font-size: 1.25rem;
     color: var(--global-theme-color);
   }
 

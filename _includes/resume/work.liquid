@@ -1,57 +1,96 @@
 <ul class="card-text font-weight-light list-group list-group-flush">
   {% assign work = data[1] | sort: 'startDate' | reverse %}
   {% for content in work %}
-    <li class="list-group-item">
-      <div class="row">
-        <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
-          {% if content.startDate %}
-            {% assign startDate = content.startDate | split: '-' | slice: 0, 2 | join: '.' %}
-            {% assign endDate = content.endDate | split: '-' | slice: 0, 2 | join: '.' | default: 'Present' %}
-            {% assign date = startDate | append: ' - ' %}
-            {% assign date = date | append: endDate %}
-          {% else %}
-            {% assign date = '' %}
-          {% endif %}
-          <table class="table-cv">
-            <tbody>
-              <tr>
-                <td>
-                  <span
-                    class="badge font-weight-bold danger-color-dark text-uppercase align-middle"
-                    style="min-width: 75px"
-                  >
-                    {{ date }}
-                  </span>
-                </td>
-              </tr>
-              {% if content.location %}
-                <tr>
-                  <td>
-                    <p class="location">
-                      <i class="fa-solid fa-location-dot iconlocation"></i>
-                      {{ content.location }}
-                    </p>
-                  </td>
-                </tr>
-              {% endif %}
-            </tbody>
-          </table>
-        </div>
-        <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
-          <h6 class="title font-weight-bold ml-1 ml-md-4">
-            <a href="{{ content.url }}">{{ content.position }}</a>
-          </h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ content.name }}</h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ content.summary }}</h6>
-          <ul class="items">
-            {% for item in content.highlights %}
-              <li>
-                <span class="item">{{ item }}</span>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col-xs-3 col-sm-3 col-md-2 text-center date-column">
+        {% if content.startDate %}
+        {% assign startDate = content.startDate | split: '-' | join: '.' %}
+        {% assign endDate = content.endDate | split: '-' | join: '.' | default: 'Present' %}
+        <span class="badge font-weight-bold text-uppercase align-middle"
+          style="min-width: 75px; background-color: #007bff; color: #fff;">
+          {{ startDate }} - {{ endDate }}
+        </span>
+        {% endif %}
       </div>
-    </li>
+      <div class="col-xs-9 col-sm-9 col-md-10 mt-2 mt-md-0">
+        <h5 class="title font-weight-bold ml-1 ml-md-4">
+          <a style=color: var(--global-theme-color)>{{ content.position }}</a>
+        </h5>
+        <h6 class="ml-1 ml-md-4" style="font-size: .95rem;">
+          <a href="{{ content.url }}">{{ content.name }}</a>, {{ content.location }}
+        </h6>
+        <p class="ml-1 ml-md-4" style="font-size: 0.95rem; color: var(--global-text-color)">{{ content.summary }}</p>
+        {% if content.highlights %}
+        <ul class="highlights-list ml-1 ml-md-4">
+          {% for highlight in content.highlights %}
+          <li class="highlight-item" style="font-size: 0.95rem">{{ highlight }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+    </div>
+  </li>
   {% endfor %}
 </ul>
+
+<style>
+  .highlights-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    gap: 10px;
+    /* Gap between items */
+  }
+
+  .highlight-item {
+    flex: 1 1 calc(50% - 10px);
+    /* Two columns layout with gap */
+    position: relative;
+    padding: 10px 20px;
+    background-color: var(--global-bg-color);
+    /* Light background for better visibility */
+    border-radius: 5px;
+    border-color: var(--global-divider-color);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px;
+  }
+
+  .highlight-item::before {
+    /* content: '•'; */
+    /* Custom bullet icon */
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--global-text-color);
+    background-color: var(--global-bg-color);
+    border-color: var(--global-divider-color);
+    /* Primary color */
+    font-size: .95rem;
+    /* Adjust size if needed */
+    line-height: 1;
+    text-align: center;
+    align-content: center;
+  }
+
+  .highlight-item:hover {
+    background-color: var(--global-theme-color);
+    /* Light hover effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+  }
+</style>

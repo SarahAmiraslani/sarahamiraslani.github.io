@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="{{ site.lang }}">
   <!-- Head -->
+
   <head>
     {% if page.redirect %}
       {% if page.redirect == true %}
@@ -16,7 +17,10 @@
   </head>
 
   <!-- Body -->
-  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+
+  <body
+    class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}"
+  >
     <!-- Header -->
     {% include header.liquid %}
 
@@ -73,6 +77,5 @@
     {% include scripts/jekyll_tabs.liquid %}
     {% include scripts/back_to_top.liquid %}
     {% include scripts/search.liquid %}
-    <script src="{{ '/assets/js/shortcut-key.js' | relative_url }}"></script>
   </body>
 </html>

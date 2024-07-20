@@ -496,10 +496,8 @@ pre code {
 .col-md-2,
 .col-md-6,
 .col-sm,
-.col-sm-3,
 .col-sm-4,
-.col-sm-8,
-.col-sm-9 {
+.col-sm-8 {
     position: relative;
     width: 100%;
     align-items: center;
@@ -538,12 +536,6 @@ pre code {
         max-width: 100%
     }
 
-    .col-sm-3 {
-        -ms-flex: 0 0 25%;
-        flex: 0 0 25%;
-        max-width: 25%
-    }
-
     .col-sm-4 {
         -ms-flex: 0 0 33.333333%;
         flex: 0 0 33.333333%;
@@ -554,12 +546,6 @@ pre code {
         -ms-flex: 0 0 66.666667%;
         flex: 0 0 66.666667%;
         max-width: 66.666667%
-    }
-
-    .col-sm-9 {
-        -ms-flex: 0 0 75%;
-        flex: 0 0 75%;
-        max-width: 75%
     }
 }
 
@@ -2066,10 +2052,6 @@ a.close.disabled {
     .ml-md-4 {
         margin-left: 1.5rem !important
     }
-}
-
-.text-left {
-    text-align: left !important
 }
 
 .text-right {

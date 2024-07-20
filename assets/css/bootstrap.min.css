@@ -11526,4 +11526,204 @@ a.text-dark:hover {
     }
 }
 
+.padded-title {
+    padding-top: 15px;
+}
+
+.highlights-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    gap: 10px;
+    /* Gap between items */
+}
+
+.highlight-item {
+    flex: 1 1 calc(50% - 10px);
+    /* Two columns layout with gap */
+    position: relative;
+    padding: 10px 20px;
+    background-color: var(--global-code-bg-color);
+    color: var(--global-text-color);
+    /* Light background for better visibility */
+    border-radius: 5px;
+    border-color: var(--global-divider-color);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.highlight-item::before {
+    /* content: '•'; */
+    /* Custom bullet icon */
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--global-text-color);
+    background-color: var(--global-code-bg-color);
+    border-color: var(--global-divider-color);
+    /* Primary color */
+    font-size: .95rem;
+    /* Adjust size if needed */
+    line-height: 1;
+    text-align: center;
+    align-content: center;
+}
+
+.highlight-item:hover {
+    background-color: var(--global-theme-color);
+    /* Light hover effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+}
+
+.date-badge {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 0.85rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.25rem;
+    min-width: 85px;
+    text-align: center;
+}
+
+.date-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.languages-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.language-group {
+    flex: 1 1 calc(50% - 20px);
+    /* Two columns layout */
+    background-color: transparent;
+    padding: 20px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+}
+
+.language-category {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.language-icon {
+    margin-right: 15px;
+    font-size: .95rem;
+    color: var(--global-theme-color);
+    /* Primary color */
+}
+
+.language-name {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: var(--global-theme-color);
+}
+
+.language-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.language-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease;
+}
+
+.language-item:last-child {
+    border-bottom: none;
+}
+
+.language-item:hover {
+    background-color: transparent;
+}
+
+.language-keywords {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: var(--global-text-color-light);
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.skill-group {
+    flex: 1 1 calc(50% - 20px);
+    /* Two columns layout */
+    background-color: transparent;
+    padding: 20px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.skill-category {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.skill-icon {
+    margin-right: 15px;
+    font-size: 0.95rem;
+    color: var(--global-theme-color);
+    /* Primary color */
+}
+
+.skill-name {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: var(--global-theme-color);
+}
+
+.skill-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.skill-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease;
+}
+
+.skill-item:last-child {
+    border-bottom: none;
+}
+
+.skill-item:hover {
+    background-color: transparent;
+}
+
 /*# sourceMappingURL=bootstrap.min.css.map */

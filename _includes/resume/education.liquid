@@ -7,13 +7,13 @@
         {% if content.startDate %}
         {% assign startDate = content.startDate | split: '-' | join: '.' %}
         {% assign endDate = content.endDate | split: '-' | join: '.' | default: 'Present' %}
-        <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 100px">
+        <span class="badge date-badge" style="min-width: 100px">
           {{ startDate }} - {{ endDate }}
         </span>
         {% endif %}
       </div>
       <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
-        <h6 class="title font-weight-bold ml-1 ml-md-4" style="font-size: 1.25rem">
+        <h6 class="title font-weight-bold ml-1 ml-md-4 padded-title" style="font-size: 1.25rem">
           <a href="{{ content.url }}">{{ content.institution }}</a>
         </h6>
         <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ content.area }}, {{ content.studyType }}</h6>
@@ -23,7 +23,8 @@
         {% endif %}
         {% if content.courses %}
         <div class="ml-1 ml-md-4" style="font-size: 0.95rem"><strong>Courses:</strong>
-          {{ content.courses | join: ', ' }}</div>
+          {{ content.courses | join: ', ' }}
+        </div>
         {% endif %}
       </div>
     </div>

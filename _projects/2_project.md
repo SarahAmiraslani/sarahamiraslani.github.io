@@ -63,92 +63,34 @@ bibliography: formula-one-distill.bib
         {% include figure.liquid loading="eager" path="assets/img/race-engineering.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-<!-- <div class="caption">
-    (left) from Sports
-</div> -->
+<div class="caption">
+    (left) <a href="https://www.formula1.com/en/drivers/sergio-perez">Sergio Pérez</a> driving for Red Bull image captured by Jared C. Tilton <d-cite key="race_for_second_2024"></d-cite>. (right) <a href="https://en.wikipedia.org/wiki/Scuderia_AlphaTauri">Alpha Tauri</a> Engineers analyzing lap times, GPS coordinates, and video footage in real time in the pit wall. <d-cite key="how_teams_analyse_f1_race_strategy_2024"></d-cite>
+</div>
 
 # Introduction
 
-Formula 1, often hailed as the pinnacle of motorsport, combines high-speed competition, cutting-edge technology, and a global fan base. This premier racing series showcases a unique synergy of engineering excellence, driver skill, and strategic depth, making it an intriguing subject for in-depth analysis. This project leverages machine learning to explore the complexities of Formula 1, with a primary focus on predicting top 10 finishes in races—a crucial outcome for securing championship points for drivers and teams. Additionally, we analyze race track characteristics through unsupervised learning, clustering tracks based on factors such as layout, surface, and length.
+Formula 1, often hailed as the pinnacle of motorsport, combines high-speed competition, cutting-edge technology, and a global fan base. This premier racing series showcases a unique synergy of engineering excellence, driver skill, and strategic depth, making it an intriguing subject for in-depth analysis. This project leverages machine learning to explore the complexities of Formula 1, with a primary focus on predicting top 10 finishes in races — a crucial outcome for securing championship points for drivers and teams. Additionally, we analyze race track characteristics through unsupervised learning, clustering tracks based on factors such as layout, surface, and length.
 
 Historically, Formula 1 analytics has focused on predicting race winners using various statistical and machine learning techniques. These studies often reflect the dominance of certain teams during specific eras, such as Red Bull's supremacy from 2010 to 2013 and 2021 to the present, and Mercedes' stronghold from 2013 to 2020. While insightful, this focus on predicting race winners can overlook the nuanced dynamics and strategic elements that contribute to the broader competitive landscape of Formula 1 racing.
 
-Recognizing this gap, our project aims to broaden the analytical scope by targeting the prediction of top 10 finishes. Securing a place in the top 10 is vital for accumulating championship points, crucial for both drivers and constructors over a season. By shifting our focus to these positions, we aim to capture the intricate competitive interactions and strategic nuances that influence race outcomes beyond the winner's podium. This approach provides a more comprehensive understanding of performance determinants in Formula 1, addressing both the predictability associated with team dominance and the variability arising from tactical decisions across the grid.
+Our project aims to broaden the analytical scope by targeting the prediction of top 10 finishes. Securing a place in the top 10 is vital for accumulating championship points, crucial for both drivers and constructors over a season. By shifting our focus to these positions, we aim to capture the intricate competitive interactions and strategic nuances that influence race outcomes beyond the winner's podium. This approach provides a more comprehensive understanding of performance determinants in Formula 1, addressing both the predictability associated with team dominance and the variability arising from tactical decisions across the grid.
 
-Our exploration into the unsupervised clustering of race tracks adds another dimension to this analysis. By uncovering similarities and distinctions among tracks, we offer deeper insights into how different track characteristics influence racing strategies and outcomes. This dual-faceted approach distinguishes our work from conventional race prediction analyses, offering a novel perspective on the dynamics of Formula 1 racing.
 
-Integrating these analyses, our project aspires to provide valuable insights for teams, drivers, and fans, enhancing strategic planning and performance optimization within the sport.
+The Formula 1 points system awards points to the top 10 finishers in a grand prix, with the winner receiving 25 points, second place 18 points, and so on down to 1 point for the 10th place.  Additionally, there is a bonus point for the fastest lap (FL) in the grand prix, provided the driver finishes in the top 10. In the shorter sprint races – about one-third the distance of a typical Grand Prix distance – points are awarded to the top 8 finishers, with the winner getting 8 points. This system, in place since 2010, was designed to create a larger gap between first and second place and to accommodate the expanded grid and improved reliability of modern cars.
 
-<details>
-<summary>Click to learn more about the sport</summary>
-<br>
-Point System:
-<table class="styled-table">
-  <thead>
-    <tr>
-      <th>Position</th>
-      <th>1st</th>
-      <th>2nd</th>
-      <th>3rd</th>
-      <th>4th</th>
-      <th>5th</th>
-      <th>6th</th>
-      <th>7th</th>
-      <th>8th</th>
-      <th>9th</th>
-      <th>10th</th>
-      <th>FL*</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Points</td>
-      <td>25</td>
-      <td>18</td>
-      <td>15</td>
-      <td>12</td>
-      <td>10</td>
-      <td>8</td>
-      <td>6</td>
-      <td>4</td>
-      <td>2</td>
-      <td>1</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-A driver must finish within the top ten to receive a point for setting the fastest lap (FL) of the race. If the driver who set the fastest lap finishes outside of the top ten, then the point for fastest lap will not be awarded for that race
-</details>
-<br>
+| Position | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th | 10th | FL  |
+| -------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---- | --- |
+| Points   | 25  | 18  | 15  | 12  | 10  | 8   | 6   | 4   | 2   | 1    | 1   |
 
-# Data Source
+Additionally, our exploration into the unsupervised clustering of race tracks adds another dimension to this analysis. By uncovering similarities and distinctions among tracks, we offer deeper insights into how different track characteristics influence racing strategies and outcomes. This dual-faceted approach distinguishes our work from conventional race prediction analyses, offering a novel perspective on the dynamics of Formula 1 racing.
+
+# DataSource
 
 The Ergast Developer API serves as a pivotal data source for our Formula 1 analysis, offering an extensive repository of historical race data, including driver standings, race results, and qualifying times <d-cite key="ergast"></d-cite>. Renowned for its comprehensive coverage of F1 statistics, the API has been instrumental in various analytical projects, ranging from predictive modeling to detailed statistical analyses of driver performances. In our project, the Ergast API provided a robust foundation for both the supervised and unsupervised learning components. We used it to extract datasets spanning from 1995 to the present, reflecting our focus on the modern era of Formula 1 racing. This period is characterized by significant technological advancements and regulatory changes, making the data particularly relevant for our analysis. Key features of the API that we leveraged include its ability to filter data by race season, event, and individual driver/team performance metrics. This flexibility allowed us to tailor our dataset precisely to the needs of our predictive models and clustering algorithms, ensuring a high degree of accuracy and relevance in our analysis.
 
-<!-- Table -->
-<table class="styled-table">
-  <tr>
-    <th>Attribute</th>
-    <th>Details</th>
-  </tr>
-  <tr>
-    <td><strong>Location</strong></td>
-    <td> <a href="https://ergast.com">Ergast Developer API</a></td>
-  </tr>
-  <tr>
-    <td><strong>Format</strong></td>
-    <td>JSON/CSV/XML</td>
-  </tr>
-  <tr>
-    <td><strong>Number of records</strong></td>
-    <td>9623</td>
-  </tr>
-  <tr>
-    <td><strong>Time Period Covered</strong></td>
-    <td>1995 - Present</td>
-  </tr>
-</table>
-
+> ##### Reproducibility Note
+> The public Ergast API is set to sunset after the 2024 formula 1 season. To recreate You can find legacy data on [Kaggle](https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020) or in this project's [GitHub repository](https://github.com/SarahAmiraslani/formula1-predictions-track-clustering/tree/main/data/raw).
+{: .block-tip }
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/ergast_db.png" class="img-fluid rounded z-depth-1" zoomable=true %}
@@ -164,7 +106,6 @@ The Ergast Developer API serves as a pivotal data source for our Formula 1 analy
 
 To prepare the dataset for our supervised learning model, a comprehensive pre-processing routine was implemented, focusing on extracting and structuring key information from the Ergast Developer API. Initially, unique identifiers for races and racers were constructed using a combination of the race year and session for RaceId, and a concatenation of the racer's first and last names for RacerId. These identifiers serve as indexes to uniquely identify data points without directly contributing to the model's input features. For the Type of track, we categorized circuits into purpose-built tracks and street circuits, encoded as 0 and 1, respectively, based on circuit information obtained from the API. This binary classification aids the model in distinguishing the inherent differences between these track types. Additionally, we derived the TrackId by using the circuit name, ensuring a consistent reference across different datasets. The previous year's race result for each racer, Qualifying position, and the timings for Q1, Q2, and Q3 were meticulously extracted and formatted, with non-participation or non-qualification explicitly marked, ensuring a comprehensive dataset ready for analysis.
 
-<!-- Table -->
 <table class="styled-table">
   <thead>
     <tr>
@@ -231,18 +172,18 @@ For our analysis of F1 track characteristics, we leveraged three data sources. T
 <table class="styled-table">
   <thead>
     <tr>
-      <th>Attribute</th>
-      <th>Wikipedia List of F1 Circuits</th>
-      <th>Ergast API</th>
-      <th>Kaggle F1 circuits.csv dataset</th>
+      <th style="width: 10%;">Attribute</th>
+      <th style="width: 30%;">Wikipedia</th>
+      <th style="width: 30%;">Ergast API</th>
+      <th style="width: 30%;">Kaggle</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Location</td>
-      <td><a href="https://en.wikipedia.org/wiki/List_of_Formula_One_circuits">https://en.wikipedia.org/wiki/List_of_Formula_One_circuits</a></td>
-      <td>https://ergast.com/api/f1/circuits?limit=100&offset=0</td>
-      <td><a href="https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020">https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020</a></td>
+      <td><a href="https://en.wikipedia.org/wiki/List_of_Formula_One_circuits">Wikipedia List of F1 Circuits</a></td>
+      <td><a href="https://ergast.com/mrd/">API Query<d-footnote><code>https://ergast.com/api/f1/circuits?limit=100&amp;offset=0</code> was used as the API endpoint. However, note that the API service is deprecated as of 2024. </d-footnote></a></td>
+      <td><a href="https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020">Kaggle F1 circuits.csv dataset</a></td>
     </tr>
     <tr>
       <td>Format</td>
@@ -252,7 +193,7 @@ For our analysis of F1 track characteristics, we leveraged three data sources. T
     </tr>
     <tr>
       <td>Important Variables Included</td>
-      <td>Circuit Name, Type, Direction. circuit length in kilometers</td>
+      <td>Circuit Name, Type, Direction, circuit length in kilometers</td>
       <td>circuit name, altitude</td>
       <td>Number of turns</td>
     </tr>
@@ -271,8 +212,8 @@ For our analysis of F1 track characteristics, we leveraged three data sources. T
     <tr>
       <td>Preprocessing</td>
       <td>Extract track length from text string, convert to numeric</td>
-      <td>Match track names with from wikipedia table with Levenshtein distance, left join on wikipedia data</td>
-      <td>Match track names from wikipedia table with Levenshtein distance, left join on wikipedia data. Impute missing number of turn values with K nearest neighbors imputer</td>
+      <td>Match track names from the Wikipedia table using Levenshtein distance, and perform a left join with the Wikipedia data.</td>
+      <td>Match track names from the Wikipedia table using Levenshtein distance, and perform a left join with the Wikipedia data.	. Impute missing number of turn values with K nearest neighbors imputer.</td>
     </tr>
   </tbody>
 </table>
@@ -281,7 +222,7 @@ After our initial data sourcing and preprocessing, we developed a dataset that c
 
 # Exploratory Data Analysis
 
-Our data analysis phase utilized a suite of visual tools to dissect and understand the underlying patterns within the Formula 1 dataset. Through the deployment of heatmaps, we were able to discern the correlation matrix across various features, providing us with an initial glimpse into the relationships between variables such as qualifying times, previous year's positions, and their impact on race outcomes. Pair plots further enriched our analysis by offering a granular view of the pairwise relationships between features, revealing trends, clusters, and potential outliers that could influence model performance. Additionally, leveraging feature importance plots, particularly from our Random Forest model, allowed us to identify the most predictive variables in determining top 10 finishes. This visual exploration not only guided our feature selection process but also offered profound insights into the factors that most significantly affect race performance, laying a robust foundation for our predictive modeling efforts. This comprehensive approach to data analysis ensures that our models are built on a nuanced understanding of the dataset, maximizing their ability to uncover meaningful patterns and predictions.
+Our data analysis phase utilized a suite of visual tools to dissect and understand the underlying patterns within the Formula 1 dataset. Through the use of heatmaps, we were able to discern the correlation across various features, providing us with an initial glimpse into the relationships between variables such as qualifying times, previous year's positions, and their impact on race outcomes. Pair plots further enriched our analysis by offering a granular view of the pairwise relationships between features, revealing trends, clusters, and potential outliers that could influence model performance. Additionally, leveraging feature importance plots, particularly from our Random Forest model, allowed us to identify the most predictive variables in determining top 10 finishes. This visual exploration not only guided our feature selection process but also offered profound insights into the factors that most significantly affect race performance, laying a robust foundation for our predictive modeling efforts. This comprehensive approach to data analysis ensures that our models are built on a nuanced understanding of the dataset, maximizing their ability to uncover meaningful patterns and predictions.
 
 ## Multivariate Analysis
 
@@ -291,10 +232,10 @@ A heatmap is a graphical representation of data where values are depicted by col
     {% include figure.liquid loading="eager" path="assets/img/f1-heatmap.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 </div>
 
-- **Strong Negative Correlation between Qualifying Position and Race Position**: There is a strong negative correlation (approximately -0.51) between `qualifying_pos` and `position`. This suggests that drivers with better (lower number) qualifying positions tend to finish the race in better (also, numerically lower) positions.
-- **Positive Correlation between Q2 and Q3 Timings**: The `q2_timing` and `q3_timing` have a strong positive correlation of about 0.64. This indicates that drivers who perform well in Q2 also tend to perform well in Q3.
-- **Negative Correlation between Q2/Q3 Timings and Qualifying Position**: Both `q2_timing` and `q3_timing` show a significant negative correlation with qualifying_pos (approximately -0.48 and -0.64, respectively). This implies that faster (lower) timings in Q2 and Q3 are associated with better qualifying positions.
-- **Weak Correlation between Q1 Timing and Other Features**: The `q1_timing` shows relatively weak correlations with other features, with the highest being around 0.17 with `q2_timing`. This might suggest that the Q1 timing is less indicative of the final position or the performances in the later qualifying rounds.
+- **Strong Negative Correlation between Qualifying Position and Race Position**: There is a strong negative correlation (r = -0.51) between `qualifying_pos` and `position`. This suggests that drivers with better (lower number) qualifying positions tend to finish the race in better (also, numerically lower) positions.
+- **Positive Correlation between Q2 and Q3 Timings**: The `q2_timing` and `q3_timing` have a strong positive correlation (r = 0.64). This indicates that drivers who perform well in Q2 also tend to perform well in Q3.
+- **Negative Correlation between Q2/Q3 Timings and Qualifying Position**: Both `q2_timing` and `q3_timing` show a significant negative correlation with qualifying_pos (r = -0.48 and r = -0.64, respectively). This implies that faster (i.e., lower) timings in Q2 and Q3 are associated with better qualifying positions.
+- **Weak Correlation between Q1 Timing and Other Features**: The `q1_timing` shows relatively weak correlations with other features, with the highest being r =0.17 with `q2_timing`. This might suggest that the Q1 timing is less indicative of the final position or the performances in the later qualifying rounds.
 - **Low Correlation between Previous Year Position and Current Position**: There is a very weak negative correlation (almost zero) between `prev_year_pos` and `position`. This suggests that the previous year's race position does not have a strong predictive power on the current year's race outcome.
 
 A pair plot, or a scatterplot matrix, visualizes pairwise relationships between variables in a dataset, combining scatter plots for each variable combination with histograms to show the distribution of each variable, thus providing a comprehensive overview of correlations, trends, and distributions all in one figure.
@@ -310,7 +251,7 @@ A pair plot, or a scatterplot matrix, visualizes pairwise relationships between 
 
 ## Feature Importance
 
-A feature importance plot ranks the features of a model based on their importance in making accurate predictions, and in the context of a RandomForestClassifier, it reflects how much each feature contributes to reducing the variance in the model's predictions.
+A feature importance plot ranks the features of a model based on their importance in making accurate predictions, and in the context of a Random Forest Classifier, it reflects how much each feature contributes to reducing the variance in the model's predictions.
 
 <div class="col-sm mt-3 mt-md-0">
     {% include figure.liquid loading="eager" path="assets/img/f1-feature-importance.png" class="img-fluid rounded z-depth-1" zoomable=true %}
@@ -331,7 +272,7 @@ Because clustering and dimensionality reduction algorithms require numeric repre
 
 ## Top 10 Predictions
 
-Supervised learning is at the core of our project, focusing on predicting the likelihood of Formula 1 drivers finishing in the top 10—an outcome critical for championship points. Our methodology involves training models on a dataset featuring variables such as track type, drivers' past performances, qualifying positions, and lap times. The goal is to classify each race outcome into a binary variable indicating whether a driver finishes in the top 10. This focus is driven by the significant impact these positions have on championship standings.
+Supervised learning is at the core of our project, focusing on predicting the likelihood of Formula 1 drivers finishing in the top 1 — an outcome critical for championship points. Our methodology involves training models on a dataset featuring variables such as track type, drivers' past performances, qualifying positions, and lap times. The goal is to classify each race outcome into a binary variable indicating whether a driver finishes in the top 10. This focus is driven by the significant impact these positions have on championship standings.
 
 We employ various models, including Random Forest, Logistic Regression, and Neural Networks, each chosen for its ability to capture different aspects of the complex dynamics influencing Formula 1 race outcomes. These models are trained, validated, and tested on data from the Ergast Developer API, providing a robust foundation for our predictive analysis. Accuracy is our primary metric for evaluating model performance, as it offers clear interpretability for our binary classification task, simplifying the analysis by focusing on the overall goal of identifying drivers and conditions that frequently lead to top 10 finishes.
 
@@ -339,11 +280,196 @@ We employ various models, including Random Forest, Logistic Regression, and Neur
 
 Logistic Regression is a statistical method used to predict a binary outcome based on one or more predictor variables. It is particularly popular for binary classification tasks, such as predicting whether a driver will finish in the top 10.
 
+{% details Click here to see the code block %}
+The function below was used to find the ideal the logistic regression model using grid search.
+
+<d-code block language="python">
+  def build_best_logistic_regression_model(
+    X_train_scaled, X_test_scaled, y_train, y_test, param_grid, **grid_search_kwargs
+):
+    """
+    Builds and returns the best Logistic Regression model using GridSearchCV.
+
+    Args:
+        X_train_scaled (pd.DataFrame): Scaled training features.
+        X_test_scaled (pd.DataFrame): Scaled test features.
+        y_train (pd.Series): Training labels.
+        y_test (pd.Series): Test labels.
+        param_grid (dict): Parameter grid for GridSearchCV.
+        **grid_search_kwargs: Additional keyword arguments for GridSearchCV.
+
+    Returns:
+        best_model (LogisticRegression): The best Logistic Regression model.
+        accuracy (float): Accuracy of the best model on the test set.
+    """
+    # Initializing the Logistic Regression model
+    log_reg = LogisticRegression(random_state=42, max_iter=1000)
+
+    # Setting up GridSearchCV to find the best model
+    grid_search = GridSearchCV(
+        estimator=log_reg,
+        param_grid=param_grid,
+        cv=5,
+        scoring="accuracy",
+        n_jobs=-1,
+        verbose=1,
+        **grid_search_kwargs,
+    )
+
+    start_time = time.time()
+    logging.info("Starting GridSearchCV to find the best Logistic Regression model.")
+
+    try:
+        # Fitting GridSearchCV to the training data
+        grid_search.fit(X_train_scaled, y_train)
+
+        # Extracting the best estimator (model)
+        best_model = grid_search.best_estimator_
+
+        # Making predictions with the best model on the test set
+        y_pred = best_model.predict(X_test_scaled)
+
+        # Calculating the accuracy of the best model
+        accuracy = accuracy_score(y_test, y_pred)
+
+        end_time = time.time()
+        elapsed_time = end_time - start_time
+
+        logging.info(f"GridSearchCV completed in {elapsed_time:.2f} seconds.")
+        logging.info(f"Best Model's Accuracy: {accuracy * 100:.2f}%")
+        logging.info(f"Best Parameters: {grid_search.best_params_}")
+
+        # Returning the best model and its accuracy
+        return best_model, accuracy
+
+    except Exception as e:
+        logging.error(f"An error occurred during GridSearchCV: {e}")
+        return None, None
+
+
+# Defining the parameter grid for logistic regression
+lr_param_grid = {
+    "C": [0.01, 0.1, 1, 10, 100],
+    "penalty": ["l1", "l2"],
+    "solver": ["liblinear"],  # 'liblinear' is compatible with l1 and l2 penalties.
+}
+
+# Building and evaluating the Logistic Regression model
+best_lr_model, best_lr_accuracy = build_best_logistic_regression_model(
+    X_train_scaled,
+    X_test_scaled,
+    y_train,
+    y_test,
+    lr_param_grid,
+    return_train_score=True,
+)
+
+if best_lr_model is not None:
+    dump(best_lr_model, "best_logistic_regression_model.joblib")
+
+</d-code>
+
+
+{% enddetails %}
+
+
 The provided code defines a function to construct and fine-tune a logistic regression model using grid search to explore a defined space of hyperparameters. GridSearchCV fits the model on the scaled training data using combinations of regularization strength (`C`), penalty type (`penalty`), and solver algorithm (`solver`) to determine the most effective parameters. The optimal model, with an l1 penalty, a regularization strength of 0.01, and the liblinear solver, achieved a prediction accuracy of 73.14% on the test dataset.
 
 ### Random Forest
 
 Random Forest is an ensemble learning method that constructs multiple decision trees and outputs the mode of the classes for classification tasks. It is known for its accuracy, robustness, and ability to handle large datasets with high dimensionality, reducing the risk of overfitting.
+
+{% details Click here to see the code block %}
+
+<d-code block language="python">
+def build_best_random_forest_model(
+    X_train, X_test, y_train, y_test, param_grid, **grid_search_kwargs
+):
+    """
+    Builds and returns the best Random Forest model using GridSearchCV.
+
+    Args:
+        X_train (pd.DataFrame): Training features.
+        X_test (pd.DataFrame): Test features.
+        y_train (pd.Series): Training labels.
+        y_test (pd.Series): Test labels.
+        param_grid (dict): Parameter grid for GridSearchCV.
+        **grid_search_kwargs: Additional keyword arguments for GridSearchCV.
+
+    Returns:
+        best_model (RandomForestClassifier): The best Random Forest model.
+        accuracy (float): Accuracy of the best model on the test set.
+    """
+    # Initializing the Random Forest classifier
+    rf_clf = RandomForestClassifier(random_state=42)
+
+    # Setting up GridSearchCV to find the best model
+    grid_search = GridSearchCV(
+        estimator=rf_clf,
+        param_grid=param_grid,
+        cv=5,
+        scoring="accuracy",
+        n_jobs=-1,
+        verbose=1,
+        **grid_search_kwargs,
+    )
+
+    start_time = time.time()
+    logging.info("Starting GridSearchCV to find the best Random Forest model.")
+
+    try:
+        # Fitting GridSearchCV to the training data
+        grid_search.fit(X_train, y_train)
+
+        # Extracting the best estimator (model)
+        best_model = grid_search.best_estimator_
+
+        # Making predictions with the best model on the test set
+        y_pred = best_model.predict(X_test)
+
+        # Calculating the accuracy of the best model
+        accuracy = accuracy_score(y_test, y_pred)
+
+        end_time = time.time()
+        elapsed_time = end_time - start_time
+
+        logging.info(f"GridSearchCV completed in {elapsed_time:.2f} seconds.")
+        logging.info(f"Best Model's Accuracy: {accuracy * 100:.2f}%")
+        logging.info(f"Best Parameters: {grid_search.best_params_}")
+
+        # Returning the best model and its accuracy
+        return best_model, accuracy
+
+    except Exception as e:
+        logging.error(f"An error occurred during GridSearchCV: {e}")
+        return None, None
+
+
+# Defining the parameter grid for Random Forest
+rf_param_grid = {
+    "n_estimators": [10, 50, 100, 200],
+    "max_depth": [None, 10, 20, 30],
+    "min_samples_split": [2, 5, 10],
+}
+
+# Example usage with additional GridSearchCV parameters
+best_rf_model, best_rf_accuracy = build_best_random_forest_model(
+    X_train_scaled,
+    X_test_scaled,
+    y_train,
+    y_test,
+    rf_param_grid,
+    return_train_score=True,
+)
+
+if best_rf_model is not None:
+    dump(best_rf_model, "best_random_forest_model.joblib")
+
+
+</d-code>
+
+
+{% enddetails %}
 
 The provided code builds and evaluates a Random Forest classifier using a grid search over specified hyperparameters. GridSearchCV systematically tests parameter combinations, cross-validating to find the best performance in terms of accuracy. The optimal model achieved an accuracy of 73.87% on the test set, with 200 trees (`n_estimators`), a maximum depth of 10 (`max_depth`), and a minimum split size of 10 (`min_samples_split`).
 
@@ -351,11 +477,216 @@ The provided code builds and evaluates a Random Forest classifier using a grid s
 
 Neural Networks are algorithms modeled after the human brain, designed to recognize patterns and perform classification tasks. They process information in a layered structure of nodes, making them effective for complex pattern recognition and predictive modeling.
 
-The provided code builds and optimizes a neural network model for binary classification using Keras and TensorFlow. A function, `create_model`, defines a neural network with one hidden layer and a given learning rate. The `build_best_neural_network_model` function uses GridSearchCV to iterate over hyperparameters such as the number of hidden nodes, learning rate, epochs, and batch size. The best-performing model, with 10 hidden nodes, a learning rate of 0.01, a batch size of 32, and training for 50 epochs, achieved an accuracy of 73.82% on the scaled test data.
+{% details Click here to see the code block %}
+
+<d-code block language="python">
+def create_model(hidden_nodes=1, learning_rate=0.001):
+    """
+    Creates and compiles a Keras Sequential model.
+
+    Args:
+        hidden_nodes (int): Number of nodes in the hidden layer.
+        learning_rate (float): Learning rate for the optimizer.
+
+    Returns:
+        model (Sequential): Compiled Keras model.
+    """
+    # Define the model
+    model = Sequential()
+    model.add(Dense(hidden_nodes, input_dim=X_train_scaled.shape[1], activation="relu"))
+    model.add(Dense(1, activation="sigmoid"))  # Output layer for binary classification
+
+    # Compile the model
+    optimizer = Adam(learning_rate=learning_rate)
+    model.compile(loss="binary_crossentropy", optimizer=optimizer, metrics=["accuracy"])
+    return model
+
+
+def build_best_neural_network_model(
+    X_train_scaled, X_test_scaled, y_train, y_test, param_grid, **grid_search_kwargs
+):
+    """
+    Builds and returns the best neural network model using GridSearchCV.
+
+    Args:
+        X_train_scaled (pd.DataFrame): Scaled training features.
+        X_test_scaled (pd.DataFrame): Scaled test features.
+        y_train (pd.Series): Training labels.
+        y_test (pd.Series): Test labels.
+        param_grid (dict): Parameter grid for GridSearchCV.
+        **grid_search_kwargs: Additional keyword arguments for GridSearchCV.
+
+    Returns:
+        best_model (KerasClassifier): The best neural network model.
+        accuracy (float): Accuracy of the best model on the test set.
+    """
+    # Wrapping the Keras model so it can be used by scikit-learn
+    model = KerasClassifier(build_fn=create_model, verbose=0)
+
+    # Setting up GridSearchCV to find the best model
+    grid_search = GridSearchCV(
+        estimator=model,
+        param_grid=param_grid,
+        cv=5,
+        scoring="accuracy",
+        n_jobs=-1,
+        verbose=1,
+        **grid_search_kwargs,
+    )
+
+    start_time = time.time()
+    logging.info("Starting GridSearchCV to find the best neural network model.")
+
+    try:
+        # Fitting GridSearchCV to the training data
+        grid_search.fit(X_train_scaled, y_train)
+
+        # Extracting the best estimator (model)
+        best_model = grid_search.best_estimator_
+
+        # Making predictions with the best model on the test set
+        y_pred = best_model.predict(X_test_scaled)
+        y_pred = np.round(y_pred).astype(int)  # Convert probabilities to binary output
+
+        # Calculating the accuracy of the best model
+        accuracy = accuracy_score(y_test, y_pred)
+
+        end_time = time.time()
+        elapsed_time = end_time - start_time
+
+        logging.info(f"GridSearchCV completed in {elapsed_time:.2f} seconds.")
+        logging.info(f"Best Model's Accuracy: {accuracy * 100:.2f}%")
+        logging.info(f"Best Parameters: {grid_search.best_params_}")
+
+        # Returning the best model and its accuracy
+        return best_model, accuracy
+
+    except Exception as e:
+        logging.error(f"An error occurred during GridSearchCV: {e}")
+        return None, None
+
+
+# Defining the parameter grid for the neural network
+nn_param_grid = {
+    "hidden_nodes": [10, 50, 100],
+    "learning_rate": [0.001, 0.01, 0.1],
+    "epochs": [50],
+    "batch_size": [32],
+}
+
+# Building and evaluating the neural network model
+best_nn_model, best_nn_accuracy = build_best_neural_network_model(
+    X_train_scaled,
+    X_test_scaled,
+    y_train,
+    y_test,
+    nn_param_grid,
+    return_train_score=True,
+)
+
+if best_nn_model is not None:
+    dump(best_nn_model, "best_neural_network_model.joblib")
+
+</d-code>
+
+
+{% enddetails %}
+
+The provided code builds and optimizes a neural network model for binary classification using Keras and TensorFlow. A function, `create_model`, defines a neural network with one hidden layer and a given learning rate. The `build_best_neural_network_model` function uses `GridSearchCV` to iterate over hyperparameters such as the number of hidden nodes, learning rate, epochs, and batch size. The best-performing model, with 10 hidden nodes, a learning rate of 0.01, a batch size of 32, and training for 50 epochs, achieved an accuracy of 73.82% on the scaled test data.
 
 ### Sensitivity Analysis
 
-The sensitivity analysis across all three models—Random Forest, Logistic Regression, and Neural Network—reveals consistent findings. The feature `qualifying_pos` exhibits the highest sensitivity, indicating a strong influence on the model's predictions; changes in qualifying position are likely to have a significant impact on the probability of a driver finishing in the top 10. In contrast, `prev_year_pos` shows notably lower sensitivity, suggesting that a driver's position in the previous year is less indicative of their performance in the current race. The timing features (`q1_timing`, `q2timing`, `q3_timibg`) demonstrate moderate sensitivity, with some variability across the models, reflecting their respective influence on race outcomes. This consistent pattern across different models underscores the robustness of these features' influences on predicting top 10 finishes in Formula 1 races.
+The sensitivity analysis across all three models — Random Forest, Logistic Regression, and Neural Network — reveals consistent findings. The feature `qualifying_pos` exhibits the highest sensitivity, indicating a strong influence on the model's predictions; changes in qualifying position are likely to have a significant impact on the probability of a driver finishing in the top 10. In contrast, `prev_year_pos` shows notably lower sensitivity, suggesting that a driver's position in the previous year is less indicative of their performance in the current race. The timing features (`q1_timing`, `q2timing`, `q3_timibg`) demonstrate moderate sensitivity, with some variability across the models, reflecting their respective influence on race outcomes. This consistent pattern across different models underscores the robustness of these features' influences on predicting top 10 finishes in Formula 1 races.
+
+{% details Click here to see the code block %}
+
+<d-code block language="python">
+def perform_sensitivity_analysis(
+    models, X_scaled, feature_names, output_dir=".", file_format="png"
+):
+    """
+    Perform sensitivity analysis on given models.
+
+    Args:
+        models (dict): Dictionary of trained models with their names as keys.
+        X_scaled (np.ndarray): Scaled features array.
+        feature_names (list): List of feature names.
+        output_dir (str): Directory to save the sensitivity analysis plots.
+        file_format (str): File format for saving plots.
+    """
+    # Number of points to evaluate for each feature
+    num_points = 100
+
+    # Results dictionary to store sensitivity data
+    sensitivity_results = {}
+
+    # Iterate through each model
+    for model_name, model in models.items():
+        logging.info(f"Analyzing model: {model_name}")
+        sensitivity_results[model_name] = {}
+
+        # Iterate through each feature
+        for feature in feature_names:
+            # Array to hold predictions
+            predictions = []
+
+            # Generate values across the range
+            feature_index = feature_names.index(feature)
+            min_val, max_val = np.min(X_scaled[:, feature_index]), np.max(
+                X_scaled[:, feature_index]
+            )
+            values = np.linspace(min_val, max_val, num_points)
+
+            # Modify one feature at a time, keeping others constant
+            for val in values:
+                X_temp = np.copy(X_scaled)
+                X_temp[:, feature_index] = val
+                try:
+                    pred = model.predict(X_temp)
+                    predictions.append(np.mean(pred))
+                except Exception as e:
+                    logging.error(
+                        f"Error predicting with model {model_name} for feature {feature}: {e}"
+                    )
+                    predictions.append(np.nan)  # Use NaN to indicate prediction failure
+
+            sensitivity_results[model_name][feature] = np.nanstd(
+                predictions
+            )  # Use nanstd to handle NaNs
+
+    # Plotting the sensitivity results
+    for model_name, sensitivities in sensitivity_results.items():
+        plt.figure(figsize=(10, 6))
+        plt.title(f"Sensitivity Analysis for {model_name}")
+        plt.bar(range(len(sensitivities)), list(sensitivities.values()), align="center")
+        plt.xticks(
+            range(len(sensitivities)), list(sensitivities.keys()), rotation="vertical"
+        )
+        plt.ylabel("Standard Deviation of Predictions")
+
+        file_path = f"{output_dir}/sensitivity_{model_name}.{file_format}"
+        plt.savefig(file_path, dpi=300)
+        plt.show()
+        logging.info(f"Sensitivity plot saved to {file_path}")
+
+
+# Example usage
+models = {
+    "Random Forest": best_rf_model,
+    "Logistic Regression": best_lr_model,
+    "Neural Network": best_nn_model,
+}
+
+feature_names = [
+    "q1_timing",
+    "q2_timing",
+    "q3_timing",
+    "qualifying_pos",
+    "prev_year_pos",
+]
+perform_sensitivity_analysis(models, X_test_scaled, feature_names)
+</d-code>
+{% enddetails %}
 
 ### Failure Analysis
 
@@ -401,57 +732,11 @@ Visual evaluation of cluster results: track direction and type drives clusters.
 
 ## Top 10 Prediction
 
-The Random Forest model, with its ensemble approach, provided an accuracy of 73.87%, indicating a robust predictive capability potentially due to its handling of non-linear relationships between features and the target variable. This model's performance was slightly outperformed by the Neural Network model, which achieved an accuracy of 73.82%, with an architecture of a single hidden layer containing ten nodes. The Neural Network's performance, despite being marginally lower, suggests that a more complex model does not necessarily guarantee superior results, considering the computational complexity and time taken to train such models. The Logistic Regression model, a more straightforward and interpretable model, yielded a slightly lower accuracy of 73.14%. This could be attributed to its linear nature, which may not capture complex patterns in the data as effectively as the other two models. However, the difference in accuracy is relatively small, highlighting that simpler models can still be competitive and beneficial, especially when considering the trade-off between performance and model complexity.
+The Random Forest model, with its ensemble approach, provided an accuracy of 73.87%, indicating a robust predictive capability potentially due to its handling of non-linear relationships between features and the target variable. This model's performance was slightly outperformed by the Neural Network model, which achieved an accuracy of 73.82%, with an architecture of a single hidden layer containing ten nodes.
+The Neural Network's performance, despite being marginally lower, suggests that a more complex model does not necessarily guarantee superior results, considering the computational complexity and time taken to train such models. The Logistic Regression model, a more straightforward and interpretable model, yielded a slightly lower accuracy of 73.14%. This could be attributed to its linear nature, which may not capture complex patterns in the data as effectively as the other two models. However, the difference in accuracy is relatively small, highlighting that simpler models can still be competitive and beneficial, especially when considering the trade-off between performance and model complexity.
+
 The feature importance plot and the pair plot provided valuable insights into the predictive power of different features, with q1_timing and qualifying_pos being the most significant predictors across models, aligning with domain knowledge that qualifying performances have substantial impacts on race outcomes. The negligible importance of the prev_year_pos feature suggests that past performance is not a reliable indicator of future race results, pointing to the dynamic nature of the sport where numerous variables can influence race day performance.
 
 ## Track Clustering
 
 In our unsupervised analysis of clustering Formula 1 circuits, tuning hyperparameters in the DBSCAN algorithm emerged as a significant factor in achieving meaningful clusters. This aspect underscores that adjustment of algorithm parameters can profoundly impact the outcomes and interpretability of the results. However, we encountered a remarkable challenge when categorical variables, rather than continuous variables like track length, number of turns, and altitude, predominantly drove the variation in clusters. This observation was somewhat anticipated, given the relative uniformity in these continuous variables across different tracks, which consequently led to categorical factors becoming more influential in the clustering process. This outcome, while initially disappointing, provided valuable insights into the feature space of track characteristics. In light of these findings, future work should pivot towards exploring the clustering of driver finish times in relation to track characteristics. This direction aims to delve deeper into the potential correlations between track features and performance outcomes, potentially uncovering patterns that could inform strategic decisions in race preparation and execution.
-
-## Ethical Considerations
-
-In the realm of predictive modeling within Formula 1 racing, ethical considerations must be at the forefront, particularly regarding the extraction and use of data. Our project utilized data from the Ergast API, which aggregates F1 statistics, and it is paramount to ensure that this data collection abides by the terms of service and respects the proprietary nature of the information. Since the data pertains to real individuals and teams, we must handle it with integrity, ensuring that no confidential strategies or sensitive personal data are disclosed. There is an ethical obligation to prevent the misuse of such predictive analytics that could unfairly influence betting markets or team strategies, potentially undermining the competitive fairness that is central to the sport. Moreover, we must acknowledge the impact of data-driven decisions on the sport's stakeholders, ensuring that the augmentation provided by machine learning complements the skill and expertise of teams and drivers, upholding the spirit of F1 racing.
-
-Clustering Formula 1 tracks to find similarities between tracks raise several ethical issues, mainly concerning privacy, data accuracy, and potential bias. Firstly, if the data used for clustering included information about specific races, teams, or drivers, there could be concerns about confidentiality and the second use of sensitive data without consent. To address this, we did not expand our analysis to include driver information to ensure that no drivers or teams can be directly identified from the unsupervised analysis. Secondly, the accuracy and representation of data are critical; using incomplete or biased datasets could lead to misleading conclusions, potentially disadvantageous to developing countries. We ensured that the circuit data we collected is comprehensive and current to mitigate this issue. Engaging with stakeholders in the Formula 1 community for transparency and feedback could also help in identifying and addressing these ethical concerns.
-
-<style>
-.table-title {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.styled-table {
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9em;
-    min-width: 400px;
-    border-radius: 5px 5px 0 0;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-}
-
-.styled-table th,
-.styled-table td {
-    padding: 12px 15px;
-}
-
-.styled-table th {
-    background-color: #b509ac;
-    color: #ffff;
-    text-align: left;
-}
-
-.styled-table tr {
-    border-bottom: 1px solid #dddddd;
-}
-
-.styled-table tr:nth-of-type(even) {
-    background-color: #f3f3f3;
-}
-
-.styled-table tr:last-of-type {
-    border-bottom: 2px solid #b509ac;
-}
-
-</style>

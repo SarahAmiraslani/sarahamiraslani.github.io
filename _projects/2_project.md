@@ -75,8 +75,7 @@ Historically, Formula 1 analytics has focused on predicting race winners using v
 
 Our project aims to broaden the analytical scope by targeting the prediction of top 10 finishes. Securing a place in the top 10 is vital for accumulating championship points, crucial for both drivers and constructors over a season. By shifting our focus to these positions, we aim to capture the intricate competitive interactions and strategic nuances that influence race outcomes beyond the winner's podium. This approach provides a more comprehensive understanding of performance determinants in Formula 1, addressing both the predictability associated with team dominance and the variability arising from tactical decisions across the grid.
 
-
-The Formula 1 points system awards points to the top 10 finishers in a grand prix, with the winner receiving 25 points, second place 18 points, and so on down to 1 point for the 10th place.  Additionally, there is a bonus point for the fastest lap (FL) in the grand prix, provided the driver finishes in the top 10. In the shorter sprint races – about one-third the distance of a typical Grand Prix distance – points are awarded to the top 8 finishers, with the winner getting 8 points. This system, in place since 2010, was designed to create a larger gap between first and second place and to accommodate the expanded grid and improved reliability of modern cars.
+The Formula 1 points system awards points to the top 10 finishers in a grand prix, with the winner receiving 25 points, second place 18 points, and so on down to 1 point for the 10th place. Additionally, there is a bonus point for the fastest lap (FL) in the grand prix, provided the driver finishes in the top 10. In the shorter sprint races – about one-third the distance of a typical Grand Prix distance – points are awarded to the top 8 finishers, with the winner getting 8 points. This system, in place since 2010, was designed to create a larger gap between first and second place and to accommodate the expanded grid and improved reliability of modern cars.
 
 | Position | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th | 10th | FL  |
 | -------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---- | --- |
@@ -89,8 +88,10 @@ Additionally, our exploration into the unsupervised clustering of race tracks ad
 The Ergast Developer API serves as a pivotal data source for our Formula 1 analysis, offering an extensive repository of historical race data, including driver standings, race results, and qualifying times <d-cite key="ergast"></d-cite>. Renowned for its comprehensive coverage of F1 statistics, the API has been instrumental in various analytical projects, ranging from predictive modeling to detailed statistical analyses of driver performances. In our project, the Ergast API provided a robust foundation for both the supervised and unsupervised learning components. We used it to extract datasets spanning from 1995 to the present, reflecting our focus on the modern era of Formula 1 racing. This period is characterized by significant technological advancements and regulatory changes, making the data particularly relevant for our analysis. Key features of the API that we leveraged include its ability to filter data by race season, event, and individual driver/team performance metrics. This flexibility allowed us to tailor our dataset precisely to the needs of our predictive models and clustering algorithms, ensuring a high degree of accuracy and relevance in our analysis.
 
 > ##### Reproducibility Note
+>
 > The public Ergast API is set to sunset after the 2024 formula 1 season. To recreate You can find legacy data on [Kaggle](https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020) or in this project's [GitHub repository](https://github.com/SarahAmiraslani/formula1-predictions-track-clustering/tree/main/data/raw).
-{: .block-tip }
+> {: .block-tip }
+
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/ergast_db.png" class="img-fluid rounded z-depth-1" zoomable=true %}
@@ -346,32 +347,31 @@ The function below was used to find the ideal the logistic regression model usin
         logging.error(f"An error occurred during GridSearchCV: {e}")
         return None, None
 
-
 # Defining the parameter grid for logistic regression
+
 lr_param_grid = {
-    "C": [0.01, 0.1, 1, 10, 100],
-    "penalty": ["l1", "l2"],
-    "solver": ["liblinear"],  # 'liblinear' is compatible with l1 and l2 penalties.
+"C": [0.01, 0.1, 1, 10, 100],
+"penalty": ["l1", "l2"],
+"solver": ["liblinear"], # 'liblinear' is compatible with l1 and l2 penalties.
 }
 
 # Building and evaluating the Logistic Regression model
+
 best_lr_model, best_lr_accuracy = build_best_logistic_regression_model(
-    X_train_scaled,
-    X_test_scaled,
-    y_train,
-    y_test,
-    lr_param_grid,
-    return_train_score=True,
+X_train_scaled,
+X_test_scaled,
+y_train,
+y_test,
+lr_param_grid,
+return_train_score=True,
 )
 
 if best_lr_model is not None:
-    dump(best_lr_model, "best_logistic_regression_model.joblib")
+dump(best_lr_model, "best_logistic_regression_model.joblib")
 
 </d-code>
 
-
 {% enddetails %}
-
 
 The provided code defines a function to construct and fine-tune a logistic regression model using grid search to explore a defined space of hyperparameters. GridSearchCV fits the model on the scaled training data using combinations of regularization strength (`C`), penalty type (`penalty`), and solver algorithm (`solver`) to determine the most effective parameters. The optimal model, with an l1 penalty, a regularization strength of 0.01, and the liblinear solver, achieved a prediction accuracy of 73.14% on the test dataset.
 
@@ -444,30 +444,29 @@ def build_best_random_forest_model(
         logging.error(f"An error occurred during GridSearchCV: {e}")
         return None, None
 
-
 # Defining the parameter grid for Random Forest
+
 rf_param_grid = {
-    "n_estimators": [10, 50, 100, 200],
-    "max_depth": [None, 10, 20, 30],
-    "min_samples_split": [2, 5, 10],
+"n_estimators": [10, 50, 100, 200],
+"max_depth": [None, 10, 20, 30],
+"min_samples_split": [2, 5, 10],
 }
 
 # Example usage with additional GridSearchCV parameters
+
 best_rf_model, best_rf_accuracy = build_best_random_forest_model(
-    X_train_scaled,
-    X_test_scaled,
-    y_train,
-    y_test,
-    rf_param_grid,
-    return_train_score=True,
+X_train_scaled,
+X_test_scaled,
+y_train,
+y_test,
+rf_param_grid,
+return_train_score=True,
 )
 
 if best_rf_model is not None:
-    dump(best_rf_model, "best_random_forest_model.joblib")
-
+dump(best_rf_model, "best_random_forest_model.joblib")
 
 </d-code>
-
 
 {% enddetails %}
 
@@ -501,12 +500,11 @@ def create_model(hidden_nodes=1, learning_rate=0.001):
     model.compile(loss="binary_crossentropy", optimizer=optimizer, metrics=["accuracy"])
     return model
 
-
 def build_best_neural_network_model(
-    X_train_scaled, X_test_scaled, y_train, y_test, param_grid, **grid_search_kwargs
+X_train_scaled, X_test_scaled, y_train, y_test, param_grid, \*\*grid_search_kwargs
 ):
-    """
-    Builds and returns the best neural network model using GridSearchCV.
+"""
+Builds and returns the best neural network model using GridSearchCV.
 
     Args:
         X_train_scaled (pd.DataFrame): Scaled training features.
@@ -565,30 +563,30 @@ def build_best_neural_network_model(
         logging.error(f"An error occurred during GridSearchCV: {e}")
         return None, None
 
-
 # Defining the parameter grid for the neural network
+
 nn_param_grid = {
-    "hidden_nodes": [10, 50, 100],
-    "learning_rate": [0.001, 0.01, 0.1],
-    "epochs": [50],
-    "batch_size": [32],
+"hidden_nodes": [10, 50, 100],
+"learning_rate": [0.001, 0.01, 0.1],
+"epochs": [50],
+"batch_size": [32],
 }
 
 # Building and evaluating the neural network model
+
 best_nn_model, best_nn_accuracy = build_best_neural_network_model(
-    X_train_scaled,
-    X_test_scaled,
-    y_train,
-    y_test,
-    nn_param_grid,
-    return_train_score=True,
+X_train_scaled,
+X_test_scaled,
+y_train,
+y_test,
+nn_param_grid,
+return_train_score=True,
 )
 
 if best_nn_model is not None:
-    dump(best_nn_model, "best_neural_network_model.joblib")
+dump(best_nn_model, "best_neural_network_model.joblib")
 
 </d-code>
-
 
 {% enddetails %}
 
@@ -669,20 +667,20 @@ def perform_sensitivity_analysis(
         plt.show()
         logging.info(f"Sensitivity plot saved to {file_path}")
 
-
 # Example usage
+
 models = {
-    "Random Forest": best_rf_model,
-    "Logistic Regression": best_lr_model,
-    "Neural Network": best_nn_model,
+"Random Forest": best_rf_model,
+"Logistic Regression": best_lr_model,
+"Neural Network": best_nn_model,
 }
 
 feature_names = [
-    "q1_timing",
-    "q2_timing",
-    "q3_timing",
-    "qualifying_pos",
-    "prev_year_pos",
+"q1_timing",
+"q2_timing",
+"q3_timing",
+"qualifying_pos",
+"prev_year_pos",
 ]
 perform_sensitivity_analysis(models, X_test_scaled, feature_names)
 </d-code>

@@ -1,34 +1,32 @@
 <ul class="card-text font-weight-light list-group list-group-flush">
   {% assign work = data[1] | sort: 'startDate' | reverse %}
   {% for content in work %}
-  <li class="list-group-item">
-    <div class="row align-items-center">
-      <div class="col-xs-3 col-sm-3 col-md-2 text-center date-column">
-        {% if content.startDate %}
-        {% assign startDate = content.startDate | split: '-' | join: '.' %}
-        {% assign endDate = content.endDate | split: '-' | join: '.' | default: 'Present' %}
-        <span class="badge date-badge">
-          {{ startDate }} - {{ endDate }}
-        </span>
-        {% endif %}
+    <li class="list-group-item">
+      <div class="row align-items-center">
+        <div class="col-xs-3 col-sm-3 col-md-2 text-center date-column">
+          {% if content.startDate %}
+            {% assign startDate = content.startDate | split: '-' | join: '.' %}
+            {% assign endDate = content.endDate | split: '-' | join: '.' | default: 'Present' %}
+            <span class="badge date-badge"> {{ startDate }} - {{ endDate }} </span>
+          {% endif %}
+        </div>
+        <div class="col-xs-9 col-sm-9 col-md-10 mt-2 mt-md-0">
+          <h5 class="title font-weight-bold ml-1 ml-md-4 padded-title">
+            <a style="color:" var(--global-theme-color)>{{ content.position }}</a>
+          </h5>
+          <h6 class="ml-1 ml-md-4" style="font-size: .95rem;">
+            <a href="{{ content.url }}">{{ content.name }}</a>, {{ content.location }}
+          </h6>
+          <p class="ml-1 ml-md-4" style="font-size: 0.95rem; color: var(--global-text-color)">{{ content.summary }}</p>
+          {% if content.highlights %}
+            <ul class="highlights-list ml-1 ml-md-4">
+              {% for highlight in content.highlights %}
+                <li class="highlight-item" style="font-size: 0.95rem">{{ highlight }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
       </div>
-      <div class="col-xs-9 col-sm-9 col-md-10 mt-2 mt-md-0">
-        <h5 class="title font-weight-bold ml-1 ml-md-4 padded-title">
-          <a style=color: var(--global-theme-color)>{{ content.position }}</a>
-        </h5>
-        <h6 class="ml-1 ml-md-4" style="font-size: .95rem;">
-          <a href="{{ content.url }}">{{ content.name }}</a>, {{ content.location }}
-        </h6>
-        <p class="ml-1 ml-md-4" style="font-size: 0.95rem; color: var(--global-text-color)">{{ content.summary }}</p>
-        {% if content.highlights %}
-        <ul class="highlights-list ml-1 ml-md-4">
-          {% for highlight in content.highlights %}
-          <li class="highlight-item" style="font-size: 0.95rem">{{ highlight }}</li>
-          {% endfor %}
-        </ul>
-        {% endif %}
-      </div>
-    </div>
-  </li>
+    </li>
   {% endfor %}
 </ul>

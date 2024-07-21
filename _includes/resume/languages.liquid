@@ -1,20 +1,20 @@
 <div class="languages-container">
   {% for content in data[1] %}
-  <div class="language-group" title="{{ content.fluency }}">
-    <div class="language-category">
-      {% if content.icon %}
-      <span class="language-icon">
-        <i class="{{ content.icon }}"></i>
-      </span>
+    <div class="language-group" title="{{ content.fluency }}">
+      <div class="language-category">
+        {% if content.icon %}
+          <span class="language-icon">
+            <i class="{{ content.icon }}"></i>
+          </span>
+        {% endif %}
+        <span class="title language-name">{{ content.language }}</span>
+      </div>
+      {{ content.fluency }}
+      {% if content.keywords %}
+        <div class="language-keywords">
+          {{ content.keywords | join: ', ' }}
+        </div>
       {% endif %}
-      <span class="title language-name">{{ content.language }}</span>
     </div>
-    {{ content.fluency }}
-    {% if content.keywords %}
-    <div class="language-keywords">
-      {{ content.keywords | join: ', ' }}
-    </div>
-    {% endif %}
-  </div>
   {% endfor %}
 </div>

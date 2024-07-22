@@ -156,7 +156,7 @@ We analyzed the effects of illustration generativity on multiple-choice gains, o
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/mc-gain.png" title="Experiment 1, Copy Condition" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/mc-gain.png" title="Multiple Choice Gain by Condition" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="caption">
         Figure 7. A bar chart demonstrating participants’ multiple-choice gain (post-test minus pre-test) score. Higher scores indicate better performance and maximum possible gain score is 13.
@@ -165,7 +165,7 @@ We analyzed the effects of illustration generativity on multiple-choice gains, o
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/or-scores.png" title="Experiment 1, Complete Condition" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/or-scores.png" title="Open Response Retention by Condition" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="caption">
         Figure 8. A bar chart demonstrating participants’ performance on the open responses retention test organized by condition. Higher scores indicate better performance and the maximum possible score is 22.

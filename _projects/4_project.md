@@ -5,7 +5,7 @@ description: This project leverages ensemble and deep learning models to forecas
 date: 2024-05-20
 img: /assets/img/jorge-l-valdivia-lgctDB98ejI-unsplash.jpg
 importance: 3
-category: Machine Learning
+category: Machine Learning & Analytics
 related_publications: true
 github: https://github.com/SarahAmiraslani/solar-wind-coronal-origin-ml
 giscus: true

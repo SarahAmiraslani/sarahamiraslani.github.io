@@ -1,5 +1,5 @@
 - url: /projects/1_project/
-  title: Drawing to Learn Abstractions
+  title: Drawing to Learn Science Abstract Concepts
   description: This project examines the effectiveness of student-generated drawings in
     learning abstract science concepts. By comparing various visualization
     strategies and important covariates in a lab setting, we explore how
@@ -14,7 +14,7 @@
   image: /assets/img/drawing-black-holes.png
 
 - url: /projects/2_project/
-  title: "Predicting Top 10 Formula 1 Finishes and Clustering Race Tracks"
+  title: Predicting Top 10 Formula 1 Finishes and Clustering Race Tracks
   description: This project applies supervised learning to predict top 10 race finishes,
     pinpointing key factors that influence these outcomes. Additionally, it
     employs unsupervised learning to cluster race tracks based on

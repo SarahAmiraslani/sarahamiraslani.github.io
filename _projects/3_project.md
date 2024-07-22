@@ -5,7 +5,7 @@ description: This project uses machine learning to analyze solar wind, trace its
 date: 2024-06-20
 img: /assets/img/solar-wind-image.png
 importance: 3
-category: Machine Learning
+category: Machine Learning & Analytics
 github: https://github.com/SarahAmiraslani/solar-wind-coronal-origin-ml
 giscus: true
 giscus_comments: true

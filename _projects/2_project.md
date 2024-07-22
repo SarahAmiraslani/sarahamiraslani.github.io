@@ -5,7 +5,7 @@ description: This project uses machine learning to predict top 10 finishes in F1
 date: 2024-04-01
 img: /assets/img/f1-lego.jpg
 importance: 3
-category: Machine Learning
+category: Machine Learning & Analytics
 github: https://github.com/SarahAmiraslani/formula1-predictions-track-clustering
 giscus: true
 giscus_comments: true

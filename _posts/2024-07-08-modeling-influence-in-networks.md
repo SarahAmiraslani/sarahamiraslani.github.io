@@ -5,7 +5,7 @@ date: 2024-07-08 11:12:00-0400
 description: an example of a blog post with some math
 tags: machine-learning, network-analysis
 categories: exploration
-featured: true
+featured: false
 related_posts: true
 giscus: true
 giscus_comments: true

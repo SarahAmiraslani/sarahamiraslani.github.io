@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Predicting Sunspots
-description: This project forecasts sunspots and HCS indexes using ensemble and deep learning to predict solar wind structure.
+description: This project leverages ensemble and deep learning models to forecast sunspots and Heliospheric Current Sheet (HCS) indexes, enhancing the prediction of solar wind structures.
 date: 2024-05-20
 img: /assets/img/jorge-l-valdivia-lgctDB98ejI-unsplash.jpg
 importance: 3
@@ -32,11 +32,18 @@ toc:
   - name: Evaluation
   - name: Discussion
   - name: Acknowledgments
+bibliography: sunspots-distill.bib
 ---
 
 # Introduction
 
-## Motivation
+Sunspots, observed since the 1800s, exhibit a cyclic pattern with an average period of about 11 years, serving as a critical measure of solar activity <d-cite key="upton2018updated"></d-cite>. Sunspots are linked to phenomena like solar flares and coronal mass ejections. Sunspot' frequency and intensity can impact satellite communications, power grids, and Earth's climate.
+
+Sunspots also play a role in determining the Sun's rotation period, approximately 27 days<d-cite key="upton2018updated"></d-cite>. Historical data show fluctuations in sunspot cycle amplitudes, with peaks averaging around 150. Periods like the Maunder Minimum highlight phases of reduced solar activity. Understanding these patterns requires continuous monitoring to predict solar behavior accurately, ensuring preparedness for potential impacts on technology and climate.
+
+By integrating machine learning models with Sunspot Index and Long-term Solar Observations data, this project aims to forecast the number of sunspots to the end of the current solar cycle, which is the year 2030.
+
+<!-- ## Motivation -->
 
 ## Analytical Questions
 
@@ -45,13 +52,21 @@ toc:
 
 # Data Source
 
-## [Sunspot Index and Long-term Solar Observations](https://www.sidc.be/SILSO/infosnmtot)
+## Sunspot Index and Long-term Solar Observations
 
-This dataset contains monthly mean total sunspot numbers, which are averages derived from daily total counts per calendar month, starting from January 1749 up to the last elapsed month. This extensive time range is due to data availability only from 1749 onward because of sparse earlier observations. The dataset is available in plain ASCII text and CSV formats, detailing columns for the year, month, date in fraction of year, monthly mean sunspot number, monthly standard deviation, and number of observations used. Notably, an error value of -1 indicates missing observations, with the monthly standard deviation calculated from daily values. These monthly mean values provide critical insights into long-term solar activity patterns essential for various scientific and operational purposes.
+The Sunspot Index and Long-term Solar Observations dataset offers a glimpse into solar activity, tracking monthly mean sunspot numbers - average daily counts per month - from January 1749 to the present <d-cite key="SILSO_Sunspot_Data"></d-cite>. Available in plain ASCII text and CSV formats, the datasets include year, month, date (as a fraction of the year), monthly mean sunspot number, monthly standard deviation, and the number of observations. Notably, a value of -1 signals missing observations, while the monthly standard deviation is derived from daily values. These detailed records provide invaluable insights into long-term solar patterns.
+
+## National Centers for Environmental Information
+
+The National Centers for Environmental Information (NCEI) by the National Oceanic and Atmospheric Administration (NOAA) maintains extensive collections of sunspot data spanning various time periods and formats <d-cite key="NOAA_Sunspot_Data"></d-cite>. The International Sunspot Number data includes sunspot maximum and minimum counts from 1610 to the present, annual numbers from 1700, monthly numbers from 1749, daily values from 1818, and sunspot counts by hemisphere. This dataset also features the McNish-Lincoln sunspot prediction, all available for download.
+
+Relative Sunspot Numbers provide an index of the activity of the Sun’s visible disk, calculated daily using the formula R = K (10g + s), where g represents sunspot groups, s represents distinct spots, and K is a scale factor unique to each observer. Initially based on observations from Zurich, these numbers are now managed by the Solar Influences Data Analysis Center (SIDC) in Belgium. The dataset includes daily, monthly, and annual sunspot numbers, sunspot counts by hemisphere from 1992 to 1996, and American Relative Sunspot Numbers starting from 1951. Users of this data are requested to credit SIDC, RWC Belgium, World Data Center for the Sunspot Index, and the Royal Observatory of Belgium.
+
+Additionally, the site offers ancient sunspot records from 165 B.C. to 1684 A.D. This includes a catalogue of sunspot observations, large sunspots, and estimated annual mean sunspot numbers from 1610 to 1715. Additionally, Group Sunspot Numbers, re-evaluated by Doug Hoyt, span from 1610 to 1995. The data is organized into various file types: input files containing raw daily data, means files with daily, monthly, and yearly averages, standard deviation files, and files detailing the number of observations. Documentation files include inventories of observers, summaries, bibliographies, and correction factors to ensure consistency with the Royal Greenwich Observatory (RGO) scale. This extensive dataset offers valuable insights into solar activity patterns essential for scientific and operational purposes.
 
 ## Heliospheric Current Sheet (HCS) Indexes
 
-Curated by Dr. Liang Zhao from the University of Michigan, this dataset encompasses heliospheric current attributes recorded bi-monthly from 1976 to 2022. The key features of this dataset include the SD index and the SL index. The SD index describes the standard deviation of the HCS's latitude, while the SL index describes the HCS's integrated slope. These novel, derived parameters simplify current methods of evaluating HCS activity and tracking the solar cycle. In compliance with non-disclosure agreements, sharing this dataset with the public is restricted.
+Curated by Dr. Liang Zhao from the University of Michigan, this comprehensive dataset captures heliospheric current attributes recorded bi-monthly from 1976 to 2022. It features two key indices: the SD index, which represents the standard deviation of the HCS’s latitude, and the SL index, which measures the HCS’s integrated slope. These innovative parameters enhance the evaluation of HCS activity and facilitate the prediction of sunspots. Please note, due to licensing agreements, this dataset is not available for public sharing.
 
 # Preprocessing
 
@@ -59,15 +74,26 @@ Curated by Dr. Liang Zhao from the University of Michigan, this dataset encompas
 
 # Modeling
 
+> ##### NOTE
+>
+> This is an ongoing project. We are currently working on improving the performance of the models and testing new techniques such as AR-Net, ARIMA, and Extra Tree.
+> {: .block-tip }
+
+To forecast sunspot numbers, we selected two diverse models: LSTM and Prophet, each renowned for their unique strengths in time series analysis. LSTM, with its advanced neural network architecture, excels in capturing long-term dependencies within the data. In contrast, the Prophet model, developed by Facebook, is adept at handling seasonality and trends, making it ideal for the periodic nature of sunspot activity.
+
+<!-- ## ARIMA
+
+## Seasonal Naive -->
+
 ## Prophet
 
-To address the forecasting of sunspot numbers, we selected two diverse models: LSTM and Prophet, each known for their distinct capabilities in handling time series data. LSTM was utilized for its potential to capture long-term dependencies within the data through its advanced neural network architecture. The Prophet model was incorporated due to its robust handling of seasonality and trends, making it suitable for the periodic nature of sunspot activity.
-
-The Prophet model, developed by Facebook, is tailored explicitly for time series forecasting with daily observations that display patterns on different time scales. Its appeal lies in its decomposable model framework, where time series data are considered to consist of three main components: trend, seasonality, and holidays.
+Prophet is specifically designed for time series forecasting with daily observations, featuring a decomposable model framework. It breaks down the time series data into three main components: trend, seasonality, and holidays, providing a robust approach to understanding and predicting sunspot patterns.
 
 ## LSTM
 
-The Long Short-Term Memory (LSTM) network is a type of recurrent neural network (RNN) particularly suited for forecasting time series that exhibit long-term dependencies. Its architecture allows it to remember information over extended periods, which is essential for capturing the patterns in data as complex and cyclical as sunspot activity. LSTMs are designed to avoid the long-term dependency problem, making them capable of learning order dependence in sequence prediction problems. This characteristic is especially beneficial for modeling the sequential nature of sunspot numbers, where past information can influence the trends and patterns many cycles into the future. Unlike more traditional time series models that may struggle with long-term dependencies or require manual feature engineering to capture seasonality, LSTMs can learn these from the data through their internal state and gated mechanisms.
+The Long Short-Term Memory (LSTM) network is a specialized type of recurrent neural network (RNN) ideal for forecasting time series with long-term dependencies. This algorithm consists of sequential special cells with structural inputs and outputs. Data progressing through LSTM cells is obtained as the output data for a cell, while it is used as input data for the next cell. With this aspect, LSTM can memorize data sequences longer than RNNs.Its unique architecture enables it to retain information over extended periods, crucial for capturing the complex and cyclical patterns of sunspot activity. LSTMs are specifically designed to overcome the long-term dependency problem, making them adept at learning order dependence in sequence prediction tasks. This capability is particularly valuable for modeling sunspot numbers, where past information can significantly influence trends and patterns across multiple cycles. Unlike traditional time series models that may struggle with long-term dependencies or require manual feature engineering to capture seasonality, LSTMs can autonomously learn these aspects from the data through their internal state and gated mechanisms.
+
+<!-- ## AR-Net -->
 
 # Evaluation
 

@@ -4,7 +4,7 @@ title: Exploring Breaking Bad Relations
 date: 2024-07-22 11:12:00-0400
 description: Visualizing character relations
 tags: data-visualization
-categories: sample-posts
+categories: exploration
 featured: false
 related_posts: true
 giscus: true

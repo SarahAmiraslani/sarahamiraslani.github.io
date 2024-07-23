@@ -12,7 +12,6 @@ giscus_comments: true
 excerpt_separator: "<!--more-->"
 ---
 
-
 # Introduction
 
 A network, or graph, is a representation of connections among a set of items where items are called nodes and the connections are called edges.

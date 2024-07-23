@@ -23,9 +23,7 @@ github: https://github.com/SarahAmiraslani/blog-posts/blob/main/network_analysis
 
 ## Exploratory Analyses
 
-
 ## Modeling
-
 
 ## Evaluation
 

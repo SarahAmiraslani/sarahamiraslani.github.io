@@ -40,7 +40,6 @@ Breaking Bad is my favorite television series, and it has sparked my interest in
 Credits and explanation goes here.
 </div>
 
-
 # Data Sourcing
 
 ## Quotes
@@ -50,6 +49,7 @@ To model the relationships between characters in the Breaking Bad series, we nee
 To extract quotes data from Wikiquote, there are a few methods available. One option is to use a web-scraping tool to iterate through each Wikiquote page related to the Breaking Bad franchise and scrape the text. However, a more efficient approach is to utilize the publicly available and regularly updated data dumps provided by the Wikimedia organization. These dumps are updated at least monthly, making them a reliable source<d-footnote>Learn more about the data dumps at https://dumps.wikimedia.org/</d-footnote>. By requesting the XML files for the pages related to Breaking Bad, we can process the text without scraping. This method is ideal because the show’s finale aired nearly a decade ago, so the most recent data dumps should closely match the current live information, making real-time updates unnecessary.
 
 The following commands were used to download the latest Wikiquote articles to my machine.
+
 ```bash
 wget https://dumps.wikimedia.org/enwikiquote/latest/enwikiquote-latest-pages-articles.xml.bz2
 bzip2 -d enwikiquote-latest-pages-articles.xml.bz2
@@ -58,7 +58,6 @@ bzip2 -d enwikiquote-latest-pages-articles.xml.bz2
 `Wget` is a command-line tool that makes it possible to download the latest zipped xml data dump from the internet directly to your active directory. `bzip2 -d` allows us to decompress the XML file which is necessary to process this unstructured dataset into a semistructured or tabular form. The result is a large XML file that contains all of the Wikiquote article contents per the date of the dump (mine was last updated on 20-Jul-2024 18:02).
 
 # Data Processing
-
 
 Several developers have created utilities to facilitate this process, and I will be using one such tool: [wickedQuotes by heyseth](https://github.com/heyseth/wickedQuotes). This utility simplifies the extraction and processing of quotes from the data dump, allowing us to focus on analyzing the interactions and relationships between the characters in Breaking Bad.
 

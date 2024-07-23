@@ -17,19 +17,17 @@ github: https://github.com/SarahAmiraslani/blog-posts/blob/main/data_mining/Mini
 
 > “We are drowning in information but starved for knowledge.” - John Naisbitt (1982)
 
-
 ## Introduction
 
 Thanks to the explosive growth of data, data mining has grown as a specialized discipline of data analytics and machine learning. It is estimated that by 2025 ~100 zettabytes of data will be
 generated worldwide. For context, 1 zettabyte is the equivalent of 1 trillion terabytes and 1e+12 gigabytes.
 
-
 Four-Dimensions of Data Mining
+
 - Data to be mined (Input)
 - Knowledge to be discovered (Output)
 - Techniques utilized (Connects Input-Output)
 - Applications adopted (Where to use?)
-
 
 ## Introduction to Data Mining
 

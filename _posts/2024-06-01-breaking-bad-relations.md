@@ -20,6 +20,7 @@ toc:
   - name: Data Processing
 
 github: https://github.com/SarahAmiraslani/blog-posts/blob/main/visualization/breaking_bad.ipynb
+bibliography: blogs-distill.bib
 ---
 
 # Introduction

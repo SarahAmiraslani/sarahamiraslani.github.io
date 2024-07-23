@@ -4,7 +4,7 @@ title: Predicting Top 10 Formula 1 Finishes and Clustering Race Tracks
 description: This project uses machine learning to predict top 10 finishes in F1 races and cluster tracks by characteristics.
 date: 2024-04-01
 img: /assets/img/f1-lego.jpg
-importance: 3
+importance: 1
 category: Machine Learning & Analytics
 github: https://github.com/SarahAmiraslani/formula1-predictions-track-clustering
 giscus: true
@@ -26,32 +26,32 @@ toc:
   - name: Introduction
   - name: Data Source
   - name: Preprocessing
-    children:
-      - name: Top 10 Predictions
-      - name: Track Clustering
+    # subsections:
+    #   - name: Top 10 Predictions
+    #   - name: Track Clustering
   - name: Exploratory Data Analysis
-    children:
-      - name: Multivariate Analysis
-      - name: Feature Importance
+    # subsections:
+    #   - name: Multivariate Analysis
+    #   - name: Feature Importance
   - name: Feature Engineering
-    children:
-      - name: Top 10 Predictions
-      - name: Track Clustering
+    # subsections:
+    #   - name: Top 10 Predictions
+    #   - name: Track Clustering
   - name: Modeling
-    children:
+    subsections:
       - name: Top 10 Predictions
-        children:
-          - name: Logistic Regression
-          - name: Random Forest
-          - name: Neural Networks
-          - name: Sensitivity Analysis
-          - name: Failure Analysis
+        # subsections:
+        #   - name: Logistic Regression
+        #   - name: Random Forest
+        #   - name: Neural Networks
+        #   - name: Sensitivity Analysis
+        #   - name: Failure Analysis
       - name: Track Clustering
   - name: Discussion
-    children:
-      - name: Top 10 Prediction
-      - name: Track Clustering
-      - name: Ethical Considerations
+    # subsections:
+    #   - name: Top 10 Prediction
+    #   - name: Track Clustering
+    #   - name: Ethical Considerations
 bibliography: formula-one-distill.bib
 ---
 
@@ -64,7 +64,7 @@ bibliography: formula-one-distill.bib
     </div>
 </div>
 <div class="caption">
-    (left) <a href="https://www.formula1.com/en/drivers/sergio-perez">Sergio Pérez</a> driving for Red Bull image captured by Jared C. Tilton <d-cite key="race_for_second_2024"></d-cite>. (right) <a href="https://en.wikipedia.org/wiki/Scuderia_AlphaTauri">Alpha Tauri</a> Engineers analyzing lap times, GPS coordinates, and video footage in real time in the pit wall. <d-cite key="how_teams_analyse_f1_race_strategy_2024"></d-cite>
+    (left) <a href="https://www.formula1.com/en/drivers/sergio-perez">Sergio Pérez</a> driving for Red Bull image captured by Jared C. Tilton<d-cite key="race_for_second_2024"></d-cite>. (right) <a href="https://en.wikipedia.org/wiki/Scuderia_AlphaTauri">Alpha Tauri</a> engineers analyzing lap times, GPS coordinates, and video footage in real time in the pit wall.<d-cite key="how_teams_analyse_f1_race_strategy_2024"></d-cite>
 </div>
 
 # Introduction
@@ -83,9 +83,9 @@ The Formula 1 points system awards points to the top 10 finishers in a grand pri
 
 Additionally, our exploration into the unsupervised clustering of race tracks adds another dimension to this analysis. By uncovering similarities and distinctions among tracks, we offer deeper insights into how different track characteristics influence racing strategies and outcomes. This dual-faceted approach distinguishes our work from conventional race prediction analyses, offering a novel perspective on the dynamics of Formula 1 racing.
 
-# DataSource
+# Data Source
 
-The Ergast Developer API serves as a pivotal data source for our Formula 1 analysis, offering an extensive repository of historical race data, including driver standings, race results, and qualifying times <d-cite key="ergast"></d-cite>. Renowned for its comprehensive coverage of F1 statistics, the API has been instrumental in various analytical projects, ranging from predictive modeling to detailed statistical analyses of driver performances. In our project, the Ergast API provided a robust foundation for both the supervised and unsupervised learning components. We used it to extract datasets spanning from 1995 to the present, reflecting our focus on the modern era of Formula 1 racing. This period is characterized by significant technological advancements and regulatory changes, making the data particularly relevant for our analysis. Key features of the API that we leveraged include its ability to filter data by race season, event, and individual driver/team performance metrics. This flexibility allowed us to tailor our dataset precisely to the needs of our predictive models and clustering algorithms, ensuring a high degree of accuracy and relevance in our analysis.
+The Ergast Developer API serves as a pivotal data source for our Formula 1 analysis, offering an extensive repository of historical race data, including driver standings, race results, and qualifying times<d-cite key="ergast"></d-cite>. Renowned for its comprehensive coverage of F1 statistics, the API has been instrumental in various analytical projects, ranging from predictive modeling to detailed statistical analyses of driver performances. In our project, the Ergast API provided a robust foundation for both the supervised and unsupervised learning components. We used it to extract datasets spanning from 1995 to the present, reflecting our focus on the modern era of Formula 1 racing. This period is characterized by significant technological advancements and regulatory changes, making the data particularly relevant for our analysis. Key features of the API that we leveraged include its ability to filter data by race season, event, and individual driver/team performance metrics. This flexibility allowed us to tailor our dataset precisely to the needs of our predictive models and clustering algorithms, ensuring a high degree of accuracy and relevance in our analysis.
 
 > ##### Reproducibility Note
 >
@@ -105,7 +105,7 @@ The Ergast Developer API serves as a pivotal data source for our Formula 1 analy
 
 ## Top 10 Predictions
 
-To prepare the dataset for our supervised learning model, a comprehensive pre-processing routine was implemented, focusing on extracting and structuring key information from the Ergast Developer API. Initially, unique identifiers for races and racers were constructed using a combination of the race year and session for RaceId, and a concatenation of the racer's first and last names for RacerId. These identifiers serve as indexes to uniquely identify data points without directly contributing to the model's input features. For the Type of track, we categorized circuits into purpose-built tracks and street circuits, encoded as 0 and 1, respectively, based on circuit information obtained from the API. This binary classification aids the model in distinguishing the inherent differences between these track types. Additionally, we derived the TrackId by using the circuit name, ensuring a consistent reference across different datasets. The previous year's race result for each racer, Qualifying position, and the timings for Q1, Q2, and Q3 were meticulously extracted and formatted, with non-participation or non-qualification explicitly marked, ensuring a comprehensive dataset ready for analysis.
+To prepare the dataset for supervised learning, a pre-processing routine was implemented, focusing on extracting and structuring key information from the Ergast Developer API. Initially, unique identifiers for races and racers were constructed using a combination of the race year and session for RaceId, and a concatenation of the racer's first and last names for RacerId. These identifiers serve as indexes to uniquely identify data points without directly contributing to the model's input features. For the Type of track, we categorized circuits into purpose-built tracks and street circuits, encoded as 0 and 1, respectively, based on circuit information obtained from the API. This binary classification aids the model in distinguishing the inherent differences between these track types. Additionally, we derived the TrackId by using the circuit name, ensuring a consistent reference across different datasets. The previous year's race result for each racer, Qualifying position, and the timings for Q1, Q2, and Q3 were meticulously extracted and formatted, with non-participation or non-qualification explicitly marked, ensuring a comprehensive dataset ready for analysis.
 
 <table class="styled-table">
   <thead>
@@ -698,10 +698,10 @@ Our primary clustering algorithm was DBSCAN (Density-Based Spatial Clustering of
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Dendogram-track.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/Dendogram-track.png" class="img-fluid rounded z-depth-1 same-height-sd" style="--custom-height: 100px;" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/K-Distance.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/K-Distance.png" class="img-fluid rounded z-depth-1 same-height-sd" style="--custom-height: 100px;" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -716,10 +716,10 @@ To navigate the high-dimensional nature of our data, we leveraged Principal Comp
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/tracks-biplot.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/tracks-biplot.png" class="img-fluid rounded z-depth-1 same-height-sd" style="--custom-height: 100px;" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/t-sne-tracks.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/t-sne-tracks.png" class="img-fluid rounded z-depth-1 same-height-sd" style="--custom-height: 100px;" zoomable=true %}
     </div>
 </div>
 <div class="caption">

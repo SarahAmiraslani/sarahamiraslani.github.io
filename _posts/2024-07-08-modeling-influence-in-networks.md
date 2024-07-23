@@ -2,47 +2,31 @@
 layout: distill
 title: Modeling Influence in Networks
 date: 2024-07-08 11:12:00-0400
-description: an example of a blog post with some math
+description: TBD
 tags: machine-learning, network-analysis
 categories: exploration
 featured: false
 related_posts: true
 giscus: true
 giscus_comments: true
-_styles: >
-  .fake-img {
-    background: #bbb;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 12px;
-  }
-  .fake-img p {
-    font-family: monospace;
-    color: white;
-    text-align: left;
-    margin: 12px 0;
-    text-align: center;
-    font-size: 16px;
-  }
-
-bibliography: 2018-12-22-distill.bib
-
-# Optionally, you can add a table of contents to your post.
-# NOTES:
-#   - make sure that TOC names match the actual section names
-#     for hyperlinks within the post to work correctly.
-#   - we may want to automate TOC generation in the future using
-#     jekyll-toc plugin (https://github.com/toshimaru/jekyll-toc).
+bibliography: blogs-distill.bib
 toc:
-  - name: Equations
-    # if a section has subsections, you can add them as follows:
-    # subsections:
-    #   - name: Example Child Subsection 1
-    #   - name: Example Child Subsection 2
-  - name: Citations
-  - name: Footnotes
-  - name: Code Blocks
-  - name: Interactive Plots
-  - name: Layouts
-  - name: Other Typography?
+  - name: Introduction
+  - name: Exploratory Analyses
+  - name: Modeling
+  - name: Evaluation
+  - name: Conclusion
+github: https://github.com/SarahAmiraslani/blog-posts/blob/main/network_analysis/starwars_network_analysis.ipynb
 ---
+
+## Introduction
+
+## Exploratory Analyses
+
+
+## Modeling
+
+
+## Evaluation
+
+## Conclusion

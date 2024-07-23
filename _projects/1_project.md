@@ -4,7 +4,7 @@ title: "Draw to Learn: A Strategy to Learn Abstract Concepts"
 description: This project studies how student-generated drawings aid learning of abstract science concepts in a lab setting.
 date: 2020-05-20
 img: /assets/img/multimedia-learning.png
-importance: 2
+importance: 1
 category: Experimental Design
 github: "https://github.com/SarahAmiraslani/drawing-to-learn"
 giscus: true
@@ -17,18 +17,18 @@ authors:
 toc:
   - name: Summary
   - name: Introduction
-    children:
-      - name: Research Focus
-      - name: Hypothesis
+    # subsections:
+    #   - name: Research Focus
+    #   - name: Hypothesis
   - name: Methods
-    children:
-      - name: Participants
-      - name: Design
-      - name: Materials
+    # subsections:
+    #   - name: Participants
+    #   - name: Design
+    #   - name: Materials
   - name: Results
-    children:
-      - name: Planned Analyses
-      - name: Exploratory Analyses
+    # subsections:
+    #   - name: Planned Analyses
+    #   - name: Exploratory Analyses
   - name: Discussion
   - name: Acknowledgment
 bibliography: multimedia-learning-distill.bib
@@ -36,9 +36,9 @@ bibliography: multimedia-learning-distill.bib
 
 # Summary
 
-Have you ever wondered why images stick in your mind longer than words? Our brains are hardwired to process visual information with remarkable efficiency. Research shows that visual aids not only make learning easier by breaking down complex ideas, but also help illustrate spatial relationships, pinpoint knowledge gaps, and keep us captivated <d-cite key="mayer2008"></d-cite>. But what if drawing your own pictures could take learning to the next level, even more than instructor-provided visuals?
+Have you ever wondered why images stick in your mind longer than words? Our brains are hardwired to process visual information with remarkable efficiency. Research shows that visual aids not only make learning easier by breaking down complex ideas, but also help illustrate spatial relationships, pinpoint knowledge gaps, and keep us captivated<d-cite key="mayer2008"></d-cite>. But what if drawing your own pictures could take learning to the next level, even more than instructor-provided visuals?
 
-Studies reveal that drawing can significantly enhance understanding of how physical systems work. However, its effectiveness hinges on factors like the accuracy of the drawings, the learner’s prior knowledge, and the level of guidance provided while drawing <d-cite key="fiorella2018"></d-cite>. Beginners often benefit from more structured support as creating accurate drawings from scratch is cognitively demanding and may detract from energy spent learning the material <d-cite key="vanmeter2005"></d-cite>. Yet, when dealing with content that doesn’t have a clear visual representation, the accuracy of these drawings may not be consequential. In these scenarios, student-generated drawings can capture their unique thought processes and create memorable visual representations.
+Studies reveal that drawing can significantly enhance understanding of how physical systems work. However, its effectiveness hinges on factors like the accuracy of the drawings, the learner’s prior knowledge, and the level of guidance provided while drawing<d-cite key="fiorella2018"></d-cite>. Beginners often benefit from more structured support as creating accurate drawings from scratch is cognitively demanding and may detract from energy spent learning the material<d-cite key="vanmeter2005"></d-cite>. Yet, when dealing with content that doesn’t have a clear visual representation, the accuracy of these drawings may not be consequential. In these scenarios, student-generated drawings can capture their unique thought processes and create memorable visual representations.
 
 In two experiments, we randomly assigned college students to different learning tasks. Some studied or copied an instructor’s drawing, others completed a scaffolded drawing worksheet, and some drew their own representations on a blank sheet while reading about abstract concepts or physical systems. We found that, when it came to abstract lessons, unguided drawing significantly boosted retention but not transfer. However, for lessons on physical systems, drawing didn’t improve retention or transfer and students reported higher levels of intrinsic cognitive load.
 
@@ -46,24 +46,24 @@ These insights suggest that while drawing aids learning, its impact depends on t
 
 # Introduction
 
-Visual representations play a crucial role in learning by summarizing verbal information, illustrating spatial relationships, and enhancing memory retention <d-cite key="ainsworth2011"></d-cite>. While educational visuals are typically provided by instructors or the authors of textbooks, asking students to create their own drawings is less common <d-cite key="vanmeter2005"></d-cite>. Studying and constructing visuals engage different cognitive processes and can differentially impact learning <d-cite key="fiorella2018"></d-cite>. Therefore, it is essential to determine which method most effectively promotes meaningful learning.
+Visual representations play a crucial role in learning by summarizing verbal information, illustrating spatial relationships, and enhancing memory retention<d-cite key="ainsworth2011"></d-cite>. While educational visuals are typically provided by instructors or the authors of textbooks, asking students to create their own drawings is less common<d-cite key="vanmeter2005"></d-cite>. Studying and constructing visuals engage different cognitive processes and can differentially impact learning<d-cite key="fiorella2018"></d-cite>. Therefore, it is essential to determine which method most effectively promotes meaningful learning.
 
-According to the Cognitive Theory of Multimedia Learning, effective learning involves selecting, organizing, and integrating new information with prior knowledge <d-cite key="mayer2002multimedia"></d-cite>. The more connections learners make between new material and their existing knowledge, the more likely they are to retain information and transfer it to new contexts <d-cite key="mayer2003nine"></d-cite>. Thus, an ideal learning strategy encourages the integration of new and prior knowledge.
+According to the Cognitive Theory of Multimedia Learning, effective learning involves selecting, organizing, and integrating new information with prior knowledge<d-cite key="mayer2002multimedia"></d-cite>. The more connections learners make between new material and their existing knowledge, the more likely they are to retain information and transfer it to new contexts<d-cite key="mayer2003nine"></d-cite>. Thus, an ideal learning strategy encourages the integration of new and prior knowledge.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/ctml-diagram.png" title="Cognitive Theory of Multimedia Learning " class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="caption">
-        Figure 1. A visual representation of the Cognitive Theory of Multimedia Learning from Multimedia Learning <d-cite key="mayer2002multimedia"></d-cite>. While learning can occur through various media (e.g., text, podcasts, pictures), Multimedia Learning specifically involves processing both words and pictures. This distinction is important because verbal and pictorial information are processed through different cognitive pathways.
+        Figure 1. A visual representation of the Cognitive Theory of Multimedia Learning from Multimedia Learning<d-cite key="mayer2002multimedia"></d-cite>. While learning can occur through various media (e.g., text, podcasts, pictures), Multimedia Learning specifically involves processing both words and pictures. This distinction is important because verbal and pictorial information are processed through different cognitive pathways.
     </div>
 </div>
 
-The Dual Channel Processing Theory, a well-supported cognitive theory, explains that we process verbal and non-verbal information through separate channels, forming unique connections between new material and our existing knowledge <d-cite key="paivio1968"></d-cite> . When learners draw, they engage both verbal and visual processing channels as process the text in a passage and create a corresponding visuospatial representation. This process enhances cognitive processing and recall <d-cite key="wammes2017learning"></d-cite>.
+The Dual Channel Processing Theory, a well-supported cognitive theory, explains that we process verbal and non-verbal information through separate channels, forming unique connections between new material and our existing knowledge<d-cite key="paivio1968"></d-cite> . When learners draw, they engage both verbal and visual processing channels as process the text in a passage and create a corresponding visuospatial representation. This process enhances cognitive processing and recall<d-cite key="wammes2017learning"></d-cite>.
 
-Learner-generated drawings are visual representations created by students to achieve educational goals <d-cite key="alesandrini1981pictorial"></d-cite>. Generative learning strategies, like drawing, promote long-term understanding by helping learners identify gaps in their knowledge and update their understanding through self-monitoring <d-cite key="vanmeter2013"></d-cite>. Drawing allows students to personalize study materials, addressing individual differences in prior knowledge and learning needs. These drawings can be representational (faithfully depicting physical structures) or non-representational (abstract diagrams and flow charts) <d-cite key="carney2002pictorial"></d-cite>. Non-representational drawings may require additional cognitive processing to translate abstract visuals into meaningful content.
+Learner-generated drawings are visual representations created by students to achieve educational goals<d-cite key="alesandrini1981pictorial"></d-cite>. Generative learning strategies, like drawing, promote long-term understanding by helping learners identify gaps in their knowledge and update their understanding through self-monitoring<d-cite key="vanmeter2013"></d-cite>. Drawing allows students to personalize study materials, addressing individual differences in prior knowledge and learning needs. These drawings can be representational (faithfully depicting physical structures) or non-representational (abstract diagrams and flow charts)<d-cite key="carney2002pictorial"></d-cite>. Non-representational drawings may require additional cognitive processing to translate abstract visuals into meaningful content.
 
-Research on learner-generated drawings has yielded mixed results, influenced by factors such as prior knowledge and the level of guidance provided during the drawing process. Early studies showed weak effects favoring drawing to learn. For example, researchers found that drawing or paraphrasing while learning about electrochemistry had varied impacts based on the level of detail of students' drawings <d-cite key="alesandrini1981pictorial"></d-cite>. Subsequent studies indicated that drawing without guidance might be too cognitively demanding, detracting from meaningful engagement with the material <d-cite key="schwamborn2011cognitive"></d-cite>. Guided drawing processes, such as providing drawing training or partially completed worksheets, have shown positive learning outcomes. These strategies help learners identify knowledge gaps, reduce cognitive load, and receive feedback on their mental representations <d-cite key="scheiter2017sketching"></d-cite>.
+Research on learner-generated drawings has yielded mixed results, influenced by factors such as prior knowledge and the level of guidance provided during the drawing process. Early studies showed weak effects favoring drawing to learn. For example, researchers found that drawing or paraphrasing while learning about electrochemistry had varied impacts based on the level of detail of students' drawings<d-cite key="alesandrini1981pictorial"></d-cite>. Subsequent studies indicated that drawing without guidance might be too cognitively demanding, detracting from meaningful engagement with the material<d-cite key="schwamborn2011cognitive"></d-cite>. Guided drawing processes, such as providing drawing training or partially completed worksheets, have shown positive learning outcomes. These strategies help learners identify knowledge gaps, reduce cognitive load, and receive feedback on their mental representations<d-cite key="scheiter2017sketching"></d-cite>.
 
 ## Research Focus
 
@@ -107,15 +107,15 @@ The materials for this study included a Qualtrics survey, a passage about black 
 
 - **Prior Knowledge**: Participants self-reported their knowledge and confidence in physics and astronomy using 5-point Likert scales. The knowledge scale ranged from “I know nothing at all” to “I know a great deal,” and the confidence scale ranged from “not confident at all” to “extremely confident.” The prior knowledge score was calculated by multiplying the knowledge and confidence ratings for both subjects and summing the results.
 
-- **Black holes Lesson**: All participants read an educational passage about black holes, adapted from The Cosmic Perspective textbook <d-cite key="bennett2016"></d-cite>. The passage was condensed to 11 paragraphs (1607 words) covering the definition, formation, properties, event horizon, singularity, size, and internal structure of black holes. The readability of the passage was measured using the Automated Readability Index (ARI), resulting in an ARI of 11.30, indicating a grade level of 11.6.
+- **Black holes Lesson**: All participants read an educational passage about black holes, adapted from The Cosmic Perspective textbook<d-cite key="bennett2016"></d-cite>. The passage was condensed to 11 paragraphs (1607 words) covering the definition, formation, properties, event horizon, singularity, size, and internal structure of black holes. The readability of the passage was measured using the Automated Readability Index (ARI), resulting in an ARI of 11.30, indicating a grade level of 11.6.
 
-- **Illustrations**: Participants in the copy, study, and complete conditions received illustrations produced using Adobe Photoshop 2019 and Pages. Inspired by The Cosmic Perspective textbook and Pearson Mastering Astronomy platform <d-cite key="pearson2019"></d-cite>, the illustrations included drawings of black hole features, Einstein’s Theory of General Relativity, and spacetime distortion near black holes. Scaffolded illustrations featured key elements masked with empty text boxes. Participants in the drawing condition received blank sheets of paper and pens.
+- **Illustrations**: Participants in the copy, study, and complete conditions received illustrations produced using Adobe Photoshop 2019 and Pages. Inspired by The Cosmic Perspective textbook and Pearson Mastering Astronomy platform<d-cite key="pearson2019"></d-cite>, the illustrations included drawings of black hole features, Einstein’s Theory of General Relativity, and spacetime distortion near black holes. Scaffolded illustrations featured key elements masked with empty text boxes. Participants in the drawing condition received blank sheets of paper and pens.
 
 - **Passage Comprehension Tests**: Three types of tests were developed: two analogous 15-question multiple-choice tests, one 4-question open response retention test, and one 4-question open response transfer test. The multiple-choice tests included 8 perfect analogs and 7 strong pairs of questions. Retention questions asked students to summarize lesson information, while transfer questions required application of knowledge to new scenarios. Answers were scored based on identified idea units, with inter-rater reliability for retention and transfer tests being _r_(212)=0.995, _p_ <0.0001 and _r_(212)=0.798, _p_ <0.0001, respectively.
 
-- **Cognitive Load**: Cognitive load was measured using a 10-item instrument assessing intrinsic, extraneous, and germane load <d-cite key="leppink2013"></d-cite>. Participants rated items on a 0 to 10 scale. Examples included “The topics covered in the activity were very complex” (intrinsic load), “The instructions and explanations during the activity were very unclear” (extraneous load), and “The activity really enhanced my understanding of the topics covered” (germane load). Cognitive load was analyzed to determine the impact of visualization strategies on perceived difficulty and mental effort.
+- **Cognitive Load**: Cognitive load was measured using a 10-item instrument assessing intrinsic, extraneous, and germane load<d-cite key="leppink2013"></d-cite>. Participants rated items on a 0 to 10 scale. Examples included “The topics covered in the activity were very complex” (intrinsic load), “The instructions and explanations during the activity were very unclear” (extraneous load), and “The activity really enhanced my understanding of the topics covered” (germane load). Cognitive load was analyzed to determine the impact of visualization strategies on perceived difficulty and mental effort.
 
-- **Visual Imagery**: Visual imagery ability was assessed using the Vividness of Visual Imagery Questionnaire (VVIQ), which asks participants to rate the vividness of imagined scenes on a 5-point Likert scale <d-cite key="mckelvie1995"></d-cite>. The VVIQ was completed once with eyes open.
+- **Visual Imagery**: Visual imagery ability was assessed using the Vividness of Visual Imagery Questionnaire (VVIQ), which asks participants to rate the vividness of imagined scenes on a 5-point Likert scale<d-cite key="mckelvie1995"></d-cite>. The VVIQ was completed once with eyes open.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

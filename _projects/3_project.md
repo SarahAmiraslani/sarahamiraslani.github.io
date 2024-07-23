@@ -4,7 +4,7 @@ title: Tracing the Origins of Solar Wind
 description: This project uses machine learning to analyze solar wind, trace its solar corona origins, and predict heliophysical events.
 date: 2024-06-20
 img: /assets/img/solar-wind-image.png
-importance: 3
+importance: 2
 category: Machine Learning & Analytics
 github: https://github.com/SarahAmiraslani/solar-wind-coronal-origin-ml
 giscus: true
@@ -34,12 +34,12 @@ bibliography: solar-wind-distill.bib
     </div>
 </div>
 <div class="caption">
-    (left) An artist's depiction of solar wind permeating in the Solar system. (right) A conceptual animation showing solar wind interacting with Earth's magnetic field and causing atmospheric loss within the cusp aurora at the polar cusps <d-cite key="nasa_magnetopause"></d-cite>.
+    (left) An artist's depiction of solar wind permeating in the Solar system. (right) A conceptual animation showing solar wind interacting with Earth's magnetic field and causing atmospheric loss within the cusp aurora at the polar cusps<d-cite key="nasa_magnetopause"></d-cite>.
 </div>
 
 # Introduction
 
-The solar corona, the Sun’s outermost layer, continuously emits streams of charged particles and magnetic fields collectively known as the solar wind. This high-energy stream escapes the Sun’s gravitational pull and permeates the solar system, forming the heliosphere. Periodically, solar disturbances, such as interplanetary coronal mass ejections (ICMEs), solar flares, and high-speed streams, propagate outward into the heliosphere. These disturbances can interact with the magnetospheres and atmospheres of planets, significantly affecting space weather - geomagnetic storms that can penetrate our atmosphere, threatening spacecraft and astronauts, disrupting navigation systems and wreaking havoc on power grids that impact Earth <d-cite key="carpenter2022characterizing"></d-cite>. Therefore, understanding the characteristics and origins of solar wind is crucial for forecasting space weather conditions.
+The solar corona, the Sun’s outermost layer, continuously emits streams of charged particles and magnetic fields collectively known as the solar wind. This high-energy stream escapes the Sun’s gravitational pull and permeates the solar system, forming the heliosphere. Periodically, solar disturbances, such as interplanetary coronal mass ejections (ICMEs), solar flares, and high-speed streams, propagate outward into the heliosphere. These disturbances can interact with the magnetospheres and atmospheres of planets, significantly affecting space weather - geomagnetic storms that can penetrate our atmosphere, threatening spacecraft and astronauts, disrupting navigation systems and wreaking havoc on power grids that impact Earth<d-cite key="carpenter2022characterizing"></d-cite>. Therefore, understanding the characteristics and origins of solar wind is crucial for forecasting space weather conditions.
 
 The in-situ<d-footnote>In the field of Earth and Planetary Sciences, 'In Situ Measurement' refers to the process of directly measuring the environment or an individual's experience using specific equipment, taking into account factors such as equipment limitations, potential errors, and the need for calibrations.</d-footnote> properties of the solar wind are intrinsically linked to their origins near the Sun and the inner solar atmosphere, where the wind plasma is accelerated, heated, and ionized. Therefore, the solar wind’s characteristics reflect the plasma properties of its coronal origin and the features of its acceleration process. For instance, solar wind originating from coronal holes typically exhibits fast proton speeds and low heavy ion charge state ratios, which become fixed at a certain height when the low electron temperature halts ionization and recombination processes. In contrast, solar wind from non-coronal-hole regions, such as the periphery of active regions, usually shows slow or intermediate speeds.
 These non-evolving properties of solar wind can be used to map solar wind measurements to their origins in the sun.
@@ -53,10 +53,10 @@ These non-evolving properties of solar wind can be used to map solar wind measur
     </div>
 </div>
 <div class="caption">
-    (left) A conceptual animation showing solar wind interacting with Earth's magnetic field and causing atmospheric loss within the cusp aurora at the polar cusps <d-cite key="nasa_magnetopause"></d-cite>. (right) A sketch of the Sun with a coronal hole surrounded by two helmet streamers (pink labels). The source locations of three types of plasma are indicated with the circles: coronal-hole-origin plasma (red), sector-reversal-region plasma (purple), and streamer-belt-origin plasma (green). The streamer belt plasma may come from the edge of the coronal hole near the streamer belt and/or interchange reconnection between open flux and the closed loops of the streamer belt.
+    (left) A conceptual animation showing solar wind interacting with Earth's magnetic field and causing atmospheric loss within the cusp aurora at the polar cusps<d-cite key="nasa_magnetopause"></d-cite>. (right) A sketch of the Sun with a coronal hole surrounded by two helmet streamers (pink labels). The source locations of three types of plasma are indicated with the circles: coronal-hole-origin plasma (red), sector-reversal-region plasma (purple), and streamer-belt-origin plasma (green). The streamer belt plasma may come from the edge of the coronal hole near the streamer belt and/or interchange reconnection between open flux and the closed loops of the streamer belt.
 </div>
 
-Solar wind can generally be classified into four major types: coronal-hole-origin plasma (CHOP), streamer belt plasma (SBP), sector-reversal-region plasma (SRRP), and ejecta (EJECT) <d-cite key="xu2015new"></d-cite>. CHOP, sometimes called the fast solar wind, originates from the open-field line regions of coronal holes and typically exhibits speeds in excess of 500 km/s at 1 AU and beyond. Statistically, CHOP tends to be homogeneous with high proton temperature and low plasma density and is dominated by outward propagating Alfvénic waves. SBP and SRRP are subgroups of the streamer-belt-origin plasma (SBOP), also known as the slow solar wind, with a typical speed of less than 400 km/s. Compared to CHOP, SBOP does not exhibit much Alfvénic fluctuations.
+Solar wind can generally be classified into four major types: coronal-hole-origin plasma (CHOP), streamer belt plasma (SBP), sector-reversal-region plasma (SRRP), and ejecta (EJECT)<d-cite key="xu2015new"></d-cite>. CHOP, sometimes called the fast solar wind, originates from the open-field line regions of coronal holes and typically exhibits speeds in excess of 500 km/s at 1 AU and beyond. Statistically, CHOP tends to be homogeneous with high proton temperature and low plasma density and is dominated by outward propagating Alfvénic waves. SBP and SRRP are subgroups of the streamer-belt-origin plasma (SBOP), also known as the slow solar wind, with a typical speed of less than 400 km/s. Compared to CHOP, SBOP does not exhibit much Alfvénic fluctuations.
 
 Traditionally, the classification of solar wind sources has relied on six in-situ measured physical properties: proton speed, proton entropy, proton temperature, ion charge states, and elemental composition. However, these measurements face challenges due to overlapping property values and the dynamic interactions of the solar wind with various elements of the solar system, which can obscure the definitive origins of the wind. Consequently, researchers often rely on subjective interpretation of continuous data distributions, making accurate categorization of the solar wind difficult. However, with improvements in Machine Learning, there has been a growing push to use machine learning to identify coronal features of solar wind and to predict future solar events. Here, we examine how machine learning has the potential to link the physical properties measured in-situ to the origin of the wind at the Sun.
 
@@ -74,14 +74,14 @@ Given the growing size and complexity of solar wind in-situ observations and the
 
 ## Advanced Composition Explorer (ACE) Spacecraft Data
 
-Launched in 1997, NASA's [Advanced Composition Explorer (ACE)](https://science.nasa.gov/mission/ace/) mission captures and analyzes particles from solar, interplanetary, interstellar, and galactic sources. Its primary aim is to explore the connections between the Sun, Earth, and the Milky Way by examining materials expelled by the Sun. ACE data comprise in-situ measurements collected at the Sun-Earth L1 Lagrange point, about 870,000 miles (1.4 million kilometers) from Earth — where the gravitational pull between the Earth and the Sun is at equilibrium <d-cite key="nasa_solar"></d-cite>. ACE is equipped with nine instruments: Solar Wind Ion Mass Spectrometer (SWIMS), Solar Wind Ion Composition Spectrometer (SWICS), Ultra-Low Energy Isotope Spectrometer (ULEIS), Solar Energetic Particle Ionic Charge Analyzer (SEPICA), Solar Isotope Spectrometer (SIS), Cosmic Ray Isotope Spectrometer (CRIS), Solar Wind Electron, Proton, and Alpha Monitor (SWEPAM), Electron, Proton, and Alpha-Particle Monitor (EPAM), Magnetometer (MAG), Real Time Solar Wind Experiment (RTSW) <d-cite key="garrard1998ace"></d-cite>.
+Launched in 1997, NASA's [Advanced Composition Explorer (ACE)](https://science.nasa.gov/mission/ace/) mission captures and analyzes particles from solar, interplanetary, interstellar, and galactic sources. Its primary aim is to explore the connections between the Sun, Earth, and the Milky Way by examining materials expelled by the Sun. ACE data comprise in-situ measurements collected at the Sun-Earth L1 Lagrange point, about 870,000 miles (1.4 million kilometers) from Earth — where the gravitational pull between the Earth and the Sun is at equilibrium<d-cite key="nasa_solar"></d-cite>. ACE is equipped with nine instruments: Solar Wind Ion Mass Spectrometer (SWIMS), Solar Wind Ion Composition Spectrometer (SWICS), Ultra-Low Energy Isotope Spectrometer (ULEIS), Solar Energetic Particle Ionic Charge Analyzer (SEPICA), Solar Isotope Spectrometer (SIS), Cosmic Ray Isotope Spectrometer (CRIS), Solar Wind Electron, Proton, and Alpha Monitor (SWEPAM), Electron, Proton, and Alpha-Particle Monitor (EPAM), Magnetometer (MAG), Real Time Solar Wind Experiment (RTSW)<d-cite key="garrard1998ace"></d-cite>.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/ace-launch.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="assets/img/ace-launch.jpg" class="img-fluid rounded z-depth-1 same-height" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/ACE_Auto1F.jpeg" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="assets/img/ACE_Auto1F.jpeg" class="img-fluid rounded z-depth-1 same-height-sd" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -90,13 +90,13 @@ Launched in 1997, NASA's [Advanced Composition Explorer (ACE)](https://science.n
 
 We focus on the data from four instruments of the ACE satellite:
 
-- **Solar Wind Electron, Proton and Alpha Monitor** (SWEPAM): measures rates of electron and ion flows with two distinct electrostatic analyzers with fan- shaped fields of view that use the spacecraft’s rotation to observe in all directions. The first one observes electrons in the 1 eV–1.35 keV energy range and the second one ions in the 0.26–36 keV energy range <d-cite key="mccomas1998solar"></d-cite>.
+- **Solar Wind Electron, Proton and Alpha Monitor** (SWEPAM): measures rates of electron and ion flows with two distinct electrostatic analyzers with fan- shaped fields of view that use the spacecraft’s rotation to observe in all directions. The first one observes electrons in the 1 eV–1.35 keV energy range and the second one ions in the 0.26–36 keV energy range<d-cite key="mccomas1998solar"></d-cite>.
 
-- **Magnetic Field Monitor** (MAG): consists of a set of twin sensors measuring the three components of the interplanetary magnetic field at L1 <d-cite key="stone1998advanced"></d-cite>.
+- **Magnetic Field Monitor** (MAG): consists of a set of twin sensors measuring the three components of the interplanetary magnetic field at L1<d-cite key="stone1998advanced"></d-cite>.
 
-- **Electron, Proton, and Alpha-Particle Monitor** (EPAM): <d-cite key="gold1998electron"></d-cite>
+- **Electron, Proton, and Alpha-Particle Monitor** (EPAM):<d-cite key="gold1998electron"></d-cite>
 
-- **Solar Wind Ion Mass Spectrometer** (SWIMS): <d-cite key="gloeckler1992solar"></d-cite>
+- **Solar Wind Ion Mass Spectrometer** (SWIMS):<d-cite key="gloeckler1992solar"></d-cite>
 
 # Data Wrangling
 
@@ -110,7 +110,7 @@ ACE data is stored in daily Hierarchical Data Files (HDF). We developed Python u
 
 # Feature Engineering
 
-Using Zhao et al.’s classification scheme, we categorized solar wind into fast wind from coronal holes (CH), slow wind from non-coronal holes (NCH), and transient wind <d-cite key="zhao2017relation"></d-cite>. This involved comparing the O7+/O6+ ratio to specific constants and proton speed multipliers.
+Using Zhao et al.’s classification scheme, we categorized solar wind into fast wind from coronal holes (CH), slow wind from non-coronal holes (NCH), and transient wind<d-cite key="zhao2017relation"></d-cite>. This involved comparing the O7+/O6+ ratio to specific constants and proton speed multipliers.
 
 ## Dimensionality Reduction
 

@@ -11768,4 +11768,23 @@ a.text-dark:hover {
     border-bottom: 2px solid var(--global-theme-color);
 }
 
+.same-height-sd {
+    height: var(--custom-height, 300px) !important;
+    /* Default to 300px if not set */
+    object-fit: scale-down;
+    /* Ensure the aspect ratio is maintained */
+    width: 100%;
+    /* Ensure the image covers the parent div */
+}
+
+.same-height {
+    height: var(--custom-height, 300px) !important;
+    /* Ensure the aspect ratio is maintained */
+    width: 100%;
+    /* Ensure the image covers the parent div */
+    object-fit: cover;
+    /* Ensures the image covers the area without stretching */
+}
+
+
 /*# sourceMappingURL=bootstrap.min.css.map */

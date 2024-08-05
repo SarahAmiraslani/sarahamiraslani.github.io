@@ -51,18 +51,15 @@ The study of networks, often referred to as network science, has emerged as a po
 
 ## Key Concepts
 
-
 ## Structure
 
-
 ## Connectivity
+
 In network analysis, a fundamental question is whether every node within a network can reach every other node by traversing its edges. A network is considered connected if a path exists between any two nodes.
 
 A network that is not connected can be divided into distinct, self-contained groups of nodes called connected components. Each connected component represents a subset of the network where every node within the component has a path to every other node within the component, but this property does not hold true for a larger set of nodes (i.e., not fully connected to a larger piece of the graph).
 
 Dividing a network into it's components is a global way of describing it's structure. Within a given component, there may be more informative internal structure that is important to understanding the network.
-
-
 
 ## Distance
 
@@ -76,7 +73,6 @@ The distance between two nodes is defined as the length of the shortest path bet
 2. Find all connections to the seed node and declare them to be at distance 1.
 3. For each node found in step 1, find all their connections which were not previously found, and declare them to be at distance 2.
 4. Continue discovering new nodes in layers with each new layer adding one to the distance.
-
 
 <div class="row equal-height">
     <!-- Left column for the image -->
@@ -121,8 +117,8 @@ The distance between two nodes is defined as the length of the shortest path bet
             </table>
         </div>
     </div>
-</div>
 
+</div>
 
 # Motivation
 
@@ -135,9 +131,6 @@ The network data we'll be using for this analysis is based on the work of Evelin
 You can find the code used to create the network on [GitHub](https://github.com/evelinag/star-wars-network-data) and download the data itself from [Kaggle](https://github.com/evelinag/star-wars-network-data) <d-cite key="gregor2015draw"></d-cite>.
 
 # Key Concepts
-
-
-
 
 <div class="row d-flex align-items-stretch">
     <!-- Left column for the image -->
@@ -180,6 +173,7 @@ You can find the code used to create the network on [GitHub](https://github.com/
             </table>
         </div>
     </div>
+
 </div>
 
 ## Degree Distributions

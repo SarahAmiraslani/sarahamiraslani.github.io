@@ -497,6 +497,7 @@ pre code {
 .col,
 .col-md-10,
 .col-md-2,
+.col-md-6,
 .col-sm,
 .col-sm-2,
 .col-sm-3,
@@ -578,6 +579,12 @@ pre code {
         -ms-flex: 0 0 16.666667%;
         flex: 0 0 16.666667%;
         max-width: 16.666667%
+    }
+
+    .col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%
     }
 
     .col-md-10 {
@@ -1190,17 +1197,22 @@ a.btn.disabled {
     margin-bottom: 0
 }
 
-
+.card-img,
 .card-img-top {
     -ms-flex-negative: 0;
     flex-shrink: 0;
     width: 100%
 }
 
-
+.card-img,
 .card-img-top {
     border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px)
+}
+
+.card-img {
+    border-bottom-right-radius: calc(.25rem - 1px);
+    border-bottom-left-radius: calc(.25rem - 1px)
 }
 
 .breadcrumb {
@@ -1912,6 +1924,11 @@ a.close.disabled {
     flex-wrap: nowrap !important
 }
 
+.flex-fill {
+    -ms-flex: 1 1 auto !important;
+    flex: 1 1 auto !important
+}
+
 .justify-content-between {
     -ms-flex-pack: justify !important;
     justify-content: space-between !important
@@ -1920,6 +1937,11 @@ a.close.disabled {
 .align-items-center {
     -ms-flex-align: center !important;
     align-items: center !important
+}
+
+.align-items-stretch {
+    -ms-flex-align: stretch !important;
+    align-items: stretch !important
 }
 
 @media (min-width:768px) {

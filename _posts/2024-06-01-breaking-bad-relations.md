@@ -18,7 +18,7 @@ toc:
   - name: Introduction
   - name: Data Sourcing
   - name: Data Processing
-
+thumbnail: assets/img/walter-white.jpg
 github: https://github.com/SarahAmiraslani/blog-posts/blob/main/visualization/breaking_bad.ipynb
 bibliography: blogs-distill.bib
 ---
@@ -27,25 +27,25 @@ bibliography: blogs-distill.bib
 
 Breaking Bad is a critically acclaimed American television series created by Vince Gilligan. The show originally aired on AMC from January 20, 2008 to September 29, 2013 and consists of five seasons with a total of 62 episodes. The plot revolves around Walter White, a seemingly unremarkable high school chemistry teacher whose life takes a dramatic turn when he is diagnosed with terminal lung cancer. Facing his mortality, Walter dives into the world of methamphetamine production, driven by a desperate need to secure his family’s financial future. As Walter’s transformation from a mild-mannered teacher to a ruthless criminal mastermind unfolds, Breaking Bad explores themes of morality, desperation, greed, and the human psyche. Its exceptional storytelling, unforgettable characters, and profound thematic depth have solidified its status as a cultural phenomenon and a pillar of television history.
 
-Breaking Bad is my favorite television series, and it has sparked my interest in visualizing the relationships between its characters through network analysis. In this blog post, I will dive into this fascinating aspect of the show, exploring how the intricate web of connections adds to its storytelling brilliance.
-
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/BB_.jpg" class="img-fluid rounded z-depth-1 same-height" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/amc-breaking_bad.jpg" class="img-fluid rounded z-depth-1 same-height" %}
+        {% include figure.liquid loading="eager" path="assets/img/walter-white-cash.png" class="img-fluid rounded z-depth-1 same-height" %}
     </div>
 </div>
 <div class="caption">
-Credits and explanation goes here.
+(left) An illustration of the show's main characters. Photo credits to Abheet Gupta <d-cite key="gupta_2022"></d-cite>. (right) An image of Walter White in his cooking gear. Photo credits to Image Abyss <d-cite key="alphacoders_2012"></d-cite>.
 </div>
+
+As a fan of Breaking Bad, I've always been intrigued by how these character interactions drive the story forward. The connections between Walter, his family, his partner Jesse Pinkman, and the various allies and adversaries they encounter form a intricate web that evolves throughout the series.In this blog post, I'll be taking a unique approach to analyzing these relationships. Using network analysis techniques, I aim to visualize and explore the connections between characters, potentially revealing patterns that might not be immediately obvious when watching the series. Whether you're a longtime fan of "Breaking Bad" or new to the show, this analysis aims to provide an interesting perspective on what makes the series so compelling.
 
 # Data Sourcing
 
 ## Quotes
 
-To model the relationships between characters in the Breaking Bad series, we need a reliable source of quotes. Wikiquote, an open-source, community-led project, provides an extensive collection of quotes contributed by fans. While it may not be exhaustive, it offers a sufficient dataset for our exploratory purposes. Fortunately, there is a dedicated [page](https://en.wikiquote.org/wiki/Breaking_Bad) for the Breaking Bad franchise.
+To model the relationships between characters in the Breaking Bad series, we need a reliable source of dialogue between characters. Wikiquote, an open-source, community-led project, provides an extensive collection of quotes contributed by fans. While it may not be exhaustive, it offers a sufficient dataset for our exploratory purposes. Fortunately, there is a dedicated [page](https://en.wikiquote.org/wiki/Breaking_Bad) for the Breaking Bad franchise.
 
 To extract quotes data from Wikiquote, there are a few methods available. One option is to use a web-scraping tool to iterate through each Wikiquote page related to the Breaking Bad franchise and scrape the text. However, a more efficient approach is to utilize the publicly available and regularly updated data dumps provided by the Wikimedia organization. These dumps are updated at least monthly, making them a reliable source<d-footnote>Learn more about the data dumps at https://dumps.wikimedia.org/</d-footnote>. By requesting the XML files for the pages related to Breaking Bad, we can process the text without scraping. This method is ideal because the show’s finale aired nearly a decade ago, so the most recent data dumps should closely match the current live information, making real-time updates unnecessary.
 

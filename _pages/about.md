@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Data Scientist. Developer Advocate. San Jose, CA.
+subtitle: Data Scientist. Quantitative Analyst . San Jose, CA.
 profile:
   align: right
   image: self.jpg

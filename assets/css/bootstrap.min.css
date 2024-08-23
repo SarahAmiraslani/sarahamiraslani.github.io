@@ -1924,11 +1924,6 @@ a.close.disabled {
     flex-wrap: nowrap !important
 }
 
-.flex-fill {
-    -ms-flex: 1 1 auto !important;
-    flex: 1 1 auto !important
-}
-
 .justify-content-between {
     -ms-flex-pack: justify !important;
     justify-content: space-between !important
@@ -1937,11 +1932,6 @@ a.close.disabled {
 .align-items-center {
     -ms-flex-align: center !important;
     align-items: center !important
-}
-
-.align-items-stretch {
-    -ms-flex-align: stretch !important;
-    align-items: stretch !important
 }
 
 @media (min-width:768px) {
@@ -2093,6 +2083,10 @@ a.close.disabled {
 
 .visible {
     visibility: visible !important
+}
+
+.invisible {
+    visibility: hidden !important
 }
 
 @media print {

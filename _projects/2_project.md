@@ -283,13 +283,12 @@ Logistic Regression is a statistical method used to predict a binary outcome bas
 
 {% details Click here to see the code block %}
 The function below was used to find the ideal the logistic regression model using grid search.
-
 <d-code block language="python">
-  def build_best_logistic_regression_model(
-    X_train_scaled, X_test_scaled, y_train, y_test, param_grid, **grid_search_kwargs
+def build_best_logistic_regression_model(
+X_train_scaled, X_test_scaled, y_train, y_test, param_grid, \*\*grid_search_kwargs
 ):
-    """
-    Builds and returns the best Logistic Regression model using GridSearchCV.
+"""
+Builds and returns the best Logistic Regression model using GridSearchCV.
 
     Args:
         X_train_scaled (pd.DataFrame): Scaled training features.
@@ -370,7 +369,6 @@ if best_lr_model is not None:
 dump(best_lr_model, "best_logistic_regression_model.joblib")
 
 </d-code>
-
 {% enddetails %}
 
 The provided code defines a function to construct and fine-tune a logistic regression model using grid search to explore a defined space of hyperparameters. GridSearchCV fits the model on the scaled training data using combinations of regularization strength (`C`), penalty type (`penalty`), and solver algorithm (`solver`) to determine the most effective parameters. The optimal model, with an l1 penalty, a regularization strength of 0.01, and the liblinear solver, achieved a prediction accuracy of 73.14% on the test dataset.
@@ -380,13 +378,12 @@ The provided code defines a function to construct and fine-tune a logistic regre
 Random Forest is an ensemble learning method that constructs multiple decision trees and outputs the mode of the classes for classification tasks. It is known for its accuracy, robustness, and ability to handle large datasets with high dimensionality, reducing the risk of overfitting.
 
 {% details Click here to see the code block %}
-
 <d-code block language="python">
 def build_best_random_forest_model(
-    X_train, X_test, y_train, y_test, param_grid, **grid_search_kwargs
+X_train, X_test, y_train, y_test, param_grid, \*\*grid_search_kwargs
 ):
-    """
-    Builds and returns the best Random Forest model using GridSearchCV.
+"""
+Builds and returns the best Random Forest model using GridSearchCV.
 
     Args:
         X_train (pd.DataFrame): Training features.
@@ -467,7 +464,6 @@ if best_rf_model is not None:
 dump(best_rf_model, "best_random_forest_model.joblib")
 
 </d-code>
-
 {% enddetails %}
 
 The provided code builds and evaluates a Random Forest classifier using a grid search over specified hyperparameters. GridSearchCV systematically tests parameter combinations, cross-validating to find the best performance in terms of accuracy. The optimal model achieved an accuracy of 73.87% on the test set, with 200 trees (`n_estimators`), a maximum depth of 10 (`max_depth`), and a minimum split size of 10 (`min_samples_split`).
@@ -587,7 +583,6 @@ if best_nn_model is not None:
 dump(best_nn_model, "best_neural_network_model.joblib")
 
 </d-code>
-
 {% enddetails %}
 
 The provided code builds and optimizes a neural network model for binary classification using Keras and TensorFlow. A function, `create_model`, defines a neural network with one hidden layer and a given learning rate. The `build_best_neural_network_model` function uses `GridSearchCV` to iterate over hyperparameters such as the number of hidden nodes, learning rate, epochs, and batch size. The best-performing model, with 10 hidden nodes, a learning rate of 0.01, a batch size of 32, and training for 50 epochs, achieved an accuracy of 73.82% on the scaled test data.

@@ -1,6 +1,17 @@
 <ul class="card-text font-weight-light list-group list-group-flush">
-  {% assign work = data[1] | sort: 'startDate' | reverse %}
+  {% assign work = site.data.resume.work %}
+
+  <!-- Preprocess dates to create a sortable date attribute -->
   {% for content in work %}
+    {% assign date_parts = content.startDate | split: '-' %}
+    {% assign sortable_date = date_parts[1] | append: date_parts[0] %}
+    {% assign content = content | merge: { 'sortable_date': sortable_date } %}
+  {% endfor %}
+
+  <!-- Sort by the sortable date and reverse the order -->
+  {% assign sorted_work = work | sort: 'sortable_date' %}
+
+  {% for content in sorted_work %}
     <li class="list-group-item">
       <div class="row align-items-center">
         <div class="col-xs-3 col-sm-3 col-md-2 text-center date-column">
@@ -12,7 +23,7 @@
         </div>
         <div class="col-xs-9 col-sm-9 col-md-10 mt-2 mt-md-0">
           <h5 class="title font-weight-bold ml-1 ml-md-4 padded-title">
-            <a style="color:" var(--global-theme-color)>{{ content.position }}</a>
+            <a style="color: var(--global-theme-color)">{{ content.position }}</a>
           </h5>
           <h6 class="ml-1 ml-md-4" style="font-size: .95rem;">
             <a href="{{ content.url }}">{{ content.name }}</a>, {{ content.location }}

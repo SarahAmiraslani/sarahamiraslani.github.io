@@ -18,26 +18,30 @@ This portfolio is built with [Jekyll](https://jekyllrb.com/) and uses the al-fol
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
+
 - [Ruby](https://www.ruby-lang.org/en/downloads/) version 2.5.0 or higher
 - [RubyGems](https://rubygems.org/pages/download)
 - [Bundler](https://bundler.io/)
 
 ## Installation
 
-To set up this portfolio locally, follow these steps on the [Alfolio repository](https://github.com/alshedivat/al-folio). 
+To set up this portfolio locally, follow these steps on the [Alfolio repository](https://github.com/alshedivat/al-folio).
 
 1. Clone this repository:
+
    ```
    git clone https://github.com/yourusername/your-portfolio-repo.git
    cd your-portfolio-repo
    ```
 
 2. Install the required gems:
+
    ```
    bundle install
    ```
 
 3. Run the website locally:
+
    ```
    bundle exec jekyll serve
    ```

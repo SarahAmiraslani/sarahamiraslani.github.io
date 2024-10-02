@@ -2,10 +2,10 @@
 layout: about
 title: About
 permalink: /
-subtitle: Data Scientist. Quantitative Analyst . San Jose, CA.
+subtitle:
 profile:
   align: right
-  image: self.jpg
+  image: profile_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info:
 news: false # includes a list of news items
@@ -14,8 +14,10 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hello, I’m Sarah Amiraslani. Driven by deep curiosity and a passion for impactful work, I am committed to building innovative solutions and forming lasting professional relationships. I thrive on learning new technologies and challenging myself to reach new heights.
+Hello! I'm Sarah, a data scientist with a strong curiosity, a passion for learning, and desire to solve complex problems.
 
-I hold a Bachelor’s degree in Cognitive and Behavioral Neuroscience from the University of California, San Diego, and a Master of Science in Applied Data Science from the University of Michigan, Ann Arbor. My diverse skills in analytics and machine learning have significantly impacted various industries, including academic research, manufacturing technology, and banking.
+My interdisciplinary background in neuroscience and data science has taught me strong analytical skills and has refined my capacity for dissecting intricate systems - be they biological or technological.
 
-I am a recent graduate and currently seeking early career opportunities in Quantitative Analytics, Data Science, and Machine Learning.
+Throughout my career, I've had the privilege of applying my skills across a diverse range of fields, from academic research to manufacturing, banking, and artificial intelligence technology. Each experience has been a valuable learning opportunity, allowing me to collaborate with talented individuals and expand my expertise.
+
+I'm always happy to connect with fellow professionals in related fields. If you're passionate about data science, technology, or related topics, I'd love to chat.

@@ -1,3 +1,4 @@
+_site
 .bundle
 .sass-cache
 .jekyll-cache
@@ -8,7 +9,5 @@
 Gemfile.lock
 assets/libs/
 node_modules/
-vendor/
-.vscode/settings.json
-_site
+vendor
 .idea

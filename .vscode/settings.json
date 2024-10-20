@@ -1,0 +1,17 @@
+{
+  "spellright.language": ["en"],
+  "spellright.documentTypes": ["markdown", "latex", "plaintext", "code-runner-output", "python", "yaml", "json"],
+  "spellright.parserByClass": {
+    "code-runner-output": {
+      "parser": "markdown"
+    },
+    "github-actions-workflow": {
+      "parser": "markdown"
+    }
+  },
+  "[liquid]": {
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.formatOnSave": true
+  },
+  "github-actions.workflows.pinned.workflows": [".github/workflows/broken-links.yml", ".github/workflows/broken-links-site.yml"]
+}

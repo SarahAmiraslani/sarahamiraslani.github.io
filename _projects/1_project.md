@@ -13,42 +13,30 @@ authors:
   - name: Sarah Amiraslani
     url: sarahamiraslani@gmail.com
     affiliations:
-      name: University of California - San Diego
+      name: University of California, San Diego
 toc:
   - name: Summary
   - name: Introduction
-    # subsections:
-    #   - name: Research Focus
-    #   - name: Hypothesis
   - name: Methods
-    # subsections:
-    #   - name: Participants
-    #   - name: Design
-    #   - name: Materials
   - name: Results
-    # subsections:
-    #   - name: Planned Analyses
-    #   - name: Exploratory Analyses
   - name: Discussion
-  - name: Acknowledgment
+  - name: Acknowledgments
 bibliography: multimedia-learning-distill.bib
 ---
 
 # Summary
 
-Have you ever wondered why images stick in your mind longer than words? Our brains are hardwired to process visual information with remarkable efficiency. Research shows that visual aids not only make learning easier by breaking down complex ideas, but also help illustrate spatial relationships, pinpoint knowledge gaps, and keep us captivated<d-cite key="mayer2008"></d-cite>. But what if drawing your own pictures could take learning to the next level, even more than instructor-provided visuals?
+While visual aids are known to enhance learning by helping process complex information, most educational visuals are provided by instructors rather than created by students. This study investigated whether student-generated drawings could be more effective for learning abstract scientific concepts, those that don't have a definitive physical form, addressing a gap in existing research which has primarily focused on concrete, observable systems.
 
-Studies reveal that drawing can significantly enhance understanding of how physical systems work. However, its effectiveness hinges on factors like the accuracy of the drawings, the learner’s prior knowledge, and the level of guidance provided while drawing<d-cite key="fiorella2018"></d-cite>. Beginners often benefit from more structured support as creating accurate drawings from scratch is cognitively demanding and may detract from energy spent learning the material<d-cite key="vanmeter2005"></d-cite>. Yet, when dealing with content that doesn’t have a clear visual representation, the accuracy of these drawings may not be consequential. In these scenarios, student-generated drawings can capture their unique thought processes and create memorable visual representations.
+Through two controlled experiments with 213 college students at UC San Diego, we compared four learning conditions: studying provided illustrations, copying existing drawings, completing partial drawings, and creating freeform drawings while learning about abstract concepts like black holes. Results showed that students who created their own drawings scored significantly higher on retention tests ($\bar{x}$ = 6.688, $s$ = 2.93) compared to those who copied illustrations ($\bar{x}$ = 4.204, $s$ = 2.750, $p$ < 0.0001), though this advantage did not extend to knowledge transfer tasks.
 
-In two experiments, we randomly assigned college students to different learning tasks. Some studied or copied an instructor’s drawing, others completed a scaffolded drawing worksheet, and some drew their own representations on a blank sheet while reading about abstract concepts or physical systems. We found that, when it came to abstract lessons, unguided drawing significantly boosted retention but not transfer. However, for lessons on physical systems, drawing didn’t improve retention or transfer and students reported higher levels of intrinsic cognitive load.
-
-These insights suggest that while drawing aids learning, its impact depends on the nature of the content and the context in which it’s used. So next time you’re learning a new abstract concept, consider picking up a pen and sketching it out—you might just find it sticks with you longer. However, if you are learning about a physical system studying an instructor provided visual representation is preferred.
+Additional analyses revealed that drawing increased study time and engagement with the material, suggesting that the improved retention may be partially attributed to longer exposure to the content. While these findings indicate that drawing can enhance learning of abstract concepts, a laboratory setting is not representative authentic classroom environments where students are more genuinely motivated to learn. Future work should explore the use of drawings to learn abstract science concepts in classroom environments.
 
 # Introduction
 
-Visual representations play a crucial role in learning by summarizing verbal information, illustrating spatial relationships, and enhancing memory retention<d-cite key="ainsworth2011"></d-cite>. While educational visuals are typically provided by instructors or the authors of textbooks, asking students to create their own drawings is less common<d-cite key="vanmeter2005"></d-cite>. Studying and constructing visuals engage different cognitive processes and can differentially impact learning<d-cite key="fiorella2018"></d-cite>. Therefore, it is essential to determine which method most effectively promotes meaningful learning.
+Visual representations are fundamental to learning, serving multiple cognitive functions: they summarize complex information, illustrate spatial relationships, and enhance memory retention<d-cite key="ainsworth2011"></d-cite>. While instructors typically provide visual aids, research suggests that student-generated drawings might offer unique learning benefits<d-cite key="vanmeter2005"></d-cite>. This distinction matters because creating and studying visuals engage different cognitive processes<d-cite key="fiorella2018"></d-cite>, potentially affecting learning outcomes<d-cite key="mayer2008"></d-cite>.
 
-According to the Cognitive Theory of Multimedia Learning, effective learning involves selecting, organizing, and integrating new information with prior knowledge<d-cite key="mayer2002multimedia"></d-cite>. The more connections learners make between new material and their existing knowledge, the more likely they are to retain information and transfer it to new contexts<d-cite key="mayer2003nine"></d-cite>. Thus, an ideal learning strategy encourages the integration of new and prior knowledge.
+The theoretical foundation for understanding these processes rests on two key cognitive theories. The Cognitive Theory of Multimedia Learning posits that effective learning involves three processes: selecting relevant information, organizing it into coherent representations, and integrating it with existing knowledge<d-cite key="mayer2002multimedia"></d-cite>. The strength of these knowledge connections influences both retention and transfer ability<d-cite key="mayer2003nine"></d-cite>. Additionally, the Dual Channel Processing Theory demonstrates that we process verbal and non-verbal information through distinct cognitive pathways<d-cite key="paivio1968"></d-cite>. Drawing uniquely engages both pathways as learners translate text into visuospatial representations, potentially enhancing cognitive processing and recall<d-cite key="wammes2017learning"></d-cite>.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -59,13 +47,7 @@ According to the Cognitive Theory of Multimedia Learning, effective learning inv
     </div>
 </div>
 
-The Dual Channel Processing Theory, a well-supported cognitive theory, explains that we process verbal and non-verbal information through separate channels, forming unique connections between new material and our existing knowledge<d-cite key="paivio1968"></d-cite> . When learners draw, they engage both verbal and visual processing channels as process the text in a passage and create a corresponding visuospatial representation. This process enhances cognitive processing and recall<d-cite key="wammes2017learning"></d-cite>.
-
-Learner-generated drawings are visual representations created by students to achieve educational goals<d-cite key="alesandrini1981pictorial"></d-cite>. Generative learning strategies, like drawing, promote long-term understanding by helping learners identify gaps in their knowledge and update their understanding through self-monitoring<d-cite key="vanmeter2013"></d-cite>. Drawing allows students to personalize study materials, addressing individual differences in prior knowledge and learning needs. These drawings can be representational (faithfully depicting physical structures) or non-representational (abstract diagrams and flow charts)<d-cite key="carney2002pictorial"></d-cite>. Non-representational drawings may require additional cognitive processing to translate abstract visuals into meaningful content.
-
-Research on learner-generated drawings has yielded mixed results, influenced by factors such as prior knowledge and the level of guidance provided during the drawing process. Early studies showed weak effects favoring drawing to learn. For example, researchers found that drawing or paraphrasing while learning about electrochemistry had varied impacts based on the level of detail of students' drawings<d-cite key="alesandrini1981pictorial"></d-cite>. Subsequent studies indicated that drawing without guidance might be too cognitively demanding, detracting from meaningful engagement with the material<d-cite key="schwamborn2011cognitive"></d-cite>. Guided drawing processes, such as providing drawing training or partially completed worksheets, have shown positive learning outcomes. These strategies help learners identify knowledge gaps, reduce cognitive load, and receive feedback on their mental representations<d-cite key="scheiter2017sketching"></d-cite>.
-
-## Research Focus
+Drawing as a learning strategy presents both opportunities and challenges. Creating drawings can help students identify knowledge gaps and monitor their understanding through self-generated feedback<d-cite key="vanmeter2013"></d-cite>. These drawings may be representational (depicting physical structures) or non-representational (abstract diagrams)<d-cite key="carney2002pictorial"></d-cite>, each serving different learning purposes<d-cite key="alesandrini1981pictorial"></d-cite>. However, the effectiveness of drawing varies with factors such as the learner's prior knowledge and the level of guidance provided. For beginners, creating accurate drawings from scratch can be cognitively demanding, potentially detracting from learning the material itself<d-cite key="schwamborn2011cognitive"></d-cite>. Structured approaches, such as partially completed worksheets, have shown more consistent positive outcomes by helping students manage cognitive demands while providing feedback on their mental models<d-cite key="scheiter2017sketching"></d-cite>.
 
 Most studies on learner-generated drawings focus on concrete, observable systems. However, not all scientific concepts have definitive visual representations. Topics like dark matter, black holes, and natural selection are either theoretical, unfold over long periods, or lack a physical presence. Our research explores whether the efficacy of drawing to learn depends on the content of the lesson.
 
@@ -78,19 +60,17 @@ Most studies on learner-generated drawings focus on concrete, observable systems
     Figure 2. Examples of lesson materials used in previous drawing to learn experiments. All of these studies teach students about physical systems that have a definitive physical representation.
 </div>
 
-## Hypothesis
-
 We hypothesize that drawing will enhance learning of abstract concepts more effectively than concrete ones. For abstract lessons, we expect learning to increase as students generate more of their own drawings. For concrete lessons, we predict that guided drawing will most benefit learning by reducing cognitive demands.
 
 # Methods
 
 ## Participants
 
-A convenience sample of 238 undergraduate students was gathered from the University of California, San Diego Psychology Subject Pool. All participants received partial course credit for their participation. Twenty-five participants were excluded from data analysis, leaving a final sample of 213 participants. Of the 213 participants, 43 identified as male, 165 identified as female, and five identified as non-binary. A majority of participants were in their early twenties with a mean age of 20.27 (_SD_ = 1.93 years). Fifty-seven students participated in the study condition, 54 in the copy condition, 54 in the complete condition, and 48 in the draw condition.
+A convenience sample of 238 undergraduate students was gathered from the University of California, San Diego Psychology Subject Pool. All participants received partial course credit for their participation. Twenty-five participants were excluded from data analysis, leaving a final sample of 213 participants. Of the 213 participants, 43 identified as male, 165 identified as female, and five identified as non-binary. A majority of participants were in their early twenties with a mean age of 20.27 ($s$ = 1.93 years). Fifty-seven students participated in the study condition, 54 in the copy condition, 54 in the complete condition, and 48 in the draw condition.
 
 ## Design
 
-We used a between-subjects design to manipulate participants' drawing experience and measure their learning from a lesson about black holes. Participants were randomly assigned to one of four drawing conditions, which varied by the degree to which they generated their illustrations: copying a provided illustration (“copy”), completing a partial illustration (“complete”), free drawing their own illustration (“draw”), or a control condition that involved no drawing (“study”). Learning was measured using multiple choice and open response questions designed to assess both the retention and transfer of the lesson content. We also measured participants' prior knowledge about physics and astronomy, their visual imagery ability, and their cognitive load during the learning activity to use as covariates in our analyses. The survey was designed to prevent participants from accessing the entire study at once or revisiting previous sections. While there was no time limit, participants were expected to complete the experiment within an hour.
+We used a between-subjects design to manipulate participants' drawing experience and measure their learning from a lesson about black holes. Participants were randomly assigned to one of four drawing conditions, which varied by the degree to which they generated their illustrations: copying a provided illustration (“copy”), completing a partial illustration (“complete”), free drawing their own illustration (“draw”), or a control condition that involved no drawing (“study”). Learning was measured using multiple choice and open response questions designed to assess both the retention and transfer of the lesson content. We also measured participants' prior knowledge about physics and astronomy, their visual imagery ability, and their cognitive load during the learning activity to use as covariates in our analyses.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -111,7 +91,7 @@ The materials for this study included a Qualtrics survey, a passage about black 
 
 - **Illustrations**: Participants in the copy, study, and complete conditions received illustrations produced using Adobe Photoshop 2019 and Pages. Inspired by The Cosmic Perspective textbook and Pearson Mastering Astronomy platform<d-cite key="pearson2019"></d-cite>, the illustrations included drawings of black hole features, Einstein’s Theory of General Relativity, and spacetime distortion near black holes. Scaffolded illustrations featured key elements masked with empty text boxes. Participants in the drawing condition received blank sheets of paper and pens.
 
-- **Passage Comprehension Tests**: Three types of tests were developed: two analogous 15-question multiple-choice tests, one 4-question open response retention test, and one 4-question open response transfer test. The multiple-choice tests included 8 perfect analogs and 7 strong pairs of questions. Retention questions asked students to summarize lesson information, while transfer questions required application of knowledge to new scenarios. Answers were scored based on identified idea units, with inter-rater reliability for retention and transfer tests being _r_(212)=0.995, _p_ <0.0001 and _r_(212)=0.798, _p_ <0.0001, respectively.
+- **Passage Comprehension Tests**: Three types of tests were developed: two analogous 15-question multiple-choice tests, one 4-question open response retention test, and one 4-question open response transfer test. The multiple-choice tests included 8 perfect analogs and 7 strong pairs of questions. Retention questions asked students to summarize lesson information, while transfer questions required application of knowledge to new scenarios. Answers were scored based on identified idea units, with inter-rater reliability for retention and transfer tests being $r$(212)=0.995, $p$ <0.0001 and $r$(212)=0.798, $p$ <0.0001, respectively.
 
 - **Cognitive Load**: Cognitive load was measured using a 10-item instrument assessing intrinsic, extraneous, and germane load<d-cite key="leppink2013"></d-cite>. Participants rated items on a 0 to 10 scale. Examples included “The topics covered in the activity were very complex” (intrinsic load), “The instructions and explanations during the activity were very unclear” (extraneous load), and “The activity really enhanced my understanding of the topics covered” (germane load). Cognitive load was analyzed to determine the impact of visualization strategies on perceived difficulty and mental effort.
 
@@ -148,11 +128,11 @@ The materials for this study included a Qualtrics survey, a passage about black 
 
 ## Planned Analyses
 
-The purpose of our experiment was to determine if more generative illustration activities would improve retention and transfer of knowledge about black holes. We hypothesized that participants who created their own illustrations would perform better on comprehension measures compared to those who studied provided illustrations. From the initial 238 participants, 213 were included in the final analysis after excluding those who did not engage in the illustration activity, failed attention checks, or did not complete the study.
+This study examined whether generative illustration activities enhance knowledge retention and transfer in learning about black holes. Of 238 initial participants, 213 were included in the final analysis after applying exclusion criteria for task engagement, attention checks, and study completion.
 
-Participants demonstrated good visual imagery ability (_M_ = 3.761, _SD_ = 0.574) on a scale from 1 to 5, but reported low prior knowledge in physics and astronomy (_M_ = 9.310, _SD_ = 6.813) on a scale from 0 to 50. Their pre-test scores on a multiple-choice test specific to black holes were also low (_M_ = 4.188 out of 12, _SD_ = 1.963). There were no significant differences across conditions for visual imagery ability, self-reported prior knowledge, or pre-test scores, indicating a baseline similarity among participants.
+Baseline assessments showed no significant differences across conditions in visual imagery ability ($\bar{x}$ = 3.761, $s$ = 0.574 on a 5-point scale), prior knowledge in physics and astronomy ($\bar{x}$ = 9.310, $s$ = 6.813 on a 50-point scale), or black hole pre-test scores ($\bar{x}$ = 4.188, $s$ = 1.963 out of 12 points). This established comparable starting points across experimental conditions.
 
-We analyzed the effects of illustration generativity on multiple-choice gains, open-response retention scores, and open-response transfer scores. No significant differences were found in multiple-choice gains or transfer scores across conditions. However, we did observe significant differences in open-response retention scores (_F_(3,209) = 7.41, _p_ < 0.001). Participants who drew their own illustrations (_M_ = 6.688, _SD_ = 2.93) scored significantly higher on retention compared to those who copied illustrations (_M_ = 4.204, _SD_ = 2.750, _p_ < 0.0001) and those who completed partial illustrations (_M_ = 4.796, _SD_ = 2.595, _p_ = 0.0037). The difference between drawing and studying was near significance (_p_ = 0.052).
+Analysis revealed significant differences in open-response retention scores ($F$(3,209) = 7.41, $p$ < 0.001), with the drawing condition ($\bar{x}$ = 6.688, $s$ = 2.93) significantly outperforming both the copying ($\bar{x}$ = 4.204, $s$ = 2.750, $p$ < 0.0001) and partial illustration conditions ($\bar{x}$ = 4.796, $s$ = 2.595, $p$ = 0.0037). The difference between drawing and study conditions approached significance ($p$ = 0.052). However, no significant differences emerged in multiple-choice gains or transfer scores across conditions.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -176,26 +156,25 @@ We analyzed the effects of illustration generativity on multiple-choice gains, o
 
 Additional analyses were conducted to explore mechanisms by which drawing might enhance learning. We examined reading time, cognitive load, condition enjoyment, and word count:
 
-- **Reading Time**: Participants in the drawing condition spent more time engaging with the lesson (_M_ = 16.994 min, _SD_ = 5.809) compared to other conditions (study, copy, complete), which could contribute to their better performance on the retention test. This was confirmed by a significant linear regression (_F_(1,211)=6.97, _p_ = 0.008), with reading time predicting retention test scores.
+- **Reading Time**: Participants in the drawing condition spent more time engaging with the lesson ($\bar{x}$ = 16.994 min, $s$ = 5.809) compared to other conditions (study, copy, complete), which could contribute to their better performance on the open-response retention test. This is supported by the presence of a significant linear relationship between reading time and open-response retention test scores ($F$(1, 211) = 6.97, $p$ = 0.008).
 
-- **Cognitive Load**: We found no overall differences in cognitive load across conditions. However, significant differences were observed in extraneous load (_F_(3,209) = 15.82, _p_ < 0.0001) and germane load (_F_(3,209) = 6.20, _p_ = 0.0005). Participants in the complete condition reported higher extraneous load, while those in the study condition reported higher germane load compared to other groups.
+- **Cognitive Load**: We found no overall differences in cognitive load across conditions. However, significant differences were observed in extraneous load ($F$(3,209) = 15.82, $p$ < 0.0001) and germane load ($F$(3,209) = 6.20, $p$ = 0.0005). Participants in the complete condition reported higher extraneous load, while those in the study condition reported higher germane load compared to other groups.
 
-- **Condition Enjoyment**: Participants in the study condition enjoyed the activity more (_M_ = 3.965/5 Likert scale, _SD_ = 0.778) than those in other conditions, with significant differences observed between study and complete conditions, and between copy and complete conditions.
+- **Condition Enjoyment**: Participants in the study condition enjoyed the activity more ($\bar{x}$ = 3.965/5 Likert scale, $s$ = 0.778) than those in other conditions, with significant differences observed between study and complete conditions, and between copy and complete conditions.
 
 - **Word Count**: No significant differences were found in total word count or unique word count used to answer open response questions across conditions, suggesting that the amount of writing did not account for differences in retention scores.
 
 # Discussion
 
-The findings of our study suggest that drawing to learn theoretical science can enhance the recall of key points addressed in a passage. Participants in the drawing condition significantly outperformed all other groups on the open response retention test. However, they did not show superior performance on the multiple-choice test or the transfer test compared to other visualization conditions. The most notable difference in performance on the open response retention task was observed between the draw and copy conditions.
+Our findings demonstrate that drawing can enhance recall of theoretical scientific concepts, with the drawing condition outperforming other groups on open-response retention tests. However, this advantage did not extend to multiple-choice or transfer tests. These results challenge previous research suggesting that instructor-guided visualization is more effective for retention. The improved performance may be partly attributed to increased engagement time, as suggested by our exploratory analyses of reading time and germane load.
 
-These patterns of effects contradict previous findings that suggested students perform better on retention tests when their visualization is guided or inspired by an instructor. While our data indicate that the visualization strategy does not impact students’ transfer ability, it is possible that providing participants in future studies with more time could reveal an effect of visualization strategy. Additionally, exploratory analyses reveal that time spent on the passage may be a crucial factor in supporting retention performance and highlight that self-reported germane load is significantly predicted by the visualization condition.
+Two key limitations warrant consideration. First, the laboratory setting may not accurately represent authentic learning environments where students are intrinsically motivated to learn, rather than participating for course credit. Second, certain visualization tasks may have inadvertently discouraged engagement—participants in the study condition could passively scan illustrations, while those in the complete condition reported finding the task confusing or elementary.
 
-There are limitations to our study that future research should address. Importantly, a lab setting does not represent true learning environments where students are genuinely motivated to learn. Our participants were volunteers who participated to receive partial course credit, regardless of their performance in the experiment, which means they may not have been genuinely invested in learning about the formation and properties of black holes.
-
-Furthermore, certain visualization tasks may have disproportionately discouraged participants from completing the task. For example, because the study illustration condition requires no active engagement, participants assigned to this condition may have passively scanned the illustrations rather than studying them carefully. Similarly, students assigned to complete an illustration may have found this task odd or elementary, discouraging them from actively completing the worksheet. Feedback from our pilot study suggests that participants did not enjoy completing the illustration and were generally confused by it.
-
-Future studies should test these visualization manipulations in true classroom environments where theoretical science concepts are taught (e.g., advanced physics, astronomy, and evolutionary biology courses). This approach will help determine the effectiveness of drawing as a learning strategy in more realistic and motivating educational settings.
+Future research should examine these visualization strategies in actual classroom settings, particularly in advanced science courses where abstract concepts are regularly taught. This would provide more ecological validity and help determine the practical effectiveness of drawing as a learning strategy in authentic educational contexts.
 
 # Acknowledgments
 
-This research was conducted at the University of California, San Diego in the [LIME Lab](https://www.lime-lab-ucsd.com) between 2018 and 2020 and served as my honors thesis project. I would like to extend my heartfelt gratitude to Dr. Geller for providing invaluable mentorship and support throughout my time at UCSD. Your guidance was instrumental in the success of this project and my professional development.
+This research, conducted as an honors thesis at the Learning and Instruction in Multimedia Environments
+(LIME) Lab at UC San Diego (2018-2020), was made possible through the support of several individuals and organizations. I am particularly thankful to Dr. Geller for her exceptional mentorship, intellectual guidance, and continuous support throughout this project. Her insights significantly shaped both this research and my professional development.
+
+I also gratefully acknowledge the contributions of the LIME Lab members, whose constructive feedback during lab meetings and experimental design phases strengthened this work considerably. Special thanks to the UC San Diego Psychology Subject Pool for facilitating participant recruitment, and to all the students who participated in this study.

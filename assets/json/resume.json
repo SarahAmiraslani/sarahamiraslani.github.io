@@ -31,8 +31,8 @@
       "position": "Data Scientist",
       "department": "NeMo",
       "location": "Santa Clara, CA",
-      "url": "https://www.wellsfargo.com",
-      "startDate": "2022-09",
+      "url": "https://www.nvidia.com/en-us",
+      "startDate": "2024-09",
       "endDate": "Present",
       "summary": "TBA.",
       "highlights": ["Data Science", "Data Engineering", "Generative AI"]
@@ -117,7 +117,7 @@
       "thesis": "Understanding the in-situ Solar Wind Properties with Machine Learning"
     },
     {
-      "institution": "University of California, San Diego (UCSD)",
+      "institution": "University of California, San Diego",
       "url": "https://ucsd.edu/",
       "area": "Cognitive Behavioral Neuroscience",
       "studyType": "Bachelors of Science (BS)",

@@ -5,19 +5,17 @@ permalink: /
 subtitle:
 profile:
   align: right
-  image: profile_pic.jpg
+  image: self.png
   image_circular: false # crops the image to make it circular
   more_info:
-news: true # includes a list of news items
+news: false # includes a list of news items
 nav_order: 1
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hello! I'm Sarah, a quantitative data analytics specialist with a passion for learning and a desire to solve technical problems.
+Hello! I'm Sarah, a data professional with a passion for learning and a desire to solve challenging problems.
 
-My professional journey bridges neuroscience and data science, combining a BS in Cognitive Neuroscience with an MS in Applied Data Science. This interdisciplinary foundation enables me to approach complex systems with both scientific rigor and innovative problem-solving.
+I have 5+ years of experience working in data analytics across diverse industries including manufacturing automation, quantitative modeling, AI model development, and academic research. I am currently working on building data engineering pipelines to support NVIDIA [NeMo](https://www.nvidia.com/en-us/ai-data-science/products/nemo/) products for generative AI.
 
-My career spans academic research, manufacturing automation, and AI model development. I specialize in building robust data pipelines and analytics frameworks that drive decision-making and accelerate technological advancement.
-
-Let's connect if you're interested in the intersection of data science, AI, and cognitive systems.
+I’m passionate about learning from others and mentoring. If you're interested in exchanging ideas or exploring potential collaborations, please feel free to reach out.

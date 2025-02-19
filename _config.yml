@@ -83,7 +83,7 @@ lastfm_id: # your lastfm id
 lattes_id: # your ID on Lattes (Brazilian Lattes CV)
 linkedin_username: samirasl # your LinkedIn user name
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-medium_username: Sarah Amiraslani # your Medium username
+medium_username: # Sarah Amiraslani # your Medium username
 orcid_id: # your ORCID ID
 osf_id: # your OSF ID
 pinterest_id: # your pinterest id
@@ -157,9 +157,9 @@ giscus:
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@samiraslani/feed
+# external_sources:
+#   - name: medium.com
+#     rss_url: https://medium.com/@samiraslani/feed
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -389,7 +389,7 @@ imagemagick:
 #   You can also set loading="" to other values for specific images to override the default behavior.
 #   Options: "auto", "eager", "lazy"
 #   See https://web.dev/browser-level-image-lazy-loading/ for more information.
-lazy_loading_images: true # enables lazy loading of images (recommended)
+lazy_loading_images: false # enables lazy loading of images (recommended)
 
 # -----------------------------------------------------------------------------
 # Optional Features

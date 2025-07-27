@@ -85,7 +85,7 @@ Additionally, our exploration into the unsupervised clustering of race tracks ad
 
 # Data Source
 
-The Ergast Developer API serves as a pivotal data source for our Formula 1 analysis, offering an extensive repository of historical race data, including driver standings, race results, and qualifying times<d-cite key="ergast"></d-cite>. Renowned for its comprehensive coverage of F1 statistics, the API has been instrumental in various analytical projects, ranging from predictive modeling to detailed statistical analyses of driver performances. In our project, the Ergast API provided a robust foundation for both the supervised and unsupervised learning components. We used it to extract datasets spanning from 1995 to the present, reflecting our focus on the modern era of Formula 1 racing. This period is characterized by significant technological advancements and regulatory changes, making the data particularly relevant for our analysis. Key features of the API that we leveraged include its ability to filter data by race season, event, and individual driver/team performance metrics. This flexibility allowed us to tailor our dataset precisely to the needs of our predictive models and clustering algorithms, ensuring a high degree of accuracy and relevance in our analysis.
+The Ergast Developer API served as a pivotal data source for our Formula 1 analysis, offering an extensive repository of historical race data, including driver standings, race results, and qualifying times<d-cite key="ergast"></d-cite>. Renowned for its comprehensive coverage of F1 statistics, the API was instrumental in various analytical projects, ranging from predictive modeling to detailed statistical analyses of driver performances. In our project, the Ergast API provided a robust foundation for both the supervised and unsupervised learning components. We used it to extract datasets spanning from 1995 to the present, reflecting our focus on the modern era of Formula 1 racing. This period is characterized by significant technological advancements and regulatory changes, making the data particularly relevant for our analysis. Key features of the API that we leveraged include its ability to filter data by race season, event, and individual driver/team performance metrics. This flexibility allowed us to tailor our dataset precisely to the needs of our predictive models and clustering algorithms, ensuring a high degree of accuracy and relevance in our analysis. Note that the Ergast API has been deprecated and is no longer accessible as of 2024.
 
 > ##### Reproducibility Note
 >
@@ -183,7 +183,7 @@ For our analysis of F1 track characteristics, we leveraged three data sources. T
     <tr>
       <td>Location</td>
       <td><a href="https://en.wikipedia.org/wiki/List_of_Formula_One_circuits">Wikipedia List of F1 Circuits</a></td>
-      <td><a href="https://ergast.com/mrd/">API Query<d-footnote><code>https://ergast.com/api/f1/circuits?limit=100&amp;offset=0</code> was used as the API endpoint. However, note that the API service is deprecated as of 2024. </d-footnote></a></td>
+      <td><a>API Query<d-footnote><code>https://ergast.com/api/f1/circuits?limit=100&amp;offset=0</code> was used as the API endpoint. However, note that the API service is deprecated as of 2024 and is no longer accessible. </d-footnote></a></td>
       <td><a href="https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020">Kaggle F1 circuits.csv dataset</a></td>
     </tr>
     <tr>

@@ -15,7 +15,7 @@ keywords: portfolio-website, sarah-amiraslani, data-science, analytics, data, qu
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 👩🏻‍💻 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://sarahamiraslani.github.io # the base hostname & protocol for your site
+url: https://sarahamiraslani.com # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: true # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -107,7 +107,6 @@ youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
 
 contact_note: >
-  Note that email is the quickest way to reach me.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -389,7 +388,7 @@ imagemagick:
 #   You can also set loading="" to other values for specific images to override the default behavior.
 #   Options: "auto", "eager", "lazy"
 #   See https://web.dev/browser-level-image-lazy-loading/ for more information.
-lazy_loading_images: false # enables lazy loading of images (recommended)
+lazy_loading_images: true # enables lazy loading of images (recommended)
 
 # -----------------------------------------------------------------------------
 # Optional Features

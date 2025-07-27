@@ -19,6 +19,7 @@ group :jekyll_plugins do
     gem 'jekyll-twitter-plugin'
     gem 'jemoji'
     gem 'mini_racer'
+    gem 'observer'
     gem 'unicode_utils'
     gem 'webrick'
 end
@@ -26,4 +27,6 @@ group :other_plugins do
     gem 'css_parser'
     gem 'feedjira'
     gem 'httparty'
+    gem 'ostruct'
+    gem 'benchmark'
 end

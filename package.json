@@ -1,6 +1,20 @@
 {
+  "scripts": {
+    "purgecss": "purgecss -c purgecss.config.js",
+    "optimize-images": "node scripts/optimize-images.js",
+    "build-optimized": "npm run optimize-images && npm run purgecss && jekyll build",
+    "lighthouse": "lighthouse https://sarahamiraslani.github.io --output html --output-path lighthouse_results/desktop/$(date +%Y%m%d_%H%M%S)_desktop.html --chrome-flags='--headless'",
+    "lighthouse-mobile": "lighthouse https://sarahamiraslani.github.io --output html --output-path lighthouse_results/mobile/$(date +%Y%m%d_%H%M%S)_mobile.html --chrome-flags='--headless' --preset=mobile"
+  },
   "devDependencies": {
     "@shopify/prettier-plugin-liquid": "1.4.0",
-    "prettier": "^3.1.1"
+    "prettier": "^3.1.1",
+    "purgecss": "^7.0.2",
+    "imagemin": "^8.0.1",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-webp": "^8.0.0",
+    "imagemin-gifsicle": "^7.0.0",
+    "lighthouse": "^11.0.0"
   }
 }

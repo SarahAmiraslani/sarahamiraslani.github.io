@@ -57,18 +57,18 @@
       "startDate": "2021-09",
       "endDate": "2022-04",
       "summary": "I engineered data mining and ETL pipelines, developing Python programs to scrape terabytes of fast-fashion brand data and optimize its storage for machine learning. Collaborating with model developers and UX engineers, I created an AI-driven recommendation system, deployed as a Chrome plugin, to promote sustainable and ethical shopping choices.",
-      "highlights": ["Python Scripting", "Web-scraping", "Relational Database Management", "PostgreSQL"]
+      "highlights": ["Python Scripting", "Web-scraping", "Database Management", "PostgreSQL"]
     },
     {
-      "name": "Trackonomy Systems, INC.",
+      "name": "Trackonomy",
       "position": "Data Analyst",
-      "department": "Manufacturing Automation",
+      "department": "Supply Chain Automation",
       "location": "San Jose, CA",
       "url": "https://trackonomy.ai/",
       "startDate": "2020-12",
       "endDate": "2021-07",
       "summary": "Engineered a Python-based computer vision system for manufacturing quality control, reducing annual material waste by $115,000 and boosting production efficiency by 65%. Collaborated with engineering and operations teams to implement a real-time analytics pipeline, enabling proactive issue detection and cutting downtime by 40%.",
-      "highlights": ["Data Analysis", "Data Visualization", "Statistical Analysis", "Data Management"]
+      "highlights": ["Statistical Analysis", "Data Visualization", "Automation", "Database Management"]
     },
     {
       "name": "University of California, San Diego",
@@ -133,7 +133,7 @@
         "Linear Algebra",
         "Python Programming"
       ],
-      "thesis": "Drawing to Learn Abstract Science Concepts"
+      "thesis": "Drawing to Learn Physics"
     }
   ],
   "awards": [

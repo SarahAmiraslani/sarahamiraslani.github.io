@@ -1,24 +1,30 @@
-{% comment %}
-  Responsive image include with WebP support
-  Usage: {% include responsive-image.html image="image-name.jpg" alt="Alt text" class="optional-class" %}
-{% endcomment %}
-
-{% assign image_path = include.image %}
-{% assign image_name = image_path | split: '.' | first %}
-{% assign image_ext = image_path | split: '.' | last %}
+{% comment %} Responsive image include with WebP support Usage: {% include responsive-image.html image="image-name.jpg" alt="Alt text"
+class="optional-class" %} {% endcomment %} {% assign image_path = include.image %} {% assign image_name = image_path | split: '.' | first %} {% assign
+image_ext = image_path | split: '.' | last %}
 
 <picture>
   <!-- WebP format for supported browsers -->
-  <source 
-    srcset="{{ site.baseurl }}/assets/img/optimized/{{ image_name }}.webp" 
-    type="image/webp">
-  
+  <source srcset="{{ site.baseurl }}/assets/img/optimized/{{ image_name }}.webp" type="image/webp" />
+
   <!-- Fallback to optimized original format -->
-  <img 
-    src="{{ site.baseurl }}/assets/img/optimized/{{ image_path }}" 
+  <img
+    src="{{ site.baseurl }}/assets/img/optimized/{{ image_path }}"
     alt="{{ include.alt | default: image_name }}"
     class="{{ include.class | default: 'img-fluid' }}"
     loading="lazy"
-    {% if include.width %}width="{{ include.width }}"{% endif %}
-    {% if include.height %}height="{{ include.height }}"{% endif %}>
-</picture> 
+    {%
+    if
+    include.width
+    %}width="{{ include.width }}"
+    {%
+    endif
+    %}
+    {%
+    if
+    include.height
+    %}height="{{ include.height }}"
+    {%
+    endif
+    %}
+  />
+</picture>

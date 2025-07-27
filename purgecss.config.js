@@ -1,12 +1,12 @@
 module.exports = {
   content: [
-    "_site/**/*.html", 
+    "_site/**/*.html",
     "_site/**/*.js",
     "_site/**/*.liquid",
     "_layouts/**/*.liquid",
     "_includes/**/*.liquid",
     "_posts/**/*.md",
-    "_pages/**/*.md"
+    "_pages/**/*.md",
   ],
   css: ["_site/assets/css/*.css"],
   output: "_site/assets/css/",
@@ -41,6 +41,6 @@ module.exports = {
     /^tbody/,
     /^tr/,
     /^td/,
-    /^th/
-  ]
+    /^th/,
+  ],
 };

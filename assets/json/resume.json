@@ -5,7 +5,7 @@
     "image": "",
     "email": "sarahamiraslani@gmail.com",
     "phone": "",
-    "url": "https://sarahamiraslani.github.io/",
+    "url": "https://sarahamiraslani.com/",
     "summary": "Driven Data Science and Analytics professional with a passion for solving complex problems.",
     "location": {
       "city": "San Jose",
@@ -34,7 +34,7 @@
       "url": "https://www.nvidia.com/en-us",
       "startDate": "2024-09",
       "endDate": "Present",
-      "summary": "TBA.",
+      "summary": "At NVIDIA, I build tools that make data easier to find, use, and measure. I launched a semantic search platform that quickly turned isolated datasets into shared resources, designed a retrieval engine that significantly improved recall for multimodal data (patent pending), and created pipelines that cut reporting delays for annotation work by over 80%. Along the way, I’ve also devised practical solutions—like accurate time-tracking despite vendor limits—that help teams work smarter with their data..",
       "highlights": ["Data Science", "Data Engineering", "Generative AI"]
     },
     {
